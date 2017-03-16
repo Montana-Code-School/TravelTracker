@@ -12,17 +12,16 @@ let router = express.Router();
 
 let mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-
-let mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost/giphys';
+let mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost/traveltracker';
 let mongooseUri = uriUtil.formatMongoose(mongodbUri);
 let options = {
   server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
   replset: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }
 };
 mongoose.connect(mongooseUri, options);
-let Giphy = require('../models/giphy');
-let NewUser = require('../models/user');
-let giphyRoutes = require('../routes/giphys');
+
+let User = require('../models/user');
+let ttRoutes = require('../routes/ttRoutes');
 
 const port = 3000;
 const compiler = webpack(config);
@@ -36,12 +35,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(require('webpack-hot-middleware')(compiler));
-app.use('/api', giphyRoutes);
+app.use('/api', ttRoutes);
 
 app.get('/', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/index.html'));
 });
-
 
 app.listen(port, function(err) {
   if (err) {
