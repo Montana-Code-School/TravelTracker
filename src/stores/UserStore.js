@@ -18,21 +18,19 @@ export default class UserStore {
 
   LoginUser(name, password) {
     fetch('/api/authenticate', {
-       method: 'POST',
-       headers: {
-         'Accept': 'application/json',
-         'Content-Type': 'application/json'
-       },
-       body: JSON.stringify({
-         name: name,
-         password: password
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        password: password
       })
     })
     .then(function(result) {
-      console.log(result);
       return result.json();})
     .then(loginCred => {
-      console.log(loginCred);
       if (loginCred.admin) {
         this.id = loginCred.id;
         this.name = name;

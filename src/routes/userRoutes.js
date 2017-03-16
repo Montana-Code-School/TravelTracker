@@ -35,30 +35,30 @@ router.route('/user')
   });
 
 router.post('/authenticate', function(req, res) {
-    console.log('Authenticating....', req.body.name, req.body.password);
-    User.findOne({
-        name: req.body.name
-    }, function(err, user) {
-        if (err) throw err;
-        if (!user) {
-            res.json({ success: false, message: 'Authentication failed. User not found.' });
-        } else if (user) {
-            if (!hash.verify(req.body.password, user.password)) {
-                res.json({ success: false, message: 'Authentication failed. Wrong password.' });
-            } else {
-                let token = jwt.sign(user, app.get('superSecret'), {
-                    expiresIn: 86400 // expires in 24 hours
-                });
-                res.json({
-                    success: true,
-                    message: 'Enjoy your token!',
-                    token: token,
-                    admin: user.admin,
-                    id: user._id
-                });
-            }
-        }
-    });
+  console.log('Authenticating....', req.body.name, req.body.password);
+  User.findOne({
+    name: req.body.name
+  }, function(err, user) {
+    if (err) throw err;
+    if (!user) {
+      res.json({ success: false, message: 'Authentication failed. User not found.' });
+    } else if (user) {
+      if (!hash.verify(req.body.password, user.password)) {
+        res.json({ success: false, message: 'Authentication failed. Wrong password.' });
+      } else {
+        let token = jwt.sign(user, app.get('superSecret'), {
+          expiresIn: 86400 // expires in 24 hours
+        });
+        res.json({
+          success: true,
+          message: 'Enjoy your token!',
+          token: token,
+          admin: user.admin,
+          id: user._id
+        });
+      }
+    }
+  });
 });
 
 router.use(function(req, res, next) {
@@ -74,8 +74,8 @@ router.use(function(req, res, next) {
     });
   } else {
     return res.status(403).send({
-        success: false,
-        message: 'No token provided.'
+      success: false,
+      message: 'No token provided.'
     });
   }
 });

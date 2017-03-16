@@ -63,9 +63,9 @@ class LoginPage extends React.Component {
   }
   }
 
-  LoginPage.propTypes = {
-    LoginUser: React.PropTypes.func,
-    userStore: React.PropTypes.object
-  };
+LoginPage.propTypes = {
+  LoginUser: React.PropTypes.func,
+  userStore: React.PropTypes.object
+};
 
-  export default inject("userStore")(observer(LoginPage));
+export default inject("userStore")(observer(LoginPage));
