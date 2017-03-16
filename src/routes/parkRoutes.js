@@ -11,7 +11,7 @@ router.use(function(req, res, next){
 
 router.route('/initiateparksdb')
   .get(function(req, res, next){
-    fetch(`https://developer.nps.gov/api/v0/parks?limit=522`, {
+    fetch(`https://developer.nps.gov/api/v0/parks?q=National%20Park&limit=522`, {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
@@ -42,8 +42,7 @@ router.route('/initiateparksdb')
             }
           });
         });
-      });
-      res.json({confirm: "Parks initialized"});
+      }).then(res.json({confirm: "Parks initialized"}));
     });
 
 
