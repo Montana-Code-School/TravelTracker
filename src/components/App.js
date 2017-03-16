@@ -24,6 +24,7 @@ class App extends React.Component {
             <li><NavLink to="/NewUser">New User</NavLink></li>
           </ul>
         </div>
+        {this.props.children}
       </div>
     );
   }

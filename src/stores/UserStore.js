@@ -35,13 +35,11 @@ export default class UserStore {
         this.id = loginCred.id;
         this.name = name;
         this.admin = loginCred.admin;
-        browserHistory.push('/Main');
       }
       else if (loginCred.success && loginCred.token) {
         this.id = loginCred.id;
         this.admin = loginCred.admin;
         this.token = loginCred.token;
-        browserHistory.push('/Main');
         this.loggedInUser = true;
         this.name = name;
       } else {

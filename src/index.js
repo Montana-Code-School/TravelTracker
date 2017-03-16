@@ -15,11 +15,11 @@ const userStore = new UserStore () ;
 render((
   <Provider userStore = {userStore}>
     <Router history={browserHistory}>
+      <Route path="/" component={App}>
       <Route path="/LoginPage" component={LoginPage}/>
       <Route path="/NewUser" component={NewUser}/>
       <Route path="/Main" component={Main}/>
-      <Route path="/" component={App}/>
-      <IndexRoute component={Home}/>
+      </Route>
     </Router>
   </Provider>
 ), document.getElementById('app'));
