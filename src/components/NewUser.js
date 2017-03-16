@@ -28,8 +28,6 @@ class NewUser extends React.Component {
   }
   handleNewUser(event) {
     event.preventDefault();
-    let user1 = {name: this.state.name, password: this.state.password, email: this.state.email};
-    console.log(user1);
     this.NewUser(this.state);
     this.setState({name: "", password: "", email: ""});
   }

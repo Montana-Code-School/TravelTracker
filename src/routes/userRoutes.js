@@ -39,7 +39,6 @@ router.post('/authenticate', function(req, res) {
     User.findOne({
         name: req.body.name
     }, function(err, user) {
-        console.log(user);
         if (err) throw err;
         if (!user) {
             res.json({ success: false, message: 'Authentication failed. User not found.' });
@@ -50,7 +49,6 @@ router.post('/authenticate', function(req, res) {
                 let token = jwt.sign(user, app.get('superSecret'), {
                     expiresIn: 86400 // expires in 24 hours
                 });
-                console.log(user);
                 res.json({
                     success: true,
                     message: 'Enjoy your token!',
