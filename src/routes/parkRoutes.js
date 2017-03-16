@@ -43,7 +43,7 @@ router.route('/initiateparksdb')
           });
         });
       }).then(res.json({confirm: "Parks initialized"}));
-    });
+  });
 
 
 
