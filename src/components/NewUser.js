@@ -34,16 +34,16 @@ class NewUser extends React.Component {
 
   NewUser(usr) {
     fetch('/api/user', {
-       method: 'POST',
-       headers: {
-         'Accept': 'application/json',
-         'Content-Type': 'application/json'
-       },
-       body: JSON.stringify({
-         name: usr.name,
-         password: usr.password,
-         email: usr.email,
-         admin: usr.admin
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: usr.name,
+        password: usr.password,
+        email: usr.email,
+        admin: usr.admin
       })
     })
     .then(function(){
@@ -81,8 +81,8 @@ class NewUser extends React.Component {
   }
   }
 
-  NewUser.propTypes = {
-    NewUser: React.PropTypes.func
-  };
+NewUser.propTypes = {
+  NewUser: React.PropTypes.func
+};
 
-  export default NewUser;
+export default NewUser;

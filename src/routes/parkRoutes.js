@@ -16,7 +16,7 @@ router.route('/initiateparksdb')
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'Authorization': ''
+        'Authorization': '52929D86-F381-4EF0-B9F2-57282E5A9921'
       }
     })
       .then(result => result.json())
