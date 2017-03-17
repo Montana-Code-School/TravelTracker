@@ -16,9 +16,9 @@ render((
   <Provider userStore = {userStore}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-      <Route path="/LoginPage" component={LoginPage}/>
-      <Route path="/NewUser" component={NewUser}/>
-      <Route path="/Main" component={Main}/>
+        <Route path="/LoginPage" component={LoginPage}/>
+        <Route path="/NewUser" component={NewUser}/>
+        <Route path="/Main" component={Main}/>
       </Route>
     </Router>
   </Provider>
