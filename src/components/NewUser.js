@@ -1,5 +1,4 @@
 import React from 'react';
-import LoginPage from './LoginPage';
 import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';

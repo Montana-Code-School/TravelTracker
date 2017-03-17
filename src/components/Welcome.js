@@ -1,5 +1,4 @@
 import React from 'react';
-import LoginPage from './LoginPage';
 import NavLink from './NavLink';
 import NewUser from './NewUser';
 import { inject, observer } from 'mobx-react';

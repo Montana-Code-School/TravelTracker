@@ -6,7 +6,6 @@ import Home from './components/Home';
 import ControlBar from './components/ControlBar';
 import Dashboard from './components/Dashboard';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
-import LoginPage from './components/LoginPage';
 import NewUser from './components/NewUser';
 import UserStore from './stores/UserStore';
 import { Provider } from 'mobx-react';
