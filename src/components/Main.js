@@ -32,7 +32,7 @@ class Main extends React.Component {
           <div>
             <h3>Collection % Goes Here once selected</h3>
           </div>
-          <div>
+          <div id="map">
             <h1>THE MAP GOES HERE</h1>
           </div>
       </div>
