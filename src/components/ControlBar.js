@@ -4,14 +4,13 @@ import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem } from 'react-bootstrap';
 
-class Main extends React.Component {
+class ControlBar extends React.Component {
   render() {
 
     const dashStyle = {height: '50px', color: 'red', margin: '0px', padding:'0px'};
 
     return (
       <div>
-        <div>
           <Navbar>
             <Navbar .Header><Navbar .Brand>Welcome, {this.props.userStore.name}</Navbar .Brand></Navbar .Header>
             <Nav pullRight>
@@ -25,23 +24,15 @@ class Main extends React.Component {
               <LinkContainer to={{pathname: "/"}}><NavItem eventKey={3}>LogOut</NavItem></LinkContainer>
             </Nav>
           </Navbar>
-          <div>
-            <li><NavLink to="/">Home</NavLink></li>
-          </div>
-        </div>
-          <div>
-            <h3>Collection % Goes Here once selected</h3>
-          </div>
-          <div id="map">
-            <h1>THE MAP GOES HERE</h1>
-          </div>
+          {this.props.children}
       </div>
     );
   }
 }
 
-Main.propTypes = {
-  userStore: React.PropTypes.object
+ControlBar.propTypes = {
+  userStore: React.PropTypes.object,
+  children: React.PropTypes.object
 };
 
-export default inject("userStore")(observer(Main));
+export default inject("userStore")(observer(ControlBar));
