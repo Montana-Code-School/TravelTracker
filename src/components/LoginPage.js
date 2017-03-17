@@ -1,7 +1,9 @@
 import React from 'react';
-import {browserHistory} from 'react-router';
+import { browserHistory, Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
 import NavLink from './NavLink';
+import { Panel, Button } from 'react-bootstrap';
+
 
 class LoginPage extends React.Component {
   constructor() {
@@ -34,9 +36,8 @@ class LoginPage extends React.Component {
   }
 
   handleLoginUser(event) {
-    event.preventDefault();
+    // event.preventDefault();
     this.props.userStore.LoginUser(this.state.name, this.state.password);
-    this.setState({name: "", password: ""});
   }
 
   render() {
@@ -53,7 +54,7 @@ class LoginPage extends React.Component {
             <input onChange={this.handlePasswordChange} value={this.state.password}type="text" className="form-control" id="password" placeholder="password"/>
           </div>
 
-          <button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</button>
+          <Link to="/Main"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
        </form>
        <div>
           <li><NavLink to="/">Home</NavLink></li>

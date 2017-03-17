@@ -49,6 +49,7 @@ class App extends React.Component {
     const wellStyle = {marginTop: "30%", opacity: ".95", fontFamily: "Julius Sans One", backgroundBlendMode: "overlay"};
     return (
       <div>
+<<<<<<< HEAD
         <div style={parentStyle}>
         <Col md={2}/>
         <Col md={8}>
@@ -74,6 +75,18 @@ class App extends React.Component {
        <style>
        @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
        </style>
+=======
+        <div>
+          <h1>Your completion of National Parks is 78%</h1>
+        </div>
+        <div>
+          <ul>
+            <li><NavLink to="/LoginPage">Login Page</NavLink></li>
+            <li><NavLink to="/NewUser">New User</NavLink></li>
+          </ul>
+        </div>
+        {this.props.children}
+>>>>>>> 3cc40cb6587f656dfb1c7ca7f38e1dd4c857b2db
       </div>
 
 
