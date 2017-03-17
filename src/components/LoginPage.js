@@ -64,7 +64,6 @@ class LoginPage extends React.Component {
   }
 
 LoginPage.propTypes = {
-  LoginUser: React.PropTypes.func,
   userStore: React.PropTypes.object
 };
 
