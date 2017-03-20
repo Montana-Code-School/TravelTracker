@@ -13,6 +13,7 @@ class Dashboard extends React.Component {
     };
     this.fetchStates = this.fetchStates.bind(this);
     this.prepareCollection = this.prepareCollection.bind(this);
+    this.calcStateComp = this.calcStateComp.bind(this);
   }
 
   componentDidMount() {
@@ -40,6 +41,10 @@ class Dashboard extends React.Component {
     .then(data => this.setState({states: data}));
   }
 
+  calcStateComp(x) {
+    return (this.props.userStore.states.length/50)*100;
+  }
+
 
   render() {
     return (
@@ -50,7 +55,7 @@ class Dashboard extends React.Component {
           </div>
         </div>
           <div>
-            <h3>Collection % Goes Here once selected</h3>
+            <h3>Collection {this.calcStateComp()} %</h3>
           </div>
           <div>
             <ListGroup>
