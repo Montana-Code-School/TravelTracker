@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import Welcome from './components/Welcome';
 import Home from './components/Home';
-import Main from './components/Main';
+import ControlBar from './components/ControlBar';
+import Dashboard from './components/Dashboard';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
-import LoginPage from './components/LoginPage';
 import NewUser from './components/NewUser';
 import UserStore from './stores/UserStore';
 import { Provider } from 'mobx-react';
@@ -15,10 +15,11 @@ const userStore = new UserStore () ;
 render((
   <Provider userStore = {userStore}>
     <Router history={browserHistory}>
-      <Route path="/" component={App}>
-        <Route path="/LoginPage" component={LoginPage}/>
+      <Route path="/" component={ControlBar}>
+        <IndexRoute component={Welcome}/>
+        <Route path="/Welcome" component={Welcome}/>
         <Route path="/NewUser" component={NewUser}/>
-        <Route path="/Main" component={Main}/>
+        <Route path="/Dashboard" component={Dashboard}/>
       </Route>
     </Router>
   </Provider>

@@ -1,13 +1,11 @@
 import React from 'react';
-import LoginPage from './LoginPage';
 import NavLink from './NavLink';
 import NewUser from './NewUser';
 import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 import { Grid, Col, Row, Image, Well, Button } from 'react-bootstrap';
 
-
-class App extends React.Component {
+class Welcome extends React.Component {
 
   constructor() {
     super();
@@ -39,7 +37,6 @@ class App extends React.Component {
   }
 
   handleLoginUser(event) {
-    // event.preventDefault();
     this.props.userStore.LoginUser(this.state.name, this.state.password);
   }
 
@@ -48,7 +45,6 @@ class App extends React.Component {
     const wellStyle = {marginTop: "30%", opacity: ".95", fontFamily: "Julius Sans One", backgroundBlendMode: "overlay"};
     return (
       <div>
-
         <div style={parentStyle}>
         <Col md={2}/>
         <Col md={8}>
@@ -64,8 +60,9 @@ class App extends React.Component {
                 <input onChange={this.handlePasswordChange} value={this.state.password}type="text" className="form-control" id="password" placeholder="password"/>
               </div>
 
-              <Link to="/Main"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
-            </form>
+              <Link to="/Dashboard"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
+           </form>
+
            <Link to="/NewUser">New user</Link>
           </Well>
         </Col>
@@ -79,9 +76,9 @@ class App extends React.Component {
   }
 }
 
-App.propTypes = {
+Welcome.propTypes = {
   children: React.PropTypes.object,
   userStore: React.PropTypes.object
 };
 
-export default inject("userStore")(observer(App));
+export default inject("userStore")(observer(Welcome));
