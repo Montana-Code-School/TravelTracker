@@ -22,7 +22,26 @@ export default class UserStore {
   }
 
   toggleState(name, statename){
-    fetch(`/api/addState`, {
+
+    if(this.states.indexOf(statename)>=0) {
+
+      fetch(`/api/removeState`, {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          statename: statename
+        })
+      }).then(result=>{
+        let a = this.states.indexOf(statename);
+        this.states.splice(a, 1);}
+      );
+
+
+    } else {fetch(`/api/addState`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
@@ -32,7 +51,12 @@ export default class UserStore {
         name: name,
         statename: statename
       })
-    });
+    }).then(this.states.push(statename));}
+
+
+
+
+
   }
 
   /* Creating the function LoginUser with the name and password params
