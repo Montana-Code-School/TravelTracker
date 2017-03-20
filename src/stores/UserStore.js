@@ -15,7 +15,8 @@ export default class UserStore {
       loginMsg: "",
       loggedInUser: false,
       id: "",
-      token: ""
+      token: "",
+      states: []
     });
     this.LoginUser = this.LoginUser.bind(this);
   }
@@ -66,6 +67,7 @@ export default class UserStore {
         this.token = loginCred.token;
         this.loggedInUser = true;
         this.name = name;
+        this.states = loginCred.states;
       } else {
         alert (loginCred.message);
         this.loggedInUser=false;

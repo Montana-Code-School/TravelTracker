@@ -73,7 +73,8 @@ router.post('/authenticate', function(req, res) {
           message: 'Enjoy your token!',
           token: token,
           admin: user.admin,
-          id: user._id
+          id: user._id,
+          states: user.states
         });
       }
     }

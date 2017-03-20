@@ -20,9 +20,7 @@ class ControlBar extends React.Component {
       <Col md={2}>
          <Navbar.Header>
            <Navbar.Brand>
-           <a style={{display: "flex", float: "left", marginLeft: "0px", paddingLeft: "0px"}}>
            <img src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100" alt=""/>
-           </a>
            </Navbar.Brand>
          </Navbar.Header>
       </Col>

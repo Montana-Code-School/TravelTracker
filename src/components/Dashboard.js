@@ -2,7 +2,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup, ListGroupItem, Glyphicon } from 'react-bootstrap';
 
 class Dashboard extends React.Component {
 
@@ -20,12 +20,14 @@ class Dashboard extends React.Component {
   }
 
   prepareCollection(){
+    let states = this.props.userStore.states;
     return this.state.states.map(function(x){
 
-      
-
-
-      return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;
+      if (states.find(function(y){
+        return y==x.name;
+      })) {
+        return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check"/>  {x.name}</ListGroupItem>;
+      } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
 
 
 
