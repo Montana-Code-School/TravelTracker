@@ -24,7 +24,6 @@ export default class UserStore {
   toggleState(name, statename){
 
     if(this.states.indexOf(statename)>=0) {
-
       fetch(`/api/removeState`, {
         method: 'PUT',
         headers: {
@@ -39,8 +38,6 @@ export default class UserStore {
         let a = this.states.indexOf(statename);
         this.states.splice(a, 1);}
       );
-
-
     } else {fetch(`/api/addState`, {
       method: 'PUT',
       headers: {
@@ -52,11 +49,18 @@ export default class UserStore {
         statename: statename
       })
     }).then(this.states.push(statename));}
+  }
 
-
-
-
-
+  logUserOut(){
+    this.name= "";
+    this.password= "";
+    this.admin= false;
+    this.email= "";
+    this.loginMsg= "";
+    this.loggedInUser= false;
+    this.id= "";
+    this.token= "";
+    this.states= [];
   }
 
   /* Creating the function LoginUser with the name and password params
@@ -80,12 +84,7 @@ export default class UserStore {
     .then(function(result) {
       return result.json();})
     .then(loginCred => {
-      if (loginCred.admin) {
-        this.id = loginCred.id;
-        this.name = name;
-        this.admin = loginCred.admin;
-      }
-      else if (loginCred.success && loginCred.token) {
+      if (loginCred.success && loginCred.token) {
         this.id = loginCred.id;
         this.admin = loginCred.admin;
         this.token = loginCred.token;
@@ -93,9 +92,9 @@ export default class UserStore {
         this.name = name;
         this.states = loginCred.states;
       } else {
-        alert (loginCred.message);
         this.loggedInUser=false;
         this.name="";
+        browserHistory.push('/Welcome');
       }
     });
   }

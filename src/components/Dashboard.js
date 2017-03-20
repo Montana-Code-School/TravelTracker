@@ -2,7 +2,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup, ListGroupItem, Glyphicon } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup, ListGroupItem, Glyphicon, ProgressBar } from 'react-bootstrap';
 
 class Dashboard extends React.Component {
 
@@ -43,6 +43,7 @@ class Dashboard extends React.Component {
 
   calcStateComp(x) {
     return (this.props.userStore.states.length/50)*100;
+
   }
 
 
@@ -56,6 +57,7 @@ class Dashboard extends React.Component {
         </div>
           <div>
             <h3>Collection {this.calcStateComp()} %</h3>
+            <ProgressBar active now={this.calcStateComp()}/>
           </div>
           <div>
             <ListGroup>

@@ -19,7 +19,6 @@ class Welcome extends React.Component {
     };
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
-    this.handleAdminChange = this.handleAdminChange.bind(this);
     this.handleLoginUser = this.handleLoginUser.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
   }
@@ -30,16 +29,11 @@ class Welcome extends React.Component {
   handlePasswordChange(e) {
     this.setState({password: e.target.value});
   }
-  handleAdminChange(e) {
-    this.setState({admin: e.target.value});
-  }
   handleEmailChange(e) {
     this.setState({email: e.target.value});
   }
-
   handleLoginUser(event) {
     this.props.userStore.LoginUser(this.state.name, this.state.password);
-    this.setState({name: "", password: ""});
   }
 
   render() {
