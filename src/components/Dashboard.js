@@ -2,13 +2,46 @@ import React from 'react';
 import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 class Dashboard extends React.Component {
+
+  constructor(){
+    super();
+    this.state = {
+      states: []
+    };
+    this.fetchStates = this.fetchStates.bind(this);
+    this.prepareCollection = this.prepareCollection.bind(this);
+  }
+
+  componentDidMount() {
+    this.fetchStates();
+  }
+
+  prepareCollection(){
+    return this.state.states.map(function(x){
+
+      
+
+
+      return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;
+
+
+
+    },
+    this
+  );
+  }
+
+  fetchStates() {
+    fetch(`/states`)
+    .then(result => result.json())
+    .then(data => this.setState({states: data}));
+  }
+
+
   render() {
-
-    const dashStyle = {height: '50px', color: 'red', margin: '0px', padding:'0px'};
-
     return (
       <div>
         <div>
@@ -19,8 +52,10 @@ class Dashboard extends React.Component {
           <div>
             <h3>Collection % Goes Here once selected</h3>
           </div>
-          <div id="map">
-            <h1>THE MAP GOES HERE</h1>
+          <div>
+            <ListGroup>
+              {this.prepareCollection()}
+            </ListGroup>
           </div>
       </div>
     );

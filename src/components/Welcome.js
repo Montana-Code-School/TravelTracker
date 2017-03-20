@@ -44,15 +44,18 @@ class Welcome extends React.Component {
 
   render() {
     const parentStyle = {background: "url(http://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/national-parks-road-trips/sahale-arm-trail-cascades-national-park.jpg) no-repeat center center fixed", height: "100vh"};
-    const wellStyle = {marginTop: "30%", opacity: ".95", fontFamily: "Julius Sans One", backgroundBlendMode: "overlay"};
+    const wellStyle = {marginTop: "30%", opacity: ".95", fontFamily: "Josefin Sans", backgroundBlendMode: "overlay", height: "40vh"};
     return (
       <div>
         <div style={parentStyle}>
-        <Col md={2}/>
-        <Col md={8}>
-          <Well style={wellStyle}>
+        <Col md={2} lg={2} sm={2}/>
+        <Col md={8} lg={8} sm={8}>
+
+          <Well style={wellStyle} bsSize="large">
+
           <form method="" role="form">
-              <legend>{this.state.loginMsg == "" ? "Please Log In": this.state.loginMsg}</legend>
+
+              <legend>{this.state.loginMsg == "" ? "Log In to Travel Tracker": this.state.loginMsg}</legend>
 
               <div className="form-group">
                 <input onChange={this.handleNameChange} value={this.state.name} type="text" className="form-control" id="username" placeholder="username"/>
@@ -61,16 +64,15 @@ class Welcome extends React.Component {
               <div className="form-group">
                 <input onChange={this.handlePasswordChange} value={this.state.password}type="text" className="form-control" id="password" placeholder="password"/>
               </div>
-
+              <Link to ="/NewUser">New User</Link>
               <Link to="/Dashboard"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
-           </form>
-           <Link to="/NewUser">New user</Link>
+          </form>
           </Well>
         </Col>
-        <Col md={2}/>
+        <Col md={2} lg={2} sm={2}/>
        </div>
        <style>
-       @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+       @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
        </style>
       </div>
     );

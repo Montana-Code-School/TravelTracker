@@ -1,6 +1,10 @@
+/* importing neccessary extensions for the UserStore page */
 import { extendObservable } from 'mobx';
 import {browserHistory} from 'react-router';
 
+/* Initializing class UserStore then exporting extendObservable
+function with props this, and the {key: partner} values.
+Inside the constructor function. */
 export default class UserStore {
   constructor  () {
     extendObservable(this, {
@@ -15,6 +19,26 @@ export default class UserStore {
     });
     this.LoginUser = this.LoginUser.bind(this);
   }
+
+  toggleState(name, statename){
+    fetch(`/api/addState`, {
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        statename: statename
+      })
+    });
+  }
+
+  /* Creating the function LoginUser with the name and password params
+  using a fetch function with a post method looking to Accept and
+  Content-Type of application in JSON format. body thus requires name and password.
+  then an if else if else statements check to see if the loginCred matches and
+  supplies a token and stores data as this. */
 
   LoginUser(name, password) {
     fetch('/api/authenticate', {

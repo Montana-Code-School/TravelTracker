@@ -34,6 +34,25 @@ router.route('/user')
     });
   });
 
+router.route('/addState')
+  .put(function(req, res){
+    let user = new User();
+    User.findOne({
+      name: req.body.name
+    }, function(err, user) {
+      if (err) throw err;
+      user.states.push(req.body.statename);
+      user.save(function(err){
+        if(err){
+          res.json(err);
+        } else {
+          res.json({success: "content has been toggled"});
+        }
+      });
+    }
+  );
+  });
+
 router.post('/authenticate', function(req, res) {
   console.log('Authenticating....', req.body.name, req.body.password);
   User.findOne({
