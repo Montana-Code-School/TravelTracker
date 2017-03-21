@@ -13,7 +13,7 @@ router.use(function(req, res, next){
 
 router.route('/')
   .get(function(req, res, next){
-    Park.find(function(err, parks){
+    Park.find().sort({name: "ascending"}).exec(function(err, parks){
       if (err) {
         return next(err);
       } else {
