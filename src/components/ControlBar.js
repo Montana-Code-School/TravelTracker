@@ -3,7 +3,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
 
 /* making the class ControlBar function which is a React Component. Render to
 actually diplay the ControlBar return content.*/
@@ -32,7 +32,7 @@ class ControlBar extends React.Component {
             <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
               <Nav pullRight>
                 <Navbar .Text>
-                Welcome {this.props.userStore.name}!
+                <Glyphicon glyph="user"/> {this.props.userStore.name}
                 </Navbar .Text>
                 <NavDropdown id="dropdown" title="Collections">
                   <LinkContainer to={{pathname: '/StatesCollection'}}><NavItem>States</NavItem></LinkContainer>
