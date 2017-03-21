@@ -15,6 +15,9 @@ let UserSchema = new mongoose.Schema({
   },
   states: {
     type: Array
+  },
+  parks: {
+    type: Array
   }
 });
 

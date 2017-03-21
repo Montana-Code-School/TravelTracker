@@ -54,16 +54,14 @@ router.route('/addState')
   });
 
 router.route('/removeState')
-  .put(function(req, res){
+  .delete(function(req, res){
     let user = new User();
     User.findOne({
       name: req.body.name
     }, function(err, user) {
       if (err) throw err;
-
       let a = user.states.indexOf(req.body.statename);
       user.states.splice(a, 1);
-
       user.save(function(err){
         if(err){
           res.json(err);
@@ -75,6 +73,44 @@ router.route('/removeState')
   );
   });
 
+router.route('/addPark')
+  .put(function(req, res){
+    let user = new User();
+    User.findOne({
+      name: req.body.name
+    }, function(err, user) {
+      if (err) throw err;
+      user.parks.push(req.body.parkname);
+      user.save(function(err){
+        if(err){
+          res.json(err);
+        } else {
+          res.json({success: "content has been toggled"});
+        }
+      });
+    }
+  );
+  });
+
+router.route('/removePark')
+  .delete(function(req, res){
+    let user = new User();
+    User.findOne({
+      name: req.body.name
+    }, function(err, user) {
+      if (err) throw err;
+      let a = user.parks.indexOf(req.body.parkname);
+      user.parks.splice(a, 1);
+      user.save(function(err){
+        if(err){
+          res.json(err);
+        } else {
+          res.json({success: "content has been toggled"});
+        }
+      });
+    }
+  );
+  });
 
 router.post('/authenticate', function(req, res) {
   console.log('Authenticating....', req.body.name, req.body.password);
@@ -97,7 +133,8 @@ router.post('/authenticate', function(req, res) {
           token: token,
           admin: user.admin,
           id: user._id,
-          states: user.states
+          states: user.states,
+          parks: user.parks
         });
       }
     }

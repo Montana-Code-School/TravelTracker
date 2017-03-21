@@ -21,46 +21,34 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
+      let logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
+      let navbarStyle = {zIndex: "1", marginBottom:"50px", borderBottom:"thin grey solid", backgroundColor:"SeaShell"};
       return (
-        <Navbar>
         <div>
-        <NavItem>
-        <Col md={2}>
-           <Navbar.Header>
-             <Navbar.Brand>
-             <img src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100" alt=""/>
-             </Navbar.Brand>
-           </Navbar.Header>
-        </Col>
-        </NavItem>
-        <Col md={2}>
-          Welcome {this.props.userStore.name}
-        </Col>
-        <Col md={2}/>
-        <Col md={2}/>
-        <Col md={4}>
-        <Nav pullRight>
-          <NavDropdown  title="Collections" id="basic-nav-dropdown">
-            <MenuItem>States</MenuItem>
-            <MenuItem>National Parks</MenuItem>
-            <MenuItem>5-Star Restaurants</MenuItem>
-            <MenuItem divider />
-            <MenuItem>Starbucks</MenuItem>
-          </NavDropdown>
-          <LinkContainer to={{pathname: "/"}}><NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem></LinkContainer>
-        </Nav>
-        </Col>
+          <div>
+            <img className="hidden-xs" style={logoStyle} src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100"/>
+          </div>
+          <div>
+            <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
+              <Nav pullRight>
+                <Navbar .Text>
+                Welcome {this.props.userStore.name}!
+                </Navbar .Text>
+                <NavDropdown id="dropdown" title="Collections">
+                  <LinkContainer to={{pathname: '/StatesCollection'}}><NavItem>States</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/ParksCollection'}}><NavItem>National Parks</NavItem></LinkContainer>
+                </NavDropdown>
+                <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>
+              </Nav>
+            </Navbar>
+          </div>
         </div>
-        </Navbar>
       );
     }
   }
 
 
   render() {
-
-    const dashStyle = {height: '50px', color: 'red', margin: '0px', padding:'0px'};
-
     return (
       <div>
           {this.createNavBar()}

@@ -2,9 +2,10 @@ import React from 'react';
 import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup, ListGroupItem, Glyphicon, ProgressBar } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
+   ListGroupItem, Glyphicon, ProgressBar, Row, Col } from 'react-bootstrap';
 
-class Dashboard extends React.Component {
+class StatesCollection extends React.Component {
 
   constructor(){
     super();
@@ -21,18 +22,13 @@ class Dashboard extends React.Component {
   }
 
   prepareCollection(){
-    let states = this.props.userStore.states;
     return this.state.states.map(function(x){
-
-      if (states.find(function(y){
+      if (this.props.userStore.states.find(function(y){
         return y==x.name;
       })) {
         return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check"/>  {x.name}</ListGroupItem>;
       } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
-
-    },
-    this
-  );
+    },this);
   }
 
   fetchStates() {
@@ -41,36 +37,31 @@ class Dashboard extends React.Component {
     .then(data => this.setState({states: data}));
   }
 
-  calcStateComp(x) {
-    return ((this.props.userStore.states.length/50)*100).toFixed(0);
-
+  calcStateComp() {
+    return ((this.props.userStore.states.length/50)*100);
   }
 
-
   render() {
+    let listStyle = {height:"80vh", overflowY: "scroll", border:"thin solid SlateGrey"};
     return (
-      <div>
-        <div>
-          <div>
-            <li><NavLink to="/">Home</NavLink></li>
-          </div>
-        </div>
-          <div>
-            <h3>Collection {this.calcStateComp()} %</h3>
-            <ProgressBar active now={this.calcStateComp()}/>
-          </div>
-          <div>
-            <ListGroup>
-              {this.prepareCollection()}
-            </ListGroup>
-          </div>
-      </div>
+      <Row>
+        <Col xs={12} md={9}>
+          <h3>States collection: {this.calcStateComp().toFixed(0)}%</h3>
+          <ProgressBar active now={this.calcStateComp()}/>
+        </Col>
+        <Col xs={12} md={3}>
+          States
+          <ListGroup style={listStyle}>
+            {this.prepareCollection()}
+          </ListGroup>
+        </Col>
+      </Row>
     );
   }
 }
 
-Dashboard.propTypes = {
+StatesCollection.propTypes = {
   userStore: React.PropTypes.object
 };
 
-export default inject("userStore")(observer(Dashboard));
+export default inject("userStore")(observer(StatesCollection));

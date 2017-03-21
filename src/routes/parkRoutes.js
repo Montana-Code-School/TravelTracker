@@ -10,6 +10,17 @@ router.use(function(req, res, next){
   next();
 });
 
+router.route('/')
+  .get(function(req, res, next){
+    Park.find(function(err, parks){
+      if (err) {
+        return next(err);
+      } else {
+        res.json(parks);
+      }
+    });
+  });
+
 /* Using the router route to initiate the parks database via a get function with
 the params of req, res and next, a fetch function is used from the NP parks API with a
 Get method specif*/

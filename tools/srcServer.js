@@ -37,7 +37,7 @@ app.use(bodyParser.json());
 
 app.use(require('webpack-hot-middleware')(compiler));
 app.use('/api', userRoutes);
-app.use('/setup', parkRoutes);
+app.use('/parks', parkRoutes);
 app.use('/states', stateRoutes);
 
 app.get('/', function(req, res) {

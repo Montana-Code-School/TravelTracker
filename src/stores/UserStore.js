@@ -16,7 +16,8 @@ export default class UserStore {
       loggedInUser: false,
       id: "",
       token: "",
-      states: []
+      states: [],
+      parks: []
     });
     this.LoginUser = this.LoginUser.bind(this);
   }
@@ -25,7 +26,7 @@ export default class UserStore {
 
     if(this.states.indexOf(statename)>=0) {
       fetch(`/api/removeState`, {
-        method: 'PUT',
+        method: 'DELETE',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
@@ -51,6 +52,36 @@ export default class UserStore {
     }).then(this.states.push(statename));}
   }
 
+  togglePark(name, parkname){
+
+    if(this.parks.indexOf(parkname)>=0) {
+      fetch(`/api/removePark`, {
+        method: 'DELETE',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          parkname: parkname
+        })
+      }).then(result=>{
+        let a = this.parks.indexOf(parkname);
+        this.parks.splice(a, 1);}
+      );
+    } else {fetch(`/api/addPark`, {
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        parkname: parkname
+      })
+    }).then(this.parks.push(parkname));}
+  }
+
   logUserOut(){
     this.name= "";
     this.password= "";
@@ -61,6 +92,8 @@ export default class UserStore {
     this.id= "";
     this.token= "";
     this.states= [];
+    this.parks= [];
+    browserHistory.push('/Welcome');
   }
 
   /* Creating the function LoginUser with the name and password params
@@ -91,6 +124,7 @@ export default class UserStore {
         this.loggedInUser = true;
         this.name = name;
         this.states = loginCred.states;
+        this.parks = loginCred.parks;
       } else {
         this.loggedInUser=false;
         this.name="";
