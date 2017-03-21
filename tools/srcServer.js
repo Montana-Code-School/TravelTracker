@@ -22,6 +22,7 @@ mongoose.connect(mongooseUri, options);
 
 let userRoutes = require('../src/routes/userRoutes');
 let parkRoutes = require('../src/routes/parkRoutes');
+let stateRoutes = require('../src/routes/stateRoutes');
 
 const port = 3000;
 const compiler = webpack(config);
@@ -37,6 +38,7 @@ app.use(bodyParser.json());
 app.use(require('webpack-hot-middleware')(compiler));
 app.use('/api', userRoutes);
 app.use('/setup', parkRoutes);
+app.use('/states', stateRoutes);
 
 app.get('/', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/index.html'));

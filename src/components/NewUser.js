@@ -52,7 +52,7 @@ class NewUser extends React.Component {
     })
     .then(function(){
       alert ('User Account Created.  Please Log In');
-      browserHistory.push('/LoginPage');
+      browserHistory.push('/Welcome');
     });
   }
 
@@ -79,7 +79,7 @@ class NewUser extends React.Component {
               <div className="form-group">
                 <input onChange={this.handleEmailChange} value={this.state.email}type="text" className="form-control" id="email" placeholder="email"/>
               </div>
-
+              <Link to ="/Welcome">Login Page</Link>
               <button onClick={this.handleNewUser} type="submit" className="btn btn-primary">Submit</button>
            </form>
           </Well>
