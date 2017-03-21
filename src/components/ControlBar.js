@@ -22,7 +22,7 @@ class ControlBar extends React.Component {
   createNavBar(){
     if(this.props.userStore.loggedInUser){
       let logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
-      let navbarStyle = {zIndex: "1", marginBottom:"50px", borderBottom:"thin grey solid", backgroundColor:"SeaShell"};
+      let navbarStyle = {zIndex: "1", marginBottom:"50px", borderBottom:"thin grey solid", backgroundColor:"Azure"};
       return (
         <div>
           <div>
