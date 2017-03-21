@@ -44,12 +44,14 @@ class ParksCollection extends React.Component {
   render() {
     let listStyle = {height:"80vh", overflowY: "scroll", border:"thin solid SlateGrey"};
     let progressStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto", width: "90%"};
+    let progressStyle2 = {position: "absolute", left: "0px", right: "0px", margin:"auto"};
     return (
       <Row>
         <Col xs={12} md={9}>
           <div style={progressStyle}>
             <h3>National Parks collection: {this.calcParkComp().toFixed(0)}%</h3>
             <ProgressBar active now={this.calcParkComp()}/>
+            <img style={progressStyle2} src={require('../img/NationalParks.jpg')}/>
           </div>
         </Col>
         <Col xs={12} md={3}>
