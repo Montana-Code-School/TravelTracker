@@ -26,7 +26,7 @@ class ParksCollection extends React.Component {
       if (this.props.userStore.parks.find(function(y){
         return y==x.name;
       })) {
-        return <ListGroupItem onClick={() => {this.props.userStore.togglePark(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check"/>  {x.name}</ListGroupItem>;
+        return <ListGroupItem onClick={() => {this.props.userStore.togglePark(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check" style={{color: "green"}}/>  {x.name}</ListGroupItem>;
       } else {return <ListGroupItem onClick={() => {this.props.userStore.togglePark(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
     },this);
   }
