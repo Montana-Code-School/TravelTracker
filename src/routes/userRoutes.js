@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import express from 'express';
 import User from '../models/User';
 import hash from 'password-hash';
