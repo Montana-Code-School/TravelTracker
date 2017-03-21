@@ -6,4 +6,4 @@ let StateSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('State', StateSchema);
+export default mongoose.model('State', StateSchema);

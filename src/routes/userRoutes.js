@@ -1,10 +1,11 @@
-let express = require('express');
-let router = express.Router();
-let User = require('../models/user');
-let hash = require('password-hash');
-let jwt = require('jsonwebtoken');
+import express from 'express';
+import User from '../models/User';
+import hash from 'password-hash';
+import jwt from 'jsonwebtoken';
+
 let app = express();
 let config = require('../config');
+let router = express.Router();
 
 app.set('superSecret', config.secret);
 
@@ -39,18 +40,17 @@ router.route('/addState')
     let user = new User();
     User.findOne({
       name: req.body.name
-    }, function(err, user) {
-      if (err) throw err;
+    }, function(err, user, next) {
+      if (err) next(err);
       user.states.push(req.body.statename);
       user.save(function(err){
         if(err){
-          res.json(err);
+          next(err);
         } else {
           res.json({success: "content has been toggled"});
         }
       });
-    }
-  );
+    });
   });
 
 router.route('/removeState')
@@ -58,19 +58,18 @@ router.route('/removeState')
     let user = new User();
     User.findOne({
       name: req.body.name
-    }, function(err, user) {
-      if (err) throw err;
+    }, function(err, user, next) {
+      if (err) next(err);
       let a = user.states.indexOf(req.body.statename);
       user.states.splice(a, 1);
       user.save(function(err){
         if(err){
-          res.json(err);
+          next(err);
         } else {
           res.json({success: "content has been toggled"});
         }
       });
-    }
-  );
+    });
   });
 
 router.route('/addPark')
@@ -78,18 +77,17 @@ router.route('/addPark')
     let user = new User();
     User.findOne({
       name: req.body.name
-    }, function(err, user) {
-      if (err) throw err;
+    }, function(err, user, next) {
+      if (err) next(err);
       user.parks.push(req.body.parkname);
       user.save(function(err){
         if(err){
-          res.json(err);
+          next(err);
         } else {
           res.json({success: "content has been toggled"});
         }
       });
-    }
-  );
+    });
   });
 
 router.route('/removePark')
@@ -97,27 +95,26 @@ router.route('/removePark')
     let user = new User();
     User.findOne({
       name: req.body.name
-    }, function(err, user) {
-      if (err) throw err;
+    }, function(err, user, next) {
+      if (err) next(err);
       let a = user.parks.indexOf(req.body.parkname);
       user.parks.splice(a, 1);
       user.save(function(err){
         if(err){
-          res.json(err);
+          next(err);
         } else {
           res.json({success: "content has been toggled"});
         }
       });
-    }
-  );
+    });
   });
 
 router.post('/authenticate', function(req, res) {
   console.log('Authenticating....', req.body.name, req.body.password);
   User.findOne({
     name: req.body.name
-  }, function(err, user) {
-    if (err) throw err;
+  }, function(err, user, next) {
+    if (err) next(err);
     if (!user) {
       res.json({ success: false, message: 'Authentication failed. User not found.' });
     } else if (user) {

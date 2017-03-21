@@ -62,8 +62,8 @@ class NewUser extends React.Component {
     return (
       <div>
         <div style={parentStyle}>
-        <Col md={2}/>
-        <Col md={8}>
+          <Col md={2}/>
+          <Col md={8}>
           <Well style={wellStyle}>
           <form method="" role="form">
               <legend>Please Register</legend>

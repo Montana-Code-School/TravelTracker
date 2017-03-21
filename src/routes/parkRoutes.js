@@ -1,8 +1,9 @@
 /* Importing variables as lets to our required imports */
-let express = require('express');
-let router = express.Router();
-let Park = require('../models/park');
+import express from 'express';
+import Park from '../models/Park';
 import "isomorphic-fetch";
+
+let router = express.Router();
 
 /* using a router function with the params of req res and next */
 router.use(function(req, res, next){

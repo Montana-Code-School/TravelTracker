@@ -41,13 +41,13 @@ class Welcome extends React.Component {
     let logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     return (
       <div>
-      <div>
-        <img className="hidden-xs" style={logoStyle} src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100"/>
-      </div>
+        <div>
+          <img className="hidden-xs" style={logoStyle} src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100"/>
+        </div>
         <div style={parentStyle}>
 
-        <Col md={2} lg={2} sm={2}/>
-        <Col md={8} lg={8} sm={8}>
+          <Col sm={2}/>
+          <Col sm={8}>
 
           <Well style={wellStyle} bsSize="large">
 
