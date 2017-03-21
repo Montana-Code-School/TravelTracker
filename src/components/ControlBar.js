@@ -22,11 +22,11 @@ class ControlBar extends React.Component {
   createNavBar(){
     if(this.props.userStore.loggedInUser){
       let logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
-      let navbarStyle = {zIndex: "1", marginBottom:"50px", borderBottom:"thin grey solid", backgroundColor:"Azure"};
+      let navbarStyle = {zIndex: "1", marginBottom:"80px", background:"none", borderBottom:"none"};
       return (
         <div>
           <div>
-            <img className="hidden-xs" style={logoStyle} src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100"/>
+            <img className="hidden-xs" style={logoStyle} src={require('../img/thelogo.png')} width="150" height="150"/>
           </div>
           <div>
             <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
