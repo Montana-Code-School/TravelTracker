@@ -13,7 +13,7 @@ let UserSchema = new mongoose.Schema({
   admin: {
     type: Boolean
   },
-  collections:{
+  states: {
     type: Array
   }
 });

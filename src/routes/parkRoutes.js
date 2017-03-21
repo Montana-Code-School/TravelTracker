@@ -1,14 +1,18 @@
+/* Importing variables as lets to our required imports */
 let express = require('express');
 let router = express.Router();
 let Park = require('../models/park');
 import "isomorphic-fetch";
 
-
+/* using a router function with the params of req res and next */
 router.use(function(req, res, next){
   res.setHeader('Content-Type', 'application/json');
   next();
 });
 
+/* Using the router route to initiate the parks database via a get function with
+the params of req, res and next, a fetch function is used from the NP parks API with a
+Get method specif*/
 router.route('/initiateparksdb')
   .get(function(req, res, next){
     fetch(`https://developer.nps.gov/api/v0/parks?q=National%20Park&limit=522`, {
