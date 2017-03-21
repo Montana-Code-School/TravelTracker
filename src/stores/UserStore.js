@@ -122,7 +122,7 @@ export default class UserStore {
         this.admin = loginCred.admin;
         this.token = loginCred.token;
         this.loggedInUser = true;
-        this.name = name;
+        this.name = name.toLowerCase();
         this.states = loginCred.states;
         this.parks = loginCred.parks;
       } else {
