@@ -26,7 +26,7 @@ class StatesCollection extends React.Component {
       if (this.props.userStore.states.find(function(y){
         return y==x.name;
       })) {
-        return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check"/>  {x.name}</ListGroupItem>;
+        return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check" style={{color: "green"}}/>  {x.name}</ListGroupItem>;
       } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
     },this);
   }
@@ -43,11 +43,14 @@ class StatesCollection extends React.Component {
 
   render() {
     let listStyle = {height:"80vh", overflowY: "scroll", border:"thin solid SlateGrey"};
+    let progressStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto", width: "90%"};
     return (
       <Row>
         <Col xs={12} md={9}>
-          <h3>States collection: {this.calcStateComp().toFixed(0)}%</h3>
-          <ProgressBar active now={this.calcStateComp()}/>
+          <div style={progressStyle}>
+            <h3>States collection: {this.calcStateComp().toFixed(0)}%</h3>
+            <ProgressBar active now={this.calcStateComp()}/>
+          </div>
         </Col>
         <Col xs={12} md={3}>
           States

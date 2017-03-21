@@ -21,7 +21,7 @@ router.route('/user')
 
     let user = new User();
 
-    user.name = req.body.name;
+    user.name = req.body.name.toLowerCase();
     user.password = hash.generate(req.body.password);
     user.email = req.body.email;
     user.admin = req.body.admin;
@@ -112,7 +112,7 @@ router.route('/removePark')
 router.post('/authenticate', function(req, res, next) {
   console.log('Authenticating....', req.body.name, req.body.password);
   User.findOne({
-    name: req.body.name
+    name: req.body.name.toLowerCase()
   }, function(err, user) {
     if (err) next(err);
     if (!user) {

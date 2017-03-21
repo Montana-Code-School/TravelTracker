@@ -37,7 +37,7 @@ class Welcome extends React.Component {
 
   render() {
     const parentStyle = {height:"100vh", width:"100vw", background: "url(http://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/national-parks-road-trips/sahale-arm-trail-cascades-national-park.jpg) no-repeat center center fixed"};
-    const wellStyle = {position: "absolute", top: "0", bottom: "0", left: "0", right: "0", margin: "auto", opacity: ".95", fontFamily: "Josefin Sans", backgroundBlendMode: "overlay", height: "300px", width: "500px"};
+    const wellStyle = {position: "absolute", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", fontFamily: "Josefin Sans", backgroundBlendMode: "overlay", height: "300px", width: "500px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
     return (
