@@ -1,5 +1,4 @@
 /* Importing variables as lets to our required imports */
-/* eslint-disable import/no-unresolved */
 import express from 'express';
 import Park from '../models/Park';
 import "isomorphic-fetch";
