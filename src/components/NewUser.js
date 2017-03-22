@@ -54,19 +54,21 @@ class NewUser extends React.Component {
   }
 
   render() {
-    const parentStyle = {height:"100vh", width:"100vw", background: "url(http://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/national-parks-road-trips/sahale-arm-trail-cascades-national-park.jpg) no-repeat center center fixed"};
+    const bg = require('../img/frontBackground-min.jpg');
+    const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
     const wellStyle = {position: "absolute", top: "0", bottom: "0", left: "0", right: "0", margin: "auto", opacity: ".95", fontFamily: "Josefin Sans", backgroundBlendMode: "overlay", height: "350px", width: "500px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const loginLinkStyle = {float: "right"};
+
     return (
       <div>
         <div>
-          <img className="hidden-xs" style={logoStyle} src="https://cdn2.iconfinder.com/data/icons/geest-travel-kit/128/travel_journey-04-2-512.png" width="100" height="100"/>
+        <img className="hidden-xs" style={logoStyle} src={require('../img/thelogo.png')} width="200" height="200"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
             <Form>
-                <legend>"Sign Up For travelTracker"</legend>
+                <legend>Sign Up For Travel Tracker</legend>
 
                 <FormGroup controlId="formInlineName">
                   <ControlLabel>Name</ControlLabel>
@@ -79,7 +81,7 @@ class NewUser extends React.Component {
                 </FormGroup>
 
                 <FormGroup controlId="formInlineEmail">
-                  <ControlLabel>Password</ControlLabel>
+                  <ControlLabel>Email</ControlLabel>
                   <FormControl onChange={this.handleEmailChange} type="text" placeholder="email" />
                 </FormGroup>
 
