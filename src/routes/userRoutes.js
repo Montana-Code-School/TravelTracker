@@ -42,7 +42,7 @@ router.route('/addState')
       name: req.body.name
     }, function(err, user) {
       if (err) next(err);
-      user.states.push(req.body.statename);
+      user.states.push(req.body.state);
       user.save(function(err){
         if(err){
           next(err);
@@ -60,7 +60,7 @@ router.route('/removeState')
       name: req.body.name
     }, function(err, user) {
       if (err) next(err);
-      let a = user.states.indexOf(req.body.statename);
+      let a = user.states.indexOf(req.body.state);
       user.states.splice(a, 1);
       user.save(function(err){
         if(err){

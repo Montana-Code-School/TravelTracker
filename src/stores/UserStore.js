@@ -22,24 +22,45 @@ export default class UserStore {
     this.LoginUser = this.LoginUser.bind(this);
   }
 
-  toggleState(name, state, date){
+  getDateStateAdded(statename){
+    let state = this.states.find(function(y){
+      return y.name==statename;
+    });
 
-    if(this.states.indexOf(state.name)>=0) {
-      fetch(`/api/removeState`, {
-        method: 'DELETE',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          state: {name: state.name, datecollected: Date()}
-        })
-      }).then(result=>{
-        let a = this.states.indexOf(state);
-        this.states.splice(a, 1);}
-      );
-    } else {fetch(`/api/addState`, {
+    return state.date;
+  }
+
+  getDateParkAdded(parkname){
+    let park = this.parks.find(function(y){
+      return y.name==parkname;
+    });
+
+    return park.date;
+  }
+
+  removeState(name, statename){
+    let state = this.states.find(function(y){
+      return y.name==statename;
+    });
+    fetch(`/api/removeState`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        state: state
+      })
+    }).then(result=>{
+      let a = this.states.indexOf(state);
+      this.states.splice(a, 1);}
+    );
+  }
+
+  addState(name, statename){
+    let state = {name: statename, date: new Date().toLocaleDateString()};
+    fetch(`/api/addState`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
@@ -50,25 +71,30 @@ export default class UserStore {
         state: state
       })
     }).then(this.states.push(state));}
+
+  removePark(name, parkname){
+    let park = this.parks.find(function(y){
+      return y.name==parkname;
+    });
+    fetch(`/api/removePark`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        park: park
+      })
+    }).then(result=>{
+      let a = this.parks.indexOf(park);
+      this.parks.splice(a, 1);}
+    );
   }
 
-  togglePark(name, park){
-    if(this.parks.indexOf(park.name)>=0) {
-      fetch(`/api/removePark`, {
-        method: 'DELETE',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          park: park
-        })
-      }).then(result=>{
-        let a = this.parks.indexOf(park);
-        this.parks.splice(a, 1);}
-      );
-    } else {fetch(`/api/addPark`, {
+  addPark(name, parkname){
+    let park = {name: parkname, date: new Date().toLocaleDateString()};
+    fetch(`/api/addPark`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
@@ -78,7 +104,7 @@ export default class UserStore {
         name: name,
         park: park
       })
-    }).then(this.parks.push(park));}
+    }).then(this.parks.push(park));
   }
 
   logUserOut(){

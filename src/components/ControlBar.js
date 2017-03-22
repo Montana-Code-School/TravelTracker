@@ -1,6 +1,5 @@
 /* Importing the neccesary components*/
 import React from 'react';
-import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
@@ -31,9 +30,7 @@ class ControlBar extends React.Component {
           <div>
             <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
               <Nav pullRight>
-                <Navbar .Text>
-                <Glyphicon glyph="user"/> {this.props.userStore.name}
-                </Navbar .Text>
+                <NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem>
                 <NavDropdown id="dropdown" title="Collections">
                   <LinkContainer to={{pathname: '/StatesCollection'}}><NavItem>States</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/ParksCollection'}}><NavItem>National Parks</NavItem></LinkContainer>
