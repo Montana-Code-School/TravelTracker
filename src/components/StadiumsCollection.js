@@ -51,8 +51,8 @@ class StadiumCollection extends React.Component {
         <Col xs={12} md={9}>
           <div style={progressStyle}>
             <h3>Major League Baseball stadiums collection: {this.calcStadiumComp().toFixed(0)}%</h3>
-            <ProgressBar active now={this.calcStadiumComp()}/>
-            <img style={imageStyle} src={require('../img/mlb1.png')}/>
+             <ProgressBar active now={this.calcStadiumComp()}/>
+             <img style={imageStyle} src={require('../img/mlb2.jpg')}/>
           </div>
         </Col>
         <Col xs={12} md={3}>
