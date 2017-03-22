@@ -5,41 +5,40 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col } from 'react-bootstrap';
 
-class StatesCollection extends React.Component {
+class StadiumCollection extends React.Component {
 
   constructor(){
     super();
     this.state = {
-      states: []
+      stadiums: []
     };
-    this.fetchStates = this.fetchStates.bind(this);
+    this.fetchStadiums = this.fetchStadiums.bind(this);
     this.prepareCollection = this.prepareCollection.bind(this);
-    this.calcStateComp = this.calcStateComp.bind(this);
+    this.calcStadiumComp = this.calcStadiumComp.bind(this);
   }
 
   componentDidMount() {
-    this.fetchStates();
+    this.fetchStadiums();
   }
 
   prepareCollection(){
-    return this.state.states.map(function(x){
-      if (this.props.userStore.states.find(function(y){
+    return this.state.stadiums.map(function(x){
+      if (this.props.userStore.stadiums.find(function(y){
         return y==x.name;
       })) {
-        return (<ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>
-          <Glyphicon glyph="check" style={{color: "green"}}/> {x.name},</ListGroupItem>);
-      } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
+        return <ListGroupItem onClick={() => {this.props.userStore.toggleStadium(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check" style={{color: "green"}}/>  {x.name}</ListGroupItem>;
+      } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleStadium(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
     },this);
   }
 
-  fetchStates() {
-    fetch(`/states`)
+  fetchStadiums() {
+    fetch(`/stadiums`)
     .then(result => result.json())
-    .then(data => this.setState({states: data}));
+    .then(data => this.setState({stadiums: data}));
   }
 
-  calcStateComp() {
-    return ((this.props.userStore.states.length/50)*100);
+  calcStadiumComp() {
+    return ((this.props.userStore.stadiums.length/30)*100);
   }
 
   render() {
@@ -51,13 +50,13 @@ class StatesCollection extends React.Component {
       <Row>
         <Col xs={12} md={9}>
           <div style={progressStyle}>
-            <h3>States collection: {this.calcStateComp().toFixed(0)}%</h3>
-            <ProgressBar active now={this.calcStateComp()}/>
-            <img style={imageStyle} src={require('../img/us3.png')}/>
+            <h3>Major League Baseball stadiums collection: {this.calcStadiumComp().toFixed(0)}%</h3>
+            <ProgressBar active now={this.calcStadiumComp()}/>
+            <img style={imageStyle} src={require('../img/mlb1.png')}/>
           </div>
         </Col>
         <Col xs={12} md={3}>
-          States
+          Major League Baseball Stadiums
           <ListGroup style={listStyle}>
             {this.prepareCollection()}
           </ListGroup>
@@ -67,8 +66,8 @@ class StatesCollection extends React.Component {
   }
 }
 
-StatesCollection.propTypes = {
+StadiumCollection.propTypes = {
   userStore: React.PropTypes.object
 };
 
-export default inject("userStore")(observer(StatesCollection));
+export default inject("userStore")(observer(StadiumCollection));

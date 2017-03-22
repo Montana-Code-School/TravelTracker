@@ -109,6 +109,43 @@ router.route('/removePark')
     });
   });
 
+router.route('/addStadium')
+  .put(function(req, res, next){
+    let user = new User();
+    User.findOne({
+      name: req.body.name
+    }, function(err, user) {
+      if (err) next(err);
+      user.stadiums.push(req.body.stadiumname);
+      user.save(function(err){
+        if(err){
+          next(err);
+        } else {
+          res.json({success: "content has been toggled"});
+        }
+      });
+    });
+  });
+
+router.route('/removeStadium')
+  .delete(function(req, res, next){
+    let user = new User();
+    User.findOne({
+      name: req.body.name
+    }, function(err, user) {
+      if (err) next(err);
+      let a = user.stadiums.indexOf(req.body.stadiumname);
+      user.stadiums.splice(a, 1);
+      user.save(function(err){
+        if(err){
+          next(err);
+        } else {
+          res.json({success: "content has been toggled"});
+        }
+      });
+    });
+  });
+
 router.post('/authenticate', function(req, res, next) {
   console.log('Authenticating....', req.body.name, req.body.password);
   User.findOne({
@@ -131,7 +168,8 @@ router.post('/authenticate', function(req, res, next) {
           admin: user.admin,
           id: user._id,
           states: user.states,
-          parks: user.parks
+          parks: user.parks,
+          stadiums: user.stadiums
         });
       }
     }

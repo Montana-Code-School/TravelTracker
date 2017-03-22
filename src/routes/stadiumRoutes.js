@@ -1,6 +1,6 @@
 /* Importing variables as lets to our required imports */
 import express from 'express';
-import State from '../models/State';
+import Stadium from '../models/Stadium';
 import "isomorphic-fetch";
 
 let router = express.Router();
@@ -16,13 +16,26 @@ the params of req, res and next, a fetch function is used from the NP parks API 
 Get method specif*/
 router.route('/')
   .get(function(req, res, next){
-    State.find(function(err, states){
+    Stadium.find(function(err, stadiums){
       if (err) {
         return next(err);
       } else {
-        res.json(states);
+        res.json(stadiums);
+      }
+    });
+  })
+
+  .post(function(req, res, next){
+    let newStadium = new Stadium();
+    newStadium.name = "Rogers Centre";
+    newStadium.team = "Toronto Blue Jays";
+    newStadium.state = "ONT";
+    newStadium.save(function(err, stadium, next){
+      if(err){
+        return next(err);
       }
     });
   });
+
 
 module.exports = router;

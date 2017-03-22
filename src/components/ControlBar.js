@@ -37,6 +37,7 @@ class ControlBar extends React.Component {
                 <NavDropdown id="dropdown" title="Collections">
                   <LinkContainer to={{pathname: '/StatesCollection'}}><NavItem>States</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/ParksCollection'}}><NavItem>National Parks</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/StadiumsCollection'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
                 </NavDropdown>
                 <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>
               </Nav>

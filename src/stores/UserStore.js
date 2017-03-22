@@ -1,6 +1,6 @@
 /* importing neccessary extensions for the UserStore page */
 import { extendObservable } from 'mobx';
-import {browserHistory} from 'react-router';
+import { browserHistory } from 'react-router';
 
 /* Initializing class UserStore then exporting extendObservable
 function with props this, and the {key: partner} values.
@@ -17,7 +17,8 @@ export default class UserStore {
       id: "",
       token: "",
       states: [],
-      parks: []
+      parks: [],
+      stadiums: []
     });
     this.LoginUser = this.LoginUser.bind(this);
   }
@@ -82,6 +83,36 @@ export default class UserStore {
     }).then(this.parks.push(parkname));}
   }
 
+  toggleStadium(name, stadiumname){
+
+    if(this.stadiums.indexOf(stadiumname)>=0) {
+      fetch(`/api/removeStadium`, {
+        method: 'DELETE',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          stadiumname: stadiumname
+        })
+      }).then(result=>{
+        let a = this.stadiums.indexOf(stadiumname);
+        this.stadiums.splice(a, 1);}
+      );
+    } else {fetch(`/api/addStadium`, {
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        stadiumname: stadiumname
+      })
+    }).then(this.stadiums.push(stadiumname));}
+  }
+
   logUserOut(){
     this.name= "";
     this.password= "";
@@ -93,6 +124,7 @@ export default class UserStore {
     this.token= "";
     this.states= [];
     this.parks= [];
+    this.stadiums= [];
     browserHistory.push('/Welcome');
   }
 
@@ -125,6 +157,7 @@ export default class UserStore {
         this.name = name.toLowerCase();
         this.states = loginCred.states;
         this.parks = loginCred.parks;
+        this.stadiums = loginCred.stadiums;
       } else {
         this.loggedInUser=false;
         this.name="";
