@@ -46,22 +46,29 @@ class StadiumCollection extends React.Component {
     let progressStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto", width: "90%"};
     let imageStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto",
       width: "48vw", height: "65vh", border: "2px solid black"};
+    let textStyle ={fontFamily: "Josefin Sans"};
+
     return (
-      <Row>
-        <Col xs={12} md={9}>
-          <div style={progressStyle}>
-            <h3>Major League Baseball stadiums collection: {this.calcStadiumComp().toFixed(0)}%</h3>
-             <ProgressBar active now={this.calcStadiumComp()}/>
-             <img style={imageStyle} src={require('../img/mlb2.jpg')}/>
-          </div>
-        </Col>
-        <Col xs={12} md={3}>
-          Major League Baseball Stadiums
-          <ListGroup style={listStyle}>
-            {this.prepareCollection()}
-          </ListGroup>
-        </Col>
-      </Row>
+      <div style={textStyle}>
+        <Row>
+          <Col xs={12} md={9}>
+            <div style={progressStyle}>
+              <h3>Major League Baseball stadiums collection: {this.calcStadiumComp().toFixed(0)}%</h3>
+               <ProgressBar active now={this.calcStadiumComp()}/>
+               <img style={imageStyle} src={require('../img/mlb2.jpg')}/>
+            </div>
+          </Col>
+          <Col xs={12} md={3}>
+            Major League Baseball Stadiums
+            <ListGroup style={listStyle}>
+              {this.prepareCollection()}
+            </ListGroup>
+          </Col>
+        </Row>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+        </style>
+      </div>
     );
   }
 }

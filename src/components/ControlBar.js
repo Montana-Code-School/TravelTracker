@@ -22,8 +22,10 @@ class ControlBar extends React.Component {
     if(this.props.userStore.loggedInUser){
       let logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
       let navbarStyle = {zIndex: "1", marginBottom:"80px", background:"none", borderBottom:"none"};
+      let textStyle ={fontFamily: "Josefin Sans"};
+
       return (
-        <div>
+        <div style={textStyle}>
           <div>
             <img className="hidden-xs" style={logoStyle} src={require('../img/thelogo.png')} width="150" height="150"/>
           </div>
@@ -40,6 +42,9 @@ class ControlBar extends React.Component {
               </Nav>
             </Navbar>
           </div>
+          <style>
+          @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+          </style>
         </div>
       );
     }
