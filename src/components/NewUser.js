@@ -49,7 +49,6 @@ class NewUser extends React.Component {
       })
     })
     .then(function(){
-      alert ('User Account Created.  Please Log In');
       browserHistory.push('/Welcome');
     });
   }
