@@ -1,5 +1,4 @@
 import React from 'react';
-import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
@@ -24,10 +23,11 @@ class StadiumCollection extends React.Component {
   prepareCollection(){
     return this.state.stadiums.map(function(x){
       if (this.props.userStore.stadiums.find(function(y){
-        return y==x.name;
+        return y.name==x.name;
       })) {
-        return <ListGroupItem onClick={() => {this.props.userStore.toggleStadium(this.props.userStore.name, x.name);}} key={x.name}><Glyphicon glyph="check" style={{color: "green"}}/>  {x.name}</ListGroupItem>;
-      } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleStadium(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
+        return (<ListGroupItem onClick={() => {this.props.userStore.removeStadium(this.props.userStore.name, x.name);}}
+          key={x.name}><Glyphicon glyph="check" style={{color: "green"}}/>  {x.name}, {this.props.userStore.getDateStadiumAdded(x.name)}</ListGroupItem>);
+      } else {return <ListGroupItem onClick={() => {this.props.userStore.addStadium(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
     },this);
   }
 

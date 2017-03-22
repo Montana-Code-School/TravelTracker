@@ -23,84 +23,53 @@ export default class UserStore {
     this.LoginUser = this.LoginUser.bind(this);
   }
 
-  toggleState(name, statename){
+  getDateStateAdded(statename){
+    let state = this.states.find(function(y){
+      return y.name==statename;
+    });
 
-    if(this.states.indexOf(statename)>=0) {
-      fetch(`/api/removeState`, {
-        method: 'DELETE',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          statename: statename
-        })
-      }).then(result=>{
-        let a = this.states.indexOf(statename);
-        this.states.splice(a, 1);}
-      );
-    } else {fetch(`/api/addState`, {
-      method: 'PUT',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        statename: statename
-      })
-    }).then(this.states.push(statename));}
+    return state.date;
   }
 
-  togglePark(name, parkname){
+  getDateParkAdded(parkname){
+    let park = this.parks.find(function(y){
+      return y.name==parkname;
+    });
 
-    if(this.parks.indexOf(parkname)>=0) {
-      fetch(`/api/removePark`, {
-        method: 'DELETE',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          parkname: parkname
-        })
-      }).then(result=>{
-        let a = this.parks.indexOf(parkname);
-        this.parks.splice(a, 1);}
-      );
-    } else {fetch(`/api/addPark`, {
-      method: 'PUT',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        parkname: parkname
-      })
-    }).then(this.parks.push(parkname));}
+    return park.date;
   }
 
-  toggleStadium(name, stadiumname){
+  getDateStadiumAdded(stadiumname){
+    let stadium = this.stadiums.find(function(y){
+      return y.name==stadiumname;
+    });
 
-    if(this.stadiums.indexOf(stadiumname)>=0) {
-      fetch(`/api/removeStadium`, {
-        method: 'DELETE',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          stadiumname: stadiumname
-        })
-      }).then(result=>{
-        let a = this.stadiums.indexOf(stadiumname);
-        this.stadiums.splice(a, 1);}
-      );
-    } else {fetch(`/api/addStadium`, {
+    return stadium.date;
+  }
+
+  removeState(name, statename){
+    let state = this.states.find(function(y){
+      return y.name==statename;
+    });
+    fetch(`/api/removeState`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        state: state
+      })
+    }).then(result=>{
+      let a = this.states.indexOf(state);
+      this.states.splice(a, 1);}
+    );
+  }
+
+  addState(name, statename){
+    let state = {name: statename, date: new Date().toLocaleDateString()};
+    fetch(`/api/addState`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
@@ -108,9 +77,78 @@ export default class UserStore {
       },
       body: JSON.stringify({
         name: name,
-        stadiumname: stadiumname
+        state: state
       })
-    }).then(this.stadiums.push(stadiumname));}
+    }).then(this.states.push(state));}
+
+  removePark(name, parkname){
+    let park = this.parks.find(function(y){
+      return y.name==parkname;
+    });
+    fetch(`/api/removePark`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        park: park
+      })
+    }).then(result=>{
+      let a = this.parks.indexOf(park);
+      this.parks.splice(a, 1);}
+    );
+  }
+
+  addPark(name, parkname){
+    let park = {name: parkname, date: new Date().toLocaleDateString()};
+    fetch(`/api/addPark`, {
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        park: park
+      })
+    }).then(this.parks.push(park));
+  }
+
+  removeStadium(name, stadiumname) {
+    let stadium = this.stadiums.find(function(y){
+      return y.name==stadiumname;
+    });
+    fetch(`/api/removeStadium`, {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        stadium: stadium
+      })
+    }).then(result=>{
+      let a = this.stadiums.indexOf(stadium);
+      this.stadiums.splice(a, 1);}
+    );
+  }
+
+  addStadium(name, stadiumname){
+    let stadium = {name: stadiumname, date: new Date().toLocaleDateString()};
+    fetch(`/api/addStadium`, {
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        stadium: stadium
+      })
+    }).then(this.stadiums.push(stadium));
   }
 
   logUserOut(){

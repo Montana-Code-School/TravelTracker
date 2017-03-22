@@ -1,5 +1,4 @@
 import React from 'react';
-import NavLink from './NavLink';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
@@ -24,11 +23,11 @@ class StatesCollection extends React.Component {
   prepareCollection(){
     return this.state.states.map(function(x){
       if (this.props.userStore.states.find(function(y){
-        return y==x.name;
+        return y.name==x.name;
       })) {
-        return (<ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>
-          <Glyphicon glyph="check" style={{color: "green"}}/> {x.name},</ListGroupItem>);
-      } else {return <ListGroupItem onClick={() => {this.props.userStore.toggleState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
+        return (<ListGroupItem onClick={() => {this.props.userStore.removeState(this.props.userStore.name, x.name);}} key={x.name}>
+          <Glyphicon glyph="check" style={{color: "green"}}/> {x.name}, {this.props.userStore.getDateStateAdded(x.name)}</ListGroupItem>);
+      } else {return <ListGroupItem onClick={() => {this.props.userStore.addState(this.props.userStore.name, x.name);}} key={x.name}>{x.name}</ListGroupItem>;}
     },this);
   }
 

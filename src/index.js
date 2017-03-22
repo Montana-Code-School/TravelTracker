@@ -11,10 +11,10 @@ import NewUser from './components/NewUser';
 import UserStore from './stores/UserStore';
 import { Provider } from 'mobx-react';
 
-const userStore = new UserStore () ;
+const userStore = new UserStore();
 
 render((
-  <Provider userStore = {userStore}>
+  <Provider userStore={userStore}>
     <Router history={browserHistory}>
       <Route path="/" component={ControlBar}>
         <IndexRoute component={Welcome}/>

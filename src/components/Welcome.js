@@ -1,5 +1,4 @@
 import React from 'react';
-import NavLink from './NavLink';
 import NewUser from './NewUser';
 import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
