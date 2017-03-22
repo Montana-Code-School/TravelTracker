@@ -79,7 +79,7 @@ router.route('/addPark')
       name: req.body.name
     }, function(err, user) {
       if (err) next(err);
-      user.parks.push(req.body.parkname);
+      user.parks.push(req.body.park);
       user.save(function(err){
         if(err){
           next(err);
@@ -97,7 +97,7 @@ router.route('/removePark')
       name: req.body.name
     }, function(err, user) {
       if (err) next(err);
-      let a = user.parks.indexOf(req.body.parkname);
+      let a = user.parks.indexOf(req.body.park);
       user.parks.splice(a, 1);
       user.save(function(err){
         if(err){

@@ -22,9 +22,9 @@ export default class UserStore {
     this.LoginUser = this.LoginUser.bind(this);
   }
 
-  toggleState(name, statename){
+  toggleState(name, state, date){
 
-    if(this.states.indexOf(statename)>=0) {
+    if(this.states.indexOf(state.name)>=0) {
       fetch(`/api/removeState`, {
         method: 'DELETE',
         headers: {
@@ -33,10 +33,10 @@ export default class UserStore {
         },
         body: JSON.stringify({
           name: name,
-          statename: statename
+          state: {name: state.name, datecollected: Date()}
         })
       }).then(result=>{
-        let a = this.states.indexOf(statename);
+        let a = this.states.indexOf(state);
         this.states.splice(a, 1);}
       );
     } else {fetch(`/api/addState`, {
@@ -47,14 +47,13 @@ export default class UserStore {
       },
       body: JSON.stringify({
         name: name,
-        statename: statename
+        state: state
       })
-    }).then(this.states.push(statename));}
+    }).then(this.states.push(state));}
   }
 
-  togglePark(name, parkname){
-
-    if(this.parks.indexOf(parkname)>=0) {
+  togglePark(name, park){
+    if(this.parks.indexOf(park.name)>=0) {
       fetch(`/api/removePark`, {
         method: 'DELETE',
         headers: {
@@ -63,10 +62,10 @@ export default class UserStore {
         },
         body: JSON.stringify({
           name: name,
-          parkname: parkname
+          park: park
         })
       }).then(result=>{
-        let a = this.parks.indexOf(parkname);
+        let a = this.parks.indexOf(park);
         this.parks.splice(a, 1);}
       );
     } else {fetch(`/api/addPark`, {
@@ -77,9 +76,9 @@ export default class UserStore {
       },
       body: JSON.stringify({
         name: name,
-        parkname: parkname
+        park: park
       })
-    }).then(this.parks.push(parkname));}
+    }).then(this.parks.push(park));}
   }
 
   logUserOut(){
