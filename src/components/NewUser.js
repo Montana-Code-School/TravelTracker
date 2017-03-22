@@ -3,7 +3,6 @@ import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 import { Grid, Col, Row, Image, Well, Form, FormControl, FormGroup, ControlLabel, Button } from 'react-bootstrap';
 
-
 class NewUser extends React.Component {
 
   constructor() {
