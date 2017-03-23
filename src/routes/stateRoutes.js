@@ -16,7 +16,7 @@ the params of req, res and next, a fetch function is used from the NP parks API 
 Get method specif*/
 router.route('/')
   .get(function(req, res, next){
-    State.find(function(err, states){
+    State.find().sort({name: "ascending"}).exec(function(err, states){
       if (err) {
         return next(err);
       } else {

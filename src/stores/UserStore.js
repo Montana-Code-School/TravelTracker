@@ -14,6 +14,8 @@ export default class UserStore {
       email: "",
       loginMsg: "",
       loggedInUser: false,
+      failedLogin: false,
+      newUserCreated: false,
       id: "",
       token: "",
       states: [],
@@ -23,133 +25,52 @@ export default class UserStore {
     this.LoginUser = this.LoginUser.bind(this);
   }
 
-  getDateStateAdded(statename){
-    let state = this.states.find(function(y){
-      return y.name==statename;
-    });
-
-    return state.date;
+  getPercentageCompletion(collectionname){
+    return (this[collectionname].length/50)*100;
   }
 
-  getDateParkAdded(parkname){
-    let park = this.parks.find(function(y){
-      return y.name==parkname;
+  getDateCollectableAdded(collectablename, collectionname){
+    let collectable = this[collectionname].find(function(y){
+      return y.name==collectablename;
     });
-
-    return park.date;
+    return collectable.date;
   }
 
-  getDateStadiumAdded(stadiumname){
-    let stadium = this.stadiums.find(function(y){
-      return y.name==stadiumname;
+  removeCollectable(username, collectablename, collectionname){
+    let collectable = this[collectionname].find(function(y){
+      return y.name==collectablename;
     });
-
-    return stadium.date;
-  }
-
-  removeState(name, statename){
-    let state = this.states.find(function(y){
-      return y.name==statename;
-    });
-    fetch(`/api/removeState`, {
+    fetch(`/api/remove`, {
       method: 'DELETE',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        name: name,
-        state: state
+        username: username,
+        collectable: collectable,
+        collectionname: collectionname
       })
     }).then(result=>{
-      let a = this.states.indexOf(state);
-      this.states.splice(a, 1);}
+      let collectableposition = this[collectionname].indexOf(collectable);
+      this[collectionname].splice(collectableposition, 1);}
     );
   }
 
-  addState(name, statename){
-    let state = {name: statename, date: new Date().toLocaleDateString()};
-    fetch(`/api/addState`, {
+  addCollectable(username, collectablename, collectionname){
+    let collectable = {name: collectablename, date: new Date().toLocaleDateString()};
+    fetch(`/api/add`, {
       method: 'PUT',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        name: name,
-        state: state
+        username: username,
+        collectable: collectable,
+        collectionname: collectionname
       })
-    }).then(this.states.push(state));}
-
-  removePark(name, parkname){
-    let park = this.parks.find(function(y){
-      return y.name==parkname;
-    });
-    fetch(`/api/removePark`, {
-      method: 'DELETE',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        park: park
-      })
-    }).then(result=>{
-      let a = this.parks.indexOf(park);
-      this.parks.splice(a, 1);}
-    );
-  }
-
-  addPark(name, parkname){
-    let park = {name: parkname, date: new Date().toLocaleDateString()};
-    fetch(`/api/addPark`, {
-      method: 'PUT',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        park: park
-      })
-    }).then(this.parks.push(park));
-  }
-
-  removeStadium(name, stadiumname) {
-    let stadium = this.stadiums.find(function(y){
-      return y.name==stadiumname;
-    });
-    fetch(`/api/removeStadium`, {
-      method: 'DELETE',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        stadium: stadium
-      })
-    }).then(result=>{
-      let a = this.stadiums.indexOf(stadium);
-      this.stadiums.splice(a, 1);}
-    );
-  }
-
-  addStadium(name, stadiumname){
-    let stadium = {name: stadiumname, date: new Date().toLocaleDateString()};
-    fetch(`/api/addStadium`, {
-      method: 'PUT',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        stadium: stadium
-      })
-    }).then(this.stadiums.push(stadium));
-  }
+    }).then(this[collectionname].push(collectable));}
 
   logUserOut(){
     this.name= "";
@@ -188,6 +109,7 @@ export default class UserStore {
       return result.json();})
     .then(loginCred => {
       if (loginCred.success && loginCred.token) {
+        this.failedLogin=false;
         this.id = loginCred.id;
         this.admin = loginCred.admin;
         this.token = loginCred.token;
@@ -196,8 +118,10 @@ export default class UserStore {
         this.states = loginCred.states;
         this.parks = loginCred.parks;
         this.stadiums = loginCred.stadiums;
+        browserHistory.push('/Dashboard');
       } else {
         this.loggedInUser=false;
+        this.failedLogin=true;
         this.name="";
         browserHistory.push('/Welcome');
       }

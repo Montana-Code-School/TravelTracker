@@ -31,10 +31,10 @@ class NewUser extends React.Component {
   handleNewUser(event) {
     event.preventDefault();
     this.NewUser(this.state);
-    this.setState({name: "", password: "", email: ""});
   }
 
   NewUser(usr) {
+    this.props.userStore.newUserCreated = true;
     fetch('/api/user', {
       method: 'POST',
       headers: {
@@ -44,8 +44,7 @@ class NewUser extends React.Component {
       body: JSON.stringify({
         name: usr.name,
         password: usr.password,
-        email: usr.email,
-        admin: usr.admin
+        email: usr.email
       })
     })
     .then(function(){
@@ -54,9 +53,11 @@ class NewUser extends React.Component {
   }
 
   render() {
+    this.props.userStore.failedLogin = false;
+    this.props.userStore.newUserCreated = false;
     const bg = require('../img/frontBackground-min.jpg');
     const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
-    const wellStyle = {position: "absolute", top: "0", bottom: "0", left: "0", right: "0", margin: "auto", opacity: ".95", fontFamily: "Josefin Sans", backgroundBlendMode: "overlay", height: "350px", width: "500px"};
+    const wellStyle = {position: "absolute", top: "0", bottom: "0", left: "0", right: "0", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "350px", width: "500px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const loginLinkStyle = {float: "right"};
 
@@ -92,9 +93,6 @@ class NewUser extends React.Component {
             </Form>
           </Well>
        </div>
-       <style>
-       @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-       </style>
       </div>
     );
   }

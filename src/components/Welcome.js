@@ -19,6 +19,7 @@ class Welcome extends React.Component {
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.handleLoginUser = this.handleLoginUser.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
+    this.loginNotice = this.loginNotice.bind(this);
   }
 
   handleNameChange(e) {
@@ -30,14 +31,22 @@ class Welcome extends React.Component {
   handleEmailChange(e) {
     this.setState({email: e.target.value});
   }
-  handleLoginUser(event) {
+  handleLoginUser(e) {
+    e.preventDefault();
     this.props.userStore.LoginUser(this.state.name, this.state.password);
+  }
+
+  loginNotice() {
+    if(this.props.userStore.failedLogin){
+      return (<h5 style={{color: "red"}}>Incorrect username or password.  Please try again</h5>);}
+    else if(this.props.userStore.newUserCreated){
+      return (<h5 style={{color: "green"}}>New User Created! Feel free to login</h5>);}
   }
 
   render() {
     const bg = require('../img/frontBackground-min.jpg');
     const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
-    const wellStyle = {position: "absolute", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", fontFamily: "Josefin Sans", backgroundBlendMode: "overlay", height: "300px", width: "500px"};
+    const wellStyle = {position: "absolute", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "300px", width: "500px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
 
@@ -51,7 +60,7 @@ class Welcome extends React.Component {
             <Form>
 
                 <legend>Log In to Travel Tracker</legend>
-
+                {this.loginNotice()}
                 <FormGroup controlId="formInlineName">
                   <ControlLabel>Name</ControlLabel>
                   <FormControl onChange={this.handleNameChange} type="text" placeholder="username" />
@@ -65,13 +74,10 @@ class Welcome extends React.Component {
                 <div style={newUserLinkStyle}>
                   <Link to ="/NewUser" >New User</Link>
                 </div>
-                <Link to="/StatesCollection"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
+                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
             </Form>
           </Well>
        </div>
-       <style>
-       @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-       </style>
       </div>
     );
   }
