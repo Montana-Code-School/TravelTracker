@@ -26,7 +26,6 @@ class ControlBar extends React.Component {
       let navbarStyle = {zIndex: "1", marginBottom:"80px", background: "white", borderBottom: ".5px solid black"};
       let trophyStyle = {position: "relative", left: "20%", top: ".5px",
         width: "50px", height: "49px", border: ".5px solid black"};
-      let trophCaseStyle ={position: "fixed", left: "0px", right: "0px", margin:"auto"};
       let displayTrophy = [];
 
       if ((this.props.userStore.getPercentageCompletion("states") >= 30)) {
@@ -36,10 +35,6 @@ class ControlBar extends React.Component {
       } if (this.props.userStore.getPercentageCompletion("parks") >= 30) {
         displayTrophy.push (
           <img style={trophyStyle} src={require('../img/NPtr.png')}/>
-        );
-      } if (this.props.userStore.getPercentageCompletion("parks") >= 30) {
-        displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/token.png')}/>
         );
       }if (this.props.userStore.getPercentageCompletion("stadiums") >= 30) {
         displayTrophy.push (
