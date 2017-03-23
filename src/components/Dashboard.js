@@ -1,5 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
+import { Link } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col } from 'react-bootstrap';
@@ -33,18 +34,30 @@ class Dashboard extends React.Component {
             <Col xs={2}/>
               <Col xs={3}>
                 States
-                {this.createPieChart("states")}
-                {this.props.userStore.getPercentageCompletion("states").toFixed(0)}%
+                <Link to={{pathname: '/Collection/states'}}>
+                  <div>
+                    {this.createPieChart("states")}
+                    {this.props.userStore.getPercentageCompletion("states").toFixed(0)}%
+                  </div>
+                </Link>
               </Col>
               <Col xs={3}>
                 Parks
-                {this.createPieChart("parks")}
-                {this.props.userStore.getPercentageCompletion("parks").toFixed(0)}%
+                <Link to={{pathname: '/Collection/parks'}}>
+                  <div>
+                    {this.createPieChart("parks")}
+                    {this.props.userStore.getPercentageCompletion("parks").toFixed(0)}%
+                  </div>
+                </Link>
               </Col>
               <Col xs={3}>
                 Stadiums
-                {this.createPieChart("stadiums")}
-                {this.props.userStore.getPercentageCompletion("stadiums").toFixed(0)}%
+                <Link to={{pathname: '/Collection/stadiums'}}>
+                  <div>
+                    {this.createPieChart("stadiums")}
+                    {this.props.userStore.getPercentageCompletion("stadiums").toFixed(0)}%
+                  </div>
+                </Link>
               </Col>
           </Col>
           <Col xs={12} md={2}>

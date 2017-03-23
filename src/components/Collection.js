@@ -13,7 +13,6 @@ class Collection extends React.Component {
     };
     this.fetchCollection = this.fetchCollection.bind(this);
     this.prepareCollection = this.prepareCollection.bind(this);
-    this.calcCollectionComp = this.calcCollectionComp.bind(this);
   }
   componentWillMount() {
     this.fetchCollection();
@@ -38,10 +37,6 @@ class Collection extends React.Component {
     fetch(`/`+this.props.params.collectionname)
     .then(result => result.json())
     .then(data => this.setState({collection: data}));
-  }
-
-  calcCollectionComp() {
-    return ((this.props.userStore[this.props.params.collectionname].length/this.state.collection.length)*100);
   }
 
   render() {
