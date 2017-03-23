@@ -22,13 +22,14 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
-      let logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
-      let navbarStyle = {zIndex: "1", marginBottom:"80px", background:"none", borderBottom:"none"};
+      let logoStyle = {position: "absolute", top: "1.25px", left: "1.25px", zIndex: "100"};
+      let navbarStyle = {zIndex: "1", marginBottom:"40px", background:"rgb(53, 183, 41)", color: "white", boxShadow: "0px 1px 5px grey"};
 
       return (
         <div>
           <div>
-            <img className="hidden-xs" style={logoStyle} src={require('../img/canureadme.png')} width="150" height="150"/>
+            <img className="hidden-xs" style={logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/>
+            <img className="hidden-md hidden-lg hidden-sm" style={logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/>
           </div>
           <div>
             <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
