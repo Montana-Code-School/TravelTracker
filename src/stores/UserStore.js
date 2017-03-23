@@ -26,7 +26,9 @@ export default class UserStore {
   }
 
   getPercentageCompletion(collectionname){
-    return (this[collectionname].length/50)*100;
+    if(collectionname == "states"){return (this[collectionname].length/50)*100;}
+    else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
+    else if(collectionname == "stadiums"){return (this[collectionname].length/30)*100;}
   }
 
   getDateCollectableAdded(collectablename, collectionname){
