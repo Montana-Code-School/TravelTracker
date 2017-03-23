@@ -50,22 +50,24 @@ class Collection extends React.Component {
     let imageStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto",
       width: "48vw", height: "65vh"};
 
+
     return (
       <div>
         <Row>
           <Col xs={12} md={9}>
             <div style={progressStyle}>
-              <h3>{this.props.params.collectionname} collection: {this.calcCollectionComp().toFixed(0)}%</h3>
-              <ProgressBar active now={this.calcCollectionComp()}/>
+              <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
+              <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}/>
               <img style={imageStyle} src={require('../img/'+this.props.params.collectionname+'.jpg')}/>
             </div>
           </Col>
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             {this.props.params.collectionname}
             <ListGroup style={listStyle}>
               {this.prepareCollection()}
             </ListGroup>
           </Col>
+          <Col md={1}/>
         </Row>
       </div>
     );

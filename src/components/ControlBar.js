@@ -24,6 +24,23 @@ class ControlBar extends React.Component {
     if(this.props.userStore.loggedInUser){
       let logoStyle = {position: "absolute", top: "1.25px", left: "1.25px", zIndex: "100"};
       let navbarStyle = {zIndex: "1", marginBottom:"40px", background:"rgb(53, 183, 41)", color: "white", boxShadow: "0px 1px 5px grey"};
+      let trophyStyle = {position: "relative", left: "20%", top: ".5px",
+        width: "50px", height: "49px", border: ".5px solid black"};
+      let displayTrophy = [];
+
+      if ((this.props.userStore.getPercentageCompletion("states") >= 30)) {
+        displayTrophy.push (
+          <img style={trophyStyle} src={require('../img/STtr.jpg')}/>
+        );
+      } if (this.props.userStore.getPercentageCompletion("parks") >= 30) {
+        displayTrophy.push (
+          <img style={trophyStyle} src={require('../img/NPtr.png')}/>
+        );
+      }if (this.props.userStore.getPercentageCompletion("stadiums") >= 30) {
+        displayTrophy.push (
+          <img style={trophyStyle} src={require('../img/BBtr.png')}/>
+        );
+      }
 
       return (
         <div>
@@ -35,6 +52,7 @@ class ControlBar extends React.Component {
             <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
               <Navbar .Toggle />
               <Navbar .Collapse>
+                {displayTrophy}
                 <Nav pullRight>
                   <LinkContainer to={{pathname: '/Dashboard'}}><NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem></LinkContainer>
                   <NavDropdown id="dropdown" title="Collections">
@@ -53,7 +71,7 @@ class ControlBar extends React.Component {
   }
 
   render() {
-    let textStyle ={fontFamily: "Josefin Sans"};
+    let textStyle ={fontFamily: "Josefin Sans", background: "#F7F7F7"};
     return (
       <div style={textStyle}>
           {this.createNavBar()}
