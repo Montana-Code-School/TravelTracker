@@ -38,7 +38,7 @@ class ParksCollection extends React.Component {
   }
 
   calcParkComp() {
-    return ((this.props.userStore.parks.length/62)*100);
+    return ((this.props.userStore.parks.length/59)*100);
   }
 
   render() {

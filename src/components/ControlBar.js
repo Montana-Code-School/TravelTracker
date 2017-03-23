@@ -27,7 +27,7 @@ class ControlBar extends React.Component {
       return (
         <div style={textStyle}>
           <div>
-            <img className="hidden-xs" style={logoStyle} src={require('../img/thelogo.png')} width="150" height="150"/>
+            <img className="hidden-xs" style={logoStyle} src={require('../img/canureadme.png')} width="150" height="150"/>
           </div>
           <div>
             <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>

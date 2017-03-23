@@ -44,7 +44,7 @@ class Welcome extends React.Component {
     return (
       <div>
         <div>
-          <img className="hidden-xs" style={logoStyle} src={require('../img/thelogo.png')} width="200" height="200"/>
+          <img className="hidden-xs" style={logoStyle} src={require('../img/canureadme.png')} width="150" height="150"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
