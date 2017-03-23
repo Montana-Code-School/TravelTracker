@@ -30,7 +30,7 @@ class Dashboard extends React.Component {
       <div>
         <Row>
           <Col xs={12} md={9} style={{textAlign: "center"}}>
-            <Col xs={3}/>
+            <Col xs={2}/>
               <Col xs={3}>
                 States
                 {this.createPieChart("states")}
@@ -47,12 +47,13 @@ class Dashboard extends React.Component {
                 {this.props.userStore.getPercentageCompletion("stadiums").toFixed(0)}%
               </Col>
           </Col>
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             Recent Activity
             <ListGroup style={listStyle}>
               <ListGroupItem>activity list over here maybe</ListGroupItem>
             </ListGroup>
           </Col>
+          <Col md={1}/>
         </Row>
       </div>
     );
