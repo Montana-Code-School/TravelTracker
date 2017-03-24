@@ -33,7 +33,7 @@ class Dashboard extends React.Component {
           <Col xs={12} md={9} style={{textAlign: "center"}}>
             <Col xs={2}/>
               <Col xs={3}>
-                States
+                US States
                 <Link to={{pathname: '/Collection/states'}}>
                   <div>
                     {this.createPieChart("states")}
@@ -42,7 +42,7 @@ class Dashboard extends React.Component {
                 </Link>
               </Col>
               <Col xs={3}>
-                Parks
+                National Parks
                 <Link to={{pathname: '/Collection/parks'}}>
                   <div>
                     {this.createPieChart("parks")}
@@ -51,11 +51,20 @@ class Dashboard extends React.Component {
                 </Link>
               </Col>
               <Col xs={3}>
-                Stadiums
+                MLB Stadiums
                 <Link to={{pathname: '/Collection/stadiums'}}>
                   <div>
                     {this.createPieChart("stadiums")}
                     {this.props.userStore.getPercentageCompletion("stadiums").toFixed(0)}%
+                  </div>
+                </Link>
+              </Col>
+              <Col xs={3}>
+                US Airports
+                <Link to={{pathname: '/Collection/airports'}}>
+                  <div>
+                    {this.createPieChart("airports")}
+                    {this.props.userStore.getPercentageCompletion("airports").toFixed(0)}%
                   </div>
                 </Link>
               </Col>

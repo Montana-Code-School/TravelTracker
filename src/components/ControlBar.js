@@ -25,20 +25,84 @@ class ControlBar extends React.Component {
       let logoStyle = {position: "absolute", top: "1.25px", left: "1.25px", zIndex: "100"};
       let navbarStyle = {zIndex: "1", marginBottom:"40px", background:"rgb(53, 183, 41)", color: "white", boxShadow: "0px 1px 5px grey"};
       let trophyStyle = {position: "relative", left: "20%", top: ".5px",
-        width: "50px", height: "49px", border: ".5px solid black"};
+        width: "50px", height: "49px"};
+      let trophyStyle1 = {position: "relative", left: "20%", top: ".5px",
+        width: "50px", height: "49px", border: "3px solid #cc851c"};
+      let trophyStyle2 = {position: "relative", left: "20%", top: ".5px",
+        width: "50px", height: "49px", border: "3px solid silver"};
+      let trophyStyle3 = {position: "relative", left: "20%", top: ".5px",
+        width: "50px", height: "49px", border: "3px solid gold"};
       let displayTrophy = [];
 
-      if ((this.props.userStore.getPercentageCompletion("states") >= 30)) {
+      if ((this.props.userStore.getPercentageCompletion("states") == 100)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/STtr.jpg')}/>
+          <img style={trophyStyle3} src={require('../img/STtr.png')}/>
         );
-      } if (this.props.userStore.getPercentageCompletion("parks") >= 30) {
+      } else if ((this.props.userStore.getPercentageCompletion("states") >= 80)) {
+        displayTrophy.push (
+          <img style={trophyStyle2} src={require('../img/STtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("states") >= 40)) {
+        displayTrophy.push (
+          <img style={trophyStyle1} src={require('../img/STtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("states") >= 1)) {
+        displayTrophy.push (
+          <img style={trophyStyle} src={require('../img/STtr.png')}/>
+        );
+      }
+
+      if ((this.props.userStore.getPercentageCompletion("parks") == 100)) {
+        displayTrophy.push (
+          <img style={trophyStyle3} src={require('../img/NPtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("parks") >= 80)) {
+        displayTrophy.push (
+          <img style={trophyStyle2} src={require('../img/NPtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("parks") >= 40)) {
+        displayTrophy.push (
+          <img style={trophyStyle1} src={require('../img/NPtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("parks") >= 1)) {
         displayTrophy.push (
           <img style={trophyStyle} src={require('../img/NPtr.png')}/>
         );
-      }if (this.props.userStore.getPercentageCompletion("stadiums") >= 30) {
+      }
+
+      if ((this.props.userStore.getPercentageCompletion("stadiums") == 100)) {
+        displayTrophy.push (
+          <img style={trophyStyle3} src={require('../img/BBtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 80)) {
+        displayTrophy.push (
+          <img style={trophyStyle2} src={require('../img/BBtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 40)) {
+        displayTrophy.push (
+          <img style={trophyStyle1} src={require('../img/BBtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 1)) {
         displayTrophy.push (
           <img style={trophyStyle} src={require('../img/BBtr.png')}/>
+        );
+      }
+
+      if ((this.props.userStore.getPercentageCompletion("airports") == 100)) {
+        displayTrophy.push (
+          <img style={trophyStyle3} src={require('../img/APtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("airports") >= 80)) {
+        displayTrophy.push (
+          <img style={trophyStyle2} src={require('../img/APtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("airports") >= 40)) {
+        displayTrophy.push (
+          <img style={trophyStyle1} src={require('../img/APtr.png')}/>
+        );
+      } else if ((this.props.userStore.getPercentageCompletion("airports") >= 1)) {
+        displayTrophy.push (
+          <img style={trophyStyle} src={require('../img/APtr.png')}/>
         );
       }
 
@@ -63,6 +127,7 @@ class ControlBar extends React.Component {
                     <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
                     <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
                     <LinkContainer to={{pathname: '/Collection/stadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
+                    <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
                   </NavDropdown>
                   <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>
                 </Nav>

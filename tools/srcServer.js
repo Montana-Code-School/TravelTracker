@@ -24,6 +24,7 @@ let userRoutes = require('../src/routes/userRoutes');
 let parkRoutes = require('../src/routes/parkRoutes');
 let stateRoutes = require('../src/routes/stateRoutes');
 let stadiumRoutes = require('../src/routes/stadiumRoutes');
+let airportRoutes = require('../src/routes/airportRoutes');
 
 const port = 3000;
 const compiler = webpack(config);
@@ -41,6 +42,7 @@ app.use('/api', userRoutes);
 app.use('/parks', parkRoutes);
 app.use('/states', stateRoutes);
 app.use('/stadiums', stadiumRoutes);
+app.use('/airports', airportRoutes);
 
 app.get('/', function(req, res) {
   res.sendFile(path.join( __dirname, '../src/index.html'));
