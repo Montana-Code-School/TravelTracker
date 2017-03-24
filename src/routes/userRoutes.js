@@ -96,7 +96,8 @@ router.post('/authenticate', function(req, res, next) {
           id: user._id,
           states: user.states,
           parks: user.parks,
-          stadiums: user.stadiums
+          stadiums: user.stadiums,
+          airports: user.airports
         });
       }
     }

@@ -20,7 +20,8 @@ export default class UserStore {
       token: "",
       states: [],
       parks: [],
-      stadiums: []
+      stadiums: [],
+      airports: []
     });
     this.LoginUser = this.LoginUser.bind(this);
   }
@@ -29,6 +30,7 @@ export default class UserStore {
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
     else if(collectionname == "stadiums"){return (this[collectionname].length/30)*100;}
+    else if(collectionname == "airports"){return (this[collectionname].length/529)*100;}
   }
 
   getDateCollectableAdded(collectablename, collectionname){
@@ -86,6 +88,7 @@ export default class UserStore {
     this.states= [];
     this.parks= [];
     this.stadiums= [];
+    this.airports= [];
     browserHistory.push('/Welcome');
   }
 
@@ -120,6 +123,7 @@ export default class UserStore {
         this.states = loginCred.states;
         this.parks = loginCred.parks;
         this.stadiums = loginCred.stadiums;
+        this.airports = loginCred.airports;
         browserHistory.push('/Dashboard');
       } else {
         this.loggedInUser=false;
