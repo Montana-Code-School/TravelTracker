@@ -38,7 +38,7 @@ class ControlBar extends React.Component {
 
       if ((this.props.userStore.getPercentageCompletion("states") == 100)) {
         displayTrophy.push (
-          <img key="states" style={trophyStyle3} src={require('../img/STtr.jpg')}/>
+          <img key="states" style={trophyStyle3} src={require('../img/STtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 80)) {
         displayTrophy.push (
@@ -104,7 +104,7 @@ class ControlBar extends React.Component {
         );
       } else if ((this.props.userStore.getPercentageCompletion("airports") >= 1)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/APtr.png')}/>
+          <img key="airports" style={trophyStyle} src={require('../img/APtr.png')}/>
         );
       }
 

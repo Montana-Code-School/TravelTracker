@@ -48,7 +48,7 @@ class Collection extends React.Component {
           <Col xs={12} md={9}>
             <div style={styles.progressStyle}>
               <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
-              <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}/>
+              <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
               <img style={styles.imageStyle} src={require('../img/'+this.props.params.collectionname+'.jpg')}/>
             </div>
           </Col>
