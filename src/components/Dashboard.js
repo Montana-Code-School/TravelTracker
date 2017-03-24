@@ -69,6 +69,7 @@ class Dashboard extends React.Component {
                   </div>
                 </Link>
               </Col>
+              <Col xs={2}/>
               <Col xs={3}>
                 US Airports
                 <Link to={{pathname: '/Collection/airports'}}>

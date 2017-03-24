@@ -1,5 +1,6 @@
 /* Importing the neccesary components*/
 import React from 'react';
+import { Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
@@ -35,19 +36,19 @@ class ControlBar extends React.Component {
 
       if ((this.props.userStore.getPercentageCompletion("states") == 100)) {
         displayTrophy.push (
-          <img key="states" style={trophyStyle3} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle3} src={require('../img/STtr.png')}/></Link>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 80)) {
         displayTrophy.push (
-          <img key="states" style={trophyStyle2} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle2} src={require('../img/STtr.png')}/></Link>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 40)) {
         displayTrophy.push (
-          <img key="states" style={trophyStyle1} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle1} src={require('../img/STtr.png')}/></Link>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 1)) {
         displayTrophy.push (
-          <img key="states" style={trophyStyle} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle} src={require('../img/STtr.png')}/></Link>
         );
       }
 
@@ -111,8 +112,8 @@ class ControlBar extends React.Component {
             <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
               <Navbar .Header>
                 <Navbar .Brand>
-                  <img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/>
-                  <img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/>
+                  <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/></Link>
+                  <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
                 </Navbar .Brand>
               </Navbar .Header>
               <Navbar .Toggle />
