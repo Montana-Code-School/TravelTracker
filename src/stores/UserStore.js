@@ -1,6 +1,8 @@
 /* importing neccessary extensions for the UserStore page */
 import { extendObservable } from 'mobx';
+import React from 'react';
 import { browserHistory } from 'react-router';
+import { ListGroupItem } from 'react-bootstrap';
 
 /* Initializing class UserStore then exporting extendObservable
 function with props this, and the {key: partner} values.
@@ -24,6 +26,38 @@ export default class UserStore {
       airports: []
     });
     this.LoginUser = this.LoginUser.bind(this);
+  }
+
+  getActivityList(){
+    let activityList = [];
+
+    this.states.forEach(function(x){
+      activityList.push(x);
+    });
+
+    this.parks.forEach(function(x){
+      activityList.push(x);
+    });
+
+    this.stadiums.forEach(function(x){
+      activityList.push(x);
+    });
+
+    this.airports.forEach(function(x){
+      activityList.push(x);
+    });
+
+    activityList.sort(function (a,b) {
+      return a.date > b.date;
+    });
+    activityList.reverse();
+    let preparedActivityList = [];
+
+    activityList.forEach(function(x){
+      preparedActivityList.push(<ListGroupItem key={x.name}>{x.name}, {x.date}</ListGroupItem>);
+    });
+
+    return preparedActivityList;
   }
 
   getPercentageCompletion(collectionname){

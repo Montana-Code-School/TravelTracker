@@ -11,14 +11,27 @@ class Dashboard extends React.Component {
   constructor(){
     super();
     this.state = {
+      activityList: []
     };
     this.createPieChart = this.createPieChart.bind(this);
+    this.createActivityList = this.createActivityList.bind(this);
+
+  }
+
+  componentWillMount(){
+    this.setState({
+      activityList: this.props.userStore.getActivityList()
+    });
   }
 
   createPieChart(collectionname){
     let percentComplete = this.props.userStore.getPercentageCompletion(collectionname);
     return(<PieChart slices={[{color: '#35b729', value: percentComplete},
       {color: '#8FBC8F',value: (100-percentComplete)}]}/>);
+  }
+
+  createActivityList(){
+    return this.props.userStore.getActivityList();
   }
 
   render() {
@@ -69,7 +82,7 @@ class Dashboard extends React.Component {
           <Col xs={12} md={2}>
             Recent Activity
             <ListGroup style={listStyle}>
-              <ListGroupItem>activity list over here maybe</ListGroupItem>
+              {this.state.activityList}
             </ListGroup>
           </Col>
           <Col md={1}/>
