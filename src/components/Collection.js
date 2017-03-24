@@ -3,6 +3,7 @@ import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col } from 'react-bootstrap';
+import styles from './style/CollectionStyle.css.js';
 
 class Collection extends React.Component {
 
@@ -40,25 +41,20 @@ class Collection extends React.Component {
   }
 
   render() {
-    let listStyle = {height:"77vh", overflowY: "scroll", border:"thin solid SlateGrey"};
-    let progressStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto", width: "90%"};
-    let imageStyle = {position: "absolute", left: "0px", right: "0px", margin:"auto",
-      width: "48vw", height: "65vh"};
-
 
     return (
       <div>
         <Row>
           <Col xs={12} md={9}>
-            <div style={progressStyle}>
+            <div style={styles.progressStyle}>
               <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
               <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}/>
-              <img style={imageStyle} src={require('../img/'+this.props.params.collectionname+'.jpg')}/>
+              <img style={styles.imageStyle} src={require('../img/'+this.props.params.collectionname+'.jpg')}/>
             </div>
           </Col>
           <Col xs={12} md={2}>
             {this.props.params.collectionname}
-            <ListGroup style={listStyle}>
+            <ListGroup style={styles.listStyle}>
               {this.prepareCollection()}
             </ListGroup>
           </Col>

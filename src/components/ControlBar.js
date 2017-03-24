@@ -4,6 +4,7 @@ import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
 import Collection from './Collection';
+import styles from './style/ControlBarStyle.css.js';
 
 /* making the class ControlBar function which is a React Component. Render to
 actually diplay the ControlBar return content.*/
@@ -22,34 +23,30 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
-      let logoStyle = {position: "absolute", top: "1.25px", left: "1.25px", zIndex: "100"};
-      let navbarStyle = {zIndex: "1", marginBottom:"40px", background:"rgb(53, 183, 41)", color: "white", boxShadow: "0px 1px 5px grey"};
-      let trophyStyle = {position: "relative", left: "20%", top: ".5px",
-        width: "50px", height: "49px", border: ".5px solid black"};
       let displayTrophy = [];
 
       if ((this.props.userStore.getPercentageCompletion("states") >= 30)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/STtr.jpg')}/>
+          <img key="states" style={styles.trophyStyle} src={require('../img/STtr.jpg')}/>
         );
       } if (this.props.userStore.getPercentageCompletion("parks") >= 30) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/NPtr.png')}/>
+          <img key="parks" style={styles.trophyStyle} src={require('../img/NPtr.png')}/>
         );
       }if (this.props.userStore.getPercentageCompletion("stadiums") >= 30) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/BBtr.png')}/>
+          <img key="stadiums" style={styles.trophyStyle} src={require('../img/BBtr.png')}/>
         );
       }
 
       return (
         <div>
           <div>
-            <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
+            <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
               <Navbar .Header>
                 <Navbar .Brand>
-                  <img className="hidden-xs" style={logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/>
-                  <img className="hidden-md hidden-lg hidden-sm" style={logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/>
+                  <img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/>
+                  <img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/>
                 </Navbar .Brand>
               </Navbar .Header>
               <Navbar .Toggle />
