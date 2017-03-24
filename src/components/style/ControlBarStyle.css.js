@@ -12,6 +12,13 @@ export default {
     left: "1.25px",
     zIndex: "100"
   },
+  trophyCase:{
+    position: "relative",
+    left: "20%",
+    top: ".5px",
+    width: "50px",
+    height: "49px"
+  },
   trophyStyle:{
     position: "relative",
     left: "20%",

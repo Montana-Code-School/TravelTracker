@@ -1,6 +1,7 @@
 /* Importing the neccesary components*/
 import React from 'react';
 import { Link } from 'react-router';
+import Trophy from './Trophy';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
@@ -24,87 +25,7 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
-      let trophyStyle = {position: "relative", left: "20%", top: ".5px",
-        width: "50px", height: "49px"};
-      let trophyStyle1 = {position: "relative", left: "20%", top: ".5px",
-        width: "50px", height: "49px", border: "3px solid #cc851c"};
-      let trophyStyle2 = {position: "relative", left: "20%", top: ".5px",
-        width: "50px", height: "49px", border: "3px solid silver"};
-      let trophyStyle3 = {position: "relative", left: "20%", top: ".5px",
-        width: "50px", height: "49px", border: "3px solid gold"};
-      let displayTrophy = [];
-
-      if ((this.props.userStore.getPercentageCompletion("states") == 100)) {
-        displayTrophy.push (
-          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle3} src={require('../img/STtr.png')}/></Link>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("states") >= 80)) {
-        displayTrophy.push (
-          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle2} src={require('../img/STtr.png')}/></Link>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("states") >= 40)) {
-        displayTrophy.push (
-          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle1} src={require('../img/STtr.png')}/></Link>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("states") >= 1)) {
-        displayTrophy.push (
-          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle} src={require('../img/STtr.png')}/></Link>
-        );
-      }
-
-      if ((this.props.userStore.getPercentageCompletion("parks") == 100)) {
-        displayTrophy.push (
-          <img key="parks" style={trophyStyle3} src={require('../img/NPtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("parks") >= 80)) {
-        displayTrophy.push (
-          <img key="parks" style={trophyStyle2} src={require('../img/NPtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("parks") >= 40)) {
-        displayTrophy.push (
-          <img key="parks" style={trophyStyle1} src={require('../img/NPtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("parks") >= 1)) {
-        displayTrophy.push (
-          <img key="parks" style={styles.trophyStyle} src={require('../img/NPtr.png')}/>
-        );
-      }
-
-      if ((this.props.userStore.getPercentageCompletion("stadiums") == 100)) {
-        displayTrophy.push (
-          <img key="stadiums" style={trophyStyle3} src={require('../img/BBtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 80)) {
-        displayTrophy.push (
-          <img key="stadiums" style={trophyStyle2} src={require('../img/BBtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 40)) {
-        displayTrophy.push (
-          <img key="stadiums" style={trophyStyle1} src={require('../img/BBtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 1)) {
-        displayTrophy.push (
-          <img key="stadiums" style={styles.trophyStyle} src={require('../img/BBtr.png')}/>
-        );
-      }
-
-      if ((this.props.userStore.getPercentageCompletion("airports") == 100)) {
-        displayTrophy.push (
-          <img style={trophyStyle3} src={require('../img/APtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("airports") >= 80)) {
-        displayTrophy.push (
-          <img style={trophyStyle2} src={require('../img/APtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("airports") >= 40)) {
-        displayTrophy.push (
-          <img style={trophyStyle1} src={require('../img/APtr.png')}/>
-        );
-      } else if ((this.props.userStore.getPercentageCompletion("airports") >= 1)) {
-        displayTrophy.push (
-          <img key="airports" style={trophyStyle} src={require('../img/APtr.png')}/>
-        );
-      }
+      let displayTrophy = [<Trophy key="states" collectionName={"states"}/>, <Trophy key="parks" collectionName={"parks"}/>, <Trophy key="stadiums" collectionName={"stadiums"}/>, <Trophy key="airports" collectionName={"airports"}/>];
 
       return (
         <div>
