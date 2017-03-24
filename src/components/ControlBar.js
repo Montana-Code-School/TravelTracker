@@ -1,9 +1,11 @@
 /* Importing the neccesary components*/
 import React from 'react';
+import { Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
 import Collection from './Collection';
+import styles from './style/ControlBarStyle.css.js';
 
 /* making the class ControlBar function which is a React Component. Render to
 actually diplay the ControlBar return content.*/
@@ -22,6 +24,7 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
+
       let logoStyle = {position: "absolute", top: "1.25px", left: "1.25px", zIndex: "100"};
       let navbarStyle = {zIndex: "1", marginBottom:"40px", background:"rgb(53, 183, 41)", color: "white", boxShadow: "0px 1px 5px grey"};
       let trophyStyle = {position: "relative", left: "20%", top: ".5px",
@@ -36,55 +39,55 @@ class ControlBar extends React.Component {
 
       if ((this.props.userStore.getPercentageCompletion("states") == 100)) {
         displayTrophy.push (
-          <img style={trophyStyle3} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle3} src={require('../img/STtr.png')}/></Link>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 80)) {
         displayTrophy.push (
-          <img style={trophyStyle2} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle2} src={require('../img/STtr.png')}/></Link>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 40)) {
         displayTrophy.push (
-          <img style={trophyStyle1} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle1} src={require('../img/STtr.png')}/></Link>
         );
       } else if ((this.props.userStore.getPercentageCompletion("states") >= 1)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/STtr.png')}/>
+          <Link to={{pathname: '/Collection/states'}} key="states"><img key="states" style={styles.trophyStyle} src={require('../img/STtr.png')}/></Link>
         );
       }
 
       if ((this.props.userStore.getPercentageCompletion("parks") == 100)) {
         displayTrophy.push (
-          <img style={trophyStyle3} src={require('../img/NPtr.png')}/>
+          <img key="parks" style={trophyStyle3} src={require('../img/NPtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("parks") >= 80)) {
         displayTrophy.push (
-          <img style={trophyStyle2} src={require('../img/NPtr.png')}/>
+          <img key="parks" style={trophyStyle2} src={require('../img/NPtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("parks") >= 40)) {
         displayTrophy.push (
-          <img style={trophyStyle1} src={require('../img/NPtr.png')}/>
+          <img key="parks" style={trophyStyle1} src={require('../img/NPtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("parks") >= 1)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/NPtr.png')}/>
+          <img key="parks" style={styles.trophyStyle} src={require('../img/NPtr.png')}/>
         );
       }
 
       if ((this.props.userStore.getPercentageCompletion("stadiums") == 100)) {
         displayTrophy.push (
-          <img style={trophyStyle3} src={require('../img/BBtr.png')}/>
+          <img key="stadiums" style={trophyStyle3} src={require('../img/BBtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 80)) {
         displayTrophy.push (
-          <img style={trophyStyle2} src={require('../img/BBtr.png')}/>
+          <img key="stadiums" style={trophyStyle2} src={require('../img/BBtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 40)) {
         displayTrophy.push (
-          <img style={trophyStyle1} src={require('../img/BBtr.png')}/>
+          <img key="stadiums" style={trophyStyle1} src={require('../img/BBtr.png')}/>
         );
       } else if ((this.props.userStore.getPercentageCompletion("stadiums") >= 1)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/BBtr.png')}/>
+          <img key="stadiums" style={styles.trophyStyle} src={require('../img/BBtr.png')}/>
         );
       }
 
@@ -102,18 +105,18 @@ class ControlBar extends React.Component {
         );
       } else if ((this.props.userStore.getPercentageCompletion("airports") >= 1)) {
         displayTrophy.push (
-          <img style={trophyStyle} src={require('../img/APtr.png')}/>
+          <img key="airports" style={trophyStyle} src={require('../img/APtr.png')}/>
         );
       }
 
       return (
         <div>
           <div>
-            <Navbar staticTop collapseOnSelect fluid style={navbarStyle}>
+            <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
               <Navbar .Header>
                 <Navbar .Brand>
-                  <img className="hidden-xs" style={logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/>
-                  <img className="hidden-md hidden-lg hidden-sm" style={logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/>
+                  <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/></Link>
+                  <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
                 </Navbar .Brand>
               </Navbar .Header>
               <Navbar .Toggle />
