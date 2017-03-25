@@ -4,6 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col } from 'react-bootstrap';
 import styles from './style/CollectionStyle.css.js';
+import Datamap from 'react-datamaps';
 
 class Collection extends React.Component {
 
@@ -40,6 +41,43 @@ class Collection extends React.Component {
     .then(data => this.setState({collection: data}));
   }
 
+  prepareMap(){
+    const radius = 4;
+    return (<Datamap scope="usa" height="450"
+    geographyConfig={{
+      highlightBorderColor: '#bada55',
+      highlightBorderWidth: 3
+    }}
+    fills={{
+      'Collected': '#cc4731',
+      'NotCollected': '#306596'}}
+      data={{
+        MT: {
+          fillKey: 'Collected'
+        },
+        ID: {
+          fillKey: 'NotCollected'
+        }
+      }}
+      bubbles={[
+        {
+          name: 'National Park Test',
+          radius,
+          country: 'USA',
+          latitude: 43.7489325553179,
+          longitude: -101.942207738757,
+          fillKey: 'bubbleFill'
+        }
+      ]
+        }
+        bubbleOptions={{
+          borderWidth: 1,
+          borderColor: '#ABCDEF'
+        }}
+      labels
+      />);
+  }
+
   render() {
 
     return (
@@ -49,7 +87,9 @@ class Collection extends React.Component {
             <div style={styles.progressStyle}>
               <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
               <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
-              <img style={styles.imageStyle} src={require('../img/'+this.props.params.collectionname+'.jpg')}/>
+                <Col xs={12}>
+                {this.prepareMap()}
+                </Col>
             </div>
           </Col>
           <Col xs={12} md={2}>

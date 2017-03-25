@@ -18,15 +18,15 @@ class Trophy extends React.Component {
   createTrophy(){
     if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) == 100)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle3} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle.gold} src={require('../img/'+this.props.collectionName+'.png')}/>
     );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 80)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle2} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle.silver} src={require('../img/'+this.props.collectionName+'.png')}/>
     );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 40)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle1} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle.bronze} src={require('../img/'+this.props.collectionName+'.png')}/>
     );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 1)) {
       return (

@@ -25,7 +25,11 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
-      let displayTrophy = [<Trophy key="states" collectionName={"states"}/>, <Trophy key="parks" collectionName={"parks"}/>, <Trophy key="stadiums" collectionName={"stadiums"}/>, <Trophy key="airports" collectionName={"airports"}/>];
+      let displayTrophy = [
+        <Trophy key="states" collectionName={"states"}/>,
+        <Trophy key="parks" collectionName={"parks"}/>,
+        <Trophy key="stadiums" collectionName={"stadiums"}/>,
+        <Trophy key="airports" collectionName={"airports"}/>];
 
       return (
         <div>
