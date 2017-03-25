@@ -5,7 +5,7 @@ import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
 import Collection from './Collection';
-import styles from './style/ControlBarStyle.css.js';
+import styles from './style/TrophyStyle.css.js';
 
 class Trophy extends React.Component {
   constructor(){
@@ -18,19 +18,19 @@ class Trophy extends React.Component {
   createTrophy(){
     if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) == 100)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle.gold} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle.gold} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
     );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 80)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle.silver} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle.silver} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
     );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 40)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle.bronze} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle.bronze} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
     );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 1)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
     );}
   }
 

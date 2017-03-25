@@ -22,7 +22,7 @@ export default class UserStore {
       token: "",
       states: [],
       parks: [],
-      stadiums: [],
+      mlbstadiums: [],
       airports: []
     });
     this.LoginUser = this.LoginUser.bind(this);
@@ -39,7 +39,7 @@ export default class UserStore {
       activityList.push(x);
     });
 
-    this.stadiums.forEach(function(x){
+    this.mlbstadiums.forEach(function(x){
       activityList.push(x);
     });
 
@@ -63,7 +63,7 @@ export default class UserStore {
   getPercentageCompletion(collectionname){
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
-    else if(collectionname == "stadiums"){return (this[collectionname].length/30)*100;}
+    else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}
     else if(collectionname == "airports"){return (this[collectionname].length/529)*100;}
   }
 
@@ -121,7 +121,7 @@ export default class UserStore {
     this.token= "";
     this.states= [];
     this.parks= [];
-    this.stadiums= [];
+    this.mlbstadiums= [];
     this.airports= [];
     browserHistory.push('/Welcome');
   }
@@ -156,7 +156,7 @@ export default class UserStore {
         this.name = name.toLowerCase();
         this.states = loginCred.states;
         this.parks = loginCred.parks;
-        this.stadiums = loginCred.stadiums;
+        this.mlbstadiums = loginCred.mlbstadiums;
         this.airports = loginCred.airports;
         browserHistory.push('/Dashboard');
       } else {

@@ -23,7 +23,7 @@ mongoose.connect(mongooseUri, options);
 let userRoutes = require('../src/routes/userRoutes');
 let parkRoutes = require('../src/routes/parkRoutes');
 let stateRoutes = require('../src/routes/stateRoutes');
-let stadiumRoutes = require('../src/routes/stadiumRoutes');
+let mlbstadiumRoutes = require('../src/routes/mlbstadiumRoutes');
 let airportRoutes = require('../src/routes/airportRoutes');
 
 const port = 3000;
@@ -41,7 +41,7 @@ app.use(require('webpack-hot-middleware')(compiler));
 app.use('/api', userRoutes);
 app.use('/parks', parkRoutes);
 app.use('/states', stateRoutes);
-app.use('/stadiums', stadiumRoutes);
+app.use('/mlbstadiums', mlbstadiumRoutes);
 app.use('/airports', airportRoutes);
 
 app.get('/', function(req, res) {

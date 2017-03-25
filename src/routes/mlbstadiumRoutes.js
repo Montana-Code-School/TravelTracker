@@ -23,6 +23,22 @@ router.route('/')
         res.json(mlbstadiums);
       }
     });
+  })
+  .post(function(req, res, next){
+
+    let mlbstadium = new Mlbstadium();
+
+    mlbstadium.name = "Rogers Centre";
+    mlbstadium.description = "Toronto Blue Jays";
+    mlbstadium.state = "ONT";
+
+    mlbstadium.save(function(err, user, next){
+      if(err){
+        next(err);
+      } else {
+        res.json(mlbstadium);
+      }
+    });
   });
 
 
