@@ -4,7 +4,7 @@ let MlbstadiumSchema = new mongoose.Schema({
   name: {
     type: String
   },
-  team: {
+  description: {
     type: String
   },
   state: {

@@ -25,7 +25,7 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
-      let displayTrophy = [<Trophy key="states" collectionName={"states"}/>, <Trophy key="parks" collectionName={"parks"}/>, <Trophy key="stadiums" collectionName={"stadiums"}/>, <Trophy key="airports" collectionName={"airports"}/>];
+      let displayTrophy = [<Trophy key="states" collectionName={"states"}/>, <Trophy key="parks" collectionName={"parks"}/>, <Trophy key="mlbstadiums" collectionName={"mlbstadiums"}/>, <Trophy key="airports" collectionName={"airports"}/>];
 
       return (
         <div>
@@ -47,7 +47,7 @@ class ControlBar extends React.Component {
                     <MenuItem divider/>
                     <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
                     <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
-                    <LinkContainer to={{pathname: '/Collection/stadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
+                    <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
                     <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
                   </NavDropdown>
                   <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>

@@ -62,10 +62,10 @@ class Dashboard extends React.Component {
               </Col>
               <Col xs={3}>
                 MLB Stadiums
-                <Link to={{pathname: '/Collection/stadiums'}}>
+                <Link to={{pathname: '/Collection/mlbstadiums'}}>
                   <div>
-                    {this.createPieChart("stadiums")}
-                    {this.props.userStore.getPercentageCompletion("stadiums").toFixed(0)}%
+                    {this.createPieChart("mlbstadiums")}
+                    {this.props.userStore.getPercentageCompletion("mlbstadiums").toFixed(0)}%
                   </div>
                 </Link>
               </Col>
