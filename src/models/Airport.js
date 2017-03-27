@@ -1,18 +1,11 @@
 let mongoose = require('mongoose');
 
 let AirportSchema = new mongoose.Schema({
-  name: {
-    type: String
-  },
-  code: {
-    type: String
-  },
-  state: {
-    type: String
-  },
-  city: {
-    type: String
-  }
+  states: String,
+  description: String,
+  name: String,
+  latitude: String,
+  longitude: String
 });
 
 export default mongoose.model('Airport', AirportSchema);

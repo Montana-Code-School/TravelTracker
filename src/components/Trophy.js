@@ -28,7 +28,7 @@ class Trophy extends React.Component {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle.bronze} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
     );}
-    else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 1)) {
+    else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) > 1)) {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
     );}
