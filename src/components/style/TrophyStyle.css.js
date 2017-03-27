@@ -36,8 +36,5 @@ export default {
     top: ".5px",
     width: "50px",
     height: "49px"
-  },
-  hover:{
-    background: "purple"
   }
 };

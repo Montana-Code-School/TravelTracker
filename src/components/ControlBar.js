@@ -33,32 +33,30 @@ class ControlBar extends React.Component {
 
       return (
         <div>
-          <div>
-            <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
-              <Navbar .Header>
-                <Navbar .Brand>
-                  <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/></Link>
-                  <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
-                </Navbar .Brand>
-              </Navbar .Header>
-              <Navbar .Toggle />
-              <Navbar .Collapse>
-                {displayTrophy}
-                <Nav pullRight>
-                  <LinkContainer to={{pathname: '/Dashboard'}}><NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem></LinkContainer>
-                  <NavDropdown id="dropdown" title="Collections">
-                    <LinkContainer to={{pathname: '/Dashboard'}}><NavItem>Home Page</NavItem></LinkContainer>
-                    <MenuItem divider/>
-                    <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
-                    <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
-                    <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
-                    <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
-                  </NavDropdown>
-                  <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>
-                </Nav>
-              </Navbar .Collapse>
-            </Navbar>
-          </div>
+          <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
+            <Navbar .Header>
+              <Navbar .Brand>
+                <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/></Link>
+                <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
+              </Navbar .Brand>
+            </Navbar .Header>
+            <Navbar .Toggle />
+            <Navbar .Collapse>
+              {displayTrophy}
+              <Nav pullRight>
+                <LinkContainer to={{pathname: '/Dashboard'}}><NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem></LinkContainer>
+                <NavDropdown id="dropdown" title="Collections">
+                  <LinkContainer to={{pathname: '/Dashboard'}}><NavItem>Home Page</NavItem></LinkContainer>
+                  <MenuItem divider/>
+                  <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
+                </NavDropdown>
+                <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>
+              </Nav>
+            </Navbar .Collapse>
+          </Navbar>
         </div>
       );
     }
