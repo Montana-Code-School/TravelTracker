@@ -2,7 +2,7 @@
 import { extendObservable } from 'mobx';
 import React from 'react';
 import { browserHistory } from 'react-router';
-import { ListGroupItem } from 'react-bootstrap';
+import { ListGroupItem, Glyphicon } from 'react-bootstrap';
 
 /* Initializing class UserStore then exporting extendObservable
 function with props this, and the {key: partner} values.
@@ -54,7 +54,7 @@ export default class UserStore {
     let preparedActivityList = [];
 
     activityList.forEach(function(x){
-      preparedActivityList.push(<ListGroupItem key={x.name}>{x.name}, {x.date}</ListGroupItem>);
+      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "green"}}/>  {x.name}, {x.date}</ListGroupItem>);
     });
 
     return preparedActivityList;
