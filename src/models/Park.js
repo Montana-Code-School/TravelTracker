@@ -14,7 +14,7 @@ let ParkSchema = new mongoose.Schema({
   weatherInfo: String,
   name: String,
   latitude: String,
-  logitude: String
+  longitude: String
 });
 
 export default mongoose.model('Park', ParkSchema);

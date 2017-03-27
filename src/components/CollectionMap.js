@@ -22,12 +22,13 @@ class CollectionMap extends React.Component {
   prepareFillKeys(){
     let fillKeys = {};
     this.props.fullCollection.forEach(function(x){
+      console.log(x);
       if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
-        fillKeys[x.abbreviation] = {
+        fillKeys[x.states] = {
           fillKey: 'Collected'
         };
       }else{
-        fillKeys[x.abbreviation] = {
+        fillKeys[x.states] = {
           fillKey: 'NotCollected'
         };
       }

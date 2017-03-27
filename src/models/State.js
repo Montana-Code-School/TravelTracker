@@ -4,7 +4,16 @@ let StateSchema = new mongoose.Schema({
   name: {
     type: String
   },
-  abbreviation: {
+  states: {
+    type: String
+  },
+  description: {
+    type: String
+  },
+  latitude: {
+    type: String
+  },
+  longitude: {
     type: String
   }
 });
