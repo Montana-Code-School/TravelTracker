@@ -9,6 +9,12 @@ let MlbstadiumSchema = new mongoose.Schema({
   },
   state: {
     type: String
+  },
+  latitude: {
+    type: String
+  },
+  longitude: {
+    type: String
   }
 });
 

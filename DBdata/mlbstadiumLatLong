@@ -1,0 +1,182 @@
+[
+{
+team: "Anaheim Angels",
+address: "2000 Gene Autry Way, Anaheim, CA. 92806",
+latitude: 33.799572,
+longitude: -117.889031
+},
+{
+team: "Arizona Diamondbacks",
+address: "P.O. Box 2095, Phoenix, AZ. 85001",
+latitude: 33.452922,
+longitude: -112.038669
+},
+{
+team: "Atlanta Braves",
+address: "P.O. Box 4064, Atlanta, GA. 30302",
+latitude: 33.74691,
+longitude: -84.391239
+},
+{
+team: "Baltimore Orioles",
+address: "333 W. Camden Street, Baltimore, MD. 21201",
+latitude: 39.285243,
+longitude: -76.620103
+},
+{
+team: "Boston Red Sox",
+address: "4 Yawkey Way, Boston, MA 02215",
+latitude: 42.346613,
+longitude: -71.098817
+},
+{
+team: "Chicago Cubs",
+address: "1060 Addison Street, Chicago, IL 60616",
+latitude: 41.947201,
+longitude: -87.656413
+},
+{
+team: "Chicago White Sox",
+address: "333 W. 35th Street, Chicago, IL 60616",
+latitude: 41.830883,
+longitude: -87.635083
+},
+{
+team: "Cincinnati Reds",
+address: "100 Cinergy Field, Cincinnati, OH 45202",
+latitude: 39.107183,
+longitude: -84.507713
+},
+{
+team: "Cleveland Indians",
+address: "2401 Ontario Street, Cleveland, OH 44115",
+latitude: 41.495149,
+longitude: -81.68709
+},
+{
+team: "Colorado Rockies",
+address: "Coors Field, 2001 Blake Street, Denver, CO 80205-2000",
+latitude: 39.75698,
+longitude: -104.965329
+},
+{
+team: "Detroit Tigers",
+address: "Comerica Park, 2100 Woodward Ave., Detroit, MI 48201",
+latitude: 42.346354,
+longitude: -83.059619
+},
+{
+team: "Florida Marlins",
+address: "2269 NW 199th Street, Miami, FL 33056",
+latitude: 25.954428,
+longitude: -80.238164
+},
+{
+team: "Houston Astros",
+address: "P.O. Box 288, Houston, TX 77001-0288",
+latitude: 29.76045,
+longitude: -95.369784
+},
+{
+team: "Kansas City Royals",
+address: "P.O. Boz 419969, Kansas City, MO 64141",
+latitude: 39.10222,
+longitude: -94.583559
+},
+{
+team: "Los Angeles Dodgers",
+address: "1000 Elysian Park Ave., Los Angeles, CA 90012",
+latitude: 34.072437,
+longitude: -118.246879
+},
+{
+team: "Milwaukee Brewers",
+address: "P.O. Box 3099, Milwaukee, WI 53201-3099",
+latitude: 43.04205,
+longitude: -87.905599
+},
+{
+team: "Minnesota Twins",
+address: "501 Chicago Ave. S., Minneapolis, MN 55415",
+latitude: 44.974346,
+longitude: -93.259616
+},
+{
+team: "Washington Nationals",
+address: "1500 South Capitol Street SE, Washington, DC",
+latitude: 38.87,
+longitude: -77.01
+},
+{
+team: "New York Mets",
+address: "Roosevelt Ave & 126th Street, New York, NY 11368",
+latitude: 40.75535,
+longitude: -73.843219
+},
+{
+team: "New York Yankees",
+address: "Yankee Stadium, E. 161 Street & River Ave., New York, NY 10451",
+latitude: 40.819782,
+longitude: -73.929939
+},
+{
+team: "Oakland Athletics",
+address: "Oakland Coliseum, 700 Coliseum Way, Oakland, Ca 94621-1918",
+latitude: 37.74923,
+longitude: -122.196487
+},
+{
+team: "Philadelphia Phillies",
+address: "P.O. Box 7575, Philadelphia, PA 19101",
+latitude: 39.952313,
+longitude: -75.162392
+},
+{
+team: "Pittsburgh Pirates",
+address: "600 Stadium Circle, Pittsburgh, PA 15212",
+latitude: 40.461503,
+longitude: -80.008924
+},
+{
+team: "St. Louis Cardinals",
+address: "250 Stadium Plaza, St. Louis, MO 63102",
+latitude: 38.629683,
+longitude: -90.188247
+},
+{
+team: "San Diego Padres",
+address: "P.O. Box 2000, San Diego, CA 92112-2000",
+latitude: 32.752148,
+longitude: -117.143635
+},
+{
+team: "San Francisco Giants",
+address: "Pacific Bell Park, 24 Willie Mays Plaza, San Francisco, CA 94107",
+latitude: 37.77987,
+longitude: -122.389754
+},
+{
+team: "Seattle Mariners",
+address: "P.O. Box 41000, 411 First Ave. S., Seattle, WA 98104",
+latitude: 47.60174,
+longitude: -122.330829
+},
+{
+team: "Tampa Bay Devil Rays",
+address: "1 Tropicana Drive, St. Petersburg, FL 33705",
+latitude: 27.768487,
+longitude: -82.648191
+},
+{
+team: "Texas Rangers",
+address: "1000 Ballpark Way, Arlington, TX 76011",
+latitude: 32.750156,
+longitude: -97.081117
+},
+{
+team: "Toronto Blue Jays",
+address: "1 Blue Jay Way, Suite 3200, Toronto, ONT M5V 1J1",
+latitude: 43.641653,
+longitude: -79.3917
+}
+]

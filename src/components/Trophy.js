@@ -19,19 +19,19 @@ class Trophy extends React.Component {
     if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) == 100)) {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle.gold} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
-    );}
+      );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 80)) {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle.silver} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
-    );}
+      );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 40)) {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle.bronze} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
-    );}
+      );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 1)) {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
-    );}
+      );}
   }
 
   render() {

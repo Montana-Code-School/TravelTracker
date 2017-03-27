@@ -59,7 +59,7 @@ class CollectionMap extends React.Component {
   }
 
   prepareMap(){
-    let ourMap = (<Datamap scope="usa" height="500"
+    let ourMap = (<Datamap scope="usa" height="650"
     ref={this.addClickHandlers}
     geographyConfig={{
       highlightFillColor: '#0DFFA6',
@@ -86,7 +86,7 @@ class CollectionMap extends React.Component {
       <Col className="hidden-sm hidden-xs" md={12}>
         {this.prepareMap()}
       </Col>
-      );
+    );
   }
 }
 
