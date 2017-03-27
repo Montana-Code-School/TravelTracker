@@ -1,347 +1,248 @@
-/* 1 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e74"),
     "name" : "Alabama",
     "abbreviation" : "AL"
 }
-
-/* 2 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e76"),
     "name" : "Alaska",
     "abbreviation" : "AK"
 }
-
-/* 3 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e78"),
     "name" : "Arizona",
     "abbreviation" : "AZ"
 }
-
-/* 4 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e7a"),
     "name" : "Arkansas",
     "abbreviation" : "AR"
 }
-
-/* 5 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e7c"),
     "name" : "California",
     "abbreviation" : "CA"
 }
-
-/* 6 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e7e"),
     "name" : "Colorado",
     "abbreviation" : "CO"
 }
-
-/* 7 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e80"),
     "name" : "Connecticut",
     "abbreviation" : "CT"
 }
-
-/* 8 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e82"),
     "name" : "Delaware",
     "abbreviation" : "DE"
 }
-
-/* 9 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e84"),
     "name" : "Florida",
     "abbreviation" : "FL"
 }
-
-/* 10 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e86"),
     "name" : "Georgia",
     "abbreviation" : "GA"
 }
-
-/* 11 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e88"),
     "name" : "Hawaii",
     "abbreviation" : "HI"
 }
-
-/* 12 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e8a"),
     "name" : "Idaho",
     "abbreviation" : "ID"
 }
-
-/* 13 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e8c"),
     "name" : "Illinois",
     "abbreviation" : "IL"
 }
-
-/* 14 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e8e"),
     "name" : "Indiana",
     "abbreviation" : "IN"
 }
-
-/* 15 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e90"),
     "name" : "Iowa",
     "abbreviation" : "IA"
 }
-
-/* 16 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e92"),
     "name" : "Kansas",
     "abbreviation" : "KS"
 }
-
-/* 17 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e94"),
     "name" : "Kentucky",
     "abbreviation" : "KY"
 }
-
-/* 18 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e96"),
     "name" : "Louisiana",
     "abbreviation" : "LA"
 }
-
-/* 19 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e98"),
     "name" : "Maine",
     "abbreviation" : "ME"
 }
-
-/* 20 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e9a"),
     "name" : "Maryland",
     "abbreviation" : "MD"
 }
-
-/* 21 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e9c"),
     "name" : "Massachusetts",
     "abbreviation" : "MA"
 }
-
-/* 22 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912e9e"),
     "name" : "Michigan",
     "abbreviation" : "MI"
 }
-
-/* 23 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ea0"),
     "name" : "Minnesota",
     "abbreviation" : "MN"
 }
-
-/* 24 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ea2"),
     "name" : "Mississippi",
     "abbreviation" : "MS"
 }
-
-/* 25 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ea4"),
     "name" : "Missouri",
     "abbreviation" : "MO"
 }
-
-/* 26 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ea6"),
     "name" : "Montana",
     "abbreviation" : "MT"
 }
-
-/* 27 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ea8"),
     "name" : "Nebraska",
     "abbreviation" : "NE"
 }
-
-/* 28 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eaa"),
     "name" : "Nevada",
     "abbreviation" : "NV"
 }
-
-/* 29 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eac"),
     "name" : "New Hampshire",
     "abbreviation" : "NH"
 }
-
-/* 30 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eae"),
     "name" : "New Jersey",
     "abbreviation" : "NJ"
 }
-
-/* 31 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eb0"),
     "name" : "New Mexico",
     "abbreviation" : "NM"
 }
-
-/* 32 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eb2"),
     "name" : "New York",
     "abbreviation" : "NY"
 }
-
-/* 33 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eb4"),
     "name" : "North Carolina",
     "abbreviation" : "NC"
 }
-
-/* 34 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eb6"),
     "name" : "North Dakota",
     "abbreviation" : "ND"
 }
-
-/* 35 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eb8"),
     "name" : "Ohio",
     "abbreviation" : "OH"
 }
-
-/* 36 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eba"),
     "name" : "Oklahoma",
     "abbreviation" : "OK"
 }
-
-/* 37 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ebc"),
     "name" : "Oregon",
     "abbreviation" : "OR"
 }
-
-/* 38 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ebe"),
     "name" : "Pennsylvania",
     "abbreviation" : "PA"
 }
-
-/* 39 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ec0"),
     "name" : "Rhode Island",
     "abbreviation" : "RI"
 }
-
-/* 40 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ec2"),
     "name" : "South Carolina",
     "abbreviation" : "SC"
 }
-
-/* 41 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ec4"),
     "name" : "South Dakota",
     "abbreviation" : "SD"
 }
-
-/* 42 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ec6"),
     "name" : "Tennessee",
     "abbreviation" : "TN"
 }
-
-/* 43 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ec8"),
     "name" : "Texas",
     "abbreviation" : "TX"
 }
-
-/* 44 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912eca"),
     "name" : "Utah",
     "abbreviation" : "UT"
 }
-
-/* 45 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ecc"),
     "name" : "Vermont",
     "abbreviation" : "VT"
 }
-
-/* 46 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ece"),
     "name" : "Virginia",
     "abbreviation" : "VA"
 }
-
-/* 47 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ed0"),
     "name" : "Washington",
     "abbreviation" : "WA"
 }
-
-/* 48 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ed2"),
     "name" : "West Virginia",
     "abbreviation" : "WV"
 }
-
-/* 49 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ed4"),
     "name" : "Wisconsin",
     "abbreviation" : "WI"
 }
-
-/* 50 */
 {
     "_id" : ObjectId("58d0746e9e0854f8b8912ed6"),
     "name" : "Wyoming",

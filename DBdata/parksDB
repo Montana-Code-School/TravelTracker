@@ -1,4 +1,3 @@
-/* 1 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ccf"),
     "name" : "Acadia",
@@ -17,8 +16,6 @@
     "longitude" : "-68.2598657906",
     "__v" : 0
 }
-
-/* 2 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd0"),
     "name" : "Arches",
@@ -35,8 +32,6 @@
     "states" : "UT",
     "__v" : 0
 }
-
-/* 3 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd1"),
     "name" : "Badlands",
@@ -55,8 +50,6 @@
     "longitude" : "-101.942207738757",
     "__v" : 0
 }
-
-/* 4 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd2"),
     "name" : "Big Bend",
@@ -75,8 +68,6 @@
     "longitude" : "-103.207245469093",
     "__v" : 0
 }
-
-/* 5 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd3"),
     "name" : "Biscayne",
@@ -95,8 +86,6 @@
     "states" : "FL",
     "__v" : 0
 }
-
-/* 6 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd4"),
     "name" : "Black Canyon Of The Gunnison",
@@ -113,8 +102,6 @@
     "states" : "CO",
     "__v" : 0
 }
-
-/* 7 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd5"),
     "name" : "Bryce Canyon",
@@ -133,8 +120,6 @@
     "states" : "UT",
     "__v" : 0
 }
-
-/* 8 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd6"),
     "name" : "Canyonlands",
@@ -153,8 +138,6 @@
     "states" : "UT",
     "__v" : 0
 }
-
-/* 9 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd7"),
     "name" : "Capitol Reef",
@@ -173,8 +156,6 @@
     "longitude" : "-111.247314452467",
     "__v" : 0
 }
-
-/* 10 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd8"),
     "name" : "Carlsbad Caverns",
@@ -191,8 +172,6 @@
     "states" : "NM",
     "__v" : 0
 }
-
-/* 11 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cd9"),
     "name" : "Channel Islands",
@@ -211,8 +190,6 @@
     "longitude" : "-119.26687",
     "__v" : 0
 }
-
-/* 12 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cdb"),
     "name" : "Congaree",
@@ -231,8 +208,6 @@
     "states" : "SC",
     "__v" : 0
 }
-
-/* 13 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cdc"),
     "name" : "Crater Lake",
@@ -251,8 +226,6 @@
     "states" : "OR",
     "__v" : 0
 }
-
-/* 14 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cdd"),
     "name" : "Cuyahoga Valley",
@@ -271,8 +244,6 @@
     "states" : "OH",
     "__v" : 0
 }
-
-/* 15 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cde"),
     "name" : "Death Valley",
@@ -291,8 +262,6 @@
     "states" : "CA,NV",
     "__v" : 0
 }
-
-/* 16 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cdf"),
     "name" : "Denali",
@@ -309,8 +278,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 17 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce0"),
     "name" : "Dry Tortugas",
@@ -329,8 +296,6 @@
     "states" : "FL",
     "__v" : 0
 }
-
-/* 18 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce1"),
     "name" : "Everglades",
@@ -349,8 +314,6 @@
     "states" : "FL",
     "__v" : 0
 }
-
-/* 19 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce2"),
     "name" : "Gates Of The Arctic",
@@ -367,8 +330,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 20 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce3"),
     "name" : "Glacier Bay",
@@ -387,8 +348,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 21 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce4"),
     "name" : "Glacier",
@@ -405,8 +364,6 @@
     "states" : "MT",
     "__v" : 0
 }
-
-/* 22 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce5"),
     "name" : "Grand Canyon",
@@ -425,8 +382,6 @@
     "states" : "AZ",
     "__v" : 0
 }
-
-/* 23 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce6"),
     "name" : "Grand Teton",
@@ -445,8 +400,6 @@
     "states" : "WY",
     "__v" : 0
 }
-
-/* 24 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce7"),
     "name" : "Great Basin",
@@ -465,8 +418,6 @@
     "states" : "NV",
     "__v" : 0
 }
-
-/* 25 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce8"),
     "name" : "Great Sand Dunes",
@@ -485,8 +436,6 @@
     "states" : "CO",
     "__v" : 0
 }
-
-/* 26 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ce9"),
     "name" : "Great Smoky Mountains",
@@ -505,8 +454,6 @@
     "states" : "NC,TN",
     "__v" : 0
 }
-
-/* 27 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cea"),
     "name" : "Guadalupe Mountains",
@@ -523,8 +470,6 @@
     "states" : "TX",
     "__v" : 0
 }
-
-/* 28 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ceb"),
     "name" : "Haleakalā",
@@ -541,8 +486,6 @@
     "states" : "HI",
     "__v" : 0
 }
-
-/* 29 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cec"),
     "name" : "Hawai'i Volcanoes",
@@ -561,8 +504,6 @@
     "states" : "HI",
     "__v" : 0
 }
-
-/* 30 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8ced"),
     "name" : "Hot Springs",
@@ -581,8 +522,6 @@
     "states" : "AR",
     "__v" : 0
 }
-
-/* 31 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cee"),
     "name" : "Isle Royale",
@@ -601,8 +540,6 @@
     "states" : "MI",
     "__v" : 0
 }
-
-/* 32 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cef"),
     "name" : "Joshua Tree",
@@ -621,8 +558,6 @@
     "states" : "CA",
     "__v" : 0
 }
-
-/* 33 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf0"),
     "name" : "Katmai",
@@ -641,8 +576,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 34 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf1"),
     "name" : "Kenai Fjords",
@@ -661,8 +594,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 35 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf2"),
     "name" : "Kings Canyon",
@@ -679,8 +610,6 @@
     "states" : "CA",
     "__v" : 0
 }
-
-/* 36 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf3"),
     "name" : "Kobuk Valley",
@@ -699,8 +628,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 37 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf4"),
     "name" : "Lake Clark",
@@ -719,8 +646,6 @@
     "states" : "AK",
     "__v" : 0
 }
-
-/* 38 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf5"),
     "name" : "Lassen Volcanic",
@@ -737,8 +662,6 @@
     "states" : "CA",
     "__v" : 0
 }
-
-/* 39 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf6"),
     "name" : "Mammoth Cave",
@@ -757,8 +680,6 @@
     "states" : "KY",
     "__v" : 0
 }
-
-/* 40 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf7"),
     "name" : "Mesa Verde",
@@ -777,8 +698,6 @@
     "states" : "CO",
     "__v" : 0
 }
-
-/* 41 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cf8"),
     "name" : "Mount Rainier",
@@ -797,8 +716,6 @@
     "states" : "WA",
     "__v" : 0
 }
-
-/* 42 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cfb"),
     "name" : "North Cascades",
@@ -817,8 +734,6 @@
     "states" : "WA",
     "__v" : 0
 }
-
-/* 43 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cfc"),
     "name" : "Olympic",
@@ -837,8 +752,6 @@
     "states" : "WA",
     "__v" : 0
 }
-
-/* 44 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cfd"),
     "name" : "Petrified Forest",
@@ -857,8 +770,6 @@
     "states" : "AZ",
     "__v" : 0
 }
-
-/* 45 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cfe"),
     "name" : "Pinnacles",
@@ -877,8 +788,6 @@
     "states" : "CA",
     "__v" : 0
 }
-
-/* 46 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8cff"),
     "name" : "Rocky Mountain",
@@ -897,8 +806,6 @@
     "states" : "CO",
     "__v" : 0
 }
-
-/* 47 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8d01"),
     "name" : "Saguaro",
@@ -917,8 +824,6 @@
     "states" : "AZ",
     "__v" : 0
 }
-
-/* 48 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8d02"),
     "name" : "Sequoia & Kings Canyon",
@@ -937,8 +842,6 @@
     "states" : "CA",
     "__v" : 0
 }
-
-/* 49 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8d03"),
     "name" : "Shenandoah",
@@ -957,8 +860,6 @@
     "states" : "VA",
     "__v" : 0
 }
-
-/* 50 */
 {
     "_id" : ObjectId("58cac2a1af77936a192f8d04"),
     "name" : "Theodore Roosevelt",
@@ -976,4 +877,162 @@
     "longitude" : "-103.449996948242",
     "states" : "ND",
     "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d09"),
+    "name" : "Wrangell - St Elias",
+    "weatherInfo" : "Varies widely depending on location in park and time of year.  Visit http://www.nps.gov/wrst/planyourvisit/weather.htm for detailed information.",
+    "url" : "https://www.nps.gov/wrst/index.htm",
+    "fullName" : "Wrangell - St Elias National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/wrst/planyourvisit/wrangell-st-elias-visitor-center.htm",
+    "directionsInfo" : "The administrative building and main park visitor center are located along the Richardson Highway (Hwy 4), which is a paved state highway that runs through Copper Center, AK. The buildings are 8 miles south of the Glenn Highway and Richardson Highway intersection near Glennallen, Alaska.  This is approximately 200 miles east of Anchorage, AK and 250 miles south of Fairbanks, AK.",
+    "id" : "B7944940-3FE5-4F9B-80AB-2FD78A4CDD48",
+    "parkCode" : "wrst",
+    "designation" : "National Park & Preserve",
+    "description" : "Wrangell St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. Mount St. Elias. At 13.2 million acres, it’s the same size as Yellowstone Nat. Park, Yosemite Nat. Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This is a rugged, beautiful area filled with opportunities for adventure.",
+    "latLong" : "lat:61.2079391479492, long:-142.242660522461",
+    "latitude" : "61.2079391479492",
+    "longitude" : "-142.242660522461",
+    "states" : "AK",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d05"),
+    "name" : "Virgin Islands",
+    "weatherInfo" : "Mostly Perfect!\nThe Tradewinds (the Easterlies) dominate the weather in the Virgin Islands, blowing east to west across the tropical Atlantic. The winter tends to bring stronger winds and less rain, and the summer tends to bring more rain and lighter winds.",
+    "url" : "https://www.nps.gov/viis/index.htm",
+    "fullName" : "Virgin Islands National Park",
+    "directionsUrl" : "http://www.nps.gov/viis/planyourvisit/directions.htm",
+    "directionsInfo" : "There are no airports on St. John so you must fly to St. Thomas Cyril E. King Airport (code STT) and travel from there.\nFrom the airport you rent a car and drive or take a taxi to Redhook (west end) St. Thomas.\nFrom there you can either take a car barge to St. John or the people ferry.\nOnce on St. John you can easily walk from the ferry terminal to the Visitor Center.",
+    "id" : "C65070FE-942C-4E00-8C2B-64CA33C85B4A",
+    "parkCode" : "viis",
+    "designation" : "National Park",
+    "description" : "Virgin Islands National Park’s hills, valleys and beaches are breathtaking. However, within its 7,000 plus acres on the island of St. John is the complex history of civilizations - both free and enslaved - dating back more than a thousand years, all who utilized the land and the sea for survival. Use the links below to learn about the history, culture and resources of Virgin Islands National Park.",
+    "latLong" : "lat:18.351905146, long:-64.7557621002",
+    "latitude" : "18.351905146",
+    "longitude" : "-64.7557621002",
+    "states" : "VI",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d0a"),
+    "name" : "Yellowstone",
+    "weatherInfo" : "Yellowstone's weather can vary quite a bit, even in a single day. In the summer, daytime highs can exceed 70F (25C), only to drop 20 or more degrees when a thunderstorm rolls through. It can snow during any month of the year, and winter lows frequently drop below zero, especially at night. Bring a range of clothing options, including a warm jacket and rain gear, even in the summer.",
+    "url" : "https://www.nps.gov/yell/index.htm",
+    "fullName" : "Yellowstone National Park",
+    "directionsUrl" : "http://www.nps.gov/yell/planyourvisit/directions.htm",
+    "directionsInfo" : "Yellowstone covers nearly 3,500 square miles in the northwest corner of Wyoming (3% of the park is in Montana and 1% is in Idaho). The park has five entrances and the directions to each depend on where your trip originates.",
+    "id" : "F58C6D24-8D10-4573-9826-65D42B8B83AD",
+    "parkCode" : "yell",
+    "designation" : "National Park",
+    "description" : "Visit Yellowstone and experience the world's first national park. Marvel at a volcano’s hidden power rising up in colorful hot springs, mudpots, and geysers. Explore mountains, forests, and lakes to watch wildlife and witness the drama of the natural world unfold. Discover the history that led to the conservation of our national treasures “for the benefit and enjoyment of the people.”",
+    "latLong" : "lat:44.9912101476, long:-110.691947937",
+    "latitude" : "44.9912101476",
+    "longitude" : "-110.691947937",
+    "states" : "ID,MT,WY",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d06"),
+    "name" : "Voyageurs",
+    "weatherInfo" : "There are four distinct seasons in Voyageur country.  The air is temperate during June, July, and August when periods of fine, mild weather prevail.  The frost-free season averages 120 days from June to mid-September.  The average ice-out date is May 3 but varies year to year.  Annual precipitation (rain and snow) averages 25-28 inches in the park and snowfall ranges from 55-70 inches, but is highly variable.  The first measurable snowfall occurs in late October and the last in late April or early May.",
+    "url" : "https://www.nps.gov/voya/index.htm",
+    "fullName" : "Voyageurs National Park",
+    "directionsUrl" : "http://www.nps.gov/voya/planyourvisit/directions.htm",
+    "directionsInfo" : "Voyageurs National Park is located in Northern Minnesota. The park shares its northern boundary with Canada and lies just west of the Boundary Water Canoe Area Wilderness. The park visitor centers are accessible by car but in order to truly experience the park, one must leave their vehicle behind and access the park by boat.",
+    "id" : "859727CB-2812-40DF-B8DB-D4AE9EA00089",
+    "parkCode" : "voya",
+    "designation" : "National Park",
+    "description" : "Voyageurs National Park lies within the heart of the North American Continent.  Here you can see and touch rocks half as old as the world, experience the life of a voyageur, immerse yourself in the sights and sounds of a boreal forest, view the dark skies, or ply the interconnected water routes.\n\nLeave your car behind and set out on the water highways of the North Woods.",
+    "latLong" : "lat:48.5843199822147, long:-93.1617055088282",
+    "latitude" : "48.5843199822147",
+    "longitude" : "-93.1617055088282",
+    "states" : "MN",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d0b"),
+    "name" : "Yosemite",
+    "weatherInfo" : "Yosemite National Park covers nearly 1,200 square miles (3,100 square km) in the Sierra Nevada, with elevations ranging from about 2,000 feet (600 m) to 13,000 ft (4,000 m). Yosemite receives 95% of its precipitation between October and May (and over 75% between November and March). Most of Yosemite is blanketed in snow from about November through May. (Yosemite Valley can be rainy or snowy in any given winter storm.)",
+    "url" : "https://www.nps.gov/yose/index.htm",
+    "fullName" : "Yosemite National Park",
+    "directionsUrl" : "http://www.nps.gov/yose/planyourvisit/driving.htm",
+    "directionsInfo" : "You can drive to Yosemite all year and enter via Highways 41, 140, and 120 from the west. Tioga Pass Entrance (via Highway 120 from the east) is closed from around November through late May or June. Hetch Hetchy is open all year but may close intermittently due to snow.\n\nPlease note that GPS units do not always provide accurate directions to or within Yosemite.",
+    "id" : "4324B2B4-D1A3-497F-8E6B-27171FAE4DB2",
+    "parkCode" : "yose",
+    "designation" : "National Park",
+    "description" : "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.\n\nFirst protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+    "latLong" : "lat:37.8391265869141, long:-119.540840148926",
+    "latitude" : "37.8391265869141",
+    "longitude" : "-119.540840148926",
+    "states" : "CA",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d07"),
+    "name" : "Wind Cave",
+    "weatherInfo" : "Spring:  Highs range from 50 - 70 F with highly variable weather. Spring is the park's wettest season.\n\nSummer:  Warm and generally dry with highs in the 80s F. Thunderstorms are common and can produce large hail and severe lightning. \n\nFall:  Generally dry with warm days and cool nights. Highs in the 50s - 60s F. Lows below freezing are common.\n\nWinter: Highs in the upper 30s F with lows in the 10s F. Snowfall averages 30 inches annually, periodically closing park roads.",
+    "url" : "https://www.nps.gov/wica/index.htm",
+    "fullName" : "Wind Cave National Park",
+    "directionsUrl" : "http://www.nps.gov/wica/planyourvisit/directions.htm",
+    "directionsInfo" : "Wind Cave National Park is located in South Dakota about 11 miles north of Hot Springs, or about 22 miles south of Custer, on US Highway 385. The park Visitor Center, where all cave tours begin, is approximately 1/2 mile west of the highway.",
+    "id" : "37C48EE0-2881-4D22-8F91-A249AE3B0CD0",
+    "parkCode" : "wica",
+    "designation" : "National Park",
+    "description" : "Bison, elk, and other wildlife roam the rolling prairie grasslands and forested hillsides of one of America's oldest national parks. Below the remnant island of intact prairie sits Wind Cave, one of the longest and most complex caves in the world. Named for barometric winds at its entrance, this maze of passages is home to boxwork, a unique formation rarely found elsewhere.",
+    "latLong" : "lat:43.555748462677, long:-103.47825050354",
+    "latitude" : "43.555748462677",
+    "longitude" : "-103.47825050354",
+    "states" : "SD",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d0c"),
+    "name" : "Zion",
+    "weatherInfo" : "Zion is known for a wide range of weather conditions. Temperatures vary with changes in elevation and day/night temperatures may differ by over 30°F.\n\nIn summer, temperatures in Zion National Park often exceed 100°F/38°C. Zion experiences monsoons from mid-July into September that results in an increased risk of flash floods. Always be aware of the threat of storms and lightning and be prepared for a wide range of weather conditions. Winters are generally mild.",
+    "url" : "https://www.nps.gov/zion/index.htm",
+    "fullName" : "Zion National Park",
+    "directionsUrl" : "http://www.nps.gov/zion/planyourvisit/directions.htm",
+    "directionsInfo" : "Zion National Park is located on State Route 9 in Springdale, Utah.",
+    "id" : "41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2",
+    "parkCode" : "zion",
+    "designation" : "National Park",
+    "description" : "Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures. \nUpdates: Follow us on Twitter",
+    "latLong" : "lat:37.2020727396, long:-112.988339067",
+    "latitude" : "37.2020727396",
+    "longitude" : "-112.988339067",
+    "states" : "UT",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("58d1a5b19e0854f8b89164df"),
+    "states" : "CA",
+    "latLong" : "",
+    "description" : "Most people know Redwood as home to the tallest trees on Earth. The parks also protect vast prairies, oak woodlands, wild riverways, and nearly 40 miles of rugged coastline.  For thousands of years people have lived in this verdant landscape.  Together, the National Park Service and California State Parks manage these lands for the inspiration, enjoyment, and education of all.",
+    "designation" : "National and State Parks",
+    "parkCode" : "redw",
+    "id" : "041B325C-A34F-4027-8E41-1DF3F9A1D799",
+    "directionsInfo" : "Redwood National and State Parks is located in northernmost coastal California - almost on the Oregon border. The parks are about 60-miles long, with four visitor centers from north to south.\n\nWe are a six to seven-hour drive (325 miles) north of San Francisco, a six-hour drive (330 miles) south of Portland, OR and a four-hour drive (170 miles) west of Redding, CA.",
+    "directionsUrl" : "http://www.nps.gov/redw/planyourvisit/directions.htm",
+    "fullName" : "Redwood National and State Parks",
+    "url" : "https://www.nps.gov/redw/index.htm",
+    "weatherInfo" : "Visitors should be prepared for cooler and damp weather. Dress in layers and expect to get wet.\nYear-round temperatures along California's redwood coast: mid-40s°F (7°C) to mid-60s°F (18°C). \n\nSummer can be foggy, with highs occasionally reaching low 70s°F (20°C). \nWinters are cooler with considerable rain. October through April averages 60-80 inches of rain over the region.",
+    "name" : "Redwood"
+}
+{
+    "_id" : ObjectId("58d1a6ee9e0854f8b89165bb"),
+    "states" : "AS",
+    "latLong" : "lat:-14.2526760569505, long:-170.66430806939",
+    "latitude" : "-14.2526760569505",
+    "longitude" : "-170.66430806939",
+    "description" : "The National Park of American Samoa welcomes you into the heart of the South Pacific, to a world of sights, sounds, and experiences that you will find in no other national park in the United States. \n\nEnjoy this unique national park and the welcoming people of American Samoa. We are here to protect its rich culture and natural resources. Come explore them with us!",
+    "designation" : "",
+    "parkCode" : "npsa",
+    "id" : "6E71B72E-4F2F-495D-9225-A6634E6C2EB1",
+    "directionsInfo" : "The visitor center is located in the village of Pago Pago, across from the Pago Way Service Station. The national park is located in the villages of Vatia, Pago Pago, Fagasa, Afono (on Tutuila Island), Fitiuta, Faleasao (on Ta'u Island), and Ofu Island",
+    "directionsUrl" : "http://www.nps.gov/npsa/planyourvisit/upload/NPSA-Visitor-Guide_web-January-2015.pdf",
+    "fullName" : "National Park of American Samoa",
+    "url" : "https://www.nps.gov/npsa/index.htm",
+    "weatherInfo" : "American Samoa is in the South Pacific Ocean, between the Equator and the Tropic of Capricorn. A tropical climate prevails with warm or hot temperatures year-round and high humidity. Rain showers are frequent and can last only for a few minutes or all-day.\n\nThe average annual rainfall is 125-inches in the dryer areas to as much as 300-inches in the highest mountains. Tropical storms are more prevalent during the long, wet summer season (October -May) and a slightly cooler and drier season (June-September)",
+    "name" : "American Samoa"
 }
