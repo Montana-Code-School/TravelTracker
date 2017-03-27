@@ -1,61 +1,61 @@
-{"name" : "Angel Stadium of Anaheim", "description" : "Anaheim Angels", "state" : "CA", "latitude": 33.799572,
+{"name" : "Angel Stadium of Anaheim", "description" : "Anaheim Angels", "states" : "CA", "latitude": 33.799572,
 "longitude": -117.889031}
-{"name" : "AT&T Park", "description" : "San Francisco Giants", "state" : "CA", "latitude": 37.77987,
+{"name" : "AT&T Park", "description" : "San Francisco Giants", "states" : "CA", "latitude": 37.77987,
 "longitude": -122.389754}
-{"name" : "Busch Stadium", "description" : "St. Louis Cardinals", "state" : "MO", "latitude": 38.629683,
+{"name" : "Busch Stadium", "description" : "St. Louis Cardinals", "states" : "MO", "latitude": 38.629683,
 "longitude": -90.188247}
-{"name" : "Chase Field", "description" : "Arizona Diamondbacks", "state" : "AZ",
+{"name" : "Chase Field", "description" : "Arizona Diamondbacks", "states" : "AZ",
 "latitude": 33.452922,
 "longitude": -112.038669}
-{"name" : "Citi Field", "description" : "New York Mets", "state" : "NY", "latitude": 40.75535,
+{"name" : "Citi Field", "description" : "New York Mets", "states" : "NY", "latitude": 40.75535,
 "longitude": -73.843219}
-{"name" : "Citizens Bank Park", "description" : "Philadelphia Phillies", "state" : "PA", "latitude": 39.952313,
+{"name" : "Citizens Bank Park", "description" : "Philadelphia Phillies", "states" : "PA", "latitude": 39.952313,
 "longitude": -75.162392}
-{"name" : "Comerica Park", "description" : "Detroit Tigers", "state" : "MI", "latitude": 42.346354,
+{"name" : "Comerica Park", "description" : "Detroit Tigers", "states" : "MI", "latitude": 42.346354,
 "longitude": -83.059619}
-{"name" : "Coors Field", "description" : "Colorado Rockies", "state" : "CO", "latitude": 39.75698,
+{"name" : "Coors Field", "description" : "Colorado Rockies", "states" : "CO", "latitude": 39.75698,
 "longitude": -104.965329}
-{"name" : "Dodger Stadium", "description" : "Los Angeles Dodgers", "state" : "CA", "latitude": 34.072437,
+{"name" : "Dodger Stadium", "description" : "Los Angeles Dodgers", "states" : "CA", "latitude": 34.072437,
 "longitude": -118.246879}
-{"name" : "Fenway Park", "description" : "Boston Red Sox", "state" : "MA", "latitude": 42.346613,
+{"name" : "Fenway Park", "description" : "Boston Red Sox", "states" : "MA", "latitude": 42.346613,
 "longitude": -71.098817}
-{"name" : "Globe Life Park in Arlington", "description" : "Texas Rangers", "state" : "TX", "latitude": 32.750156,
+{"name" : "Globe Life Park in Arlington", "description" : "Texas Rangers", "states" : "TX", "latitude": 32.750156,
 "longitude": -97.081117}
-{"name" : "Great American Ballpark", "description" : "Cincinnati Reds", "state" : "OH", "latitude": 39.107183,
+{"name" : "Great American Ballpark", "description" : "Cincinnati Reds", "states" : "OH", "latitude": 39.107183,
 "longitude": -84.507713}
-{"name" : "Guaranteed Rate Field", "description" : "Chicago White Sox", "state" : "IL", "latitude": 41.830883,
+{"name" : "Guaranteed Rate Field", "description" : "Chicago White Sox", "states" : "IL", "latitude": 41.830883,
 "longitude": -87.635083}
-{"name" : "Kauffman Stadium", "description" : "Kansas City Royals", "state" : "MO", "latitude": 39.10222,
+{"name" : "Kauffman Stadium", "description" : "Kansas City Royals", "states" : "MO", "latitude": 39.10222,
 "longitude": -94.583559}
-{"name" : "Marlins Park", "description" : "Florida Marlins", "state" : "FL", "latitude": 25.954428,
+{"name" : "Marlins Park", "description" : "Florida Marlins", "states" : "FL", "latitude": 25.954428,
 "longitude": -80.238164}
-{"name" : "Miller Park", "description" : "Milwaukee Brewers", "state" : "WI", "latitude": 43.04205,
+{"name" : "Miller Park", "description" : "Milwaukee Brewers", "states" : "WI", "latitude": 43.04205,
 "longitude": -87.905599}
-{"name" : "Minute Maid Park", "description" : "Houston Astros", "state" : "TX", "latitude": 29.76045,
+{"name" : "Minute Maid Park", "description" : "Houston Astros", "states" : "TX", "latitude": 29.76045,
 "longitude": -95.369784}
-{"name" : "Nationals Park", "description" : "Washington Nationals", "state" : "DC", "latitude": 38.87,
+{"name" : "Nationals Park", "description" : "Washington Nationals", "states" : "DC", "latitude": 38.87,
 "longitude": -77.01}
-{"name" : "Oakland-Alameda County Coliseum", "description" : "Oakland Athletics", "state" : "CA", "latitude": 37.74923,
+{"name" : "Oakland-Alameda County Coliseum", "description" : "Oakland Athletics", "states" : "CA", "latitude": 37.74923,
 "longitude": -122.196487}
-{"name" : "Oriole Park at Camden Yards", "description" : "Baltimore Orioles", "state" : "MD", "latitude": 39.285243,
+{"name" : "Oriole Park at Camden Yards", "description" : "Baltimore Orioles", "states" : "MD", "latitude": 39.285243,
 "longitude": -76.620103}
-{"name" : "Petco Park", "description" : "San Diego Padres", "state" : "CA", "latitude": 32.752148,
+{"name" : "Petco Park", "description" : "San Diego Padres", "states" : "CA", "latitude": 32.752148,
 "longitude": -117.143635}
-{"name" : "PNC Park", "description" : "Pittsburgh Pirates", "state" : "PA", "latitude": 40.461503,
+{"name" : "PNC Park", "description" : "Pittsburgh Pirates", "states" : "PA", "latitude": 40.461503,
 "longitude": -80.008924}
-{"name" : "Progressive Field", "description" : "Cleveland Indians", "state" : "PA", "latitude": 41.495149,
+{"name" : "Progressive Field", "description" : "Cleveland Indians", "states" : "PA", "latitude": 41.495149,
 "longitude": -81.68709}
-{"name" : "Rogers Centre", "description" : "Toronto Blue Jays", "state" : "ONT", "latitude": 43.641653,
+{"name" : "Rogers Centre", "description" : "Toronto Blue Jays", "states" : "ONT", "latitude": 43.641653,
 "longitude": -79.3917}
-{"name" : "SunTrust Park", "description" : "Atlanta Braves", "state" : "GA", "latitude": 33.890730,
+{"name" : "SunTrust Park", "description" : "Atlanta Braves", "states" : "GA", "latitude": 33.890730,
 "longitude": -84.467753}
-{"name" : "Safeco Field", "description" : "Seattle Mariners", "state" : "WA", "latitude": 47.60174,
+{"name" : "Safeco Field", "description" : "Seattle Mariners", "states" : "WA", "latitude": 47.60174,
 "longitude": -122.330829}
-{"name" : "Target Field", "description" : "Minnesota Twins", "state" : "MI", "latitude": 44.974346,
+{"name" : "Target Field", "description" : "Minnesota Twins", "states" : "MI", "latitude": 44.974346,
 "longitude": -93.259616}
-{"name" : "Tropicana Field", "description" : "Tampa Bay Rays", "state" : "FL", "latitude": 27.768487,
+{"name" : "Tropicana Field", "description" : "Tampa Bay Rays", "states" : "FL", "latitude": 27.768487,
 "longitude": -82.648191}
-{"name" : "Wrigley Field", "description" : "Chicago Cubs", "state" : "IL", "latitude": 41.947201,
+{"name" : "Wrigley Field", "description" : "Chicago Cubs", "states" : "IL", "latitude": 41.947201,
 "longitude": -87.656413}
-{"name" : "Yankee Stadium", "description" : "New York Yankees", "state" : "NY", "latitude": 40.819782,
+{"name" : "Yankee Stadium", "description" : "New York Yankees", "states" : "NY", "latitude": 40.819782,
 "longitude": -73.929939}
