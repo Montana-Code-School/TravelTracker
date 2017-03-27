@@ -45,7 +45,7 @@ class CollectionMap extends React.Component {
       if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
         bubbles.push(
           {
-            name: x.name,
+            name: x.name + ", " + x.description,
             radius,
             country: 'USA',
             latitude: x.latitude,

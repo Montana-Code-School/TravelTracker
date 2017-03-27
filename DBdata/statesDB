@@ -1,397 +1,350 @@
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e74"),
     "name" : "Alabama",
     "states" : "AL",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "32.806671",
+    "longitude" : "-86.791130"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e76"),
     "name" : "Alaska",
     "states" : "AK",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "61.370716",
+    "longitude" : "-152.404419"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e78"),
     "name" : "Arizona",
     "states" : "AZ",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "33.729759",
+    "longitude" : "-111.431221"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e7a"),
     "name" : "Arkansas",
     "states" : "AR",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "34.969704",
+    "longitude" : "-92.373123"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e7c"),
     "name" : "California",
     "states" : "CA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "36.116203",
+    "longitude" : "-119.681564"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e7e"),
     "name" : "Colorado",
     "states" : "CO",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "39.059811",
+    "longitude" : "-105.311104"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e80"),
     "name" : "Connecticut",
     "states" : "CT",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "41.597782",
+    "longitude" : "-72.755371"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e82"),
     "name" : "Delaware",
     "states" : "DE",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "39.318523",
+    "longitude" : "-75.507141"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e84"),
     "name" : "Florida",
     "states" : "FL",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "27.766279",
+    "longitude" : "-81.686783"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e86"),
     "name" : "Georgia",
     "states" : "GA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "33.040619",
+    "longitude" : "-83.643074"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e88"),
     "name" : "Hawaii",
     "states" : "HI",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "21.094318",
+    "longitude" : "-157.498337"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e8a"),
     "name" : "Idaho",
     "states" : "ID",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "44.240459",
+    "longitude" : "-114.478828"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e8c"),
     "name" : "Illinois",
     "states" : "IL",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "40.349457",
+    "longitude" : "-88.986137"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e8e"),
     "name" : "Indiana",
     "states" : "IN",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "39.849426",
+    "longitude" : "-86.258278"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e90"),
     "name" : "Iowa",
     "states" : "IA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "42.011539",
+    "longitude" : "-93.210526"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e92"),
     "name" : "Kansas",
     "states" : "KS",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "38.526600",
+    "longitude" : "-96.726486"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e94"),
     "name" : "Kentucky",
     "states" : "KY",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "37.668140",
+    "longitude" : "-84.670067"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e96"),
     "name" : "Louisiana",
     "states" : "LA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "31.169546",
+    "longitude" : "-91.867805"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e98"),
     "name" : "Maine",
     "states" : "ME",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "44.693947",
+    "longitude" : "-69.381927"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e9a"),
     "name" : "Maryland",
     "states" : "MD",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "39.063946",
+    "longitude" : "-76.802101"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e9c"),
     "name" : "Massachusetts",
     "states" : "MA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "42.230171",
+    "longitude" : "-71.530106"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912e9e"),
     "name" : "Michigan",
     "states" : "MI",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "43.326618",
+    "longitude" : "-84.536095"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ea0"),
     "name" : "Minnesota",
     "states" : "MN",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "45.694454",
+    "longitude" : "-93.900192"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ea2"),
     "name" : "Mississippi",
-    "states" : "MS"
+    "states" : "MS",
+    "description" : "",
+    "latitude" : "32.741646",
+    "longitude" : "-89.678696"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ea4"),
     "name" : "Missouri",
     "states" : "MO",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "38.456085",
+    "longitude" : "-92.288368"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ea6"),
     "name" : "Montana",
     "states" : "MT",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "46.921925",
+    "longitude" : "-110.454353"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ea8"),
     "name" : "Nebraska",
     "states" : "NE",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "41.125370",
+    "longitude" : "-98.268082"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eaa"),
     "name" : "Nevada",
     "states" : "NV",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "38.313515",
+    "longitude" : "-117.055374"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eac"),
     "name" : "New Hampshire",
     "states" : "NH",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "43.452492",
+    "longitude" : "-71.563896"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eae"),
     "name" : "New Jersey",
     "states" : "NJ",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "40.298904",
+    "longitude" : "-74.521011"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eb0"),
     "name" : "New Mexico",
     "states" : "NM",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "34.840515",
+    "longitude" : "-106.248482"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eb2"),
     "name" : "New York",
     "states" : "NY",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "42.165726",
+    "longitude" : "-74.948051"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eb4"),
     "name" : "North Carolina",
     "states" : "NC",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "35.630066",
+    "longitude" : "-79.806419"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eb6"),
     "name" : "North Dakota",
     "states" : "ND",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "47.528912",
+    "longitude" : "-99.784012"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eb8"),
     "name" : "Ohio",
     "states" : "OH",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "40.388783",
+    "longitude" : "-82.764915"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eba"),
     "name" : "Oklahoma",
     "states" : "OK",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "35.565342",
+    "longitude" : "-96.928917"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ebc"),
     "name" : "Oregon",
     "states" : "OR",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "44.572021",
+    "longitude" : "-122.070938"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ebe"),
     "name" : "Pennsylvania",
     "states" : "PA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "40.590752",
+    "longitude" : "-77.209755"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ec0"),
     "name" : "Rhode Island",
     "states" : "RI",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "41.680893",
+    "longitude" : "-71.511780"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ec2"),
     "name" : "South Carolina",
     "states" : "SC",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "33.856892",
+    "longitude" : "-80.945007"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ec4"),
     "name" : "South Dakota",
     "states" : "SD",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "44.299782",
+    "longitude" : "-99.438828"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ec6"),
     "name" : "Tennessee",
     "states" : "TN",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "35.747845",
+    "longitude" : "-86.692345"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ec8"),
     "name" : "Texas",
     "states" : "TX",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "31.054487",
+    "longitude" : "-97.563461"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912eca"),
     "name" : "Utah",
     "states" : "UT",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "40.150032",
+    "longitude" : "-111.862434"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ecc"),
     "name" : "Vermont",
     "states" : "VT",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "44.045876",
+    "longitude" : "-72.710686"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ece"),
     "name" : "Virginia",
     "states" : "VA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "37.769337",
+    "longitude" : "-78.169968"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ed0"),
     "name" : "Washington",
     "states" : "WA",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "47.400902",
+    "longitude" : "-121.490494"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ed2"),
     "name" : "West Virginia",
     "states" : "WV",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "38.491226",
+    "longitude" : "-80.954453"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ed4"),
     "name" : "Wisconsin",
     "states" : "WI",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "44.268543",
+    "longitude" : "-89.616508"
 }
 {
-    "_id" : ObjectId("58d0746e9e0854f8b8912ed6"),
     "name" : "Wyoming",
     "states" : "WY",
     "description" : "",
-    "latitude" : "",
-    "longitude" : ""
+    "latitude" : "42.755966",
+    "longitude" : "-107.302490"
 }
