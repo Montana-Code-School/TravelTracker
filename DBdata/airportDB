@@ -1,37 +1,37 @@
-{"state" : "AK", "city" : "Adak Island", "name" : "Adak", "code" : "ADK"}
-{"state" : "AK", "city" : "Anchorage", "name" : "Ted Stevens Anchorage Intl", "code" : "ANC"}
-{"state" : "AK", "city" : "Barrow", "name" : "Wiley Post-Will Rogers Memorial", "code" : "BRW"}
-{"state" : "AK", "city" : "Bethel", "name" : "Bethel", "code" : "BET"}
-{"state" : "AK", "city" : "Cold Bay", "name" : "Cold Bay", "code" : "CDB"}
-{"state" : "AK", "city" : "Cordova", "name" : "Merle K. (Mudhole) Smith", "code" : "CDV"}
-{"state" : "AK", "city" : "Deadhorse", "name" : "Deadhorse", "code" : "SCC"}
-{"state" : "AK", "city" : "Dillingham", "name" : "Dillingham", "code" : "DLG"}
-{"state" : "AK", "city" : "Fairbanks", "name" : "Fairbanks Intl", "code" : "FAI"}
-{"state" : "AK", "city" : "Gustavus", "name" : "Gustavus", "code" : "GST"}
-{"state" : "AK", "city" : "Homer", "name" : "Homer", "code" : "HOM"}
-{"state" : "AK", "city" : "Juneau", "name" : "Juneau Intl", "code" : "JNU"}
-{"state" : "AK", "city" : "Kenai", "name" : "Kenai Municipal", "code" : "ENA"}
-{"state" : "AK", "city" : "Ketchikan", "name" : "Ketchikan Intl", "code" : "KTN"}
-{"state" : "AK", "city" : "King Salmon", "name" : "King Salmon", "code" : "AKN"}
-{"state" : "AK", "city" : "Kodiak", "name" : "Kodiak", "code" : "ADQ"}
-{"state" : "AK", "city" : "Kotzebue", "name" : "Ralph Wien Memorial", "code" : "OTZ"}
-{"state" : "AK", "city" : "Nome", "name" : "Nome", "code" : "OME"}
-{"state" : "AK", "city" : "Petersburg", "name" : "Petersburg James A. Johnson", "code" : "PSG"}
-{"state" : "AK", "city" : "Sitka", "name" : "Sitka Rocky Gutierrez", "code" : "SIT"}
-{"state" : "AK", "city" : "Unalaska", "name" : "Unalaska", "code" : "DUT"}
-{"state" : "AK", "city" : "Valdez", "name" : "Valdez Pioneer Field", "code" : "VDZ"}
-{"state" : "AK", "city" : "Wrangell", "name" : "Wrangell", "code" : "WRG"}
-{"state" : "AK", "city" : "Yakutat", "name" : "Yakutat", "code" : "YAK"}
-{"state" : "AL", "city" : "Anniston", "name" : "Anniston Regional", "code" : "ANB"}
-{"state" : "AL", "city" : "Birmingham", "name" : "Birmingham-Shuttlesworth Intl", "code" : "BHM"}
-{"state" : "AL", "city" : "Dothan", "name" : "Dothan Regional", "code" : "DHN"}
-{"state" : "AL", "city" : "Huntsville", "name" : "Huntsville Intl-Carl T. Jones Field", "code" : "HSV"}
-{"state" : "AL", "city" : "Mobile", "name" : "Mobile Downtown", "code" : "BFM"}
-{"state" : "AL", "city" : "Mobile", "name" : "Mobile Regional", "code" : "MOB"}
-{"state" : "AL", "city" : "Montgomery", "name" : "Montgomery Regional (Dannelly Field)", "code" : "MGM"}
-{"state" : "AL", "city" : "Muscle Shoals", "name" : "Northwest Alabama Regional", "code" : "MSL"}
-{"state" : "AL", "city" : "Tuscaloosa", "name" : "Tuscaloosa Regional", "code" : "TCL"}
-{"state" : "AR", "city" : "Fayetteville", "name" : "Drake Field", "code" : "FYV"}
+{"states" : "AK", "name" : "Adak", "description" : "ADK", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Ted Stevens Anchorage Intl", "description" : "ANC", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Wiley Post-Will Rogers Memorial", "description" : "BRW", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Bethel", "description" : "BET", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Cold Bay", "description" : "CDB", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Merle K. (Mudhole) Smith", "description" : "CDV", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Deadhorse", "description" : "SCC", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Dillingham", "description" : "DLG", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Fairbanks Intl", "description" : "FAI", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Gustavus", "description" : "GST", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Homer", "description" : "HOM", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Juneau Intl", "description" : "JNU", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Kenai Municipal", "description" : "ENA", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Ketchikan Intl", "description" : "KTN", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "King Salmon", "description" : "AKN", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Kodiak", "description" : "ADQ", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Ralph Wien Memorial", "description" : "OTZ", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Nome", "description" : "OME", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Petersburg James A. Johnson", "description" : "PSG", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Sitka Rocky Gutierrez", "description" : "SIT", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Unalaska", "description" : "DUT", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Valdez Pioneer Field", "description" : "VDZ", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Wrangell", "description" : "WRG", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Yakutat", "description" : "YAK", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Anniston Regional", "description" : "ANB", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Birmingham-Shuttlesworth Intl", "description" : "BHM", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Dothan Regional", "description" : "DHN", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Huntsville Intl-Carl T. Jones Field", "description" : "HSV", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Mobile Downtown", "description" : "BFM", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Mobile Regional", "description" : "MOB", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Montgomery Regional (Dannelly Field)", "description" : "MGM", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Northwest Alabama Regional", "description" : "MSL", "latitude": "", "longitude": ""}
+{"states" : "AL", "name" : "Tuscaloosa Regional", "description" : "TCL", "latitude": "", "longitude": ""}
+{"states" : "AR", "name" : "Drake Field", "description" : "FYV", "latitude": "", "longitude": ""}
 
 AR	FAYETTEVILLE/SPRINGDALE/	NORTHWEST ARKANSAS RGNL	XNA
 AR	FORT SMITH	FORT SMITH RGNL	FSM
@@ -377,7 +377,7 @@ OH	AKRON	AKRON-CANTON RGNL	CAK
 OH	CINCINNATI	CINCINNATI MUNI AIRPORT LUNKEN FIELD	LUK
 OH	CLEVELAND	BURKE LAKEFRONT	BKL
 OH	CLEVELAND	CLEVELAND-HOPKINS INTL	CLE
-OH	COLUMBUS	OHIO STATE UNIVERSITY	OSU
+OH	COLUMBUS	OHIO states UNIVERSITY	OSU
 OH	COLUMBUS	PORT COLUMBUS INTL	CMH
 OH	COLUMBUS	RICKENBACKER INTL	LCK
 OH	DAYTON	JAMES M COX DAYTON INTL	DAY
@@ -411,13 +411,13 @@ PA	LATROBE	ARNOLD PALMER RGNL	LBE
 PA	PHILADELPHIA	PHILADELPHIA INTL	PHL
 PA	PITTSBURGH	PITTSBURGH INTL	PIT
 PA	READING	READING RGNL/CARL A SPAATZ FIELD	RDG
-PA	STATE COLLEGE	UNIVERSITY PARK	UNV
+PA	states COLLEGE	UNIVERSITY PARK	UNV
 PA	WILKES-BARRE/SCRANTON	WILKES-BARRE/SCRANTON INTL	AVP
 PA	WILLIAMSPORT	WILLIAMSPORT RGNL	IPT
 PR	AGUADILLA	RAFAEL HERNANDEZ	BQN
 PR	PONCE	MERCEDITA	PSE
 PR	SAN JUAN	LUIS MUNOZ MARIN INTL	SJU
-RI	PROVIDENCE	THEODORE FRANCIS GREEN STATE	PVD
+RI	PROVIDENCE	THEODORE FRANCIS GREEN states	PVD
 SC	ANDERSON	ANDERSON RGNL	AND
 SC	CHARLESTON	CHARLESTON AFB/INTL	CHS
 SC	COLUMBIA	COLUMBIA METROPOLITAN	CAE
@@ -514,7 +514,7 @@ WI	RHINELANDER	RHINELANDER-ONEIDA COUNTY	RHI
 WV	BECKLEY	RALEIGH COUNTY MEMORIAL	BKW
 WV	CHARLESTON	YEAGER	CRW
 WV	CLARKSBURG	NORTH CENTRAL WEST VIRGINIA	CKB
-WV	HUNTINGTON	TRI-STATE/MILTON J FERGUSON FIELD	HTS
+WV	HUNTINGTON	TRI-states/MILTON J FERGUSON FIELD	HTS
 WV	LEWISBURG	GREENBRIER VALLEY	LWB
 WV	MORGANTOWN	MORGANTOWN MUNI-WALTER L BILL HART FLD	MGW
 WV	PARKERSBURG	MID-OHIO VALLEY RGNL	PKB

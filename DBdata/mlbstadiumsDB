@@ -25,7 +25,7 @@
 "longitude": -84.507713}
 {"name" : "Guaranteed Rate Field", "description" : "Chicago White Sox", "state" : "IL", "latitude": 41.830883,
 "longitude": -87.635083}
-{"name" : "Kauffman", "description" : "Kansas City Royals", "state" : "MO", "latitude": 39.10222,
+{"name" : "Kauffman Stadium", "description" : "Kansas City Royals", "state" : "MO", "latitude": 39.10222,
 "longitude": -94.583559}
 {"name" : "Marlins Park", "description" : "Florida Marlins", "state" : "FL", "latitude": 25.954428,
 "longitude": -80.238164}
@@ -47,8 +47,8 @@
 "longitude": -81.68709}
 {"name" : "Rogers Centre", "description" : "Toronto Blue Jays", "state" : "ONT", "latitude": 43.641653,
 "longitude": -79.3917}
-{"name" : "Sun Trust Park", "description" : "Atlanta Braves", "state" : "GA", "latitude": 33.74691,
-"longitude": -84.391239}
+{"name" : "SunTrust Park", "description" : "Atlanta Braves", "state" : "GA", "latitude": 33.890730,
+"longitude": -84.467753}
 {"name" : "Safeco Field", "description" : "Seattle Mariners", "state" : "WA", "latitude": 47.60174,
 "longitude": -122.330829}
 {"name" : "Target Field", "description" : "Minnesota Twins", "state" : "MI", "latitude": 44.974346,
