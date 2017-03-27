@@ -1,944 +1,979 @@
-[
-  {
-    "_id": "58cac2a1af77936a192f8ccf",
-    "name": "Acadia",
-    "weatherInfo": "Located on Mount Desert Island in Maine, Acadia experiences all four seasons. Summer temperatures range from 45-90F (7-30C). Fall temperatures range from 30-70F (-1-21C). Typically the first frost is in mid-October and first snowfall begins in November and can continue through April with an average accumulation of 73 inches (185 cm). Winter temperatures range from 14-35F (-10 - 2C). Spring temperatures range from 30-70F (-1-21C).",
-    "url": "https://www.nps.gov/acad/index.htm",
-    "fullName": "Acadia National Park",
-    "directionsUrl": "http://www.nps.gov/acad/planyourvisit/directions.htm",
-    "directionsInfo": "From Boston take I-95 north to Augusta, Maine, then Route 3 east to Ellsworth, and on to Mount Desert Island. For an alternate route, continue on I-95 north to Bangor, Maine, then take Route 1A east to Ellsworth. In Ellsworth, take Route 3 to Mount Desert Island.",
-    "id": "6DA17C86-088E-4B4D-B862-7C1BD5CF236B",
-    "parkCode": "acad",
-    "designation": "National Park",
-    "description": "People have been drawn to the rugged coast of Maine throughout history. Awed by its beauty and diversity, early 20th-century visionaries donated the land that became Acadia National Park. The park is home to many plants and animals, and the tallest mountain on the U.S. Atlantic coast. Today visitors come to Acadia to hike granite peaks, bike historic carriage roads, or relax and enjoy the scenery.",
-    "latLong": "lat:44.374358654, long:-68.2598657906",
-    "states": "ME",
-    "__v": 0
-  }
-  {
-    "_id": "58d1a6ee9e0854f8b89165bb",
-    "states": "AS",
-    "latLong": "lat:-14.2526760569505, long:-170.66430806939",
-    "description": "The National Park of American Samoa welcomes you into the heart of the South Pacific, to a world of sights, sounds, and experiences that you will find in no other national park in the United States. \n\nEnjoy this unique national park and the welcoming people of American Samoa. We are here to protect its rich culture and natural resources. Come explore them with us!",
-    "designation": "",
-    "parkCode": "npsa",
-    "id": "6E71B72E-4F2F-495D-9225-A6634E6C2EB1",
-    "directionsInfo": "The visitor center is located in the village of Pago Pago, across from the Pago Way Service Station. The national park is located in the villages of Vatia, Pago Pago, Fagasa, Afono (on Tutuila Island), Fitiuta, Faleasao (on Ta'u Island), and Ofu Island",
-    "directionsUrl": "http://www.nps.gov/npsa/planyourvisit/upload/NPSA-Visitor-Guide_web-January-2015.pdf",
-    "fullName": "National Park of American Samoa",
-    "url": "https://www.nps.gov/npsa/index.htm",
-    "weatherInfo": "American Samoa is in the South Pacific Ocean, between the Equator and the Tropic of Capricorn. A tropical climate prevails with warm or hot temperatures year-round and high humidity. Rain showers are frequent and can last only for a few minutes or all-day.\n\nThe average annual rainfall is 125-inches in the dryer areas to as much as 300-inches in the highest mountains. Tropical storms are more prevalent during the long, wet summer season (October -May) and a slightly cooler and drier season (June-September)",
-    "name": "American Samoa"
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd0",
-    "name": "Arches",
-    "weatherInfo": "Arches is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F.",
-    "url": "https://www.nps.gov/arch/index.htm",
-    "fullName": "Arches National Park",
-    "directionsUrl": "http://www.nps.gov/arch/planyourvisit/directions.htm",
-    "directionsInfo": "Arches National Park is located in southeast Utah, five miles north of Moab on US 191.\n\nFrom Moab, Utah, drive five miles north on Main Street/US 191. The entrance to the park is on the right.\n\nFrom Interstate 70, take exit 182 (Crescent Junction), then drive south 28 miles on US 191. The entrance to the park is on the left.",
-    "id": "36240051-018E-4915-B6EA-3F1A7F24FBE4",
-    "parkCode": "arch",
-    "designation": "National Park",
-    "description": "Visit Arches and discover a landscape of contrasting colors, landforms and textures unlike any other in the world. The park has over 2,000 natural stone arches, in addition to hundreds of soaring pinnacles, massive fins and giant balanced rocks. This red rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
-    "latLong": "",
-    "states": "UT",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd1",
-    "name": "Badlands",
-    "weatherInfo": "The Badlands weather is variable and unpredictable with temperature extremes ranging from 116° F to -40° F. Summers are hot and dry with occasional violent thunderstorms. Hailstorms and occasional tornadoes can descend on the Badlands with sudden fury. Winters are typically cold with 12 to 24 inches of total snowfall.",
-    "url": "https://www.nps.gov/badl/index.htm",
-    "fullName": "Badlands National Park",
-    "directionsUrl": "http://www.nps.gov/badl/planyourvisit/directions.htm",
-    "directionsInfo": "Badlands National Park is located 75 miles east of Rapid City, South Dakota.\n\nPhysical Addresses for GPS*\n\nPark Headquarters: 25216 Ben Reifel Road, Interior, SD 57750.\nNortheast Entrance (I-90, Exit 131): 21020 SD Hwy 240, Interior, SD 57750.\nPinnacles Entrance (I-90, Exit 110): 24240 Hwy 240, Wall, SD 57790.\nInterior Entrance: 20640 SD Hwy 377, Interior, SD 57750.",
-    "id": "B170CCF7-7AB9-48FF-950E-31815FD4DBB2",
-    "parkCode": "badl",
-    "designation": "National Park",
-    "description": "The rugged beauty of the Badlands draws visitors from around the world. These striking geologic deposits contain one of the world’s richest fossil beds. Ancient mammals such as the rhino, horse, and saber-toothed cat once roamed here. The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.",
-    "latLong": "lat:43.7489325553179, long:-101.942207738757",
-    "states": "SD",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd2",
-    "name": "Big Bend",
-    "weatherInfo": "Variable\n-- February through April often pleasant and comfortable temperatures.\n-- May through August is hot and can be stormy. Temperatures can reach well over 100 degrees in the lower elevations and along the river.\n-- September through January - . Temperatures are cooler; the weather can turn cold any time during these months.",
-    "url": "https://www.nps.gov/bibe/index.htm",
-    "fullName": "Big Bend National Park",
-    "directionsUrl": "http://www.nps.gov/bibe/planyourvisit/directions.htm",
-    "directionsInfo": "Hwy 118 south from Alpine; Hwy 385 south from Marathon; FM 170 from Presidio through Study Butte.",
-    "id": "C9056F71-7162-4208-8AE9-2D0AEFA594FD",
-    "parkCode": "bibe",
-    "designation": "National Park",
-    "description": "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and diversity of species is the best in the country. This magical place is Big Bend.",
-    "latLong": "lat:29.3290000408888, long:-103.207245469093",
-    "states": "TX",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd3",
-    "name": "Biscayne",
-    "weatherInfo": "The park is situated in a subtropical climate, which ensures sunshine year-round. Winters are normally dry and mild, with occasional fronts bringing wind and little rain. Summer brings hot and humid weather with scattered thunderstorms in the afternoons. The average temperature in January is 68 degrees Fahrenheit and 82 in July. The average rainfall for the area is 2.17 inches in January and 3.95 inches in July. June to November is hurricane season.",
-    "url": "https://www.nps.gov/bisc/index.htm",
-    "fullName": "Biscayne National Park",
-    "directionsUrl": "http://www.nps.gov/bisc/planyourvisit/directions.htm",
-    "directionsInfo": "The Dante Fascell Visitor Center may be reached from the Florida Turnpike by taking Exit 6 (Speedway Boulevard). Turn left from exit ramp and continue south to SW 328th Street (North Canal Drive). Turn left on 328th Street and continue for four miles to the end of the road. The park entrance is on the left just before the entrance to Homestead Bayfront Marina.",
-    "id": "FBF9F793-5114-4B61-A5BA-6F9ADDFDF459",
-    "parkCode": "bisc",
-    "designation": "National Park",
-    "description": "Within sight of downtown Miami, yet worlds away, Biscayne protects a rare combination of aquamarine waters, emerald islands, and fish-bejeweled coral reefs. Here too is evidence of 10,000 years of human history, from pirates and shipwrecks to pineapple farmers and presidents. Outdoors enthusiasts can boat, snorkel, camp, watch wildlife…or simply relax in a rocking chair gazing out over the bay.",
-    "latLong": "lat:25.4829769135, long:-80.2179336548",
-    "states": "FL",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd4",
-    "name": "Black Canyon Of The Gunnison",
-    "weatherInfo": "Today's Weather: http://www.weather.com/weather/today/l/NPBLCA:13:US\n\nCLIMATE\nWeather can vary greatly throughout the day. Summer daytime temperatures range between 55 to 90F (13 to 32C), nights 45 to 60F (7 to 16C). Winter daytime temperatures range between 15 to 40F (-9 to 4C), nights 10 to 20F (-12 to -6C).\n\nAfternoon thunderstorms are common during the summer. Snow accumulation varies greatly year to year. Layered clothing appropriate for the season is recommended.",
-    "url": "https://www.nps.gov/blca/index.htm",
-    "fullName": "Black Canyon Of The Gunnison National Park",
-    "directionsUrl": "http://www.nps.gov/blca/planyourvisit/directions.htm",
-    "directionsInfo": "7 miles north on CO Highway 347 from the intersection with U.S. Highway 50 east of Montrose",
-    "id": "BDBD573F-97EF-44E7-A579-471679F2C42A",
-    "parkCode": "blca",
-    "designation": "National Park",
-    "description": "Big enough to be overwhelming, still intimate enough to feel the pulse of time, Black Canyon of the Gunnison exposes you to some of the steepest cliffs, oldest rock, and craggiest spires in North America. With two million years to work, the Gunnison River, along with the forces of weathering, has sculpted this vertical wilderness of rock, water, and sky.",
-    "latLong": "",
-    "states": "CO",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd5",
-    "name": "Bryce Canyon",
-    "weatherInfo": "http://forecast.weather.gov/MapClick.php?lat=37.63&lon=-112.17#.VpUamdHUhaR",
-    "url": "https://www.nps.gov/brca/index.htm",
-    "fullName": "Bryce Canyon National Park",
-    "directionsUrl": "http://www.nps.gov/brca/planyourvisit/directions.htm",
-    "directionsInfo": "From the North:\nTake I-15 south to UT-20 (exit 95). Travel east on UT-20 to US-89. Follow US-89 south to UT-12. Travel east on UT-12 to UT-63. Take UT-63 south to Bryce Canyon National Park.\n\nFrom the South through Zion National Park:\nTake I-15 north to UT-9 (exit 16). Follow UT-9 east through Zion National Park to US-89. Travel north on US-89 to UT-12. Go east on UT-12 to UT-63. Take UT-63 south to Bryce Canyon National Park.",
-    "id": "6B1D053D-714F-46D1-B410-04BE868F14C1",
-    "parkCode": "brca",
-    "designation": "National Park",
-    "description": "There is no place like Bryce Canyon. Hoodoos (odd-shaped pillars of rock left standing from the forces of erosion) can be found on every continent, but here is the largest collection of hoodoos in the world! Descriptions fail. Photographs do not do it justice. Bring your sense of wonder and imagination when visiting Bryce Canyon National Park.",
-    "latLong": "lat:37.6392057538033, long:-112.169951498508",
-    "states": "UT",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd6",
-    "name": "Canyonlands",
-    "weatherInfo": "Canyonlands is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F.",
-    "url": "https://www.nps.gov/cany/index.htm",
-    "fullName": "Canyonlands National Park",
-    "directionsUrl": "http://www.nps.gov/cany/planyourvisit/directions.htm",
-    "directionsInfo": "Canyonlands National Park is cut into three districts by the Green and Colorado rivers. Island in the Sky district, in the north of the park, is the closest district to Moab, UT. In about 40 minutes, you can reach Island in the Sky via UT 313. The Needles district is in the southeast corner of Canyonlands. The Needles is about an hour's drive from Monticello, UT via UT 211. The Maze district, in the west of the park, is the most remote and challenging. You can reach The Maze via gravel roads from UT 24.",
-    "id": "319E07D8-E176-41F8-98A9-1E3F8099D0AB",
-    "parkCode": "cany",
-    "designation": "National Park",
-    "description": "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. These areas share a primitive desert atmosphere, but each offers different opportunities for sightseeing and adventure.",
-    "latLong": "lat:38.3121026863264, long:-109.856624603271",
-    "states": "UT",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd7",
-    "name": "Capitol Reef",
-    "weatherInfo": "Weather is posted daily; check at the park visitor center for weather updates. Do not enter into narrow canyons if there is a threat of rain or if rain has been falling in the area.",
-    "url": "https://www.nps.gov/care/index.htm",
-    "fullName": "Capitol Reef National Park",
-    "directionsUrl": "http://www.nps.gov/care/planyourvisit/directions.htm",
-    "directionsInfo": "From I-70: Take exit 149, then take UT-24 west toward Hanksville; continue for 43.8 miles (70.5 km). Turn right to continue on UT-24 west and continue for 37.3 miles (60 km). \n\nFrom I-15: take exit 188 then US-50 east toward Scipio. Left on UT-50; continuing 0.7 miles (1.1 km). Turn right onto US-50 east; continue for 24.4 miles (39.3 km). Turn right onto UT-260 south and continue 4.2 miles (6.8 km), then right on UT-24 for 71.3 miles. \n\nUT-12: North on highway 12 to Torrey, UT. Right onto UT-24.",
-    "id": "2F05E2B8-CDA3-434E-9C4C-C7DD828CAC3B",
-    "parkCode": "care",
-    "designation": "National Park",
-    "description": "Located in south-central Utah in the heart of red rock country, Capitol Reef National Park is a hidden treasure filled with cliffs, canyons, domes and bridges in the Waterpocket Fold, a geologic monocline (a wrinkle on the earth) extending almost 100 miles.",
-    "latLong": "lat:38.2821591040548, long:-111.247314452467",
-    "states": "UT",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd8",
-    "name": "Carlsbad Caverns",
-    "weatherInfo": "Carlsbad Caverns National Park is located in the Chihuahuan Desert in southeast New Mexico. Summers are hot with temperatures between 90 - low 100s(F). Windy conditions and mild temperatures are common in early spring (March-May) with frequent rain in early fall (August-September). This part of the country also sees cold temperatures in the winter with occasional snow and icy conditions. Most days, the park is enveloped by a gorgeous blue sky with very few clouds, 278 sunny days a year!",
-    "url": "https://www.nps.gov/cave/index.htm",
-    "fullName": "Carlsbad Caverns National Park",
-    "directionsUrl": "http://www.nps.gov/cave/planyourvisit/directions.htm",
-    "directionsInfo": "To access Carlsbad Caverns National Park's only entrance road, New Mexico Highway 7, turn north from US Hwy 62/180 at White's City, New Mexico - which is 20 miles southwest of Carlsbad, NM and 145 miles northeast of El Paso, Texas. The entrance road stretches a scenic 7-miles (11.3 km) from the park gate at White's City to the visitor center and cavern entrance. The address for the park's visitor center is 727 Carlsbad Caverns Highway, Carlsbad, NM, 88220, located 27 miles from the town of Carlsbad.",
-    "id": "6FDE39B1-AB4A-4C9A-A5CD-4AF67601CD78",
-    "parkCode": "cave",
-    "designation": "National Park",
-    "description": "High ancient sea ledges, deep rocky canyons, flowering cactus and desert wildlife - treasures above the ground in the Chihuahuan Desert. Hidden beneath the surface are more than 119 known caves - all formed when sulfuric acid dissolved the surrounding limestone leaving behind caverns of all sizes.\n\nClick the \"Calendar\" icon for upcoming events!\nRead interesting \"Park Ranger Blogs\"",
-    "latLong": "",
-    "states": "NM",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cd9",
-    "name": "Channel Islands",
-    "weatherInfo": "In general, the islands have a Mediterranean climate year-round. Temperatures are relatively stable, with highs averaging in the mid-60s (°F) and lows in the low-50s. However, there are seasonal differences that visitors should take into consideration when visiting the park. In addition, visitors also should be aware that ocean and weather conditions vary considerably from day-to-day and island-to-island. For more information visit: http://www.nps.gov/chis/planyourvisit/weather.htm",
-    "url": "https://www.nps.gov/chis/index.htm",
-    "fullName": "Channel Islands National Park",
-    "directionsUrl": "http://www.nps.gov/chis/planyourvisit/directions.htm",
-    "directionsInfo": "While the mainland visitor center in Ventura is readily accessible by car or public transportation, the islands are only accessible by park concessionaire boats and planes or private boat. Advanced planning is highly recommended.",
-    "id": "5595FC7A-F218-4439-8D2E-F47449838820",
-    "parkCode": "chis",
-    "designation": "National Park",
-    "description": "Channel Islands National Park encompasses five remarkable islands and their ocean environment, preserving and protecting a wealth of natural and cultural resources. Isolation over thousands of years has created unique animals, plants, and archeological resources found nowhere else on Earth and helped preserve a place where visitors can experience coastal southern California as it once was.",
-    "latLong": "lat:34.2480594, long:-119.26687",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cdb",
-    "name": "Congaree",
-    "weatherInfo": "Check the forecast before getting on the road. Conditions can change rapidly within the park. Flooding can happen with little or no warning, so make sure to check water levels for Cedar Creek and the Congaree River.",
-    "url": "https://www.nps.gov/cong/index.htm",
-    "fullName": "Congaree National Park",
-    "directionsUrl": "http://www.nps.gov/cong/planyourvisit/directions.htm",
-    "directionsInfo": "From Interstate 77, Exit 5\nAt Exit 5 turn onto SC Hwy 48 East/Bluff Road. Following the brown and white \"Congaree National Park\" directional signs, travel approximately 8 miles on and then take a slight right onto Old Bluff Road. Follow Old Bluff Road for 4.5 miles to the park entrance sign, which will be on the right. Proceed one mile to the Harry Hampton Visitor Center. Parking lots will be on the right.",
-    "id": "EEBA7225-7FF5-4B62-B60C-6BBC66351A4E",
-    "parkCode": "cong",
-    "designation": "National Park",
-    "description": "Astonishing biodiversity exists in Congaree National Park, the largest intact expanse of old growth bottomland hardwood forest remaining in the southeastern United States.   Waters from the Congaree and Wateree Rivers sweep through the floodplain, carrying nutrients and sediments that nourish and rejuvenate this ecosystem and support the growth of national and state champion trees.",
-    "latLong": "lat:33.9066505432129, long:-80.7971115112305",
-    "states": "SC",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cdc",
-    "name": "Crater Lake",
-    "weatherInfo": "October through June Crater Lake is snow covered. Snowfall averages 533 inches (1,350 cm) annually, and by early spring, it is typical to have ten to fifteen feet (4 meters) of snow on the ground. \n\nJuly, August, and September are drier and warmer. A typical daytime high temperature during these three months is around 67°F (19°C), but can range from 40°F to 80°F or more (4°C to 27°C). Temperatures cool off rapidly in the evening, with a typical nighttime low around 40°F (4°C).",
-    "url": "https://www.nps.gov/crla/index.htm",
-    "fullName": "Crater Lake National Park",
-    "directionsUrl": "http://www.nps.gov/crla/planyourvisit/directions.htm",
-    "directionsInfo": "Much of the year, the park's North Entrance is closed to cars. The North Entrance Road closes for the season on November 1 (or earlier if there is significant snowfall) and tends to open in early June.  The park’s South Entrance is open year round. Winter travelers from Roseburg will need to take Route 138 east to Route 230 south to Route 62 east to the park's west entrance. Winter travels from Bend will take Route 97 south to Route 62 north and west to the park's south entrance.",
-    "id": "7DC1050A-0DDE-4EF9-B777-3C9349BCC4DE",
-    "parkCode": "crla",
-    "designation": "National Park",
-    "description": "Crater Lake inspires awe. Native Americans witnessed it form 7,700 years ago, when a violent eruption triggered the collapse of a towering volcano. Scientists marvel at its purity: fed by rain and snow, it’s the deepest lake in the USA and perhaps the most pristine on earth. Artists, photographers, and sightseers stand in wonder at its blue water and stunning setting. Come visit, and be amazed!",
-    "latLong": "lat:42.8966964816, long:-122.13429451",
-    "states": "OR",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cdd",
-    "name": "Cuyahoga Valley",
-    "weatherInfo": "Spring's rain and warming temperatures bring new leaves on trees, blooming wildflowers, and visitors anxious get out on the trail. \n\nSummer temperatures range from 49 to 95 degrees F and can be humid. Dressing in layers is advisable. \n\nFall temperatures can range from low 70s during the day to freezing during the night. Fall foliage often peaks in mid-October.\n\nWinter weather conditions can rapidly change, due to the lake effect snow from Lake Erie. Temperatures vary from mid-30s to below zero.",
-    "url": "https://www.nps.gov/cuva/index.htm",
-    "fullName": "Cuyahoga Valley National Park",
-    "directionsUrl": "http://www.nps.gov/cuva/planyourvisit/directions.htm",
-    "directionsInfo": "Plane\nCleveland Hopkins International Airport and Akron-Canton Regional Airport offer many daily flights to the area. Car rentals are available at both airports.\n\nBus & Train\nBus stations are located in downtown Cleveland and Akron. The Amtrak station is in downtown Cleveland.\n\nCar\nThe park is easily accessible by car from all directions. A good place to start your visit is at Boston Store Visitor Center located at 1550 Boston Mills Road, Peninsula, Ohio 44264. (81° 33.512' W) (41° 15.803' N).",
-    "id": "F4D44F29-3F67-498F-B05B-0783473D2708",
-    "parkCode": "cuva",
-    "designation": "National Park",
-    "description": "Though a short distance from the urban areas of Cleveland and Akron, Cuyahoga Valley National Park seems worlds away. The park is a refuge for native plants and wildlife, and provides routes of discovery for visitors. The winding Cuyahoga River gives way to deep forests, rolling hills, and open farmlands. Walk or ride the Towpath Trail to follow the historic route of the Ohio & Erie Canal.",
-    "latLong": "lat:41.263092, long:-81.558754",
-    "states": "OH",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cde",
-    "name": "Death Valley",
-    "weatherInfo": "AUTUMN arrives in late October, with warm but pleasant temperatures and generally clear skies.\nWINTER has cool days, chilly nights and rarely, rainstorms. With snow capping the high peaks and low angled winter light, this season is especially beautiful for exploring the valley.\nSPRINGTIME is the most popular time to visit Death Valley. Besides warm and sunny days, the possibility of spring wildflowers is a big attraction.\nSUMMER starts early in Death Valley. By May the valley is too hot for most visitors",
-    "url": "https://www.nps.gov/deva/index.htm",
-    "fullName": "Death Valley National Park",
-    "directionsUrl": "http://www.nps.gov/deva/planyourvisit/directions.htm",
-    "directionsInfo": "The main road transecting Death Valley National Park from east to west is California Highway 190.\nOn the east in Nevada, U.S. Route 95 parallels the park from north to south with connecting highways at Scotty's Junction (State Route 267), Beatty (State Route 374), and Lathrop Wells (State Route 373).",
-    "id": "FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD",
-    "parkCode": "deva",
-    "designation": "National Park",
-    "description": "In this below-sea-level basin, steady drought and record summer heat make Death Valley a land of extremes. Yet, each extreme has a striking contrast. Towering peaks are frosted with winter snow. Rare rainstorms bring vast fields of wildflowers. Lush oases harbor tiny fish and refuge for wildlife and humans. Despite its morbid name, a great diversity of life survives in Death Valley.",
-    "latLong": "lat:36.4616666666667, long:-116.866666666667",
-    "states": "CA,NV",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cdf",
-    "name": "Denali",
-    "weatherInfo": "Summer is typically cool and wet, with highs typically in the upper 50s to low 60s, and lows in the 40s. On occasion, summer highs reach the low 80s, though this is rare. Snow can fall any month of the year, so be prepared for chilly weather even in summer.\n\nFall colors emerge on the alpine tundra in August and in the low valleys in early September. Winter generally starts in mid-September, with temps often getting down to -40 by January. Spring is a short season in April / May, with highs above freezing.",
-    "url": "https://www.nps.gov/dena/index.htm",
-    "fullName": "Denali National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/dena/planyourvisit/directions.htm",
-    "directionsInfo": "You can drive to Denali from Anchorage or Fairbanks, along Highway 3, which is known as the \"George Parks Highway.\" Fairbanks is about 2 hours north, while Anchorage is 5 hours south of the Denali entrance. You can also reach Denali from either city via the Alaska Railroad, which is operated by the State of Alaska. A small private airstrip is also available near the park entrance for individuals wishing to fly their own small craft to the park.",
-    "id": "C0BF2A42-E353-4FAE-B4C4-AA0676B58100",
-    "parkCode": "dena",
-    "designation": "National Park & Preserve",
-    "description": "Denali is six million acres of wild land, bisected by one ribbon of road. Travelers along it see the relatively low-elevation taiga forest give way to high alpine tundra and snowy mountains, culminating in North America's tallest peak, 20,310' Denali. Wild animals large and small roam un-fenced lands, living as they have for ages. Solitude, tranquility and wilderness await.",
-    "latLong": "",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce0",
-    "name": "Dry Tortugas",
-    "weatherInfo": "The climate in the Dry Tortugas is subtropical, which basically means that it has warm and tropical weather in the range of 60°F to 90°F. The two main seasons are the winter stormy season from December through March which is windier and sees rougher seas, and the summertime tropical storm season from June through November where there is a higher chance of isolated storms. During the summers it is hot and humid. During the winter the temperature is milder and drier.",
-    "url": "https://www.nps.gov/drto/index.htm",
-    "fullName": "Dry Tortugas National Park",
-    "directionsUrl": "http://www.nps.gov/drto/planyourvisit/directions.htm",
-    "directionsInfo": "Dry Tortugas National Park is one of the most remote parks in the National Park System. Located approximately 70 miles west of Key West it is accessible only by a daily concession ferry, private boats, charter boats, or seaplane.",
-    "id": "167A05D1-5793-49E0-89FE-0A1DDFA9A7F4",
-    "parkCode": "drto",
-    "designation": "National Park",
-    "description": "Almost 70 miles (113 km) west of Key West lies the remote Dry Tortugas National Park. The 100-square mile park is mostly open water with seven small islands.  Accessible only by boat or seaplane, the park is known the world over as the home of magnificent Fort Jefferson, picturesque blue waters, superlative coral reefs and marine life,   and the vast assortment of bird life that frequent the area.",
-    "latLong": "lat:24.6295833588, long:-82.9223480225",
-    "states": "FL",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce1",
-    "name": "Everglades",
-    "weatherInfo": "The climate in Florida is known to be mild and sunny.The average annual temperatures for South Florida and the Keys range from 74° to 77°F (23° to 25°C). There are two seasons at the Everglades National Park: the wet season and the dry season. The wet season runs from Mid-May to November and the dry season runs from December to mid-May.",
-    "url": "https://www.nps.gov/ever/index.htm",
-    "fullName": "Everglades National Park",
-    "directionsUrl": "http://www.nps.gov/ever/planyourvisit/directions.htm",
-    "directionsInfo": "Directions to Ernest Coe Visitor Center\n40001 State Road 9336, Homestead, FL 33034\n\nVisitors coming from the Miami area and points north should take the Florida Turnpike (Route 821) south until it ends merging with U.S. 1 at Florida City. Turn right at the first traffic light onto Palm Drive (State Road 9336/SW 344th St.) and follow the signs to the park.\n\nVisitors driving north from the Florida Keys should turn left on Palm Drive in Florida City and follow the signs to the park.",
-    "id": "5EA02193-276A-4037-B7DB-5765A56935FD",
-    "parkCode": "ever",
-    "designation": "National Park",
-    "description": "Everglades National Park protects an unparalleled landscape that provides important habitat for numerous rare and endangered species like the manatee,  American crocodile, and the elusive Florida panther.\n\nAn international treasure as well -  a World Heritage Site, International Biosphere Reserve, a Wetland of International Importance, and a specially protected area under the Cartagena Treaty.",
-    "latLong": "lat:25.3716144562, long:-80.9548873901",
-    "states": "FL",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce2",
-    "name": "Gates Of The Arctic",
-    "weatherInfo": "The climate of Gates pf the Arctic National Park & Preserve is generally classified as arctic and sub-arctic, with exceptionally cold winters, relatively mild summers, low annual precipitation, and generally high winds. The weather is influenced by many different systems, and can change rapidly.",
-    "url": "https://www.nps.gov/gaar/index.htm",
-    "fullName": "Gates Of The Arctic National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/gaar/planyourvisit/directions.htm",
-    "directionsInfo": "Gates of the Arctic is a wilderness park, with no roads or trails into the park lands, so visitors must fly or hike into the park. Access begins in Fairbanks, Alaska & there are several small airlines that provide daily flights into the communities of Bettles and Anaktuvuk Pass, and Coldfoot. Most visitors access the park by air taxi or hike in from the Dalton Highway or from the village of Anaktuvuk Pass. River crossings are necessary from both locations.",
-    "id": "BC195D18-71C8-4A99-BF8E-10BFAB849679",
-    "parkCode": "gaar",
-    "designation": "National Park & Preserve",
-    "description": "This vast landscape does not contain any roads or trails. Visitors discover intact ecosystems where people have lived with the land for thousands of years. Wild rivers meander through glacier-carved valleys, caribou migrate along age-old trails, endless summer light fades into aurora-lit night skies of winter. It remains virtually unchanged except by the forces of nature.",
-    "latLong": "",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce4",
-    "name": "Glacier",
-    "weatherInfo": "Glacier's weather is highly variable and can be extreme. Expect warm sunny summer days and in the winter the temperatures can fall well below freezing. Glacier's geography, straddling the Continental Divide, sets the stage for clashes of two very different climates. Warm, wet Pacific air moves in from the west, and cold dry Arctic air from the northeast. They meet at the Divide.",
-    "url": "https://www.nps.gov/glac/index.htm",
-    "fullName": "Glacier National Park",
-    "directionsUrl": "http://www.nps.gov/glac/planyourvisit/directions.htm",
-    "directionsInfo": "Glacier National Park is located in the northwest corner of Montana along the spine of the Rocky Mountains.\nBy Car you can access Glacier via Highway 2, which runs along the southern boundary of the park. You can reach the east side of the park via Highway 89.\n\nThe nearest airports are in Kalispell and Great Falls, Montana",
-    "id": "2B5178C6-2446-488C-AC31-47E3CEBF7159",
-    "parkCode": "glac",
-    "designation": "National Park",
-    "description": "As the Crown of the Continent, Glacier is the headwaters for streams that flow to the Pacific Ocean, the Gulf of Mexico, and to Hudson's Bay. What happens here affects waters in a huge section of North America. Due to a detection of invasive mussel populations in central Montana, Glacier has closed all park waters to boating until further notice. Please see the press release for further details.",
-    "latLong": "",
-    "states": "MT",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce3",
-    "name": "Glacier Bay",
-    "weatherInfo": "Summer temperatures average 50° to 60° F (10° to 15° C). Rain is the norm in lush southeast Alaska. It is best to be prepared to enjoy the park in any kind of weather, especially rain. Suggested clothing includes waterproof boots, rain gear, a hat, gloves, wool or pile layers or a warm coat. Good rain gear is essential here. April, May and June are usually the driest months of the year. September and October tend to be the wettest.",
-    "url": "https://www.nps.gov/glba/index.htm",
-    "fullName": "Glacier Bay National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/glba/planyourvisit/directions.htm",
-    "directionsInfo": "Glacier Bay National Park and Preserve lies west of Juneau, Alaska, and can only be reached by plane or boat. The only road in the area merely connects the small town of Gustavus and its airfield to park headquarters at Bartlett Cove (10 miles). Alaska Airlines provides daily jet service from Juneau to Gustavus  in the summer months. Year-round scheduled air service is also provided by a variety of small air taxis and charters. The Alaska Marine Highway ferries also provide regular service from Juneau.",
-    "id": "3682DBDE-6746-4979-86CC-2358C5B72661",
-    "parkCode": "glba",
-    "designation": "National Park & Preserve",
-    "description": "Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glacier Bay National Park is a highlight of Alaska's Inside Passage and part of a 25-million acre World Heritage Site—one of the world’s largest international protected areas. From sea to summit, Glacier Bay offers limitless opportunities for adventure and inspiration.",
-    "latLong": "lat:58.8195190429688, long:-136.967208862305",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce5",
-    "name": "Grand Canyon",
-    "weatherInfo": "This weather varies with cold winters and mild pleasant summers, moderate humidity, and considerable diurnal temperature changes at the higher elevations, with hot and drier summers at the bottom of the Grand Canyon along with cool damp winters. Summer thunderstorms and winter snowfall adds to the weather variety in this region.",
-    "url": "https://www.nps.gov/grca/index.htm",
-    "fullName": "Grand Canyon National Park",
-    "directionsUrl": "http://www.nps.gov/grca/planyourvisit/directions.htm",
-    "directionsInfo": "South Rim: Open all year, is located 60 miles north of Williams, Arizona (via route 64 from Interstate 40) and 80 miles northwest of Flagstaff (via route 180). Grand Canyon lies entirely within the state of Arizona.\n\n North Rim: located 30 miles south of Jacob Lake on Highway 67; the actual rim of the canyon is an additional 14 miles south. Jacob Lake, AZ is located in northern Arizona on Highway 89A, not far from the Utah border.",
-    "id": "B7FF43E5-3A95-4C8E-8DBE-72D8608D6588",
-    "parkCode": "grca",
-    "designation": "National Park",
-    "description": "Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size \n\nThe South Rim of the park is open all year \nThe North Rim of the park is closed for winter. \nThe North Rim reopens on May 15 for the 2017 Season",
-    "latLong": "lat:36.0567889362574, long:-112.13723257184",
-    "states": "AZ",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce6",
-    "name": "Grand Teton",
-    "weatherInfo": "Jackson Hole has long, cold winters; snow and frost are possible any month. \nmid-April, May & June - Mild days and cool nights alternate with rain and snow.\nJuly & August - Warm days and cool nights prevail, with afternoon thundershowers common.\nSeptember, October & November - Sunny days and cold nights alternate with rain and occasional snowstorms.\nDecember to mid-April - Between storms the days are sunny and nights are frigid. Snow blankets the mountains and valley.",
-    "url": "https://www.nps.gov/grte/index.htm",
-    "fullName": "Grand Teton National Park",
-    "directionsUrl": "http://www.nps.gov/grte/planyourvisit/directions.htm",
-    "directionsInfo": "Grand Teton National Park is located in northwestern Wyoming north of the town of Jackson, Wyoming and south of Yellowstone National Park.",
-    "id": "FF73E2AA-E274-44E1-A8F5-9DD998B0F579",
-    "parkCode": "grte",
-    "designation": "National Park",
-    "description": "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River or enjoy the serenity of this remarkable place.",
-    "latLong": "lat:43.658708029, long:-110.714820862",
-    "states": "WY",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce7",
-    "name": "Great Basin",
-    "weatherInfo": "There is almost an 8,000 ft (2,400 m) difference in elevation between Wheeler Peak and the valley floor. Weather conditions in the park vary with elevation. In late spring and early summer, days in the valley may be hot, yet the snow pack may not have melted in the higher elevations. The Great Basin is a desert, with low relative humidity and sharp drops in temperature at night. In the summer, fierce afternoon thunderstorms are common. It can snow any time of the year at high elevations.",
-    "url": "https://www.nps.gov/grba/index.htm",
-    "fullName": "Great Basin National Park",
-    "directionsUrl": "http://home.nps.gov/grba/planyourvisit/directions.htm",
-    "directionsInfo": "From the East or West: From U.S. Highway 6 & 50, turn south on Nevada State Highway 487 and travel 5 miles to Baker, NV. In Baker turn west on Highway 488 and travel 5 miles to the park. From the South (Utah): Travel north on Utah State Highway 21 through Milford, UT and Garrison, UT, Highway 487. Turn west on Highway 488 in Baker and travel 5 miles to the park. From the South (Nevada): Travel north on U.S. Highway 93. No public transportation is available to, or in, Great Basin National Park.",
-    "id": "4C1A549B-080F-4522-9CA7-67BB5A0845CA",
-    "parkCode": "grba",
-    "designation": "National Park",
-    "description": "From the 13,000-foot summit of Wheeler Peak, to the sage-covered foothills, Great Basin National Park is a place to sample the stunning diversity of the larger Great Basin region. Come and partake of the solitude of the wilderness, walk among ancient bristlecone pines, bask in the darkest of night skies, and explore mysterious subterranean passages. There's a whole lot more than just desert here!",
-    "latLong": "lat:39.004588404015, long:-114.218688964844",
-    "states": "NV",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce8",
-    "name": "Great Sand Dunes",
-    "weatherInfo": "Temperatures are relatively cool all year, thanks to the park and preserve's high elevation. Conditions are most often calm, but winds can arise, especially in spring and during storm fronts.  Daytime temperatures feel warmer here year round due to intense high-altitude sunlight, and a scorching mid-day summer sand surface. Plan to explore the dunes morning or evening during summer. Nights are cool in summer, and frigid in winter. Visit the Great Sand Dunes website for the most accurate weather forecasts.",
-    "url": "https://www.nps.gov/grsa/index.htm",
-    "fullName": "Great Sand Dunes National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/grsa/planyourvisit/directions.htm",
-    "directionsInfo": "To access the main park area, including the Dunes Parking Lot, Visitor Center, and Pinyon Flats Campground, take US 160 to CO 150 from the south, or CO 17 to Lane 6 to CO 150 from the west. The national park is at the north end of CO 150.",
-    "id": "461D40CC-4379-4C1B-ADB8-3563147F61A1",
-    "parkCode": "grsa",
-    "designation": "National Park & Preserve",
-    "description": "The tallest dunes in North America are the centerpiece in a diverse landscape of grasslands, wetlands, conifer and aspen forests, alpine lakes, and tundra. Experience this diversity through hiking, sand sledding, splashing in Medano Creek, wildlife watching, and more!",
-    "latLong": "lat:37.7328987121582, long:-105.512001037598",
-    "states": "CO",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ce9",
-    "name": "Great Smoky Mountains",
-    "weatherInfo": "Elevations in the park range from approximately 875 feet to 6,643 feet and the topography can drastically affect local weather. Temperatures can vary 10-20 degrees Fahrenheit from mountain base to top, and clear skies lower down do not guarantee equally pleasant weather at higher elevations. Visit http://www.nps.gov/grsm/planyourvisit/weather.htm for seasonal weather information and links to local forecasts.",
-    "url": "https://www.nps.gov/grsm/index.htm",
-    "fullName": "Great Smoky Mountains National Park",
-    "directionsUrl": "http://www.nps.gov/grsm/planyourvisit/directions.htm",
-    "directionsInfo": "Great Smoky Mountains National Park straddles the borders of the states of Tennessee and North Carolina. The three main entrances to the park are in the Gatlinburg, TN; Townsend, TN; and Cherokee, NC.",
-    "id": "D9819727-18DF-4A84-BDDE-D4F2696DE340",
-    "parkCode": "grsm",
-    "designation": "National Park",
-    "description": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.",
-    "latLong": "lat:35.6852775067091, long:-83.5369169712067",
-    "states": "NC,TN",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cea",
-    "name": "Guadalupe Mountains",
-    "weatherInfo": "Weather in the Guadalupe Mountains can change in an instant. In the Spring and Summer, average temperatures vary with highs between 70F-80F+ with evening lows in the 40F-60F range. The Fall and Winter bring milder temperatures with highs in between 50F-60F with evening lows in the 30F-50F range.",
-    "url": "https://www.nps.gov/gumo/index.htm",
-    "fullName": "Guadalupe Mountains National Park",
-    "directionsUrl": "http://www.nps.gov/gumo/planyourvisit/directions.htm",
-    "directionsInfo": "Guadalupe Mountains National Park is located on the north side of US Hwy 62/180. \nIf you are traveling east from El Paso, TX, we are 110 miles East of the city. Follow US Hwy 62/180 North to the Pine Springs Visitor Center. \nIf you are traveling from Van Horn, TX, you will travel north on US 54 and make a left hand turn at the junction of US 62/180 to arrive at the park.\nIf you are traveling west from Carlsbad, NM, you will travel on US Hwy 62/180 South and cross into Texas. Follow signs to the park.",
-    "id": "6510001B-685D-4688-A963-4ECE7AB609DB",
-    "parkCode": "gumo",
-    "designation": "National Park",
-    "description": "Guadalupe Mountains National Park is the world's premier example of a fossil reef from the Permian Era.  The park is known for its extensive hiking and backpacking opportunities in one of the nation's most pristine wilderness areas.  Birding, history, and many other opportunities to learn and have fun await visitors in this hidden gem of West Texas.",
-    "latLong": "",
-    "states": "TX",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ceb",
-    "name": "Haleakalā",
-    "weatherInfo": "On any given day, the temperatures in the park can range from a high of 80°F (27°C) in Kīpahulu to a low of 30°F (-1°C) at the summit. In either area clouds and rain can quickly replace warm sunshine.\nWeather in the high-elevation summit and wilderness areas of the park is highly unpredictable and changes often. Cool temperatures, intense solar radiation, and rapidly moving clouds are characteristic. On average, the temperature drops about 3°F for every 1,000 foot rise in elevation.",
-    "url": "https://www.nps.gov/hale/index.htm",
-    "fullName": "Haleakal&#257; National Park",
-    "directionsUrl": "http://home.nps.gov/hale/planyourvisit/directions.htm",
-    "directionsInfo": "Located on the island of Maui, Haleakalā National Park extends from the 10,023 foot (3055m) summit of Haleakalā down the southeast flank of the mountain to the Kīpahulu coast near Hana. These two sections of the park are not directly connected by road, but both can be reached from Kahului.\nThere are no gas stations within the park. The last place to get gas in route to the Summit Area is in the town of Pukalani, and along the Hana Highway before Hana is in the town of is in the town of Paia.",
-    "id": "4930BAEB-A3BF-4825-9796-DCD0FD1C3BD5",
-    "parkCode": "hale",
-    "designation": "National Park",
-    "description": "This special place vibrates with stories of ancient and modern Hawaiian culture and protects the bond between the land and its people. The park also cares for endangered species, some of which exist nowhere else. Come visit this special place - renew your spirit amid stark volcanic landscapes and sub-tropical rain forest with an unforgettable hike through the backcountry.",
-    "latLong": "",
-    "states": "HI",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cec",
-    "name": "Hawai'i Volcanoes",
-    "weatherInfo": "The weather at Kīlauea's summit (4000' elevation) varies daily and may be rainy and chilly any time of the year. Temperature varies by elevation. At the summit of the volcano, temperatures may be 12 to 15 degrees cooler than at sea level. The coastal plain at the end of Chain of Craters Road, where lava crossed the road in 2003, is often hot, dry, and windy with the possibility of passing showers.",
-    "url": "https://www.nps.gov/havo/index.htm",
-    "fullName": "Hawai'i Volcanoes National Park",
-    "directionsUrl": "http://www.nps.gov/havo/planyourvisit/directions.htm",
-    "directionsInfo": "Hawai‘i Volcanoes National Park is located on the island of Hawai‘i. From Hilo: 30 miles southwest on Highway 11 (a 45 minute drive); from Kailua-Kona: 96 miles southeast on Highway 11 (2 to 2 1/2 hour drive), or 125 miles through Waimea and Hilo via highways 19 and 11 (2 1/2 to 3 hours).",
-    "id": "D9BF4288-9AC3-4526-9598-BE8920839ACC",
-    "parkCode": "havo",
-    "designation": "National Park",
-    "description": "Volcanoes are monuments to Earth's origin, evidence that its primordial forces are still at work. During a volcanic eruption, we are reminded that our planet is an ever-changing environment whose basic processes are beyond human control. As much as we have altered the face of the Earth to suit our needs, we can only stand in awe before the power of an eruption.",
-    "latLong": "lat:19.3577289581299, long:-155.327972412109",
-    "states": "HI",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8ced",
-    "name": "Hot Springs",
-    "weatherInfo": "Temperatures range from >100°F (38°C) to <20°F (-7°C). \nSpring has the highest average rainfall. \nSummer temperatures frequently reach the triple-digit range and high humidity \nFall begins fall colors and cooler temperatures. Frost starts to become more common.\nWinter  temperatures often fall below 33 degrees and occasionally drop below 0. Roads may be icy. \nYour visit can be more enjoyable by checking the forecast and coming prepared for hikes or walks in the park.",
-    "url": "https://www.nps.gov/hosp/index.htm",
-    "fullName": "Hot Springs National Park",
-    "directionsUrl": "http://www.nps.gov/hosp/planyourvisit/directions.htm",
-    "directionsInfo": "Hot Springs National Park is a 5,500 acre park in the city of Hot Springs.  Bathhouse Row, a quarter mile long collection of eight bathhouses along the east side of Central Avenue, is the most visited area within the national park.",
-    "id": "ED9C0322-68FB-4DE1-A884-61C623281C9D",
-    "parkCode": "hosp",
-    "designation": "National Park",
-    "description": "Water. That's what first attracted people, and they have been coming here ever since to use these soothing thermal waters to heal and relax. Rich and poor alike came for the baths, and a thriving city built up around the hot springs. Together nicknamed \"The American Spa,\" Hot Springs National Park today surrounds the north end of the city of Hot Springs, Arkansas. Come discover it for yourself.",
-    "latLong": "lat:34.5094413757, long:-93.0522232056",
-    "states": "AR",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cee",
-    "name": "Isle Royale",
-    "weatherInfo": "Isle Royale National Park is a remote island wilderness in the middle of Lake Superior.  Weather influences traveling to and from the island, as well as your trip once you arrive.  For the most up-to-date weather information, call (906) 482-0984 or email isro_parkinfo@nps.gov prior to your trip.",
-    "url": "https://www.nps.gov/isro/index.htm",
-    "fullName": "Isle Royale National Park",
-    "directionsUrl": "http://www.nps.gov/isro/planyourvisit/houghton.htm",
-    "directionsInfo": "Isle Royale National Park headquarters is located in Houghton, MI.  Visit the Houghton page on the Isle Royale National Park website for additional information and a map on how to access the visitor center.",
-    "id": "0F6893CF-FC15-4AC5-8C95-E70FC9C21B1A",
-    "parkCode": "isro",
-    "designation": "National Park",
-    "description": "Explore a rugged, isolated island, far from the sights and sounds of civilization. Surrounded by Lake Superior, Isle Royale offers unparalleled solitude and adventures for backpackers, hikers, boaters, kayakers, canoeists and scuba divers. Here, amid stunning scenic beauty, you'll find opportunities for reflection and discovery, and make memories that last a lifetime.",
-    "latLong": "lat:48.0306205749512, long:-88.7701721191406",
-    "states": "MI",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cef",
-    "name": "Joshua Tree",
-    "weatherInfo": "Days are typically clear with less than 25% humidity. Temperatures are most comfortable in the spring and fall, with an average highs around 85°F (29°C) and average lows around 50°F (10°C) respectively. Winter brings cooler days, around 60°F (15°C), and freezing nights. It occasionally snows at higher elevations. Summers are hot, over 100°F (38°C) during the day and not cooling much below 75°F (24°C) at night.",
-    "url": "https://www.nps.gov/jotr/index.htm",
-    "fullName": "Joshua Tree National Park",
-    "directionsUrl": "http://www.nps.gov/jotr/planyourvisit/directions.htm",
-    "directionsInfo": "From I-10, take exit 117 for CA Hwy 62 toward 29 Palms/Yucca Valley. This will allow you to access the West Entrance, the North Entrance, Black Rock, and Indian Cove.\n\nTake exit 168 off I-10 to come in at the park's South Entrance.",
-    "id": "F5CD58FB-05DC-4074-99DA-F327A537F1BC",
-    "parkCode": "jotr",
-    "designation": "National Park",
-    "description": "Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California. Come explore for yourself.",
-    "latLong": "lat:34.020558, long:-116.019618",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf0",
-    "name": "Katmai",
-    "weatherInfo": "Located between the stormy north Pacific Ocean and the even stormier Bering Sea, the Katmai region is often a battleground between weather systems. When you visit, be prepared to encounter all types of weather.  On average, wet and cool conditions predominate in spring, summer, and fall. Winters are drier and colder.",
-    "url": "https://www.nps.gov/katm/index.htm",
-    "fullName": "Katmai National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/katm/planyourvisit/directions.htm",
-    "directionsInfo": "Katmai National Park & Preserve is located on the northern Alaska Peninsula, northwest of Kodiak Island and southwest of Homer, Alaska. The park’s headquarters is in King Salmon, about 290 air miles southwest of Anchorage. Unlike most national parks in the United States, Katmai is almost exclusively accessed by plane or boat.",
-    "id": "B712CB0C-B3DD-48A6-AA4F-CCD72C87F48B",
-    "parkCode": "katm",
-    "designation": "National Park & Preserve",
-    "description": "Katmai National Monument was established in 1918 to protect the volcanically devastated region surrounding Mount Katmai and the Valley of Ten Thousand Smokes. Today, Katmai National Park and Preserve remains an active volcanic landscape, but it also protects 9,000 years of human history as well as important habitat for salmon and thousands of brown bears.",
-    "latLong": "lat:58.303362973933, long:-155.205993652344",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf1",
-    "name": "Kenai Fjords",
-    "weatherInfo": "The weather  Kenai Fjords is difficult to predict and can change rapidly. The area generally enjoys a relatively temperate maritime climate, primarily due to the influence of the Japanese current that flows through the Gulf of Alaska.\n\nSummer daytime temperatures range from the mid 40s to the low 70s (Fahrenheit). Overcast and cool rainy days are frequent. Winter temperatures can range from the low 30s to -20.",
-    "url": "https://www.nps.gov/kefj/index.htm",
-    "fullName": "Kenai Fjords National Park",
-    "directionsUrl": "http://www.nps.gov/kefj/planyourvisit/directions.htm",
-    "directionsInfo": "Kenai Fjords National Park is located just outside the town of Seward in south-central Alaska, 126 miles south of Anchorage. Even though the park is often inaccessible during the winter months, Seward is accessible year-round via the Seward Highway, a National Scenic Byway.\n\nFollow the Seward Highway (AK-1) south from Anchorage. It will become AK-9 around mile 35 (87 miles from Anchorage)with AK-1 heading to Homer and Kenai. Continue on AK-9 to Seward.",
-    "id": "11E73438-0CCC-4441-A76A-1995F67F2D89",
-    "parkCode": "kefj",
-    "designation": "National Park",
-    "description": "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush forests around this vast expanse of ice. Native Alutiiq relied on these resources to nurture a life entwined with the sea. Today, shrinking glaciers bear witness to the effects of our changing climate.",
-    "latLong": "lat:59.7971000671387, long:-150.246566772461",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf2",
-    "name": "Kings Canyon",
-    "weatherInfo": "",
-    "url": "",
-    "fullName": "Kings Canyon National Park",
-    "directionsUrl": "",
-    "directionsInfo": "",
-    "id": "D1031AFD-5B9D-46C8-9CF6-49C05DE0CF17",
-    "parkCode": "kica",
-    "designation": "National Park",
-    "description": "",
-    "latLong": "",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf3",
-    "name": "Kobuk Valley",
-    "weatherInfo": "Snow, rain, and freezing temperatures can occur any time of the year. Always travel with good quality rain gear and warm layers. Be especially careful to stay dry. Hypothermia can set in on a windy, wet day, even when it doesn't feel that cold.",
-    "url": "https://www.nps.gov/kova/index.htm",
-    "fullName": "Kobuk Valley National Park",
-    "directionsUrl": "http://www.nps.gov/kova/planyourvisit/directions.htm",
-    "directionsInfo": "Kobuk Valley National Park is very remote. There are no roads to provide access, so planes take care of most transportation needs.  Commercial airlines provide service from Anchorage to Kotzebue, or from Fairbanks to Bettles. Once in Kotzebue or Bettles, you must fly to the park with authorized air taxis.",
-    "id": "691831BF-F280-4E02-BF4A-FF476BC66B23",
-    "parkCode": "kova",
-    "designation": "National Park",
-    "description": "Caribou, sand dunes, the Kobuk River, Onion Portage - just some of the facets of Kobuk Valley National Park. Half a million caribou migrate through, their tracks crisscrossing sculpted dunes. The Kobuk River is an ancient and current path for people and wildlife. For 9000 years, people came to Onion Portage to harvest caribou as they swam the river. Even today, that rich tradition continues.",
-    "latLong": "lat:67.3913726806641, long:-159.060638427734",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf4",
-    "name": "Lake Clark",
-    "weatherInfo": "Lake Clark has two distinct climate areas: the coast and the interior. The coast is wetter and experiences milder temperatures. The interior gets half to one fourth as much precipitation, but temperatures are hotter in summer and colder in winter.  Frost and snow can occur any time parkwide, but are most common from September to early June. Lakes here typically begins freezing in November and melting in April. Ice conditions dictate whether planes need floats or skis to land on lakes.",
-    "url": "https://www.nps.gov/lacl/index.htm",
-    "fullName": "Lake Clark National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/lacl/planyourvisit/directions.htm",
-    "directionsInfo": "Lake Clark is located on the Alaska Peninsula southwest of Anchorage and north of Katmai National Park. It is not on the road system; therefore, in order to get here you must travel either via plane or by boat. A one to two-hour flight from Anchorage, Kenai, or Homer will provide access to most points within Lake Clark. Fixed-wing aircraft are allowed to land on all suitable lakes, rivers, beaches, gravel bars, and open ground in both the park and preserve unless the area is closed or otherwise restricted.",
-    "id": "5F76F85B-23F4-4616-AA0B-A26E8DE76593",
-    "parkCode": "lacl",
-    "designation": "National Park & Preserve",
-    "description": "Lake Clark National Park is a land of stunning beauty where volcanoes steam, salmon run, bears forage, craggy mountains reflect in shimmering turquoise lakes, and local people and culture still depend on the land and water of their home.  Solitude is found around every bend in the river and shoulder of a mountain.  Venture into the park to become part of the wilderness.",
-    "latLong": "lat:60.1826068795942, long:-154.315093994141",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf5",
-    "name": "Lassen Volcanic",
-    "weatherInfo": "Weather at Lassen can vary dramatically throughout the year. Learn more about Lassen's weather.\nThe nearby town of Susanville has a humid continental climate, with cold winters and very warm, mostly dry summers. Average January temperatures are a high of 40.4 °F (4.7 °C) and a low of 20.8 °F (-6.2 °C). Average July temperatures are a high of 88.4 °F and a low of 49.8 °F. Temperatures reach 90 °F or higher on an average of 36.9 days, and drop to 32 ° or lower on an average of 164 days days annually.",
-    "url": "https://www.nps.gov/lavo/index.htm",
-    "fullName": "Lassen Volcanic National Park",
-    "directionsUrl": "http://www.nps.gov/lavo/planyourvisit/directions.htm",
-    "directionsInfo": "From Interstate 5, take Hwy 44 - 48 miles east to the junction of Hwy 89. Follow Hwy 89 south 1 mile to the north entrance of the park or take Hwy 36 E - 51 miles east to the junction of Hwy 89. Follow Hwy 89 north 6 miles to south entrance of the park.",
-    "id": "9AA4A53C-0331-43CC-99F5-379BC929FFB2",
-    "parkCode": "lavo",
-    "designation": "National Park",
-    "description": "Lassen Volcanic National Park is home to steaming fumaroles, meadows freckled with wildflowers, clear mountain lakes, and numerous volcanoes. Jagged peaks tell the story of its eruptive past while hot water continues to shape the land. Lassen Volcanic offers opportunities to discover the wonder and mysteries of volcanoes and hot water for visitors willing to explore the undiscovered.",
-    "latLong": "",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf6",
-    "name": "Mammoth Cave",
-    "weatherInfo": "Kentucky has a moderate climate with warm, yet moist conditions. Summers average in the high 80s (degrees F); winters average in the low 40s. Southern Kentucky, where Mammoth Cave is located, receives the highest average precipitation for the state, about 50 inches per year, mostly in spring. Winter can bring mild to moderate snow and ice. Storms happen year-round, and can include tornadoes and flooding in low-lying areas, but severe weather is infrequent. The temperature deep in the cave is a constant 54°.",
-    "url": "https://www.nps.gov/maca/index.htm",
-    "fullName": "Mammoth Cave National Park",
-    "directionsUrl": "http://www.nps.gov/maca/planyourvisit/directions.htm",
-    "directionsInfo": "From the North: Take Interstate 65 to Exit 53 (Cave City Exit). Turn right onto KY-70. Follow 70/255 as it becomes the Mammoth Cave Parkway in the park. Follow the Mammoth Cave Parkway to the Visitor Center.\n\nFrom the South: Take Interstate 65 to Exit 48 (Park City Exit). Turn left onto KY-255 and follow 255 as it becomes the Park City Road into the park. Follow Park City Road until it joins the Mammoth Cave Parkway; turn left. Follow the Mammoth Cave Parkway to the Visitor Center.",
-    "id": "6A1737A1-6848-4087-AAF7-68A427247357",
-    "parkCode": "maca",
-    "designation": "National Park",
-    "description": "Mammoth Cave National Park preserves the cave system and a part of the Green River valley and hilly country of south central Kentucky. This is the world's longest known cave system, with more than 400 miles explored. Early guide Stephen Bishop called the cave a \"grand, gloomy and peculiar place,\" but its vast chambers and complex labyrinths have earned its name - Mammoth.",
-    "latLong": "lat:37.1871730685, long:-86.0993814468",
-    "states": "KY",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf7",
-    "name": "Mesa Verde",
-    "weatherInfo": "Spring: Temps range from 40 F to 70 F, but snowstorms can occur as late as May. \n\nSummer: Temps can reach well into the 90s F. Thunderstorms are common in July and August. Be prepared to bring and DRINK plenty of water.\n\nFall: Temps can range from 50 F to 75 F. Snowstorms can occur as early as October. \n\nWinter: Temps can range from the teens to low 30s F. Icy roads are common. Snow tires, all-wheel drive, or chains, may be required. Be prepared with water, snacks, and layers of warm clothing.",
-    "url": "https://www.nps.gov/meve/index.htm",
-    "fullName": "Mesa Verde National Park",
-    "directionsUrl": "http://www.nps.gov/meve/planyourvisit/directions.htm",
-    "directionsInfo": "Mesa Verde National Park is in Southwestern Colorado. The park entrance is along Highway 160, between the towns of of Cortez and Mancos, Colorado. (10 miles east of Cortez; 9 miles west of Mancos; and about 35 miles west of Durango, Colorado.)\n\nOnce you enter the park, the first view of a cliff dwelling is 21 miles (approximately 45 minutes) along a steep, narrow, and winding road.",
-    "id": "BE3A981E-BB55-474D-8A0E-D711408682DC",
-    "parkCode": "meve",
-    "designation": "National Park",
-    "description": "Mesa Verde, Spanish for green table, offers a spectacular look into the lives of the Ancestral Pueblo people who made it their home for over 700 years, from AD 600 to 1300. Today the park protects nearly 5,000 known archeological sites, including 600 cliff dwellings. These sites are some of the most notable and best preserved in the United States.",
-    "latLong": "lat:37.3389974426206, long:-108.410971641541",
-    "states": "CO",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cf8",
-    "name": "Mount Rainier",
-    "weatherInfo": "Weather patterns at Mount Rainier are strongly influenced by the Pacific Ocean and elevation. The climate is generally cool and rainy, with summer highs in the 60s and 70s. While July and August are the sunniest months of the year, rain is very likely in spring, fall, and winter. Visitors should be aware that mountain weather is very changeable. In the higher elevations, like Paradise, winter can last from November to May with many feet of snow on the ground.",
-    "url": "https://www.nps.gov/mora/index.htm",
-    "fullName": "Mount Rainier National Park",
-    "directionsUrl": "http://www.nps.gov/mora/planyourvisit/directions.htm",
-    "directionsInfo": "Mount Rainier National Park is located in west-central Washington state. Several major cities in Washington- Seattle, Tacoma, and Yakima- and Portland, Oregon, are within 200 miles of the park. For GPS to Nisqually Entrance use: 39000 State Route 706 E, Ashford, WA 98304.",
-    "id": "07229CB8-8533-4669-B614-2B884779DD93",
-    "parkCode": "mora",
-    "designation": "National Park",
-    "description": "Ascending to 14,410 feet above sea level, Mount Rainier stands as an icon in the Washington landscape. An active volcano, Mount Rainier is the most glaciated peak in the contiguous U.S.A., spawning six major rivers. Subalpine wildflower meadows ring the icy volcano while ancient forest cloaks Mount Rainier’s lower slopes. Wildlife abounds in the park’s ecosystems. A lifetime of discovery awaits.",
-    "latLong": "lat:46.7407574422, long:-121.915874481",
-    "states": "WA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cfb",
-    "name": "North Cascades",
-    "weatherInfo": "The best weather for visiting the North Cascades generally occurs between mid-June and late-September. Summer daytime temperatures average in the 70's F. Snow is off most trails by mid-July. Autumn and Spring are popular for color and wildlife. Storms are common: always be prepared for a few days of rain and wind. The east side of the Cascade Mountains (Lake Chelan National Recreation Area) is drier and warmer in the summer than the west side. Summer temperatures at Stehekin reach the 90's F.",
-    "url": "https://www.nps.gov/noca/index.htm",
-    "fullName": "North Cascades National Park",
-    "directionsUrl": "http://www.nps.gov/noca/planyourvisit/directions.htm",
-    "directionsInfo": "Access to North Cascades National Park and Ross Lake National Recreation Area is from the State Route 20 corridor. SR 20 (North Cascades Highway) connects with Interstate 5 (Exit 230) at Burlington. From the east, the highway intersects with US 97 at Okanogan and with SR 153 at Twisp. The State Department of Transportation closes a portion of the road between Ross Dam Trailhead and Lone Fir Campground in winter. The Lake Chelan National Recreation Area (Stehekin) is accessible by ferry or plane from Chelan.",
-    "id": "80EB184D-4B6D-4AD2-B6E2-CAAD6312B27D",
-    "parkCode": "noca",
-    "designation": "National Park",
-    "description": "Less than three hours from Seattle, an alpine landscape beckons. Discover communities of life adapted to moisture in the west and recurring fire in the east. Explore jagged peaks crowned by more than 300 glaciers. Listen to cascading waters in forested valleys. Witness a landscape sensitive to the Earth's changing climate. Help steward the ecological heart of the Cascades.",
-    "latLong": "lat:48.8211250305176, long:-121.467964172363",
-    "states": "WA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cfc",
-    "name": "Olympic",
-    "weatherInfo": "Summers tend to be fair and warm, with high temperatures between 65 and 75 degrees F. July, August and September are the driest months, with heavier precipitation during the rest of the year. While winters are mild at lower elevation, snowfall can be heavy in the mountains. It is common for different weather conditions to exist within the park at the same time.  At any time of year, visitors should come prepared for a variety of conditions.",
-    "url": "https://www.nps.gov/olym/index.htm",
-    "fullName": "Olympic National Park",
-    "directionsUrl": "http://www.nps.gov/olym/planyourvisit/directions.htm",
-    "directionsInfo": "You can reach Olympic National Park via the I-5 corridor or by any one of the quieter state roadways. Once you arrive on the Olympic Peninsula connect to Hwy 101 to reach any destinations in and around Olympic National Park.\nFrom Olympia: take I-5 to Hwy 101\nFrom Tacoma: take State Route 16 to Bremerton; take State Route 3 north from Bremerton to State Route 104.\nFrom Washington/Oregon Coast connect to Hwy 101 in Aberdeen.",
-    "id": "81CFE898-AD06-4C0D-8A9B-C8D356273F0D",
-    "parkCode": "olym",
-    "designation": "National Park",
-    "description": "With its incredible range of precipitation and elevation, diversity is the hallmark of Olympic National Park. Encompassing nearly a million acres, the park protects a vast wilderness, thousands of years of human history, and several distinctly different ecosystems, including glacier-capped mountains, old-growth temperate rain forests, and over 70 miles of wild coastline. Come explore!",
-    "latLong": "lat:48.0999013781548, long:-123.425014168024",
-    "states": "WA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cfd",
-    "name": "Petrified Forest",
-    "weatherInfo": "Petrified Forest National Park is a semi-arid grassland. Temperatures range from above 100° F (38° C) to well below freezing. About 10 inches (25.4 cm) of moisture comes during infrequent snow in the winter and often violent summer thunder-storms. Animals and plants are adapted to extremes in temperature and moisture. You should be ready too. Check out the forecast before you arrive and plan accordingly.",
-    "url": "https://www.nps.gov/pefo/index.htm",
-    "fullName": "Petrified Forest National Park",
-    "directionsUrl": "http://www.nps.gov/pefo/planyourvisit/directions.htm",
-    "directionsInfo": "Petrified Forest stretches north and south between I-40 and Highway 180. Westbound I-40 travelers should take Exit 311, drive the 28 miles through the park and connect with Hwy 180 at the south end. Travel 19 miles on Hwy 180 North to return to Interstate 40 via Holbrook. Eastbound I-40 travelers should take Exit 285 into Holbrook then travel 19 miles on Hwy 180 South to the park's south entrance. Drive the 28 miles north through the park to return to I-40.",
-    "id": "1ABD0EFF-AC09-4EA1-8CC1-2351A3E160D0",
-    "parkCode": "pefo",
-    "designation": "National Park",
-    "description": "Did you know that Petrified Forest is more spectacular than ever? While the park has all the wonders known for a century, there are many new adventures and discoveries to share. There are backcountry hikes into areas never open before such as Red Basin and little known areas like the Martha's Butte. There are new exhibits that bring the stories to life. Come rediscover Petrified Forest!",
-    "latLong": "lat:35.0657043, long:-109.7818412",
-    "states": "AZ",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cfe",
-    "name": "Pinnacles",
-    "weatherInfo": "Pinnacles National Park has a Mediterranean climate with hot and dry summers, and mild winters with moderate precipitation. The park is several miles inland from the Pacific Ocean. A wider variation in seasonal temperatures can be expected in the local area. On July or August day, daytime temperatures over 100° F are not uncommon, but a bright sunny day can turn into a very cold night.",
-    "url": "https://www.nps.gov/pinn/index.htm",
-    "fullName": "Pinnacles National Park",
-    "directionsUrl": "http://www.nps.gov/pinn/planyourvisit/directions.htm",
-    "directionsInfo": "Pinnacles National Park is accessible through highway 101 for the West entrance, and highway 25 for the East entrance. From highway 101 you must pass through the City of Soledad to find highway 146 which will lead to West side of Pinnacles. To enter East Pinnacles you must find highway 25 through the City of Hollister coming from the North, and King City through Bitter Water Road (G-13) when coming from the South.",
-    "id": "9B266961-3364-43D2-9A08-82BB5EF5643F",
-    "parkCode": "pinn",
-    "designation": "National Park",
-    "description": "Some 23 million years ago multiple volcanoes erupted, flowed, and slid to form what would become Pinnacles National Park. What remains is a unique landscape. Travelers journey through chaparral, oak woodlands, and canyon bottoms. Hikers enter rare talus caves and emerge to towering rock spires teeming with life: prairie and peregrine falcons, golden eagles, and the inspiring California condor.",
-    "latLong": "lat:36.484516114, long:-121.155279949",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58d1a5b19e0854f8b89164df",
-    "states": "CA",
-    "latLong": "",
-    "description": "Most people know Redwood as home to the tallest trees on Earth. The parks also protect vast prairies, oak woodlands, wild riverways, and nearly 40 miles of rugged coastline.  For thousands of years people have lived in this verdant landscape.  Together, the National Park Service and California State Parks manage these lands for the inspiration, enjoyment, and education of all.",
-    "designation": "National and State Parks",
-    "parkCode": "redw",
-    "id": "041B325C-A34F-4027-8E41-1DF3F9A1D799",
-    "directionsInfo": "Redwood National and State Parks is located in northernmost coastal California - almost on the Oregon border. The parks are about 60-miles long, with four visitor centers from north to south.\n\nWe are a six to seven-hour drive (325 miles) north of San Francisco, a six-hour drive (330 miles) south of Portland, OR and a four-hour drive (170 miles) west of Redding, CA.",
-    "directionsUrl": "http://www.nps.gov/redw/planyourvisit/directions.htm",
-    "fullName": "Redwood National and State Parks",
-    "url": "https://www.nps.gov/redw/index.htm",
-    "weatherInfo": "Visitors should be prepared for cooler and damp weather. Dress in layers and expect to get wet.\nYear-round temperatures along California's redwood coast: mid-40s°F (7°C) to mid-60s°F (18°C). \n\nSummer can be foggy, with highs occasionally reaching low 70s°F (20°C). \nWinters are cooler with considerable rain. October through April averages 60-80 inches of rain over the region.",
-    "name": "Redwood"
-  }
-  {
-    "_id": "58cac2a1af77936a192f8cff",
-    "name": "Rocky Mountain",
-    "weatherInfo": "Winter (Dec–Mar): cold weather, deep snow at higher elevations, and seasonal closures of facilities and roads. Spring (April–May): unpredictable weather, with a mix of warm sunny days and cool days with heavy snow and rain. Many trails are still snow-covered. Trail Ridge Road opens in late May. Summer (Jun–Aug): warmer weather, thunderstorms, and wildflowers. Most park roads and facilities are open. Fall (Sep–Nov): crisp air, blue skies, fall colors, and the elk rut. Trail Ridge Road closes mid-October.",
-    "url": "https://www.nps.gov/romo/index.htm",
-    "fullName": "Rocky Mountain National Park",
-    "directionsUrl": "http://www.nps.gov/romo/planyourvisit/directions.htm",
-    "directionsInfo": "Driving from the east: from I-25, take US Hwy 34 or 36. Driving from the west: from I-70, take US Hwy 40 to Granby to US Hwy 34 to Grand Lake. From mid-October until late May, Trail Ridge Road between Estes Park and Grand Lake is closed to vehicles, so driving between the two takes ~4 hours. The closest airport is Denver International (DIA). There is no public transportation between nearby cities and the park.",
-    "id": "67A56B17-F533-4A56-B2DA-26091C6AD295",
-    "parkCode": "romo",
-    "designation": "National Park",
-    "description": "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
-    "latLong": "lat:40.3663213198, long:-105.562038422",
-    "states": "CO",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d01",
-    "name": "Saguaro",
-    "weatherInfo": "Winter Season\nWith daytime temperature from the low 50's to the high 70's\n\nSummer Season \nAs we get deeper into the summer season, temperatures will range from mid-80's to low 100's. This is a great time to experience the desert as the day breaks or in the late of the day as the sun disappears behind the surrounding mountain ranges. During the late spring and summer months Saguaro National Park only offers interpretive programs on an intermittent basis.",
-    "url": "https://www.nps.gov/sagu/index.htm",
-    "fullName": "Saguaro National Park",
-    "directionsUrl": "http://www.nps.gov/sagu/planyourvisit/directions.htm",
-    "directionsInfo": "Getting to the Rincon Mountain District from the City of Tucson\nTravel east on Broadway or Speedway Boulevard to Freeman Road (turn right on Freeman Road). Drive south on Freeman Road (4 miles [6.5 kilometers] from Speedway, 3 miles [5 kilometers] from Broadway) to Old Spanish Trail. Turn left on Old Spanish Trail. Drive .25 miles (.4 kilometers) southeast on Old Spanish Trail to the Park entrance on the left side of the road.",
-    "id": "A6F169CF-B830-499C-A5EB-A35138C77589",
-    "parkCode": "sagu",
-    "designation": "National Park",
-    "description": "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
-    "latLong": "lat:32.1802778, long:-110.7363889",
-    "states": "AZ",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d02",
-    "name": "Sequoia & Kings Canyon",
-    "weatherInfo": "Because of the extreme elevation range in these parks, weather conditions vary widely between areas. \n\nIn summer, the sequoia groves have comfortable temperatures and the foothills are hot and dry. Snow lingers on high-mountain passes well into summer.\n\nIn fall, some areas close or reduce their hours. Winter brings snow to sequoia groves and rain to the foothills. Be prepared for tire chain requirements. \n\nSpring is a great time to hike in the foothills and snow begins to melt at higher elevations.",
-    "url": "https://www.nps.gov/seki/index.htm",
-    "fullName": "Sequoia & Kings Canyon National Parks",
-    "directionsUrl": "http://www.nps.gov/seki/planyourvisit/directions.htm",
-    "directionsInfo": "Two highways enter the parks. Highway 180 from Fresno leads to Kings Canyon National Park, then continues 30 miles east to Cedar Grove. Highway 198 enters Sequoia National Park from the southwest via Three Rivers. Inside the parks, Highway 198 becomes the Generals Highway. \n\nRVs and trailers over 22 feet should enter the parks via Highway 180.\n\nIn winter, the Generals Highway between the parks often closes. Chains may be required on park roads.\n\nThere are no roads that cross the mountain range.",
-    "id": "7E5A693C-2F63-44FD-B791-31FC8B8B6285",
-    "parkCode": "seki",
-    "designation": "National Parks",
-    "description": "This dramatic landscape testifies to nature's size, beauty, and diversity--huge mountains, rugged foothills, deep canyons, vast caverns, and the world's largest trees. These two parks lie side by side in the southern Sierra Nevada east of the San Joaquin Valley. Weather varies a lot by season and elevation, which ranges from 1,370' to 14,494'. Sequoias grow at 5,000 - 7,000', above usual snowline.",
-    "latLong": "lat:36.4909251522, long:-118.825595677",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d03",
-    "name": "Shenandoah",
-    "weatherInfo": "Shenandoah experiences four distinct seasons. Best know for its fall foliage, the park is also spectacular in spring when the wildflowers and trees are in full bloom. Summer brings lush greens and relief from the hot valleys. The park's elevation encourages as much as a 10 degree temperature difference. In winter, this means that when surrounding lowlands are experiencing rain, the the park can be blanketed in snow and ice. It's always a good idea to be prepared for varying weather.",
-    "url": "https://www.nps.gov/shen/index.htm",
-    "fullName": "Shenandoah National Park",
-    "directionsUrl": "http://www.nps.gov/shen/planyourvisit/directions.htm",
-    "directionsInfo": "Shenandoah National Park is located in the Blue Ridge Mountains of Virginia, west of Washington, D.C. It stretches 105 miles and has four entrances: Front Royal (northern entrance), Simmons Gap, Swift Run Gap, and Rockfish Gap (southern entrance & the northern entrance to the Blue Ridge Parkway). \n\nComplete directions can be found at the accompanying link. The physical address listed is the address to the headquarters, not the park itself.  GPS is sometimes unreliable when navigating to our park.",
-    "id": "E991C8BC-C203-4A09-AFD5-87380CF5C387",
-    "parkCode": "shen",
-    "designation": "National Park",
-    "description": "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is your escape to recreation and re-creation. Cascading waterfalls, spectacular vistas, quiet wooded hollows—take a hike, meander along Skyline Drive, or picnic with the family. 200,000 acres of protected lands are haven to deer, songbirds, the night sky…and you. Plan a Shenandoah escape today!",
-    "latLong": "lat:38.4900674968958, long:-78.4510114789009",
-    "states": "VA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d04",
-    "name": "Theodore Roosevelt",
-    "weatherInfo": "In winter, some or all park roads may be closed due to snow.",
-    "url": "https://www.nps.gov/thro/index.htm",
-    "fullName": "Theodore Roosevelt National Park",
-    "directionsUrl": "http://www.nps.gov/thro/planyourvisit/directions.htm",
-    "directionsInfo": "Theodore Roosevelt National Park is located in the Badlands of western North Dakota. \nThere are three units to the park. The South Unit entrance is in the town of Medora, ND off of Interstate 94 exits 24 and 27. The North Unit entrance is on Highway 85 approximately 14 miles south of Watford City, ND. The remote Elkhorn Ranch Unit sits roughly in the middle of the North and South Units and is accessed via gravel roads. Consult park staff for directions to the Elkhorn Ranch Unit.",
-    "id": "B5FE5682-7981-47DD-AC96-13F4B33A466E",
-    "parkCode": "thro",
-    "designation": "National Park",
-    "description": "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.",
-    "latLong": "lat:46.966667175293, long:-103.449996948242",
-    "states": "ND",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d05",
-    "name": "Virgin Islands",
-    "weatherInfo": "Mostly Perfect!\nThe Tradewinds (the Easterlies) dominate the weather in the Virgin Islands, blowing east to west across the tropical Atlantic. The winter tends to bring stronger winds and less rain, and the summer tends to bring more rain and lighter winds.",
-    "url": "https://www.nps.gov/viis/index.htm",
-    "fullName": "Virgin Islands National Park",
-    "directionsUrl": "http://www.nps.gov/viis/planyourvisit/directions.htm",
-    "directionsInfo": "There are no airports on St. John so you must fly to St. Thomas Cyril E. King Airport (code STT) and travel from there.\nFrom the airport you rent a car and drive or take a taxi to Redhook (west end) St. Thomas.\nFrom there you can either take a car barge to St. John or the people ferry.\nOnce on St. John you can easily walk from the ferry terminal to the Visitor Center.",
-    "id": "C65070FE-942C-4E00-8C2B-64CA33C85B4A",
-    "parkCode": "viis",
-    "designation": "National Park",
-    "description": "Virgin Islands National Park’s hills, valleys and beaches are breathtaking. However, within its 7,000 plus acres on the island of St. John is the complex history of civilizations - both free and enslaved - dating back more than a thousand years, all who utilized the land and the sea for survival. Use the links below to learn about the history, culture and resources of Virgin Islands National Park.",
-    "latLong": "lat:18.351905146, long:-64.7557621002",
-    "states": "VI",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d06",
-    "name": "Voyageurs",
-    "weatherInfo": "There are four distinct seasons in Voyageur country.  The air is temperate during June, July, and August when periods of fine, mild weather prevail.  The frost-free season averages 120 days from June to mid-September.  The average ice-out date is May 3 but varies year to year.  Annual precipitation (rain and snow) averages 25-28 inches in the park and snowfall ranges from 55-70 inches, but is highly variable.  The first measurable snowfall occurs in late October and the last in late April or early May.",
-    "url": "https://www.nps.gov/voya/index.htm",
-    "fullName": "Voyageurs National Park",
-    "directionsUrl": "http://www.nps.gov/voya/planyourvisit/directions.htm",
-    "directionsInfo": "Voyageurs National Park is located in Northern Minnesota. The park shares its northern boundary with Canada and lies just west of the Boundary Water Canoe Area Wilderness. The park visitor centers are accessible by car but in order to truly experience the park, one must leave their vehicle behind and access the park by boat.",
-    "id": "859727CB-2812-40DF-B8DB-D4AE9EA00089",
-    "parkCode": "voya",
-    "designation": "National Park",
-    "description": "Voyageurs National Park lies within the heart of the North American Continent.  Here you can see and touch rocks half as old as the world, experience the life of a voyageur, immerse yourself in the sights and sounds of a boreal forest, view the dark skies, or ply the interconnected water routes.\n\nLeave your car behind and set out on the water highways of the North Woods.",
-    "latLong": "lat:48.5843199822147, long:-93.1617055088282",
-    "states": "MN",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d07",
-    "name": "Wind Cave",
-    "weatherInfo": "Spring:  Highs range from 50 - 70 F with highly variable weather. Spring is the park's wettest season.\n\nSummer:  Warm and generally dry with highs in the 80s F. Thunderstorms are common and can produce large hail and severe lightning. \n\nFall:  Generally dry with warm days and cool nights. Highs in the 50s - 60s F. Lows below freezing are common.\n\nWinter: Highs in the upper 30s F with lows in the 10s F. Snowfall averages 30 inches annually, periodically closing park roads.",
-    "url": "https://www.nps.gov/wica/index.htm",
-    "fullName": "Wind Cave National Park",
-    "directionsUrl": "http://www.nps.gov/wica/planyourvisit/directions.htm",
-    "directionsInfo": "Wind Cave National Park is located in South Dakota about 11 miles north of Hot Springs, or about 22 miles south of Custer, on US Highway 385. The park Visitor Center, where all cave tours begin, is approximately 1/2 mile west of the highway.",
-    "id": "37C48EE0-2881-4D22-8F91-A249AE3B0CD0",
-    "parkCode": "wica",
-    "designation": "National Park",
-    "description": "Bison, elk, and other wildlife roam the rolling prairie grasslands and forested hillsides of one of America's oldest national parks. Below the remnant island of intact prairie sits Wind Cave, one of the longest and most complex caves in the world. Named for barometric winds at its entrance, this maze of passages is home to boxwork, a unique formation rarely found elsewhere.",
-    "latLong": "lat:43.555748462677, long:-103.47825050354",
-    "states": "SD",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d09",
-    "name": "Wrangell - St Elias",
-    "weatherInfo": "Varies widely depending on location in park and time of year.  Visit http://www.nps.gov/wrst/planyourvisit/weather.htm for detailed information.",
-    "url": "https://www.nps.gov/wrst/index.htm",
-    "fullName": "Wrangell - St Elias National Park & Preserve",
-    "directionsUrl": "http://www.nps.gov/wrst/planyourvisit/wrangell-st-elias-visitor-center.htm",
-    "directionsInfo": "The administrative building and main park visitor center are located along the Richardson Highway (Hwy 4), which is a paved state highway that runs through Copper Center, AK. The buildings are 8 miles south of the Glenn Highway and Richardson Highway intersection near Glennallen, Alaska.  This is approximately 200 miles east of Anchorage, AK and 250 miles south of Fairbanks, AK.",
-    "id": "B7944940-3FE5-4F9B-80AB-2FD78A4CDD48",
-    "parkCode": "wrst",
-    "designation": "National Park & Preserve",
-    "description": "Wrangell St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. Mount St. Elias. At 13.2 million acres, it’s the same size as Yellowstone Nat. Park, Yosemite Nat. Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This is a rugged, beautiful area filled with opportunities for adventure.",
-    "latLong": "lat:61.2079391479492, long:-142.242660522461",
-    "states": "AK",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d0a",
-    "name": "Yellowstone",
-    "weatherInfo": "Yellowstone's weather can vary quite a bit, even in a single day. In the summer, daytime highs can exceed 70F (25C), only to drop 20 or more degrees when a thunderstorm rolls through. It can snow during any month of the year, and winter lows frequently drop below zero, especially at night. Bring a range of clothing options, including a warm jacket and rain gear, even in the summer.",
-    "url": "https://www.nps.gov/yell/index.htm",
-    "fullName": "Yellowstone National Park",
-    "directionsUrl": "http://www.nps.gov/yell/planyourvisit/directions.htm",
-    "directionsInfo": "Yellowstone covers nearly 3,500 square miles in the northwest corner of Wyoming (3% of the park is in Montana and 1% is in Idaho). The park has five entrances and the directions to each depend on where your trip originates.",
-    "id": "F58C6D24-8D10-4573-9826-65D42B8B83AD",
-    "parkCode": "yell",
-    "designation": "National Park",
-    "description": "Visit Yellowstone and experience the world's first national park. Marvel at a volcano’s hidden power rising up in colorful hot springs, mudpots, and geysers. Explore mountains, forests, and lakes to watch wildlife and witness the drama of the natural world unfold. Discover the history that led to the conservation of our national treasures “for the benefit and enjoyment of the people.”",
-    "latLong": "lat:44.9912101476, long:-110.691947937",
-    "states": "ID,MT,WY",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d0b",
-    "name": "Yosemite",
-    "weatherInfo": "Yosemite National Park covers nearly 1,200 square miles (3,100 square km) in the Sierra Nevada, with elevations ranging from about 2,000 feet (600 m) to 13,000 ft (4,000 m). Yosemite receives 95% of its precipitation between October and May (and over 75% between November and March). Most of Yosemite is blanketed in snow from about November through May. (Yosemite Valley can be rainy or snowy in any given winter storm.)",
-    "url": "https://www.nps.gov/yose/index.htm",
-    "fullName": "Yosemite National Park",
-    "directionsUrl": "http://www.nps.gov/yose/planyourvisit/driving.htm",
-    "directionsInfo": "You can drive to Yosemite all year and enter via Highways 41, 140, and 120 from the west. Tioga Pass Entrance (via Highway 120 from the east) is closed from around November through late May or June. Hetch Hetchy is open all year but may close intermittently due to snow.\n\nPlease note that GPS units do not always provide accurate directions to or within Yosemite.",
-    "id": "4324B2B4-D1A3-497F-8E6B-27171FAE4DB2",
-    "parkCode": "yose",
-    "designation": "National Park",
-    "description": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.\n\nFirst protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
-    "latLong": "lat:37.8391265869141, long:-119.540840148926",
-    "states": "CA",
-    "__v": 0
-  }
-  {
-    "_id": "58cac2a1af77936a192f8d0c",
-    "name": "Zion",
-    "weatherInfo": "Zion is known for a wide range of weather conditions. Temperatures vary with changes in elevation and day/night temperatures may differ by over 30°F.\n\nIn summer, temperatures in Zion National Park often exceed 100°F/38°C. Zion experiences monsoons from mid-July into September that results in an increased risk of flash floods. Always be aware of the threat of storms and lightning and be prepared for a wide range of weather conditions. Winters are generally mild.",
-    "url": "https://www.nps.gov/zion/index.htm",
-    "fullName": "Zion National Park",
-    "directionsUrl": "http://www.nps.gov/zion/planyourvisit/directions.htm",
-    "directionsInfo": "Zion National Park is located on State Route 9 in Springdale, Utah.",
-    "id": "41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2",
-    "parkCode": "zion",
-    "designation": "National Park",
-    "description": "Follow the paths where ancient native people and pioneers walked. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience wilderness in a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present day adventures. \nUpdates: Follow us on Twitter",
-    "latLong": "lat:37.2020727396, long:-112.988339067",
-    "states": "UT",
-    "__v": 0
-  }
-]
+/* 1 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ccf"),
+    "name" : "Acadia",
+    "weatherInfo" : "Located on Mount Desert Island in Maine, Acadia experiences all four seasons. Summer temperatures range from 45-90F (7-30C). Fall temperatures range from 30-70F (-1-21C). Typically the first frost is in mid-October and first snowfall begins in November and can continue through April with an average accumulation of 73 inches (185 cm). Winter temperatures range from 14-35F (-10 - 2C). Spring temperatures range from 30-70F (-1-21C).",
+    "url" : "https://www.nps.gov/acad/index.htm",
+    "fullName" : "Acadia National Park",
+    "directionsUrl" : "http://www.nps.gov/acad/planyourvisit/directions.htm",
+    "directionsInfo" : "From Boston take I-95 north to Augusta, Maine, then Route 3 east to Ellsworth, and on to Mount Desert Island. For an alternate route, continue on I-95 north to Bangor, Maine, then take Route 1A east to Ellsworth. In Ellsworth, take Route 3 to Mount Desert Island.",
+    "id" : "6DA17C86-088E-4B4D-B862-7C1BD5CF236B",
+    "parkCode" : "acad",
+    "designation" : "National Park",
+    "description" : "People have been drawn to the rugged coast of Maine throughout history. Awed by its beauty and diversity, early 20th-century visionaries donated the land that became Acadia National Park. The park is home to many plants and animals, and the tallest mountain on the U.S. Atlantic coast. Today visitors come to Acadia to hike granite peaks, bike historic carriage roads, or relax and enjoy the scenery.",
+    "latLong" : "lat:44.374358654, long:-68.2598657906",
+    "states" : "ME",
+    "latitude" : "44.374358654",
+    "longitude" : "-68.2598657906",
+    "__v" : 0
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd0"),
+    "name" : "Arches",
+    "weatherInfo" : "Arches is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F.",
+    "url" : "https://www.nps.gov/arch/index.htm",
+    "fullName" : "Arches National Park",
+    "directionsUrl" : "http://www.nps.gov/arch/planyourvisit/directions.htm",
+    "directionsInfo" : "Arches National Park is located in southeast Utah, five miles north of Moab on US 191.\n\nFrom Moab, Utah, drive five miles north on Main Street/US 191. The entrance to the park is on the right.\n\nFrom Interstate 70, take exit 182 (Crescent Junction), then drive south 28 miles on US 191. The entrance to the park is on the left.",
+    "id" : "36240051-018E-4915-B6EA-3F1A7F24FBE4",
+    "parkCode" : "arch",
+    "designation" : "National Park",
+    "description" : "Visit Arches and discover a landscape of contrasting colors, landforms and textures unlike any other in the world. The park has over 2,000 natural stone arches, in addition to hundreds of soaring pinnacles, massive fins and giant balanced rocks. This red rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+    "latLong" : "",
+    "states" : "UT",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd1"),
+    "name" : "Badlands",
+    "weatherInfo" : "The Badlands weather is variable and unpredictable with temperature extremes ranging from 116° F to -40° F. Summers are hot and dry with occasional violent thunderstorms. Hailstorms and occasional tornadoes can descend on the Badlands with sudden fury. Winters are typically cold with 12 to 24 inches of total snowfall.",
+    "url" : "https://www.nps.gov/badl/index.htm",
+    "fullName" : "Badlands National Park",
+    "directionsUrl" : "http://www.nps.gov/badl/planyourvisit/directions.htm",
+    "directionsInfo" : "Badlands National Park is located 75 miles east of Rapid City, South Dakota.\n\nPhysical Addresses for GPS*\n\nPark Headquarters: 25216 Ben Reifel Road, Interior, SD 57750.\nNortheast Entrance (I-90, Exit 131): 21020 SD Hwy 240, Interior, SD 57750.\nPinnacles Entrance (I-90, Exit 110): 24240 Hwy 240, Wall, SD 57790.\nInterior Entrance: 20640 SD Hwy 377, Interior, SD 57750.",
+    "id" : "B170CCF7-7AB9-48FF-950E-31815FD4DBB2",
+    "parkCode" : "badl",
+    "designation" : "National Park",
+    "description" : "The rugged beauty of the Badlands draws visitors from around the world. These striking geologic deposits contain one of the world’s richest fossil beds. Ancient mammals such as the rhino, horse, and saber-toothed cat once roamed here. The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.",
+    "latLong" : "lat:43.7489325553179, long:-101.942207738757",
+    "states" : "SD",
+    "latitude" : "43.7489325553179",
+    "longitude" : "-101.942207738757",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd2"),
+    "name" : "Big Bend",
+    "weatherInfo" : "Variable\n-- February through April often pleasant and comfortable temperatures.\n-- May through August is hot and can be stormy. Temperatures can reach well over 100 degrees in the lower elevations and along the river.\n-- September through January - . Temperatures are cooler; the weather can turn cold any time during these months.",
+    "url" : "https://www.nps.gov/bibe/index.htm",
+    "fullName" : "Big Bend National Park",
+    "directionsUrl" : "http://www.nps.gov/bibe/planyourvisit/directions.htm",
+    "directionsInfo" : "Hwy 118 south from Alpine; Hwy 385 south from Marathon; FM 170 from Presidio through Study Butte.",
+    "id" : "C9056F71-7162-4208-8AE9-2D0AEFA594FD",
+    "parkCode" : "bibe",
+    "designation" : "National Park",
+    "description" : "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and diversity of species is the best in the country. This magical place is Big Bend.",
+    "latLong" : "lat:29.3290000408888, long:-103.207245469093",
+    "states" : "TX",
+    "latitude" : "29.3290000408888",
+    "longitude" : "-103.207245469093",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd3"),
+    "name" : "Biscayne",
+    "weatherInfo" : "The park is situated in a subtropical climate, which ensures sunshine year-round. Winters are normally dry and mild, with occasional fronts bringing wind and little rain. Summer brings hot and humid weather with scattered thunderstorms in the afternoons. The average temperature in January is 68 degrees Fahrenheit and 82 in July. The average rainfall for the area is 2.17 inches in January and 3.95 inches in July. June to November is hurricane season.",
+    "url" : "https://www.nps.gov/bisc/index.htm",
+    "fullName" : "Biscayne National Park",
+    "directionsUrl" : "http://www.nps.gov/bisc/planyourvisit/directions.htm",
+    "directionsInfo" : "The Dante Fascell Visitor Center may be reached from the Florida Turnpike by taking Exit 6 (Speedway Boulevard). Turn left from exit ramp and continue south to SW 328th Street (North Canal Drive). Turn left on 328th Street and continue for four miles to the end of the road. The park entrance is on the left just before the entrance to Homestead Bayfront Marina.",
+    "id" : "FBF9F793-5114-4B61-A5BA-6F9ADDFDF459",
+    "parkCode" : "bisc",
+    "designation" : "National Park",
+    "description" : "Within sight of downtown Miami, yet worlds away, Biscayne protects a rare combination of aquamarine waters, emerald islands, and fish-bejeweled coral reefs. Here too is evidence of 10,000 years of human history, from pirates and shipwrecks to pineapple farmers and presidents. Outdoors enthusiasts can boat, snorkel, camp, watch wildlife…or simply relax in a rocking chair gazing out over the bay.",
+    "latLong" : "lat:25.4829769135, long:-80.2179336548",
+    "latitude" : "25.4829769135",
+    "logitude" : "-80.2179336548",
+    "states" : "FL",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd4"),
+    "name" : "Black Canyon Of The Gunnison",
+    "weatherInfo" : "Today's Weather: http://www.weather.com/weather/today/l/NPBLCA:13:US\n\nCLIMATE\nWeather can vary greatly throughout the day. Summer daytime temperatures range between 55 to 90F (13 to 32C), nights 45 to 60F (7 to 16C). Winter daytime temperatures range between 15 to 40F (-9 to 4C), nights 10 to 20F (-12 to -6C).\n\nAfternoon thunderstorms are common during the summer. Snow accumulation varies greatly year to year. Layered clothing appropriate for the season is recommended.",
+    "url" : "https://www.nps.gov/blca/index.htm",
+    "fullName" : "Black Canyon Of The Gunnison National Park",
+    "directionsUrl" : "http://www.nps.gov/blca/planyourvisit/directions.htm",
+    "directionsInfo" : "7 miles north on CO Highway 347 from the intersection with U.S. Highway 50 east of Montrose",
+    "id" : "BDBD573F-97EF-44E7-A579-471679F2C42A",
+    "parkCode" : "blca",
+    "designation" : "National Park",
+    "description" : "Big enough to be overwhelming, still intimate enough to feel the pulse of time, Black Canyon of the Gunnison exposes you to some of the steepest cliffs, oldest rock, and craggiest spires in North America. With two million years to work, the Gunnison River, along with the forces of weathering, has sculpted this vertical wilderness of rock, water, and sky.",
+    "latLong" : "",
+    "states" : "CO",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd5"),
+    "name" : "Bryce Canyon",
+    "weatherInfo" : "http://forecast.weather.gov/MapClick.php?lat=37.63&lon=-112.17#.VpUamdHUhaR",
+    "url" : "https://www.nps.gov/brca/index.htm",
+    "fullName" : "Bryce Canyon National Park",
+    "directionsUrl" : "http://www.nps.gov/brca/planyourvisit/directions.htm",
+    "directionsInfo" : "From the North:\nTake I-15 south to UT-20 (exit 95). Travel east on UT-20 to US-89. Follow US-89 south to UT-12. Travel east on UT-12 to UT-63. Take UT-63 south to Bryce Canyon National Park.\n\nFrom the South through Zion National Park:\nTake I-15 north to UT-9 (exit 16). Follow UT-9 east through Zion National Park to US-89. Travel north on US-89 to UT-12. Go east on UT-12 to UT-63. Take UT-63 south to Bryce Canyon National Park.",
+    "id" : "6B1D053D-714F-46D1-B410-04BE868F14C1",
+    "parkCode" : "brca",
+    "designation" : "National Park",
+    "description" : "There is no place like Bryce Canyon. Hoodoos (odd-shaped pillars of rock left standing from the forces of erosion) can be found on every continent, but here is the largest collection of hoodoos in the world! Descriptions fail. Photographs do not do it justice. Bring your sense of wonder and imagination when visiting Bryce Canyon National Park.",
+    "latLong" : "lat:37.6392057538033, long:-112.169951498508",
+    "latitude" : "37.6392057538033",
+    "logitude" : "-112.169951498508",
+    "states" : "UT",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd6"),
+    "name" : "Canyonlands",
+    "weatherInfo" : "Canyonlands is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F.",
+    "url" : "https://www.nps.gov/cany/index.htm",
+    "fullName" : "Canyonlands National Park",
+    "directionsUrl" : "http://www.nps.gov/cany/planyourvisit/directions.htm",
+    "directionsInfo" : "Canyonlands National Park is cut into three districts by the Green and Colorado rivers. Island in the Sky district, in the north of the park, is the closest district to Moab, UT. In about 40 minutes, you can reach Island in the Sky via UT 313. The Needles district is in the southeast corner of Canyonlands. The Needles is about an hour's drive from Monticello, UT via UT 211. The Maze district, in the west of the park, is the most remote and challenging. You can reach The Maze via gravel roads from UT 24.",
+    "id" : "319E07D8-E176-41F8-98A9-1E3F8099D0AB",
+    "parkCode" : "cany",
+    "designation" : "National Park",
+    "description" : "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. These areas share a primitive desert atmosphere, but each offers different opportunities for sightseeing and adventure.",
+    "latLong" : "lat:38.3121026863264, long:-109.856624603271",
+    "latitude" : "38.3121026863264",
+    "longitude" : "-109.856624603271",
+    "states" : "UT",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd7"),
+    "name" : "Capitol Reef",
+    "weatherInfo" : "Weather is posted daily; check at the park visitor center for weather updates. Do not enter into narrow canyons if there is a threat of rain or if rain has been falling in the area.",
+    "url" : "https://www.nps.gov/care/index.htm",
+    "fullName" : "Capitol Reef National Park",
+    "directionsUrl" : "http://www.nps.gov/care/planyourvisit/directions.htm",
+    "directionsInfo" : "From I-70: Take exit 149, then take UT-24 west toward Hanksville; continue for 43.8 miles (70.5 km). Turn right to continue on UT-24 west and continue for 37.3 miles (60 km). \n\nFrom I-15: take exit 188 then US-50 east toward Scipio. Left on UT-50; continuing 0.7 miles (1.1 km). Turn right onto US-50 east; continue for 24.4 miles (39.3 km). Turn right onto UT-260 south and continue 4.2 miles (6.8 km), then right on UT-24 for 71.3 miles. \n\nUT-12: North on highway 12 to Torrey, UT. Right onto UT-24.",
+    "id" : "2F05E2B8-CDA3-434E-9C4C-C7DD828CAC3B",
+    "parkCode" : "care",
+    "designation" : "National Park",
+    "description" : "Located in south-central Utah in the heart of red rock country, Capitol Reef National Park is a hidden treasure filled with cliffs, canyons, domes and bridges in the Waterpocket Fold, a geologic monocline (a wrinkle on the earth) extending almost 100 miles.",
+    "latLong" : "lat:38.2821591040548, long:-111.247314452467",
+    "states" : "UT",
+    "latitude" : "38.2821591040548",
+    "longitude" : "-111.247314452467",
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd8"),
+    "name" : "Carlsbad Caverns",
+    "weatherInfo" : "Carlsbad Caverns National Park is located in the Chihuahuan Desert in southeast New Mexico. Summers are hot with temperatures between 90 - low 100s(F). Windy conditions and mild temperatures are common in early spring (March-May) with frequent rain in early fall (August-September). This part of the country also sees cold temperatures in the winter with occasional snow and icy conditions. Most days, the park is enveloped by a gorgeous blue sky with very few clouds, 278 sunny days a year!",
+    "url" : "https://www.nps.gov/cave/index.htm",
+    "fullName" : "Carlsbad Caverns National Park",
+    "directionsUrl" : "http://www.nps.gov/cave/planyourvisit/directions.htm",
+    "directionsInfo" : "To access Carlsbad Caverns National Park's only entrance road, New Mexico Highway 7, turn north from US Hwy 62/180 at White's City, New Mexico - which is 20 miles southwest of Carlsbad, NM and 145 miles northeast of El Paso, Texas. The entrance road stretches a scenic 7-miles (11.3 km) from the park gate at White's City to the visitor center and cavern entrance. The address for the park's visitor center is 727 Carlsbad Caverns Highway, Carlsbad, NM, 88220, located 27 miles from the town of Carlsbad.",
+    "id" : "6FDE39B1-AB4A-4C9A-A5CD-4AF67601CD78",
+    "parkCode" : "cave",
+    "designation" : "National Park",
+    "description" : "High ancient sea ledges, deep rocky canyons, flowering cactus and desert wildlife - treasures above the ground in the Chihuahuan Desert. Hidden beneath the surface are more than 119 known caves - all formed when sulfuric acid dissolved the surrounding limestone leaving behind caverns of all sizes.\n\nClick the \"Calendar\" icon for upcoming events!\nRead interesting \"Park Ranger Blogs\"",
+    "latLong" : "",
+    "states" : "NM",
+    "__v" : 0
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cd9"),
+    "name" : "Channel Islands",
+    "weatherInfo" : "In general, the islands have a Mediterranean climate year-round. Temperatures are relatively stable, with highs averaging in the mid-60s (°F) and lows in the low-50s. However, there are seasonal differences that visitors should take into consideration when visiting the park. In addition, visitors also should be aware that ocean and weather conditions vary considerably from day-to-day and island-to-island. For more information visit: http://www.nps.gov/chis/planyourvisit/weather.htm",
+    "url" : "https://www.nps.gov/chis/index.htm",
+    "fullName" : "Channel Islands National Park",
+    "directionsUrl" : "http://www.nps.gov/chis/planyourvisit/directions.htm",
+    "directionsInfo" : "While the mainland visitor center in Ventura is readily accessible by car or public transportation, the islands are only accessible by park concessionaire boats and planes or private boat. Advanced planning is highly recommended.",
+    "id" : "5595FC7A-F218-4439-8D2E-F47449838820",
+    "parkCode" : "chis",
+    "designation" : "National Park",
+    "description" : "Channel Islands National Park encompasses five remarkable islands and their ocean environment, preserving and protecting a wealth of natural and cultural resources. Isolation over thousands of years has created unique animals, plants, and archeological resources found nowhere else on Earth and helped preserve a place where visitors can experience coastal southern California as it once was.",
+    "latLong" : "lat:34.2480594, long:-119.26687",
+    "states" : "CA",
+    "latitude" : "34.2480594",
+    "longitude" : "-119.26687",
+    "__v" : 0
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cdb"),
+    "name" : "Congaree",
+    "weatherInfo" : "Check the forecast before getting on the road. Conditions can change rapidly within the park. Flooding can happen with little or no warning, so make sure to check water levels for Cedar Creek and the Congaree River.",
+    "url" : "https://www.nps.gov/cong/index.htm",
+    "fullName" : "Congaree National Park",
+    "directionsUrl" : "http://www.nps.gov/cong/planyourvisit/directions.htm",
+    "directionsInfo" : "From Interstate 77, Exit 5\nAt Exit 5 turn onto SC Hwy 48 East/Bluff Road. Following the brown and white \"Congaree National Park\" directional signs, travel approximately 8 miles on and then take a slight right onto Old Bluff Road. Follow Old Bluff Road for 4.5 miles to the park entrance sign, which will be on the right. Proceed one mile to the Harry Hampton Visitor Center. Parking lots will be on the right.",
+    "id" : "EEBA7225-7FF5-4B62-B60C-6BBC66351A4E",
+    "parkCode" : "cong",
+    "designation" : "National Park",
+    "description" : "Astonishing biodiversity exists in Congaree National Park, the largest intact expanse of old growth bottomland hardwood forest remaining in the southeastern United States.   Waters from the Congaree and Wateree Rivers sweep through the floodplain, carrying nutrients and sediments that nourish and rejuvenate this ecosystem and support the growth of national and state champion trees.",
+    "latLong" : "lat:33.9066505432129, long:-80.7971115112305",
+    "latitude" : "33.9066505432129",
+    "longitude" : "-80.7971115112305",
+    "states" : "SC",
+    "__v" : 0
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cdc"),
+    "name" : "Crater Lake",
+    "weatherInfo" : "October through June Crater Lake is snow covered. Snowfall averages 533 inches (1,350 cm) annually, and by early spring, it is typical to have ten to fifteen feet (4 meters) of snow on the ground. \n\nJuly, August, and September are drier and warmer. A typical daytime high temperature during these three months is around 67°F (19°C), but can range from 40°F to 80°F or more (4°C to 27°C). Temperatures cool off rapidly in the evening, with a typical nighttime low around 40°F (4°C).",
+    "url" : "https://www.nps.gov/crla/index.htm",
+    "fullName" : "Crater Lake National Park",
+    "directionsUrl" : "http://www.nps.gov/crla/planyourvisit/directions.htm",
+    "directionsInfo" : "Much of the year, the park's North Entrance is closed to cars. The North Entrance Road closes for the season on November 1 (or earlier if there is significant snowfall) and tends to open in early June.  The park’s South Entrance is open year round. Winter travelers from Roseburg will need to take Route 138 east to Route 230 south to Route 62 east to the park's west entrance. Winter travels from Bend will take Route 97 south to Route 62 north and west to the park's south entrance.",
+    "id" : "7DC1050A-0DDE-4EF9-B777-3C9349BCC4DE",
+    "parkCode" : "crla",
+    "designation" : "National Park",
+    "description" : "Crater Lake inspires awe. Native Americans witnessed it form 7,700 years ago, when a violent eruption triggered the collapse of a towering volcano. Scientists marvel at its purity: fed by rain and snow, it’s the deepest lake in the USA and perhaps the most pristine on earth. Artists, photographers, and sightseers stand in wonder at its blue water and stunning setting. Come visit, and be amazed!",
+    "latLong" : "lat:42.8966964816, long:-122.13429451",
+    "latitude" : "42.8966964816",
+    "longitude" : "-122.13429451",
+    "states" : "OR",
+    "__v" : 0
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cdd"),
+    "name" : "Cuyahoga Valley",
+    "weatherInfo" : "Spring's rain and warming temperatures bring new leaves on trees, blooming wildflowers, and visitors anxious get out on the trail. \n\nSummer temperatures range from 49 to 95 degrees F and can be humid. Dressing in layers is advisable. \n\nFall temperatures can range from low 70s during the day to freezing during the night. Fall foliage often peaks in mid-October.\n\nWinter weather conditions can rapidly change, due to the lake effect snow from Lake Erie. Temperatures vary from mid-30s to below zero.",
+    "url" : "https://www.nps.gov/cuva/index.htm",
+    "fullName" : "Cuyahoga Valley National Park",
+    "directionsUrl" : "http://www.nps.gov/cuva/planyourvisit/directions.htm",
+    "directionsInfo" : "Plane\nCleveland Hopkins International Airport and Akron-Canton Regional Airport offer many daily flights to the area. Car rentals are available at both airports.\n\nBus & Train\nBus stations are located in downtown Cleveland and Akron. The Amtrak station is in downtown Cleveland.\n\nCar\nThe park is easily accessible by car from all directions. A good place to start your visit is at Boston Store Visitor Center located at 1550 Boston Mills Road, Peninsula, Ohio 44264. (81° 33.512' W) (41° 15.803' N).",
+    "id" : "F4D44F29-3F67-498F-B05B-0783473D2708",
+    "parkCode" : "cuva",
+    "designation" : "National Park",
+    "description" : "Though a short distance from the urban areas of Cleveland and Akron, Cuyahoga Valley National Park seems worlds away. The park is a refuge for native plants and wildlife, and provides routes of discovery for visitors. The winding Cuyahoga River gives way to deep forests, rolling hills, and open farmlands. Walk or ride the Towpath Trail to follow the historic route of the Ohio & Erie Canal.",
+    "latLong" : "lat:41.263092, long:-81.558754",
+    "latitude" : "41.263092",
+    "longitude" : "-81.558754",
+    "states" : "OH",
+    "__v" : 0
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cde"),
+    "name" : "Death Valley",
+    "weatherInfo" : "AUTUMN arrives in late October, with warm but pleasant temperatures and generally clear skies.\nWINTER has cool days, chilly nights and rarely, rainstorms. With snow capping the high peaks and low angled winter light, this season is especially beautiful for exploring the valley.\nSPRINGTIME is the most popular time to visit Death Valley. Besides warm and sunny days, the possibility of spring wildflowers is a big attraction.\nSUMMER starts early in Death Valley. By May the valley is too hot for most visitors",
+    "url" : "https://www.nps.gov/deva/index.htm",
+    "fullName" : "Death Valley National Park",
+    "directionsUrl" : "http://www.nps.gov/deva/planyourvisit/directions.htm",
+    "directionsInfo" : "The main road transecting Death Valley National Park from east to west is California Highway 190.\nOn the east in Nevada, U.S. Route 95 parallels the park from north to south with connecting highways at Scotty's Junction (State Route 267), Beatty (State Route 374), and Lathrop Wells (State Route 373).",
+    "id" : "FFC9F9C4-D79D-4CA7-AB0F-7A2AD30061CD",
+    "parkCode" : "deva",
+    "designation" : "National Park",
+    "description" : "In this below-sea-level basin, steady drought and record summer heat make Death Valley a land of extremes. Yet, each extreme has a striking contrast. Towering peaks are frosted with winter snow. Rare rainstorms bring vast fields of wildflowers. Lush oases harbor tiny fish and refuge for wildlife and humans. Despite its morbid name, a great diversity of life survives in Death Valley.",
+    "latLong" : "lat:36.4616666666667, long:-116.866666666667",
+    "latitude" : "36.4616666666667",
+    "longitude" : "long:-116.866666666667",
+    "states" : "CA,NV",
+    "__v" : 0
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cdf"),
+    "name" : "Denali",
+    "weatherInfo" : "Summer is typically cool and wet, with highs typically in the upper 50s to low 60s, and lows in the 40s. On occasion, summer highs reach the low 80s, though this is rare. Snow can fall any month of the year, so be prepared for chilly weather even in summer.\n\nFall colors emerge on the alpine tundra in August and in the low valleys in early September. Winter generally starts in mid-September, with temps often getting down to -40 by January. Spring is a short season in April / May, with highs above freezing.",
+    "url" : "https://www.nps.gov/dena/index.htm",
+    "fullName" : "Denali National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/dena/planyourvisit/directions.htm",
+    "directionsInfo" : "You can drive to Denali from Anchorage or Fairbanks, along Highway 3, which is known as the \"George Parks Highway.\" Fairbanks is about 2 hours north, while Anchorage is 5 hours south of the Denali entrance. You can also reach Denali from either city via the Alaska Railroad, which is operated by the State of Alaska. A small private airstrip is also available near the park entrance for individuals wishing to fly their own small craft to the park.",
+    "id" : "C0BF2A42-E353-4FAE-B4C4-AA0676B58100",
+    "parkCode" : "dena",
+    "designation" : "National Park & Preserve",
+    "description" : "Denali is six million acres of wild land, bisected by one ribbon of road. Travelers along it see the relatively low-elevation taiga forest give way to high alpine tundra and snowy mountains, culminating in North America's tallest peak, 20,310' Denali. Wild animals large and small roam un-fenced lands, living as they have for ages. Solitude, tranquility and wilderness await.",
+    "latLong" : "",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce0"),
+    "name" : "Dry Tortugas",
+    "weatherInfo" : "The climate in the Dry Tortugas is subtropical, which basically means that it has warm and tropical weather in the range of 60°F to 90°F. The two main seasons are the winter stormy season from December through March which is windier and sees rougher seas, and the summertime tropical storm season from June through November where there is a higher chance of isolated storms. During the summers it is hot and humid. During the winter the temperature is milder and drier.",
+    "url" : "https://www.nps.gov/drto/index.htm",
+    "fullName" : "Dry Tortugas National Park",
+    "directionsUrl" : "http://www.nps.gov/drto/planyourvisit/directions.htm",
+    "directionsInfo" : "Dry Tortugas National Park is one of the most remote parks in the National Park System. Located approximately 70 miles west of Key West it is accessible only by a daily concession ferry, private boats, charter boats, or seaplane.",
+    "id" : "167A05D1-5793-49E0-89FE-0A1DDFA9A7F4",
+    "parkCode" : "drto",
+    "designation" : "National Park",
+    "description" : "Almost 70 miles (113 km) west of Key West lies the remote Dry Tortugas National Park. The 100-square mile park is mostly open water with seven small islands.  Accessible only by boat or seaplane, the park is known the world over as the home of magnificent Fort Jefferson, picturesque blue waters, superlative coral reefs and marine life,   and the vast assortment of bird life that frequent the area.",
+    "latLong" : "lat:24.6295833588, long:-82.9223480225",
+    "latitude" : "24.6295833588",
+    "longitude" : "long:-82.9223480225",
+    "states" : "FL",
+    "__v" : 0
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce1"),
+    "name" : "Everglades",
+    "weatherInfo" : "The climate in Florida is known to be mild and sunny.The average annual temperatures for South Florida and the Keys range from 74° to 77°F (23° to 25°C). There are two seasons at the Everglades National Park: the wet season and the dry season. The wet season runs from Mid-May to November and the dry season runs from December to mid-May.",
+    "url" : "https://www.nps.gov/ever/index.htm",
+    "fullName" : "Everglades National Park",
+    "directionsUrl" : "http://www.nps.gov/ever/planyourvisit/directions.htm",
+    "directionsInfo" : "Directions to Ernest Coe Visitor Center\n40001 State Road 9336, Homestead, FL 33034\n\nVisitors coming from the Miami area and points north should take the Florida Turnpike (Route 821) south until it ends merging with U.S. 1 at Florida City. Turn right at the first traffic light onto Palm Drive (State Road 9336/SW 344th St.) and follow the signs to the park.\n\nVisitors driving north from the Florida Keys should turn left on Palm Drive in Florida City and follow the signs to the park.",
+    "id" : "5EA02193-276A-4037-B7DB-5765A56935FD",
+    "parkCode" : "ever",
+    "designation" : "National Park",
+    "description" : "Everglades National Park protects an unparalleled landscape that provides important habitat for numerous rare and endangered species like the manatee,  American crocodile, and the elusive Florida panther.\n\nAn international treasure as well -  a World Heritage Site, International Biosphere Reserve, a Wetland of International Importance, and a specially protected area under the Cartagena Treaty.",
+    "latLong" : "lat:25.3716144562, long:-80.9548873901",
+    "latitude" : "25.3716144562",
+    "longitude" : "-80.9548873901",
+    "states" : "FL",
+    "__v" : 0
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce2"),
+    "name" : "Gates Of The Arctic",
+    "weatherInfo" : "The climate of Gates pf the Arctic National Park & Preserve is generally classified as arctic and sub-arctic, with exceptionally cold winters, relatively mild summers, low annual precipitation, and generally high winds. The weather is influenced by many different systems, and can change rapidly.",
+    "url" : "https://www.nps.gov/gaar/index.htm",
+    "fullName" : "Gates Of The Arctic National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/gaar/planyourvisit/directions.htm",
+    "directionsInfo" : "Gates of the Arctic is a wilderness park, with no roads or trails into the park lands, so visitors must fly or hike into the park. Access begins in Fairbanks, Alaska & there are several small airlines that provide daily flights into the communities of Bettles and Anaktuvuk Pass, and Coldfoot. Most visitors access the park by air taxi or hike in from the Dalton Highway or from the village of Anaktuvuk Pass. River crossings are necessary from both locations.",
+    "id" : "BC195D18-71C8-4A99-BF8E-10BFAB849679",
+    "parkCode" : "gaar",
+    "designation" : "National Park & Preserve",
+    "description" : "This vast landscape does not contain any roads or trails. Visitors discover intact ecosystems where people have lived with the land for thousands of years. Wild rivers meander through glacier-carved valleys, caribou migrate along age-old trails, endless summer light fades into aurora-lit night skies of winter. It remains virtually unchanged except by the forces of nature.",
+    "latLong" : "",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce3"),
+    "name" : "Glacier Bay",
+    "weatherInfo" : "Summer temperatures average 50° to 60° F (10° to 15° C). Rain is the norm in lush southeast Alaska. It is best to be prepared to enjoy the park in any kind of weather, especially rain. Suggested clothing includes waterproof boots, rain gear, a hat, gloves, wool or pile layers or a warm coat. Good rain gear is essential here. April, May and June are usually the driest months of the year. September and October tend to be the wettest.",
+    "url" : "https://www.nps.gov/glba/index.htm",
+    "fullName" : "Glacier Bay National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/glba/planyourvisit/directions.htm",
+    "directionsInfo" : "Glacier Bay National Park and Preserve lies west of Juneau, Alaska, and can only be reached by plane or boat. The only road in the area merely connects the small town of Gustavus and its airfield to park headquarters at Bartlett Cove (10 miles). Alaska Airlines provides daily jet service from Juneau to Gustavus  in the summer months. Year-round scheduled air service is also provided by a variety of small air taxis and charters. The Alaska Marine Highway ferries also provide regular service from Juneau.",
+    "id" : "3682DBDE-6746-4979-86CC-2358C5B72661",
+    "parkCode" : "glba",
+    "designation" : "National Park & Preserve",
+    "description" : "Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glacier Bay National Park is a highlight of Alaska's Inside Passage and part of a 25-million acre World Heritage Site—one of the world’s largest international protected areas. From sea to summit, Glacier Bay offers limitless opportunities for adventure and inspiration.",
+    "latLong" : "lat:58.8195190429688, long:-136.967208862305",
+    "latitude" : "58.8195190429688",
+    "longitude" : "-136.967208862305",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce4"),
+    "name" : "Glacier",
+    "weatherInfo" : "Glacier's weather is highly variable and can be extreme. Expect warm sunny summer days and in the winter the temperatures can fall well below freezing. Glacier's geography, straddling the Continental Divide, sets the stage for clashes of two very different climates. Warm, wet Pacific air moves in from the west, and cold dry Arctic air from the northeast. They meet at the Divide.",
+    "url" : "https://www.nps.gov/glac/index.htm",
+    "fullName" : "Glacier National Park",
+    "directionsUrl" : "http://www.nps.gov/glac/planyourvisit/directions.htm",
+    "directionsInfo" : "Glacier National Park is located in the northwest corner of Montana along the spine of the Rocky Mountains.\nBy Car you can access Glacier via Highway 2, which runs along the southern boundary of the park. You can reach the east side of the park via Highway 89.\n\nThe nearest airports are in Kalispell and Great Falls, Montana",
+    "id" : "2B5178C6-2446-488C-AC31-47E3CEBF7159",
+    "parkCode" : "glac",
+    "designation" : "National Park",
+    "description" : "As the Crown of the Continent, Glacier is the headwaters for streams that flow to the Pacific Ocean, the Gulf of Mexico, and to Hudson's Bay. What happens here affects waters in a huge section of North America. Due to a detection of invasive mussel populations in central Montana, Glacier has closed all park waters to boating until further notice. Please see the press release for further details.",
+    "latLong" : "",
+    "states" : "MT",
+    "__v" : 0
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce5"),
+    "name" : "Grand Canyon",
+    "weatherInfo" : "This weather varies with cold winters and mild pleasant summers, moderate humidity, and considerable diurnal temperature changes at the higher elevations, with hot and drier summers at the bottom of the Grand Canyon along with cool damp winters. Summer thunderstorms and winter snowfall adds to the weather variety in this region.",
+    "url" : "https://www.nps.gov/grca/index.htm",
+    "fullName" : "Grand Canyon National Park",
+    "directionsUrl" : "http://www.nps.gov/grca/planyourvisit/directions.htm",
+    "directionsInfo" : "South Rim: Open all year, is located 60 miles north of Williams, Arizona (via route 64 from Interstate 40) and 80 miles northwest of Flagstaff (via route 180). Grand Canyon lies entirely within the state of Arizona.\n\n North Rim: located 30 miles south of Jacob Lake on Highway 67; the actual rim of the canyon is an additional 14 miles south. Jacob Lake, AZ is located in northern Arizona on Highway 89A, not far from the Utah border.",
+    "id" : "B7FF43E5-3A95-4C8E-8DBE-72D8608D6588",
+    "parkCode" : "grca",
+    "designation" : "National Park",
+    "description" : "Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size \n\nThe South Rim of the park is open all year \nThe North Rim of the park is closed for winter. \nThe North Rim reopens on May 15 for the 2017 Season",
+    "latLong" : "lat:36.0567889362574, long:-112.13723257184",
+    "latitude" : "36.0567889362574",
+    "longitude" : "-112.13723257184",
+    "states" : "AZ",
+    "__v" : 0
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce6"),
+    "name" : "Grand Teton",
+    "weatherInfo" : "Jackson Hole has long, cold winters; snow and frost are possible any month. \nmid-April, May & June - Mild days and cool nights alternate with rain and snow.\nJuly & August - Warm days and cool nights prevail, with afternoon thundershowers common.\nSeptember, October & November - Sunny days and cold nights alternate with rain and occasional snowstorms.\nDecember to mid-April - Between storms the days are sunny and nights are frigid. Snow blankets the mountains and valley.",
+    "url" : "https://www.nps.gov/grte/index.htm",
+    "fullName" : "Grand Teton National Park",
+    "directionsUrl" : "http://www.nps.gov/grte/planyourvisit/directions.htm",
+    "directionsInfo" : "Grand Teton National Park is located in northwestern Wyoming north of the town of Jackson, Wyoming and south of Yellowstone National Park.",
+    "id" : "FF73E2AA-E274-44E1-A8F5-9DD998B0F579",
+    "parkCode" : "grte",
+    "designation" : "National Park",
+    "description" : "Rising above a scene rich with extraordinary wildlife, pristine lakes, and alpine terrain, the Teton Range stands monument to the people who fought to protect it. These are mountains of the imagination. Mountains that led to the creation of Grand Teton National Park where you can explore over two hundred miles of trails, float the Snake River or enjoy the serenity of this remarkable place.",
+    "latLong" : "lat:43.658708029, long:-110.714820862",
+    "latitude" : "43.658708029",
+    "longitude" : "-110.714820862",
+    "states" : "WY",
+    "__v" : 0
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce7"),
+    "name" : "Great Basin",
+    "weatherInfo" : "There is almost an 8,000 ft (2,400 m) difference in elevation between Wheeler Peak and the valley floor. Weather conditions in the park vary with elevation. In late spring and early summer, days in the valley may be hot, yet the snow pack may not have melted in the higher elevations. The Great Basin is a desert, with low relative humidity and sharp drops in temperature at night. In the summer, fierce afternoon thunderstorms are common. It can snow any time of the year at high elevations.",
+    "url" : "https://www.nps.gov/grba/index.htm",
+    "fullName" : "Great Basin National Park",
+    "directionsUrl" : "http://home.nps.gov/grba/planyourvisit/directions.htm",
+    "directionsInfo" : "From the East or West: From U.S. Highway 6 & 50, turn south on Nevada State Highway 487 and travel 5 miles to Baker, NV. In Baker turn west on Highway 488 and travel 5 miles to the park. From the South (Utah): Travel north on Utah State Highway 21 through Milford, UT and Garrison, UT, Highway 487. Turn west on Highway 488 in Baker and travel 5 miles to the park. From the South (Nevada): Travel north on U.S. Highway 93. No public transportation is available to, or in, Great Basin National Park.",
+    "id" : "4C1A549B-080F-4522-9CA7-67BB5A0845CA",
+    "parkCode" : "grba",
+    "designation" : "National Park",
+    "description" : "From the 13,000-foot summit of Wheeler Peak, to the sage-covered foothills, Great Basin National Park is a place to sample the stunning diversity of the larger Great Basin region. Come and partake of the solitude of the wilderness, walk among ancient bristlecone pines, bask in the darkest of night skies, and explore mysterious subterranean passages. There's a whole lot more than just desert here!",
+    "latLong" : "lat:39.004588404015, long:-114.218688964844",
+    "latitude" : "39.004588404015",
+    "longitude" : "-114.218688964844",
+    "states" : "NV",
+    "__v" : 0
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce8"),
+    "name" : "Great Sand Dunes",
+    "weatherInfo" : "Temperatures are relatively cool all year, thanks to the park and preserve's high elevation. Conditions are most often calm, but winds can arise, especially in spring and during storm fronts.  Daytime temperatures feel warmer here year round due to intense high-altitude sunlight, and a scorching mid-day summer sand surface. Plan to explore the dunes morning or evening during summer. Nights are cool in summer, and frigid in winter. Visit the Great Sand Dunes website for the most accurate weather forecasts.",
+    "url" : "https://www.nps.gov/grsa/index.htm",
+    "fullName" : "Great Sand Dunes National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/grsa/planyourvisit/directions.htm",
+    "directionsInfo" : "To access the main park area, including the Dunes Parking Lot, Visitor Center, and Pinyon Flats Campground, take US 160 to CO 150 from the south, or CO 17 to Lane 6 to CO 150 from the west. The national park is at the north end of CO 150.",
+    "id" : "461D40CC-4379-4C1B-ADB8-3563147F61A1",
+    "parkCode" : "grsa",
+    "designation" : "National Park & Preserve",
+    "description" : "The tallest dunes in North America are the centerpiece in a diverse landscape of grasslands, wetlands, conifer and aspen forests, alpine lakes, and tundra. Experience this diversity through hiking, sand sledding, splashing in Medano Creek, wildlife watching, and more!",
+    "latLong" : "lat:37.7328987121582, long:-105.512001037598",
+    "latitude" : "37.7328987121582",
+    "longitude" : "-105.512001037598",
+    "states" : "CO",
+    "__v" : 0
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ce9"),
+    "name" : "Great Smoky Mountains",
+    "weatherInfo" : "Elevations in the park range from approximately 875 feet to 6,643 feet and the topography can drastically affect local weather. Temperatures can vary 10-20 degrees Fahrenheit from mountain base to top, and clear skies lower down do not guarantee equally pleasant weather at higher elevations. Visit http://www.nps.gov/grsm/planyourvisit/weather.htm for seasonal weather information and links to local forecasts.",
+    "url" : "https://www.nps.gov/grsm/index.htm",
+    "fullName" : "Great Smoky Mountains National Park",
+    "directionsUrl" : "http://www.nps.gov/grsm/planyourvisit/directions.htm",
+    "directionsInfo" : "Great Smoky Mountains National Park straddles the borders of the states of Tennessee and North Carolina. The three main entrances to the park are in the Gatlinburg, TN; Townsend, TN; and Cherokee, NC.",
+    "id" : "D9819727-18DF-4A84-BDDE-D4F2696DE340",
+    "parkCode" : "grsm",
+    "designation" : "National Park",
+    "description" : "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park.",
+    "latLong" : "lat:35.6852775067091, long:-83.5369169712067",
+    "latitude" : "35.6852775067091",
+    "longitude" : "-83.5369169712067",
+    "states" : "NC,TN",
+    "__v" : 0
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cea"),
+    "name" : "Guadalupe Mountains",
+    "weatherInfo" : "Weather in the Guadalupe Mountains can change in an instant. In the Spring and Summer, average temperatures vary with highs between 70F-80F+ with evening lows in the 40F-60F range. The Fall and Winter bring milder temperatures with highs in between 50F-60F with evening lows in the 30F-50F range.",
+    "url" : "https://www.nps.gov/gumo/index.htm",
+    "fullName" : "Guadalupe Mountains National Park",
+    "directionsUrl" : "http://www.nps.gov/gumo/planyourvisit/directions.htm",
+    "directionsInfo" : "Guadalupe Mountains National Park is located on the north side of US Hwy 62/180. \nIf you are traveling east from El Paso, TX, we are 110 miles East of the city. Follow US Hwy 62/180 North to the Pine Springs Visitor Center. \nIf you are traveling from Van Horn, TX, you will travel north on US 54 and make a left hand turn at the junction of US 62/180 to arrive at the park.\nIf you are traveling west from Carlsbad, NM, you will travel on US Hwy 62/180 South and cross into Texas. Follow signs to the park.",
+    "id" : "6510001B-685D-4688-A963-4ECE7AB609DB",
+    "parkCode" : "gumo",
+    "designation" : "National Park",
+    "description" : "Guadalupe Mountains National Park is the world's premier example of a fossil reef from the Permian Era.  The park is known for its extensive hiking and backpacking opportunities in one of the nation's most pristine wilderness areas.  Birding, history, and many other opportunities to learn and have fun await visitors in this hidden gem of West Texas.",
+    "latLong" : "",
+    "states" : "TX",
+    "__v" : 0
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ceb"),
+    "name" : "Haleakalā",
+    "weatherInfo" : "On any given day, the temperatures in the park can range from a high of 80°F (27°C) in Kīpahulu to a low of 30°F (-1°C) at the summit. In either area clouds and rain can quickly replace warm sunshine.\nWeather in the high-elevation summit and wilderness areas of the park is highly unpredictable and changes often. Cool temperatures, intense solar radiation, and rapidly moving clouds are characteristic. On average, the temperature drops about 3°F for every 1,000 foot rise in elevation.",
+    "url" : "https://www.nps.gov/hale/index.htm",
+    "fullName" : "Haleakal&#257; National Park",
+    "directionsUrl" : "http://home.nps.gov/hale/planyourvisit/directions.htm",
+    "directionsInfo" : "Located on the island of Maui, Haleakalā National Park extends from the 10,023 foot (3055m) summit of Haleakalā down the southeast flank of the mountain to the Kīpahulu coast near Hana. These two sections of the park are not directly connected by road, but both can be reached from Kahului.\nThere are no gas stations within the park. The last place to get gas in route to the Summit Area is in the town of Pukalani, and along the Hana Highway before Hana is in the town of is in the town of Paia.",
+    "id" : "4930BAEB-A3BF-4825-9796-DCD0FD1C3BD5",
+    "parkCode" : "hale",
+    "designation" : "National Park",
+    "description" : "This special place vibrates with stories of ancient and modern Hawaiian culture and protects the bond between the land and its people. The park also cares for endangered species, some of which exist nowhere else. Come visit this special place - renew your spirit amid stark volcanic landscapes and sub-tropical rain forest with an unforgettable hike through the backcountry.",
+    "latLong" : "",
+    "states" : "HI",
+    "__v" : 0
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cec"),
+    "name" : "Hawai'i Volcanoes",
+    "weatherInfo" : "The weather at Kīlauea's summit (4000' elevation) varies daily and may be rainy and chilly any time of the year. Temperature varies by elevation. At the summit of the volcano, temperatures may be 12 to 15 degrees cooler than at sea level. The coastal plain at the end of Chain of Craters Road, where lava crossed the road in 2003, is often hot, dry, and windy with the possibility of passing showers.",
+    "url" : "https://www.nps.gov/havo/index.htm",
+    "fullName" : "Hawai'i Volcanoes National Park",
+    "directionsUrl" : "http://www.nps.gov/havo/planyourvisit/directions.htm",
+    "directionsInfo" : "Hawai‘i Volcanoes National Park is located on the island of Hawai‘i. From Hilo: 30 miles southwest on Highway 11 (a 45 minute drive); from Kailua-Kona: 96 miles southeast on Highway 11 (2 to 2 1/2 hour drive), or 125 miles through Waimea and Hilo via highways 19 and 11 (2 1/2 to 3 hours).",
+    "id" : "D9BF4288-9AC3-4526-9598-BE8920839ACC",
+    "parkCode" : "havo",
+    "designation" : "National Park",
+    "description" : "Volcanoes are monuments to Earth's origin, evidence that its primordial forces are still at work. During a volcanic eruption, we are reminded that our planet is an ever-changing environment whose basic processes are beyond human control. As much as we have altered the face of the Earth to suit our needs, we can only stand in awe before the power of an eruption.",
+    "latLong" : "lat:19.3577289581299, long:-155.327972412109",
+    "latitude" : "19.3577289581299",
+    "longitude" : "-155.327972412109",
+    "states" : "HI",
+    "__v" : 0
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8ced"),
+    "name" : "Hot Springs",
+    "weatherInfo" : "Temperatures range from >100°F (38°C) to <20°F (-7°C). \nSpring has the highest average rainfall. \nSummer temperatures frequently reach the triple-digit range and high humidity \nFall begins fall colors and cooler temperatures. Frost starts to become more common.\nWinter  temperatures often fall below 33 degrees and occasionally drop below 0. Roads may be icy. \nYour visit can be more enjoyable by checking the forecast and coming prepared for hikes or walks in the park.",
+    "url" : "https://www.nps.gov/hosp/index.htm",
+    "fullName" : "Hot Springs National Park",
+    "directionsUrl" : "http://www.nps.gov/hosp/planyourvisit/directions.htm",
+    "directionsInfo" : "Hot Springs National Park is a 5,500 acre park in the city of Hot Springs.  Bathhouse Row, a quarter mile long collection of eight bathhouses along the east side of Central Avenue, is the most visited area within the national park.",
+    "id" : "ED9C0322-68FB-4DE1-A884-61C623281C9D",
+    "parkCode" : "hosp",
+    "designation" : "National Park",
+    "description" : "Water. That's what first attracted people, and they have been coming here ever since to use these soothing thermal waters to heal and relax. Rich and poor alike came for the baths, and a thriving city built up around the hot springs. Together nicknamed \"The American Spa,\" Hot Springs National Park today surrounds the north end of the city of Hot Springs, Arkansas. Come discover it for yourself.",
+    "latLong" : "lat:34.5094413757, long:-93.0522232056",
+    "latitude" : "34.5094413757",
+    "longitude" : "-93.0522232056",
+    "states" : "AR",
+    "__v" : 0
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cee"),
+    "name" : "Isle Royale",
+    "weatherInfo" : "Isle Royale National Park is a remote island wilderness in the middle of Lake Superior.  Weather influences traveling to and from the island, as well as your trip once you arrive.  For the most up-to-date weather information, call (906) 482-0984 or email isro_parkinfo@nps.gov prior to your trip.",
+    "url" : "https://www.nps.gov/isro/index.htm",
+    "fullName" : "Isle Royale National Park",
+    "directionsUrl" : "http://www.nps.gov/isro/planyourvisit/houghton.htm",
+    "directionsInfo" : "Isle Royale National Park headquarters is located in Houghton, MI.  Visit the Houghton page on the Isle Royale National Park website for additional information and a map on how to access the visitor center.",
+    "id" : "0F6893CF-FC15-4AC5-8C95-E70FC9C21B1A",
+    "parkCode" : "isro",
+    "designation" : "National Park",
+    "description" : "Explore a rugged, isolated island, far from the sights and sounds of civilization. Surrounded by Lake Superior, Isle Royale offers unparalleled solitude and adventures for backpackers, hikers, boaters, kayakers, canoeists and scuba divers. Here, amid stunning scenic beauty, you'll find opportunities for reflection and discovery, and make memories that last a lifetime.",
+    "latLong" : "lat:48.0306205749512, long:-88.7701721191406",
+    "latitude" : "48.0306205749512",
+    "longitude" : "-88.7701721191406",
+    "states" : "MI",
+    "__v" : 0
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cef"),
+    "name" : "Joshua Tree",
+    "weatherInfo" : "Days are typically clear with less than 25% humidity. Temperatures are most comfortable in the spring and fall, with an average highs around 85°F (29°C) and average lows around 50°F (10°C) respectively. Winter brings cooler days, around 60°F (15°C), and freezing nights. It occasionally snows at higher elevations. Summers are hot, over 100°F (38°C) during the day and not cooling much below 75°F (24°C) at night.",
+    "url" : "https://www.nps.gov/jotr/index.htm",
+    "fullName" : "Joshua Tree National Park",
+    "directionsUrl" : "http://www.nps.gov/jotr/planyourvisit/directions.htm",
+    "directionsInfo" : "From I-10, take exit 117 for CA Hwy 62 toward 29 Palms/Yucca Valley. This will allow you to access the West Entrance, the North Entrance, Black Rock, and Indian Cove.\n\nTake exit 168 off I-10 to come in at the park's South Entrance.",
+    "id" : "F5CD58FB-05DC-4074-99DA-F327A537F1BC",
+    "parkCode" : "jotr",
+    "designation" : "National Park",
+    "description" : "Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California. Come explore for yourself.",
+    "latLong" : "lat:34.020558, long:-116.019618",
+    "latitude" : "34.020558",
+    "longitude" : "-116.019618",
+    "states" : "CA",
+    "__v" : 0
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf0"),
+    "name" : "Katmai",
+    "weatherInfo" : "Located between the stormy north Pacific Ocean and the even stormier Bering Sea, the Katmai region is often a battleground between weather systems. When you visit, be prepared to encounter all types of weather.  On average, wet and cool conditions predominate in spring, summer, and fall. Winters are drier and colder.",
+    "url" : "https://www.nps.gov/katm/index.htm",
+    "fullName" : "Katmai National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/katm/planyourvisit/directions.htm",
+    "directionsInfo" : "Katmai National Park & Preserve is located on the northern Alaska Peninsula, northwest of Kodiak Island and southwest of Homer, Alaska. The park’s headquarters is in King Salmon, about 290 air miles southwest of Anchorage. Unlike most national parks in the United States, Katmai is almost exclusively accessed by plane or boat.",
+    "id" : "B712CB0C-B3DD-48A6-AA4F-CCD72C87F48B",
+    "parkCode" : "katm",
+    "designation" : "National Park & Preserve",
+    "description" : "Katmai National Monument was established in 1918 to protect the volcanically devastated region surrounding Mount Katmai and the Valley of Ten Thousand Smokes. Today, Katmai National Park and Preserve remains an active volcanic landscape, but it also protects 9,000 years of human history as well as important habitat for salmon and thousands of brown bears.",
+    "latLong" : "lat:58.303362973933, long:-155.205993652344",
+    "latitude" : "58.303362973933",
+    "longitude" : "-155.205993652344",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf1"),
+    "name" : "Kenai Fjords",
+    "weatherInfo" : "The weather  Kenai Fjords is difficult to predict and can change rapidly. The area generally enjoys a relatively temperate maritime climate, primarily due to the influence of the Japanese current that flows through the Gulf of Alaska.\n\nSummer daytime temperatures range from the mid 40s to the low 70s (Fahrenheit). Overcast and cool rainy days are frequent. Winter temperatures can range from the low 30s to -20.",
+    "url" : "https://www.nps.gov/kefj/index.htm",
+    "fullName" : "Kenai Fjords National Park",
+    "directionsUrl" : "http://www.nps.gov/kefj/planyourvisit/directions.htm",
+    "directionsInfo" : "Kenai Fjords National Park is located just outside the town of Seward in south-central Alaska, 126 miles south of Anchorage. Even though the park is often inaccessible during the winter months, Seward is accessible year-round via the Seward Highway, a National Scenic Byway.\n\nFollow the Seward Highway (AK-1) south from Anchorage. It will become AK-9 around mile 35 (87 miles from Anchorage)with AK-1 heading to Homer and Kenai. Continue on AK-9 to Seward.",
+    "id" : "11E73438-0CCC-4441-A76A-1995F67F2D89",
+    "parkCode" : "kefj",
+    "designation" : "National Park",
+    "description" : "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush forests around this vast expanse of ice. Native Alutiiq relied on these resources to nurture a life entwined with the sea. Today, shrinking glaciers bear witness to the effects of our changing climate.",
+    "latLong" : "lat:59.7971000671387, long:-150.246566772461",
+    "latitude" : "59.7971000671387",
+    "longitude" : "-150.246566772461",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf2"),
+    "name" : "Kings Canyon",
+    "weatherInfo" : "",
+    "url" : "",
+    "fullName" : "Kings Canyon National Park",
+    "directionsUrl" : "",
+    "directionsInfo" : "",
+    "id" : "D1031AFD-5B9D-46C8-9CF6-49C05DE0CF17",
+    "parkCode" : "kica",
+    "designation" : "National Park",
+    "description" : "",
+    "latLong" : "",
+    "states" : "CA",
+    "__v" : 0
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf3"),
+    "name" : "Kobuk Valley",
+    "weatherInfo" : "Snow, rain, and freezing temperatures can occur any time of the year. Always travel with good quality rain gear and warm layers. Be especially careful to stay dry. Hypothermia can set in on a windy, wet day, even when it doesn't feel that cold.",
+    "url" : "https://www.nps.gov/kova/index.htm",
+    "fullName" : "Kobuk Valley National Park",
+    "directionsUrl" : "http://www.nps.gov/kova/planyourvisit/directions.htm",
+    "directionsInfo" : "Kobuk Valley National Park is very remote. There are no roads to provide access, so planes take care of most transportation needs.  Commercial airlines provide service from Anchorage to Kotzebue, or from Fairbanks to Bettles. Once in Kotzebue or Bettles, you must fly to the park with authorized air taxis.",
+    "id" : "691831BF-F280-4E02-BF4A-FF476BC66B23",
+    "parkCode" : "kova",
+    "designation" : "National Park",
+    "description" : "Caribou, sand dunes, the Kobuk River, Onion Portage - just some of the facets of Kobuk Valley National Park. Half a million caribou migrate through, their tracks crisscrossing sculpted dunes. The Kobuk River is an ancient and current path for people and wildlife. For 9000 years, people came to Onion Portage to harvest caribou as they swam the river. Even today, that rich tradition continues.",
+    "latLong" : "lat:67.3913726806641, long:-159.060638427734",
+    "latitude" : "67.3913726806641",
+    "longitude" : "-159.060638427734",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf4"),
+    "name" : "Lake Clark",
+    "weatherInfo" : "Lake Clark has two distinct climate areas: the coast and the interior. The coast is wetter and experiences milder temperatures. The interior gets half to one fourth as much precipitation, but temperatures are hotter in summer and colder in winter.  Frost and snow can occur any time parkwide, but are most common from September to early June. Lakes here typically begins freezing in November and melting in April. Ice conditions dictate whether planes need floats or skis to land on lakes.",
+    "url" : "https://www.nps.gov/lacl/index.htm",
+    "fullName" : "Lake Clark National Park & Preserve",
+    "directionsUrl" : "http://www.nps.gov/lacl/planyourvisit/directions.htm",
+    "directionsInfo" : "Lake Clark is located on the Alaska Peninsula southwest of Anchorage and north of Katmai National Park. It is not on the road system; therefore, in order to get here you must travel either via plane or by boat. A one to two-hour flight from Anchorage, Kenai, or Homer will provide access to most points within Lake Clark. Fixed-wing aircraft are allowed to land on all suitable lakes, rivers, beaches, gravel bars, and open ground in both the park and preserve unless the area is closed or otherwise restricted.",
+    "id" : "5F76F85B-23F4-4616-AA0B-A26E8DE76593",
+    "parkCode" : "lacl",
+    "designation" : "National Park & Preserve",
+    "description" : "Lake Clark National Park is a land of stunning beauty where volcanoes steam, salmon run, bears forage, craggy mountains reflect in shimmering turquoise lakes, and local people and culture still depend on the land and water of their home.  Solitude is found around every bend in the river and shoulder of a mountain.  Venture into the park to become part of the wilderness.",
+    "latLong" : "lat:60.1826068795942, long:-154.315093994141",
+    "latitude" : "60.1826068795942",
+    "longitude" : "-154.315093994141",
+    "states" : "AK",
+    "__v" : 0
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf5"),
+    "name" : "Lassen Volcanic",
+    "weatherInfo" : "Weather at Lassen can vary dramatically throughout the year. Learn more about Lassen's weather.\nThe nearby town of Susanville has a humid continental climate, with cold winters and very warm, mostly dry summers. Average January temperatures are a high of 40.4 °F (4.7 °C) and a low of 20.8 °F (-6.2 °C). Average July temperatures are a high of 88.4 °F and a low of 49.8 °F. Temperatures reach 90 °F or higher on an average of 36.9 days, and drop to 32 ° or lower on an average of 164 days days annually.",
+    "url" : "https://www.nps.gov/lavo/index.htm",
+    "fullName" : "Lassen Volcanic National Park",
+    "directionsUrl" : "http://www.nps.gov/lavo/planyourvisit/directions.htm",
+    "directionsInfo" : "From Interstate 5, take Hwy 44 - 48 miles east to the junction of Hwy 89. Follow Hwy 89 south 1 mile to the north entrance of the park or take Hwy 36 E - 51 miles east to the junction of Hwy 89. Follow Hwy 89 north 6 miles to south entrance of the park.",
+    "id" : "9AA4A53C-0331-43CC-99F5-379BC929FFB2",
+    "parkCode" : "lavo",
+    "designation" : "National Park",
+    "description" : "Lassen Volcanic National Park is home to steaming fumaroles, meadows freckled with wildflowers, clear mountain lakes, and numerous volcanoes. Jagged peaks tell the story of its eruptive past while hot water continues to shape the land. Lassen Volcanic offers opportunities to discover the wonder and mysteries of volcanoes and hot water for visitors willing to explore the undiscovered.",
+    "latLong" : "",
+    "states" : "CA",
+    "__v" : 0
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf6"),
+    "name" : "Mammoth Cave",
+    "weatherInfo" : "Kentucky has a moderate climate with warm, yet moist conditions. Summers average in the high 80s (degrees F); winters average in the low 40s. Southern Kentucky, where Mammoth Cave is located, receives the highest average precipitation for the state, about 50 inches per year, mostly in spring. Winter can bring mild to moderate snow and ice. Storms happen year-round, and can include tornadoes and flooding in low-lying areas, but severe weather is infrequent. The temperature deep in the cave is a constant 54°.",
+    "url" : "https://www.nps.gov/maca/index.htm",
+    "fullName" : "Mammoth Cave National Park",
+    "directionsUrl" : "http://www.nps.gov/maca/planyourvisit/directions.htm",
+    "directionsInfo" : "From the North: Take Interstate 65 to Exit 53 (Cave City Exit). Turn right onto KY-70. Follow 70/255 as it becomes the Mammoth Cave Parkway in the park. Follow the Mammoth Cave Parkway to the Visitor Center.\n\nFrom the South: Take Interstate 65 to Exit 48 (Park City Exit). Turn left onto KY-255 and follow 255 as it becomes the Park City Road into the park. Follow Park City Road until it joins the Mammoth Cave Parkway; turn left. Follow the Mammoth Cave Parkway to the Visitor Center.",
+    "id" : "6A1737A1-6848-4087-AAF7-68A427247357",
+    "parkCode" : "maca",
+    "designation" : "National Park",
+    "description" : "Mammoth Cave National Park preserves the cave system and a part of the Green River valley and hilly country of south central Kentucky. This is the world's longest known cave system, with more than 400 miles explored. Early guide Stephen Bishop called the cave a \"grand, gloomy and peculiar place,\" but its vast chambers and complex labyrinths have earned its name - Mammoth.",
+    "latLong" : "lat:37.1871730685, long:-86.0993814468",
+    "latitude" : "37.1871730685",
+    "longitude" : "-86.0993814468",
+    "states" : "KY",
+    "__v" : 0
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf7"),
+    "name" : "Mesa Verde",
+    "weatherInfo" : "Spring: Temps range from 40 F to 70 F, but snowstorms can occur as late as May. \n\nSummer: Temps can reach well into the 90s F. Thunderstorms are common in July and August. Be prepared to bring and DRINK plenty of water.\n\nFall: Temps can range from 50 F to 75 F. Snowstorms can occur as early as October. \n\nWinter: Temps can range from the teens to low 30s F. Icy roads are common. Snow tires, all-wheel drive, or chains, may be required. Be prepared with water, snacks, and layers of warm clothing.",
+    "url" : "https://www.nps.gov/meve/index.htm",
+    "fullName" : "Mesa Verde National Park",
+    "directionsUrl" : "http://www.nps.gov/meve/planyourvisit/directions.htm",
+    "directionsInfo" : "Mesa Verde National Park is in Southwestern Colorado. The park entrance is along Highway 160, between the towns of of Cortez and Mancos, Colorado. (10 miles east of Cortez; 9 miles west of Mancos; and about 35 miles west of Durango, Colorado.)\n\nOnce you enter the park, the first view of a cliff dwelling is 21 miles (approximately 45 minutes) along a steep, narrow, and winding road.",
+    "id" : "BE3A981E-BB55-474D-8A0E-D711408682DC",
+    "parkCode" : "meve",
+    "designation" : "National Park",
+    "description" : "Mesa Verde, Spanish for green table, offers a spectacular look into the lives of the Ancestral Pueblo people who made it their home for over 700 years, from AD 600 to 1300. Today the park protects nearly 5,000 known archeological sites, including 600 cliff dwellings. These sites are some of the most notable and best preserved in the United States.",
+    "latLong" : "lat:37.3389974426206, long:-108.410971641541",
+    "latitude" : "37.3389974426206",
+    "longitude" : "-108.410971641541",
+    "states" : "CO",
+    "__v" : 0
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cf8"),
+    "name" : "Mount Rainier",
+    "weatherInfo" : "Weather patterns at Mount Rainier are strongly influenced by the Pacific Ocean and elevation. The climate is generally cool and rainy, with summer highs in the 60s and 70s. While July and August are the sunniest months of the year, rain is very likely in spring, fall, and winter. Visitors should be aware that mountain weather is very changeable. In the higher elevations, like Paradise, winter can last from November to May with many feet of snow on the ground.",
+    "url" : "https://www.nps.gov/mora/index.htm",
+    "fullName" : "Mount Rainier National Park",
+    "directionsUrl" : "http://www.nps.gov/mora/planyourvisit/directions.htm",
+    "directionsInfo" : "Mount Rainier National Park is located in west-central Washington state. Several major cities in Washington- Seattle, Tacoma, and Yakima- and Portland, Oregon, are within 200 miles of the park. For GPS to Nisqually Entrance use: 39000 State Route 706 E, Ashford, WA 98304.",
+    "id" : "07229CB8-8533-4669-B614-2B884779DD93",
+    "parkCode" : "mora",
+    "designation" : "National Park",
+    "description" : "Ascending to 14,410 feet above sea level, Mount Rainier stands as an icon in the Washington landscape. An active volcano, Mount Rainier is the most glaciated peak in the contiguous U.S.A., spawning six major rivers. Subalpine wildflower meadows ring the icy volcano while ancient forest cloaks Mount Rainier’s lower slopes. Wildlife abounds in the park’s ecosystems. A lifetime of discovery awaits.",
+    "latLong" : "lat:46.7407574422, long:-121.915874481",
+    "latitude" : "46.7407574422",
+    "longitude" : "-121.915874481",
+    "states" : "WA",
+    "__v" : 0
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cfb"),
+    "name" : "North Cascades",
+    "weatherInfo" : "The best weather for visiting the North Cascades generally occurs between mid-June and late-September. Summer daytime temperatures average in the 70's F. Snow is off most trails by mid-July. Autumn and Spring are popular for color and wildlife. Storms are common: always be prepared for a few days of rain and wind. The east side of the Cascade Mountains (Lake Chelan National Recreation Area) is drier and warmer in the summer than the west side. Summer temperatures at Stehekin reach the 90's F.",
+    "url" : "https://www.nps.gov/noca/index.htm",
+    "fullName" : "North Cascades National Park",
+    "directionsUrl" : "http://www.nps.gov/noca/planyourvisit/directions.htm",
+    "directionsInfo" : "Access to North Cascades National Park and Ross Lake National Recreation Area is from the State Route 20 corridor. SR 20 (North Cascades Highway) connects with Interstate 5 (Exit 230) at Burlington. From the east, the highway intersects with US 97 at Okanogan and with SR 153 at Twisp. The State Department of Transportation closes a portion of the road between Ross Dam Trailhead and Lone Fir Campground in winter. The Lake Chelan National Recreation Area (Stehekin) is accessible by ferry or plane from Chelan.",
+    "id" : "80EB184D-4B6D-4AD2-B6E2-CAAD6312B27D",
+    "parkCode" : "noca",
+    "designation" : "National Park",
+    "description" : "Less than three hours from Seattle, an alpine landscape beckons. Discover communities of life adapted to moisture in the west and recurring fire in the east. Explore jagged peaks crowned by more than 300 glaciers. Listen to cascading waters in forested valleys. Witness a landscape sensitive to the Earth's changing climate. Help steward the ecological heart of the Cascades.",
+    "latLong" : "lat:48.8211250305176, long:-121.467964172363",
+    "latitude" : "48.8211250305176",
+    "longitude" : "-121.467964172363",
+    "states" : "WA",
+    "__v" : 0
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cfc"),
+    "name" : "Olympic",
+    "weatherInfo" : "Summers tend to be fair and warm, with high temperatures between 65 and 75 degrees F. July, August and September are the driest months, with heavier precipitation during the rest of the year. While winters are mild at lower elevation, snowfall can be heavy in the mountains. It is common for different weather conditions to exist within the park at the same time.  At any time of year, visitors should come prepared for a variety of conditions.",
+    "url" : "https://www.nps.gov/olym/index.htm",
+    "fullName" : "Olympic National Park",
+    "directionsUrl" : "http://www.nps.gov/olym/planyourvisit/directions.htm",
+    "directionsInfo" : "You can reach Olympic National Park via the I-5 corridor or by any one of the quieter state roadways. Once you arrive on the Olympic Peninsula connect to Hwy 101 to reach any destinations in and around Olympic National Park.\nFrom Olympia: take I-5 to Hwy 101\nFrom Tacoma: take State Route 16 to Bremerton; take State Route 3 north from Bremerton to State Route 104.\nFrom Washington/Oregon Coast connect to Hwy 101 in Aberdeen.",
+    "id" : "81CFE898-AD06-4C0D-8A9B-C8D356273F0D",
+    "parkCode" : "olym",
+    "designation" : "National Park",
+    "description" : "With its incredible range of precipitation and elevation, diversity is the hallmark of Olympic National Park. Encompassing nearly a million acres, the park protects a vast wilderness, thousands of years of human history, and several distinctly different ecosystems, including glacier-capped mountains, old-growth temperate rain forests, and over 70 miles of wild coastline. Come explore!",
+    "latLong" : "lat:48.0999013781548, long:-123.425014168024",
+    "latitude" : "48.0999013781548",
+    "longitude" : "-123.425014168024",
+    "states" : "WA",
+    "__v" : 0
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cfd"),
+    "name" : "Petrified Forest",
+    "weatherInfo" : "Petrified Forest National Park is a semi-arid grassland. Temperatures range from above 100° F (38° C) to well below freezing. About 10 inches (25.4 cm) of moisture comes during infrequent snow in the winter and often violent summer thunder-storms. Animals and plants are adapted to extremes in temperature and moisture. You should be ready too. Check out the forecast before you arrive and plan accordingly.",
+    "url" : "https://www.nps.gov/pefo/index.htm",
+    "fullName" : "Petrified Forest National Park",
+    "directionsUrl" : "http://www.nps.gov/pefo/planyourvisit/directions.htm",
+    "directionsInfo" : "Petrified Forest stretches north and south between I-40 and Highway 180. Westbound I-40 travelers should take Exit 311, drive the 28 miles through the park and connect with Hwy 180 at the south end. Travel 19 miles on Hwy 180 North to return to Interstate 40 via Holbrook. Eastbound I-40 travelers should take Exit 285 into Holbrook then travel 19 miles on Hwy 180 South to the park's south entrance. Drive the 28 miles north through the park to return to I-40.",
+    "id" : "1ABD0EFF-AC09-4EA1-8CC1-2351A3E160D0",
+    "parkCode" : "pefo",
+    "designation" : "National Park",
+    "description" : "Did you know that Petrified Forest is more spectacular than ever? While the park has all the wonders known for a century, there are many new adventures and discoveries to share. There are backcountry hikes into areas never open before such as Red Basin and little known areas like the Martha's Butte. There are new exhibits that bring the stories to life. Come rediscover Petrified Forest!",
+    "latLong" : "lat:35.0657043, long:-109.7818412",
+    "latitude" : "35.0657043",
+    "longitude" : "-109.7818412",
+    "states" : "AZ",
+    "__v" : 0
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cfe"),
+    "name" : "Pinnacles",
+    "weatherInfo" : "Pinnacles National Park has a Mediterranean climate with hot and dry summers, and mild winters with moderate precipitation. The park is several miles inland from the Pacific Ocean. A wider variation in seasonal temperatures can be expected in the local area. On July or August day, daytime temperatures over 100° F are not uncommon, but a bright sunny day can turn into a very cold night.",
+    "url" : "https://www.nps.gov/pinn/index.htm",
+    "fullName" : "Pinnacles National Park",
+    "directionsUrl" : "http://www.nps.gov/pinn/planyourvisit/directions.htm",
+    "directionsInfo" : "Pinnacles National Park is accessible through highway 101 for the West entrance, and highway 25 for the East entrance. From highway 101 you must pass through the City of Soledad to find highway 146 which will lead to West side of Pinnacles. To enter East Pinnacles you must find highway 25 through the City of Hollister coming from the North, and King City through Bitter Water Road (G-13) when coming from the South.",
+    "id" : "9B266961-3364-43D2-9A08-82BB5EF5643F",
+    "parkCode" : "pinn",
+    "designation" : "National Park",
+    "description" : "Some 23 million years ago multiple volcanoes erupted, flowed, and slid to form what would become Pinnacles National Park. What remains is a unique landscape. Travelers journey through chaparral, oak woodlands, and canyon bottoms. Hikers enter rare talus caves and emerge to towering rock spires teeming with life: prairie and peregrine falcons, golden eagles, and the inspiring California condor.",
+    "latLong" : "lat:36.484516114, long:-121.155279949",
+    "latitude" : "36.484516114",
+    "longitude" : "-121.155279949",
+    "states" : "CA",
+    "__v" : 0
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8cff"),
+    "name" : "Rocky Mountain",
+    "weatherInfo" : "Winter (Dec–Mar): cold weather, deep snow at higher elevations, and seasonal closures of facilities and roads. Spring (April–May): unpredictable weather, with a mix of warm sunny days and cool days with heavy snow and rain. Many trails are still snow-covered. Trail Ridge Road opens in late May. Summer (Jun–Aug): warmer weather, thunderstorms, and wildflowers. Most park roads and facilities are open. Fall (Sep–Nov): crisp air, blue skies, fall colors, and the elk rut. Trail Ridge Road closes mid-October.",
+    "url" : "https://www.nps.gov/romo/index.htm",
+    "fullName" : "Rocky Mountain National Park",
+    "directionsUrl" : "http://www.nps.gov/romo/planyourvisit/directions.htm",
+    "directionsInfo" : "Driving from the east: from I-25, take US Hwy 34 or 36. Driving from the west: from I-70, take US Hwy 40 to Granby to US Hwy 34 to Grand Lake. From mid-October until late May, Trail Ridge Road between Estes Park and Grand Lake is closed to vehicles, so driving between the two takes ~4 hours. The closest airport is Denver International (DIA). There is no public transportation between nearby cities and the park.",
+    "id" : "67A56B17-F533-4A56-B2DA-26091C6AD295",
+    "parkCode" : "romo",
+    "designation" : "National Park",
+    "description" : "Rocky Mountain National Park’s 415 square miles encompass and protect spectacular mountain environments. Enjoy Trail Ridge Road – which crests at over 12,000 feet including many overlooks to experience the subalpine and alpine worlds – along with over 300 miles of hiking trails, wildflowers, wildlife, starry nights, and fun times. In a world of superlatives, Rocky is on top!",
+    "latLong" : "lat:40.3663213198, long:-105.562038422",
+    "latitude" : "40.3663213198",
+    "longitude" : "-105.562038422",
+    "states" : "CO",
+    "__v" : 0
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d01"),
+    "name" : "Saguaro",
+    "weatherInfo" : "Winter Season\nWith daytime temperature from the low 50's to the high 70's\n\nSummer Season \nAs we get deeper into the summer season, temperatures will range from mid-80's to low 100's. This is a great time to experience the desert as the day breaks or in the late of the day as the sun disappears behind the surrounding mountain ranges. During the late spring and summer months Saguaro National Park only offers interpretive programs on an intermittent basis.",
+    "url" : "https://www.nps.gov/sagu/index.htm",
+    "fullName" : "Saguaro National Park",
+    "directionsUrl" : "http://www.nps.gov/sagu/planyourvisit/directions.htm",
+    "directionsInfo" : "Getting to the Rincon Mountain District from the City of Tucson\nTravel east on Broadway or Speedway Boulevard to Freeman Road (turn right on Freeman Road). Drive south on Freeman Road (4 miles [6.5 kilometers] from Speedway, 3 miles [5 kilometers] from Broadway) to Old Spanish Trail. Turn left on Old Spanish Trail. Drive .25 miles (.4 kilometers) southeast on Old Spanish Trail to the Park entrance on the left side of the road.",
+    "id" : "A6F169CF-B830-499C-A5EB-A35138C77589",
+    "parkCode" : "sagu",
+    "designation" : "National Park",
+    "description" : "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
+    "latLong" : "lat:32.1802778, long:-110.7363889",
+    "latitude" : "32.1802778",
+    "longitude" : "-110.7363889",
+    "states" : "AZ",
+    "__v" : 0
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d02"),
+    "name" : "Sequoia & Kings Canyon",
+    "weatherInfo" : "Because of the extreme elevation range in these parks, weather conditions vary widely between areas. \n\nIn summer, the sequoia groves have comfortable temperatures and the foothills are hot and dry. Snow lingers on high-mountain passes well into summer.\n\nIn fall, some areas close or reduce their hours. Winter brings snow to sequoia groves and rain to the foothills. Be prepared for tire chain requirements. \n\nSpring is a great time to hike in the foothills and snow begins to melt at higher elevations.",
+    "url" : "https://www.nps.gov/seki/index.htm",
+    "fullName" : "Sequoia & Kings Canyon National Parks",
+    "directionsUrl" : "http://www.nps.gov/seki/planyourvisit/directions.htm",
+    "directionsInfo" : "Two highways enter the parks. Highway 180 from Fresno leads to Kings Canyon National Park, then continues 30 miles east to Cedar Grove. Highway 198 enters Sequoia National Park from the southwest via Three Rivers. Inside the parks, Highway 198 becomes the Generals Highway. \n\nRVs and trailers over 22 feet should enter the parks via Highway 180.\n\nIn winter, the Generals Highway between the parks often closes. Chains may be required on park roads.\n\nThere are no roads that cross the mountain range.",
+    "id" : "7E5A693C-2F63-44FD-B791-31FC8B8B6285",
+    "parkCode" : "seki",
+    "designation" : "National Parks",
+    "description" : "This dramatic landscape testifies to nature's size, beauty, and diversity--huge mountains, rugged foothills, deep canyons, vast caverns, and the world's largest trees. These two parks lie side by side in the southern Sierra Nevada east of the San Joaquin Valley. Weather varies a lot by season and elevation, which ranges from 1,370' to 14,494'. Sequoias grow at 5,000 - 7,000', above usual snowline.",
+    "latLong" : "lat:36.4909251522, long:-118.825595677",
+    "latitude" : "36.4909251522",
+    "longitude" : "-118.825595677",
+    "states" : "CA",
+    "__v" : 0
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d03"),
+    "name" : "Shenandoah",
+    "weatherInfo" : "Shenandoah experiences four distinct seasons. Best know for its fall foliage, the park is also spectacular in spring when the wildflowers and trees are in full bloom. Summer brings lush greens and relief from the hot valleys. The park's elevation encourages as much as a 10 degree temperature difference. In winter, this means that when surrounding lowlands are experiencing rain, the the park can be blanketed in snow and ice. It's always a good idea to be prepared for varying weather.",
+    "url" : "https://www.nps.gov/shen/index.htm",
+    "fullName" : "Shenandoah National Park",
+    "directionsUrl" : "http://www.nps.gov/shen/planyourvisit/directions.htm",
+    "directionsInfo" : "Shenandoah National Park is located in the Blue Ridge Mountains of Virginia, west of Washington, D.C. It stretches 105 miles and has four entrances: Front Royal (northern entrance), Simmons Gap, Swift Run Gap, and Rockfish Gap (southern entrance & the northern entrance to the Blue Ridge Parkway). \n\nComplete directions can be found at the accompanying link. The physical address listed is the address to the headquarters, not the park itself.  GPS is sometimes unreliable when navigating to our park.",
+    "id" : "E991C8BC-C203-4A09-AFD5-87380CF5C387",
+    "parkCode" : "shen",
+    "designation" : "National Park",
+    "description" : "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is your escape to recreation and re-creation. Cascading waterfalls, spectacular vistas, quiet wooded hollows—take a hike, meander along Skyline Drive, or picnic with the family. 200,000 acres of protected lands are haven to deer, songbirds, the night sky…and you. Plan a Shenandoah escape today!",
+    "latLong" : "lat:38.4900674968958, long:-78.4510114789009",
+    "latitude" : "38.4900674968958",
+    "longitude" : "-78.4510114789009",
+    "states" : "VA",
+    "__v" : 0
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("58cac2a1af77936a192f8d04"),
+    "name" : "Theodore Roosevelt",
+    "weatherInfo" : "In winter, some or all park roads may be closed due to snow.",
+    "url" : "https://www.nps.gov/thro/index.htm",
+    "fullName" : "Theodore Roosevelt National Park",
+    "directionsUrl" : "http://www.nps.gov/thro/planyourvisit/directions.htm",
+    "directionsInfo" : "Theodore Roosevelt National Park is located in the Badlands of western North Dakota. \nThere are three units to the park. The South Unit entrance is in the town of Medora, ND off of Interstate 94 exits 24 and 27. The North Unit entrance is on Highway 85 approximately 14 miles south of Watford City, ND. The remote Elkhorn Ranch Unit sits roughly in the middle of the North and South Units and is accessed via gravel roads. Consult park staff for directions to the Elkhorn Ranch Unit.",
+    "id" : "B5FE5682-7981-47DD-AC96-13F4B33A466E",
+    "parkCode" : "thro",
+    "designation" : "National Park",
+    "description" : "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.",
+    "latLong" : "lat:46.966667175293, long:-103.449996948242",
+    "latitude" : "46.966667175293",
+    "longitude" : "-103.449996948242",
+    "states" : "ND",
+    "__v" : 0
+}
