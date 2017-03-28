@@ -8,7 +8,7 @@
 {"states" : "AK", "name" : "Dillingham", "description" : "DLG", "latitude": "", "longitude": ""}
 {"states" : "AK", "name" : "Fairbanks Intl", "description" : "FAI", "latitude": "", "longitude": ""}
 {"states" : "AK", "name" : "Gustavus", "description" : "GST", "latitude": "", "longitude": ""}
-{"states" : "AK", "name" : "Homer", "description" : "HOM", "latitude": "", "longitude": ""}
+{"states" : "AK", "name" : "Homer", "description" : "HOM", "latitude": "59.643236", "longitude": "-151.492619"}
 {"states" : "AK", "name" : "Juneau Intl", "description" : "JNU", "latitude": "", "longitude": ""}
 {"states" : "AK", "name" : "Kenai Municipal", "description" : "ENA", "latitude": "", "longitude": ""}
 {"states" : "AK", "name" : "Ketchikan Intl", "description" : "KTN", "latitude": "", "longitude": ""}

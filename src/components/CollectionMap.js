@@ -50,23 +50,21 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
-    if(this.props.collectionName != "states"){
-      this.props.fullCollection.forEach(function(x){
-        if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
-          bubbles.push(
-            {
-              name: x.name,
-              radius,
-              country: 'USA',
-              latitude: x.latitude,
-              longitude: x.longitude,
-              fillKey: 'Collected'
-            }
-          );
-        }
-      }, this);
-    }
 
+    this.props.fullCollection.forEach(function(x){
+      if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
+        bubbles.push(
+          {
+            name: x.name + ", " + x.description,
+            radius,
+            country: 'USA',
+            latitude: x.latitude,
+            longitude: x.longitude,
+            fillKey: 'Collected'
+          }
+        );
+      }
+    }, this);
     return bubbles;
   }
 
