@@ -31,7 +31,7 @@ class Collection extends React.Component {
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
         return (
-          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
+          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>0
             {x.description} <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove From Collection</Button>
           </Panel>);
       } else {
