@@ -13,6 +13,25 @@ class CollectionMap extends React.Component {
     };
   }
 
+  userLocation() {
+    let userLocation={};
+    if (navigator.geolocation) {
+      setTimeout(
+        navigator.geolocation.getCurrentPosition(function(position) {
+          let lat = position.coords.latitude;
+          let lon = position.coords.longitude;
+          console.log(lat, lon);
+          userLocation = {latitude: lat, longitude: lon};
+        }), 5000
+      );
+
+    } else {
+      document.write('Your browser does not support GeoLocation :(');
+    }
+    console.log(userLocation);
+    return (userLocation);
+  }
+
   prepareFillKeys(){
     let fillKeys = {};
     let theStates = [];
@@ -35,13 +54,24 @@ class CollectionMap extends React.Component {
         };
       });
     }
-
     return fillKeys;
   }
 
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
+    let userLocation=this.userLocation();
+    console.log(userLocation);
+    bubbles.push(
+      {
+        name: "Your Location",
+        radius: 10,
+        country: 'USA',
+        latitude: userLocation.latitude,
+        longitude: userLocation.longitude,
+        fillKey: 'User'
+      }
+    );
     if(this.props.collectionName != "states"){
       this.props.fullCollection.forEach(function(x){
         if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
@@ -85,6 +115,7 @@ class CollectionMap extends React.Component {
       // highlightBorderWidth: 3
     }}
     fills={{
+      'User': '#FF0000',
       'Collected': '#35B729',
       'NotCollected': '#FF7F50',
       'defaultFill': '#707070'}}
