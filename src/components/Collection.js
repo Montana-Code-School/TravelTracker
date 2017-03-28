@@ -32,12 +32,12 @@ class Collection extends React.Component {
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
         return (
           <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
-            {x.description} <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove From Collection</Button>
+            {x.description} <Button block onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove</Button>
           </Panel>);
       } else {
         return (
           <Panel style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
-            {x.description} <Button onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Add To Collection</Button>
+            {x.description} <Button block onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Add</Button>
           </Panel>);}
     },this);
   }
@@ -50,7 +50,7 @@ class Collection extends React.Component {
 
   render() {
     return (
-        <Row className="show-grid">
+        <Row>
           <Col xs={12} md={9}>
               <Col xsHidden smHidden md={1}/>
               <Col md={11}>

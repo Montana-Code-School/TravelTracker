@@ -54,7 +54,7 @@ export default class UserStore {
     let preparedActivityList = [];
 
     activityList.forEach(function(x){
-      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "green"}}/>  {x.name}, {x.date}</ListGroupItem>);
+      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "green"}}/>  {x.name}, {new Date(x.date).toLocaleDateString()}</ListGroupItem>);
     });
 
     return preparedActivityList;
@@ -79,7 +79,7 @@ export default class UserStore {
     let collectable = this[collectionname].find(function(y){
       return y.name==collectablename;
     });
-    return collectable.date;
+    return new Date(collectable.date).toLocaleDateString();
   }
 
   removeCollectable(username, collectablename, collectionname){
@@ -104,7 +104,7 @@ export default class UserStore {
   }
 
   addCollectable(username, collectablename, collectionname){
-    let collectable = {name: collectablename, date: new Date().toLocaleDateString()};
+    let collectable = {name: collectablename, date: new Date()};
     fetch(`/api/add`, {
       method: 'PUT',
       headers: {
