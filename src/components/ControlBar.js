@@ -7,6 +7,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
 import Collection from './Collection';
 import styles from './style/ControlBarStyle.css.js';
+import './style/navBarStyle.css';
 
 /* making the class ControlBar function which is a React Component. Render to
 actually diplay the ControlBar return content.*/

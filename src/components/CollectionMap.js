@@ -13,14 +13,6 @@ class CollectionMap extends React.Component {
     };
   }
 
-  // addClickHandlers(ref){
-  //   if (ref && ref.map) {
-  //     ref.map.svg.selectAll('.datamaps-subunit').on('click', (state) => {
-  //       console.log("You clicked on "+state.properties.name);
-  //     });
-  //   }
-  // }
-
   prepareFillKeys(){
     let fillKeys = {};
     let theStates = [];
@@ -50,28 +42,29 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
-
-    this.props.fullCollection.forEach(function(x){
-      if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
-        bubbles.push(
-          {
-            name: x.name + ", " + x.description,
-            radius,
-            country: 'USA',
-            latitude: x.latitude,
-            longitude: x.longitude,
-            fillKey: 'Collected'
-          }
-        );
-      }
-    }, this);
+    if(this.props.collectionName != "states"){
+      this.props.fullCollection.forEach(function(x){
+        if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
+          bubbles.push(
+            {
+              name: x.name + ", " + x.description,
+              radius,
+              country: 'USA',
+              latitude: x.latitude,
+              longitude: x.longitude,
+              fillKey: 'Collected'
+            }
+          );
+        }
+      }, this);
+    }
     return bubbles;
   }
 
   prepareMap(){
     let fillKeys = this.prepareFillKeys();
     let ourMap = (<Datamap scope="usa"
-    responsive= "true"
+    responsive
     height="500"
     // ref={this.addClickHandlers}
     geographyConfig={{

@@ -24,7 +24,8 @@ exports.default = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: _path2.default.resolve(__dirname, 'src')
+    contentBase: _path2.default.resolve(__dirname, 'src'),
+    historyApiFallback: true
   },
   plugins: [new _webpack2.default.HotModuleReplacementPlugin(), new _webpack2.default.NoEmitOnErrorsPlugin()],
   module: {

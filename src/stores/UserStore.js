@@ -158,6 +158,7 @@ export default class UserStore {
         this.parks = loginCred.parks;
         this.mlbstadiums = loginCred.mlbstadiums;
         this.airports = loginCred.airports;
+        this.newUserCreated = false;
         browserHistory.push('/Dashboard');
       } else {
         this.loggedInUser=false;

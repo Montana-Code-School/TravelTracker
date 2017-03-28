@@ -4,7 +4,7 @@ export default {
     background:"rgb(53, 183, 41)",
     color: "white",
     boxShadow: "0px 1px 5px grey",
-    marginBottom: "20"
+    marginBottom: "20px"
   },
   logoStyle:{
     position: "absolute",
