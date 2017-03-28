@@ -8,6 +8,10 @@ class CollectionMap extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      theStates: ['AL', 'AK' , 'AS' , 'AZ' , 'AR' , 'CA', 'CO', 'CT' , 'DE' , 'DC' , 'FM' , 'FL' , 'GA' , 'GU' , 'HI' , 'ID' , 'IL',
+        'IN' , 'IA' , 'KS' , 'KY' , 'LA' , 'ME' , 'MH' , 'MD' , 'MA' , 'MI' , 'MN' , 'MS' , 'MO' , 'MT' , 'NE' , 'NV' , 'NH' ,
+        'NJ' , 'NM' , 'NY' , 'NC' , 'ND' , 'MP' , 'OH' , 'OK' , 'OR' , 'PW' , 'PA' , 'PR' , 'RI' , 'SC' , 'SD' , 'TN' , 'TX' ,
+        'UT' , 'VT' , 'VI' , 'VA' , 'WA' , 'WV' , 'WI' , 'WY' ]
     };
   }
 
@@ -19,22 +23,41 @@ class CollectionMap extends React.Component {
     }
   }
 
+  // flatMapFill(){
+  //   let fillKeys = {};
+  //   fetch(`/states`)
+  //   .then(result => result.json())
+  //   .then(data => {
+  //     data.forEach(function(x){
+  //       fillKeys[x.states] = {
+  //         fillKey: 'NotCollected'
+  //       };
+  //     });
+  //   });
+  //
+  //   return fillKeys;
+  // }
+
   prepareFillKeys(){
     let fillKeys = {};
-    this.props.fullCollection.forEach(function(x){
-      console.log(x);
-      if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
-        fillKeys[x.states] = {
-          fillKey: 'Collected'
-        };
-      }else{
-        fillKeys[x.states] = {
+    let theStates = [];
+    if(this.props.collectionName == "states"){
+      this.props.fullCollection.forEach(function(x){
+        if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
+          fillKeys[x.states] = {
+            fillKey: 'Collected'
+          };
+        }
+      }, this);
+    }else{
+      this.state.theStates.forEach(function(x){
+        fillKeys[x] = {
           fillKey: 'NotCollected'
         };
-      }
-    }, this);
+      });
+    }
 
-    return (fillKeys);
+    return fillKeys;
   }
 
   prepareBubbles(){
@@ -55,25 +78,26 @@ class CollectionMap extends React.Component {
         );
       }
     }, this);
-
     return bubbles;
   }
 
   prepareMap(){
-    let ourMap = (<Datamap scope="usa" height="650"
+    let fillKeys = this.prepareFillKeys();
+    let ourMap = (<Datamap scope="usa" height="500"
     ref={this.addClickHandlers}
     geographyConfig={{
       highlightFillColor: '#0DFFA6',
       highlightBorderColor: '#1D0CE8',
-      highlightBorderWidth: 3
+      highlightBorderWidth: 2
     }}
     fills={{
       'Collected': '#35B729',
-      'NotCollected': '#E8AB0C'}}
-      data={this.prepareFillKeys()}
+      'NotCollected': '#707070',
+      'defaultFill': '#707070'}}
+      data={fillKeys}
       bubbles={this.prepareBubbles()}
         bubbleOptions={{
-          borderWidth: 1,
+          borderWidth: 0,
           borderColor: '#E8AB0C'
         }}
       labels

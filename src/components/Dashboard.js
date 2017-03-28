@@ -26,7 +26,7 @@ class Dashboard extends React.Component {
 
   createPieChart(collectionname){
     let percentComplete = this.props.userStore.getPercentageCompletion(collectionname);
-    return(<PieChart slices={[{color: '#E8AB0C',value: (100-percentComplete)},{color: '#35b729', value: percentComplete}
+    return(<PieChart slices={[{color: '#707070',value: (100-percentComplete)},{color: '#35b729', value: percentComplete}
     ]}/>);
   }
 
