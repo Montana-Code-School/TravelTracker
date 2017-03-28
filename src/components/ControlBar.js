@@ -64,7 +64,7 @@ class ControlBar extends React.Component {
   }
 
   render() {
-    let textStyle ={fontFamily: "Josefin Sans", background: "#F7F7F7", textAlign: 'center'};
+    let textStyle ={fontFamily: "Josefin Sans", background: "#F7F7F7"};
     return (
       <div style={textStyle}>
           {this.createNavBar()}
