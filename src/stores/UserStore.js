@@ -60,6 +60,14 @@ export default class UserStore {
     return preparedActivityList;
   }
 
+  checkForCollections(){
+    if(this.states.length>0 || this.parks.length>0 || this.mlbstadiums.length>0 || this.airports.length>0) {
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   getPercentageCompletion(collectionname){
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}

@@ -55,6 +55,16 @@ class CollectionMap extends React.Component {
               fillKey: 'Collected'
             }
           );
+        }else{
+          bubbles.push({
+            name: x.name + ", " + x.description,
+            radius,
+            country: 'USA',
+            latitude: x.latitude,
+            longitude: x.longitude,
+            fillKey: 'NotCollected'
+          }
+        );
         }
       }, this);
     }
@@ -68,14 +78,15 @@ class CollectionMap extends React.Component {
     height="500"
     // ref={this.addClickHandlers}
     geographyConfig={{
-      highlightOnHover: false
+      highlightOnHover: false,
+      popupOnHover: false
       // highlightFillColor: '#0DFFA6',
       // highlightBorderColor: '#1D0CE8',
       // highlightBorderWidth: 3
     }}
     fills={{
       'Collected': '#35B729',
-      'NotCollected': '#707070',
+      'NotCollected': '#FF7F50',
       'defaultFill': '#707070'}}
       data={fillKeys}
       bubbles={this.prepareBubbles()}

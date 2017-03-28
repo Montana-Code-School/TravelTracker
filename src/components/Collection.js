@@ -3,6 +3,7 @@ import { inject, observer } from 'mobx-react';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button} from 'react-bootstrap';
 import styles from './style/CollectionStyle.css.js';
+import './style/collection.css';
 import CollectionMap from './CollectionMap';
 
 class Collection extends React.Component {
@@ -29,17 +30,14 @@ class Collection extends React.Component {
   prepareCollection(){
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
-        const collectedHeader = (<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span>{x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>);
         return (
-          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span>{x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
-          {x.description}
-          <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove From Collection</Button>
+          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
+            {x.description} <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove From Collection</Button>
           </Panel>);
       } else {
         return (
           <Panel style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
-          {x.description}
-          <Button onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Add To Collection</Button>
+            {x.description} <Button onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Add To Collection</Button>
           </Panel>);}
     },this);
   }
