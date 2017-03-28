@@ -5,6 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col, Jumbotron } from 'react-bootstrap';
 import Piechart from './Piechart';
+import styles from './style/DashboardStyle.css.js';
 
 class Dashboard extends React.Component {
 
@@ -27,7 +28,6 @@ class Dashboard extends React.Component {
   }
 
   render() {
-    let listStyle = {height:"77vh", overflowY: "scroll", border:"thin solid SlateGrey"};
 
     if(this.props.userStore.checkForCollections()){
       return (
@@ -43,7 +43,7 @@ class Dashboard extends React.Component {
             </Col>
             <Col xs={12} md={2}>
               Recent Activity
-              <ListGroup style={listStyle}>
+              <ListGroup style={styles.listStyle}>
                 {this.state.activityList}
               </ListGroup>
             </Col>
@@ -52,9 +52,13 @@ class Dashboard extends React.Component {
         </div>
       );
     } else {
-      return (        
-        <Jumbotron style={{textAlign: "center", width: "80vw"}}>Welcome to Travel Tracker!  Thank you for visiting our site.  To view the collections that are available
-         to track, simply choose from the "Collections" drop down menu.  Safe travels.</Jumbotron>
+      return (
+        <div style={styles.jumboStyle}>
+        <Jumbotron><img style={styles.welcomeRibbon} src={require('../img/logo.png')}/><h4>Welcome to Travel Tracker!
+          Thank you for visiting our site.</h4><h4>View the assortment of options available in the "Collections"
+          menu and pick your passion.</h4><h4>Periodically check in on the Home Page to view your overall progress.</h4><h3 style={{fontWeight: "bold"}}>Bon Voyage!  Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
+        </Jumbotron>
+        </div>
       );
     }
   }

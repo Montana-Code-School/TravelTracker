@@ -11,7 +11,7 @@ export default {
   },
   mapStyle:
   {
-    top: "-60px",
+    top: "40px",
     left: "20px"
   }
 };
