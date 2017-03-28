@@ -1007,7 +1007,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(11);
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var ReactDOMComponentFlags = __webpack_require__(201);
 
 var invariant = __webpack_require__(9);
@@ -2980,6 +2980,417 @@ module.exports = exports['default'];
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+
+
+var _prodInvariant = __webpack_require__(11);
+
+var invariant = __webpack_require__(9);
+
+function checkMask(value, bitmask) {
+  return (value & bitmask) === bitmask;
+}
+
+var DOMPropertyInjection = {
+  /**
+   * Mapping from normalized, camelcased property names to a configuration that
+   * specifies how the associated DOM property should be accessed or rendered.
+   */
+  MUST_USE_PROPERTY: 0x1,
+  HAS_BOOLEAN_VALUE: 0x4,
+  HAS_NUMERIC_VALUE: 0x8,
+  HAS_POSITIVE_NUMERIC_VALUE: 0x10 | 0x8,
+  HAS_OVERLOADED_BOOLEAN_VALUE: 0x20,
+
+  /**
+   * Inject some specialized knowledge about the DOM. This takes a config object
+   * with the following properties:
+   *
+   * isCustomAttribute: function that given an attribute name will return true
+   * if it can be inserted into the DOM verbatim. Useful for data-* or aria-*
+   * attributes where it's impossible to enumerate all of the possible
+   * attribute names,
+   *
+   * Properties: object mapping DOM property name to one of the
+   * DOMPropertyInjection constants or null. If your attribute isn't in here,
+   * it won't get written to the DOM.
+   *
+   * DOMAttributeNames: object mapping React attribute name to the DOM
+   * attribute name. Attribute names not specified use the **lowercase**
+   * normalized name.
+   *
+   * DOMAttributeNamespaces: object mapping React attribute name to the DOM
+   * attribute namespace URL. (Attribute names not specified use no namespace.)
+   *
+   * DOMPropertyNames: similar to DOMAttributeNames but for DOM properties.
+   * Property names not specified use the normalized name.
+   *
+   * DOMMutationMethods: Properties that require special mutation methods. If
+   * `value` is undefined, the mutation method should unset the property.
+   *
+   * @param {object} domPropertyConfig the config as described above.
+   */
+  injectDOMPropertyConfig: function injectDOMPropertyConfig(domPropertyConfig) {
+    var Injection = DOMPropertyInjection;
+    var Properties = domPropertyConfig.Properties || {};
+    var DOMAttributeNamespaces = domPropertyConfig.DOMAttributeNamespaces || {};
+    var DOMAttributeNames = domPropertyConfig.DOMAttributeNames || {};
+    var DOMPropertyNames = domPropertyConfig.DOMPropertyNames || {};
+    var DOMMutationMethods = domPropertyConfig.DOMMutationMethods || {};
+
+    if (domPropertyConfig.isCustomAttribute) {
+      DOMProperty._isCustomAttributeFunctions.push(domPropertyConfig.isCustomAttribute);
+    }
+
+    for (var propName in Properties) {
+      !!DOMProperty.properties.hasOwnProperty(propName) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'injectDOMPropertyConfig(...): You\'re trying to inject DOM property \'%s\' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.', propName) : _prodInvariant('48', propName) : void 0;
+
+      var lowerCased = propName.toLowerCase();
+      var propConfig = Properties[propName];
+
+      var propertyInfo = {
+        attributeName: lowerCased,
+        attributeNamespace: null,
+        propertyName: propName,
+        mutationMethod: null,
+
+        mustUseProperty: checkMask(propConfig, Injection.MUST_USE_PROPERTY),
+        hasBooleanValue: checkMask(propConfig, Injection.HAS_BOOLEAN_VALUE),
+        hasNumericValue: checkMask(propConfig, Injection.HAS_NUMERIC_VALUE),
+        hasPositiveNumericValue: checkMask(propConfig, Injection.HAS_POSITIVE_NUMERIC_VALUE),
+        hasOverloadedBooleanValue: checkMask(propConfig, Injection.HAS_OVERLOADED_BOOLEAN_VALUE)
+      };
+      !(propertyInfo.hasBooleanValue + propertyInfo.hasNumericValue + propertyInfo.hasOverloadedBooleanValue <= 1) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s', propName) : _prodInvariant('50', propName) : void 0;
+
+      if (process.env.NODE_ENV !== 'production') {
+        DOMProperty.getPossibleStandardName[lowerCased] = propName;
+      }
+
+      if (DOMAttributeNames.hasOwnProperty(propName)) {
+        var attributeName = DOMAttributeNames[propName];
+        propertyInfo.attributeName = attributeName;
+        if (process.env.NODE_ENV !== 'production') {
+          DOMProperty.getPossibleStandardName[attributeName] = propName;
+        }
+      }
+
+      if (DOMAttributeNamespaces.hasOwnProperty(propName)) {
+        propertyInfo.attributeNamespace = DOMAttributeNamespaces[propName];
+      }
+
+      if (DOMPropertyNames.hasOwnProperty(propName)) {
+        propertyInfo.propertyName = DOMPropertyNames[propName];
+      }
+
+      if (DOMMutationMethods.hasOwnProperty(propName)) {
+        propertyInfo.mutationMethod = DOMMutationMethods[propName];
+      }
+
+      DOMProperty.properties[propName] = propertyInfo;
+    }
+  }
+};
+
+/* eslint-disable max-len */
+var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
+/* eslint-enable max-len */
+
+/**
+ * DOMProperty exports lookup objects that can be used like functions:
+ *
+ *   > DOMProperty.isValid['id']
+ *   true
+ *   > DOMProperty.isValid['foobar']
+ *   undefined
+ *
+ * Although this may be confusing, it performs better in general.
+ *
+ * @see http://jsperf.com/key-exists
+ * @see http://jsperf.com/key-missing
+ */
+var DOMProperty = {
+
+  ID_ATTRIBUTE_NAME: 'data-reactid',
+  ROOT_ATTRIBUTE_NAME: 'data-reactroot',
+
+  ATTRIBUTE_NAME_START_CHAR: ATTRIBUTE_NAME_START_CHAR,
+  ATTRIBUTE_NAME_CHAR: ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040',
+
+  /**
+   * Map from property "standard name" to an object with info about how to set
+   * the property in the DOM. Each object contains:
+   *
+   * attributeName:
+   *   Used when rendering markup or with `*Attribute()`.
+   * attributeNamespace
+   * propertyName:
+   *   Used on DOM node instances. (This includes properties that mutate due to
+   *   external factors.)
+   * mutationMethod:
+   *   If non-null, used instead of the property or `setAttribute()` after
+   *   initial render.
+   * mustUseProperty:
+   *   Whether the property must be accessed and mutated as an object property.
+   * hasBooleanValue:
+   *   Whether the property should be removed when set to a falsey value.
+   * hasNumericValue:
+   *   Whether the property must be numeric or parse as a numeric and should be
+   *   removed when set to a falsey value.
+   * hasPositiveNumericValue:
+   *   Whether the property must be positive numeric or parse as a positive
+   *   numeric and should be removed when set to a falsey value.
+   * hasOverloadedBooleanValue:
+   *   Whether the property can be used as a flag as well as with a value.
+   *   Removed when strictly equal to false; present without a value when
+   *   strictly equal to true; present with a value otherwise.
+   */
+  properties: {},
+
+  /**
+   * Mapping from lowercase property names to the properly cased version, used
+   * to warn in the case of missing properties. Available only in __DEV__.
+   *
+   * autofocus is predefined, because adding it to the property whitelist
+   * causes unintended side effects.
+   *
+   * @type {Object}
+   */
+  getPossibleStandardName: process.env.NODE_ENV !== 'production' ? { autofocus: 'autoFocus' } : null,
+
+  /**
+   * All of the isCustomAttribute() functions that have been injected.
+   */
+  _isCustomAttributeFunctions: [],
+
+  /**
+   * Checks whether a property name is a custom attribute.
+   * @method
+   */
+  isCustomAttribute: function isCustomAttribute(attributeName) {
+    for (var i = 0; i < DOMProperty._isCustomAttributeFunctions.length; i++) {
+      var isCustomAttributeFn = DOMProperty._isCustomAttributeFunctions[i];
+      if (isCustomAttributeFn(attributeName)) {
+        return true;
+      }
+    }
+    return false;
+  },
+
+  injection: DOMPropertyInjection
+};
+
+module.exports = DOMProperty;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+exports.isReactChildren = isReactChildren;
+exports.createRouteFromReactElement = createRouteFromReactElement;
+exports.createRoutesFromReactChildren = createRoutesFromReactChildren;
+exports.createRoutes = createRoutes;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+function isValidChild(object) {
+  return object == null || _react2.default.isValidElement(object);
+}
+
+function isReactChildren(object) {
+  return isValidChild(object) || Array.isArray(object) && object.every(isValidChild);
+}
+
+function createRoute(defaultProps, props) {
+  return _extends({}, defaultProps, props);
+}
+
+function createRouteFromReactElement(element) {
+  var type = element.type;
+  var route = createRoute(type.defaultProps, element.props);
+
+  if (route.children) {
+    var childRoutes = createRoutesFromReactChildren(route.children, route);
+
+    if (childRoutes.length) route.childRoutes = childRoutes;
+
+    delete route.children;
+  }
+
+  return route;
+}
+
+/**
+ * Creates and returns a routes object from the given ReactChildren. JSX
+ * provides a convenient way to visualize how routes in the hierarchy are
+ * nested.
+ *
+ *   import { Route, createRoutesFromReactChildren } from 'react-router'
+ *
+ *   const routes = createRoutesFromReactChildren(
+ *     <Route component={App}>
+ *       <Route path="home" component={Dashboard}/>
+ *       <Route path="news" component={NewsFeed}/>
+ *     </Route>
+ *   )
+ *
+ * Note: This method is automatically used when you provide <Route> children
+ * to a <Router> component.
+ */
+function createRoutesFromReactChildren(children, parentRoute) {
+  var routes = [];
+
+  _react2.default.Children.forEach(children, function (element) {
+    if (_react2.default.isValidElement(element)) {
+      // Component classes may have a static create* method.
+      if (element.type.createRouteFromReactElement) {
+        var route = element.type.createRouteFromReactElement(element, parentRoute);
+
+        if (route) routes.push(route);
+      } else {
+        routes.push(createRouteFromReactElement(element));
+      }
+    }
+  });
+
+  return routes;
+}
+
+/**
+ * Creates and returns an array of routes from the given object which
+ * may be a JSX route, a plain object route, or an array of either.
+ */
+function createRoutes(routes) {
+  if (isReactChildren(routes)) {
+    routes = createRoutesFromReactChildren(routes);
+  } else if (routes && !Array.isArray(routes)) {
+    routes = [routes];
+  }
+
+  return routes;
+}
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports) {
+
+var hasOwnProperty = {}.hasOwnProperty;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
+};
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(50),
+    IE8_DOM_DEFINE = __webpack_require__(155),
+    toPrimitive = __webpack_require__(109),
+    dP = Object.defineProperty;
+
+exports.f = __webpack_require__(51) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+  anObject(O);
+  P = toPrimitive(P, true);
+  anObject(Attributes);
+  if (IE8_DOM_DEFINE) try {
+    return dP(O, P, Attributes);
+  } catch (e) {/* empty */}
+  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
+  if ('value' in Attributes) O[P] = Attributes.value;
+  return O;
+};
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+exports.__esModule = true;
+exports.extractPath = extractPath;
+exports.parsePath = parsePath;
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { 'default': obj };
+}
+
+var _warning = __webpack_require__(28);
+
+var _warning2 = _interopRequireDefault(_warning);
+
+function extractPath(string) {
+  var match = string.match(/^https?:\/\/[^\/]*/);
+
+  if (match == null) return string;
+
+  return string.substring(match[0].length);
+}
+
+function parsePath(path) {
+  var pathname = extractPath(path);
+  var search = '';
+  var hash = '';
+
+  process.env.NODE_ENV !== 'production' ? _warning2['default'](path === pathname, 'A path must be pathname + search + hash only, not a fully qualified URL like "%s"', path) : undefined;
+
+  var hashIndex = pathname.indexOf('#');
+  if (hashIndex !== -1) {
+    hash = pathname.substring(hashIndex);
+    pathname = pathname.substring(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+  if (searchIndex !== -1) {
+    search = pathname.substring(searchIndex);
+    pathname = pathname.substring(0, searchIndex);
+  }
+
+  if (pathname === '') pathname = '/';
+
+  return {
+    pathname: pathname,
+    search: search,
+    hash: hash
+  };
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -4076,7 +4487,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(512)(module)))
 
 /***/ }),
-/* 38 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 Object.defineProperty(exports, "__esModule", {
@@ -4425,417 +4836,6 @@ exports.Well = _Well3.default;
 exports.utils = _utils;
 
 /***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var _prodInvariant = __webpack_require__(11);
-
-var invariant = __webpack_require__(9);
-
-function checkMask(value, bitmask) {
-  return (value & bitmask) === bitmask;
-}
-
-var DOMPropertyInjection = {
-  /**
-   * Mapping from normalized, camelcased property names to a configuration that
-   * specifies how the associated DOM property should be accessed or rendered.
-   */
-  MUST_USE_PROPERTY: 0x1,
-  HAS_BOOLEAN_VALUE: 0x4,
-  HAS_NUMERIC_VALUE: 0x8,
-  HAS_POSITIVE_NUMERIC_VALUE: 0x10 | 0x8,
-  HAS_OVERLOADED_BOOLEAN_VALUE: 0x20,
-
-  /**
-   * Inject some specialized knowledge about the DOM. This takes a config object
-   * with the following properties:
-   *
-   * isCustomAttribute: function that given an attribute name will return true
-   * if it can be inserted into the DOM verbatim. Useful for data-* or aria-*
-   * attributes where it's impossible to enumerate all of the possible
-   * attribute names,
-   *
-   * Properties: object mapping DOM property name to one of the
-   * DOMPropertyInjection constants or null. If your attribute isn't in here,
-   * it won't get written to the DOM.
-   *
-   * DOMAttributeNames: object mapping React attribute name to the DOM
-   * attribute name. Attribute names not specified use the **lowercase**
-   * normalized name.
-   *
-   * DOMAttributeNamespaces: object mapping React attribute name to the DOM
-   * attribute namespace URL. (Attribute names not specified use no namespace.)
-   *
-   * DOMPropertyNames: similar to DOMAttributeNames but for DOM properties.
-   * Property names not specified use the normalized name.
-   *
-   * DOMMutationMethods: Properties that require special mutation methods. If
-   * `value` is undefined, the mutation method should unset the property.
-   *
-   * @param {object} domPropertyConfig the config as described above.
-   */
-  injectDOMPropertyConfig: function injectDOMPropertyConfig(domPropertyConfig) {
-    var Injection = DOMPropertyInjection;
-    var Properties = domPropertyConfig.Properties || {};
-    var DOMAttributeNamespaces = domPropertyConfig.DOMAttributeNamespaces || {};
-    var DOMAttributeNames = domPropertyConfig.DOMAttributeNames || {};
-    var DOMPropertyNames = domPropertyConfig.DOMPropertyNames || {};
-    var DOMMutationMethods = domPropertyConfig.DOMMutationMethods || {};
-
-    if (domPropertyConfig.isCustomAttribute) {
-      DOMProperty._isCustomAttributeFunctions.push(domPropertyConfig.isCustomAttribute);
-    }
-
-    for (var propName in Properties) {
-      !!DOMProperty.properties.hasOwnProperty(propName) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'injectDOMPropertyConfig(...): You\'re trying to inject DOM property \'%s\' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.', propName) : _prodInvariant('48', propName) : void 0;
-
-      var lowerCased = propName.toLowerCase();
-      var propConfig = Properties[propName];
-
-      var propertyInfo = {
-        attributeName: lowerCased,
-        attributeNamespace: null,
-        propertyName: propName,
-        mutationMethod: null,
-
-        mustUseProperty: checkMask(propConfig, Injection.MUST_USE_PROPERTY),
-        hasBooleanValue: checkMask(propConfig, Injection.HAS_BOOLEAN_VALUE),
-        hasNumericValue: checkMask(propConfig, Injection.HAS_NUMERIC_VALUE),
-        hasPositiveNumericValue: checkMask(propConfig, Injection.HAS_POSITIVE_NUMERIC_VALUE),
-        hasOverloadedBooleanValue: checkMask(propConfig, Injection.HAS_OVERLOADED_BOOLEAN_VALUE)
-      };
-      !(propertyInfo.hasBooleanValue + propertyInfo.hasNumericValue + propertyInfo.hasOverloadedBooleanValue <= 1) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s', propName) : _prodInvariant('50', propName) : void 0;
-
-      if (process.env.NODE_ENV !== 'production') {
-        DOMProperty.getPossibleStandardName[lowerCased] = propName;
-      }
-
-      if (DOMAttributeNames.hasOwnProperty(propName)) {
-        var attributeName = DOMAttributeNames[propName];
-        propertyInfo.attributeName = attributeName;
-        if (process.env.NODE_ENV !== 'production') {
-          DOMProperty.getPossibleStandardName[attributeName] = propName;
-        }
-      }
-
-      if (DOMAttributeNamespaces.hasOwnProperty(propName)) {
-        propertyInfo.attributeNamespace = DOMAttributeNamespaces[propName];
-      }
-
-      if (DOMPropertyNames.hasOwnProperty(propName)) {
-        propertyInfo.propertyName = DOMPropertyNames[propName];
-      }
-
-      if (DOMMutationMethods.hasOwnProperty(propName)) {
-        propertyInfo.mutationMethod = DOMMutationMethods[propName];
-      }
-
-      DOMProperty.properties[propName] = propertyInfo;
-    }
-  }
-};
-
-/* eslint-disable max-len */
-var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
-/* eslint-enable max-len */
-
-/**
- * DOMProperty exports lookup objects that can be used like functions:
- *
- *   > DOMProperty.isValid['id']
- *   true
- *   > DOMProperty.isValid['foobar']
- *   undefined
- *
- * Although this may be confusing, it performs better in general.
- *
- * @see http://jsperf.com/key-exists
- * @see http://jsperf.com/key-missing
- */
-var DOMProperty = {
-
-  ID_ATTRIBUTE_NAME: 'data-reactid',
-  ROOT_ATTRIBUTE_NAME: 'data-reactroot',
-
-  ATTRIBUTE_NAME_START_CHAR: ATTRIBUTE_NAME_START_CHAR,
-  ATTRIBUTE_NAME_CHAR: ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040',
-
-  /**
-   * Map from property "standard name" to an object with info about how to set
-   * the property in the DOM. Each object contains:
-   *
-   * attributeName:
-   *   Used when rendering markup or with `*Attribute()`.
-   * attributeNamespace
-   * propertyName:
-   *   Used on DOM node instances. (This includes properties that mutate due to
-   *   external factors.)
-   * mutationMethod:
-   *   If non-null, used instead of the property or `setAttribute()` after
-   *   initial render.
-   * mustUseProperty:
-   *   Whether the property must be accessed and mutated as an object property.
-   * hasBooleanValue:
-   *   Whether the property should be removed when set to a falsey value.
-   * hasNumericValue:
-   *   Whether the property must be numeric or parse as a numeric and should be
-   *   removed when set to a falsey value.
-   * hasPositiveNumericValue:
-   *   Whether the property must be positive numeric or parse as a positive
-   *   numeric and should be removed when set to a falsey value.
-   * hasOverloadedBooleanValue:
-   *   Whether the property can be used as a flag as well as with a value.
-   *   Removed when strictly equal to false; present without a value when
-   *   strictly equal to true; present with a value otherwise.
-   */
-  properties: {},
-
-  /**
-   * Mapping from lowercase property names to the properly cased version, used
-   * to warn in the case of missing properties. Available only in __DEV__.
-   *
-   * autofocus is predefined, because adding it to the property whitelist
-   * causes unintended side effects.
-   *
-   * @type {Object}
-   */
-  getPossibleStandardName: process.env.NODE_ENV !== 'production' ? { autofocus: 'autoFocus' } : null,
-
-  /**
-   * All of the isCustomAttribute() functions that have been injected.
-   */
-  _isCustomAttributeFunctions: [],
-
-  /**
-   * Checks whether a property name is a custom attribute.
-   * @method
-   */
-  isCustomAttribute: function isCustomAttribute(attributeName) {
-    for (var i = 0; i < DOMProperty._isCustomAttributeFunctions.length; i++) {
-      var isCustomAttributeFn = DOMProperty._isCustomAttributeFunctions[i];
-      if (isCustomAttributeFn(attributeName)) {
-        return true;
-      }
-    }
-    return false;
-  },
-
-  injection: DOMPropertyInjection
-};
-
-module.exports = DOMProperty;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }return target;
-};
-
-exports.isReactChildren = isReactChildren;
-exports.createRouteFromReactElement = createRouteFromReactElement;
-exports.createRoutesFromReactChildren = createRoutesFromReactChildren;
-exports.createRoutes = createRoutes;
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function isValidChild(object) {
-  return object == null || _react2.default.isValidElement(object);
-}
-
-function isReactChildren(object) {
-  return isValidChild(object) || Array.isArray(object) && object.every(isValidChild);
-}
-
-function createRoute(defaultProps, props) {
-  return _extends({}, defaultProps, props);
-}
-
-function createRouteFromReactElement(element) {
-  var type = element.type;
-  var route = createRoute(type.defaultProps, element.props);
-
-  if (route.children) {
-    var childRoutes = createRoutesFromReactChildren(route.children, route);
-
-    if (childRoutes.length) route.childRoutes = childRoutes;
-
-    delete route.children;
-  }
-
-  return route;
-}
-
-/**
- * Creates and returns a routes object from the given ReactChildren. JSX
- * provides a convenient way to visualize how routes in the hierarchy are
- * nested.
- *
- *   import { Route, createRoutesFromReactChildren } from 'react-router'
- *
- *   const routes = createRoutesFromReactChildren(
- *     <Route component={App}>
- *       <Route path="home" component={Dashboard}/>
- *       <Route path="news" component={NewsFeed}/>
- *     </Route>
- *   )
- *
- * Note: This method is automatically used when you provide <Route> children
- * to a <Router> component.
- */
-function createRoutesFromReactChildren(children, parentRoute) {
-  var routes = [];
-
-  _react2.default.Children.forEach(children, function (element) {
-    if (_react2.default.isValidElement(element)) {
-      // Component classes may have a static create* method.
-      if (element.type.createRouteFromReactElement) {
-        var route = element.type.createRouteFromReactElement(element, parentRoute);
-
-        if (route) routes.push(route);
-      } else {
-        routes.push(createRouteFromReactElement(element));
-      }
-    }
-  });
-
-  return routes;
-}
-
-/**
- * Creates and returns an array of routes from the given object which
- * may be a JSX route, a plain object route, or an array of either.
- */
-function createRoutes(routes) {
-  if (isReactChildren(routes)) {
-    routes = createRoutesFromReactChildren(routes);
-  } else if (routes && !Array.isArray(routes)) {
-    routes = [routes];
-  }
-
-  return routes;
-}
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
-};
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(50),
-    IE8_DOM_DEFINE = __webpack_require__(155),
-    toPrimitive = __webpack_require__(109),
-    dP = Object.defineProperty;
-
-exports.f = __webpack_require__(51) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
-  anObject(O);
-  P = toPrimitive(P, true);
-  anObject(Attributes);
-  if (IE8_DOM_DEFINE) try {
-    return dP(O, P, Attributes);
-  } catch (e) {/* empty */}
-  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
-  if ('value' in Attributes) O[P] = Attributes.value;
-  return O;
-};
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-exports.__esModule = true;
-exports.extractPath = extractPath;
-exports.parsePath = parsePath;
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { 'default': obj };
-}
-
-var _warning = __webpack_require__(28);
-
-var _warning2 = _interopRequireDefault(_warning);
-
-function extractPath(string) {
-  var match = string.match(/^https?:\/\/[^\/]*/);
-
-  if (match == null) return string;
-
-  return string.substring(match[0].length);
-}
-
-function parsePath(path) {
-  var pathname = extractPath(path);
-  var search = '';
-  var hash = '';
-
-  process.env.NODE_ENV !== 'production' ? _warning2['default'](path === pathname, 'A path must be pathname + search + hash only, not a fully qualified URL like "%s"', path) : undefined;
-
-  var hashIndex = pathname.indexOf('#');
-  if (hashIndex !== -1) {
-    hash = pathname.substring(hashIndex);
-    pathname = pathname.substring(0, hashIndex);
-  }
-
-  var searchIndex = pathname.indexOf('?');
-  if (searchIndex !== -1) {
-    search = pathname.substring(searchIndex);
-    pathname = pathname.substring(0, searchIndex);
-  }
-
-  if (pathname === '') pathname = '/';
-
-  return {
-    pathname: pathname,
-    search: search,
-    hash: hash
-  };
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
-
-/***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5001,7 +5001,7 @@ var routes = exports.routes = oneOfType([route, arrayOf(route)]);
 exports.__esModule = true;
 exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 Object.defineProperty(exports, 'createRoutes', {
   enumerable: true,
@@ -5579,7 +5579,7 @@ module.exports = !__webpack_require__(61)(function () {
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(42),
+var dP = __webpack_require__(40),
     createDesc = __webpack_require__(65);
 module.exports = __webpack_require__(51) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
@@ -7267,7 +7267,7 @@ var _runTransitionHook = __webpack_require__(117);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 var _deprecate = __webpack_require__(116);
 
@@ -9331,7 +9331,7 @@ var _getRouteParams = __webpack_require__(490);
 
 var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 var _routerWarning = __webpack_require__(18);
 
@@ -9768,8 +9768,8 @@ exports.f = Object.getOwnPropertySymbols;
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var def = __webpack_require__(42).f,
-    has = __webpack_require__(41),
+var def = __webpack_require__(40).f,
+    has = __webpack_require__(39),
     TAG = __webpack_require__(27)('toStringTag');
 
 module.exports = function (it, tag, stat) {
@@ -9843,7 +9843,7 @@ var global = __webpack_require__(34),
     core = __webpack_require__(26),
     LIBRARY = __webpack_require__(101),
     wksExt = __webpack_require__(111),
-    defineProperty = __webpack_require__(42).f;
+    defineProperty = __webpack_require__(40).f;
 module.exports = function (name) {
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
   if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
@@ -28282,11 +28282,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 var _reactRouterBootstrap = __webpack_require__(91);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 var _CollectionStyleCss = __webpack_require__(518);
 
@@ -28323,75 +28323,93 @@ var Collection = function (_React$Component) {
   _createClass(Collection, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
-      this.fetchCollection();
+      this.fetchCollection(this.props.params.collectionname);
     }
   }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
-      var _this2 = this;
-
-      fetch('/' + nextProps.params.collectionname).then(function (result) {
-        return result.json();
-      }).then(function (data) {
-        return _this2.setState({ collection: data });
-      });
+      this.fetchCollection(nextProps.params.collectionname);
     }
   }, {
     key: 'prepareCollection',
     value: function prepareCollection() {
       return this.state.collection.map(function (x) {
-        var _this3 = this;
+        var _this2 = this;
 
         if (this.props.userStore[this.props.params.collectionname].find(function (y) {
           return y.name == x.name;
         })) {
+          var collectedHeader = _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'span',
+              null,
+              _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'check', style: { color: "green" } })
+            ),
+            x.name + " - " + this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)
+          );
           return _react2.default.createElement(
-            _reactBootstrap.ListGroupItem,
-            { onClick: function onClick() {
-                _this3.props.userStore.removeCollectable(_this3.props.userStore.name, x.name, _this3.props.params.collectionname);
-              }, key: x.name },
-            _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'check', style: { color: "green" } }),
-            '  ',
-            x.name,
-            ', ',
-            this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)
+            _reactBootstrap.Panel,
+            { style: _CollectionStyleCss2.default.panelStyle, header: _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'check', style: { color: "green" } })
+                ),
+                x.name + " - " + this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)
+              ), key: x.name, eventKey: x.name },
+            x.description,
+            _react2.default.createElement(
+              _reactBootstrap.Button,
+              { onClick: function onClick() {
+                  _this2.props.userStore.removeCollectable(_this2.props.userStore.name, x.name, _this2.props.params.collectionname);
+                } },
+              'Remove From Collection'
+            )
           );
         } else {
           return _react2.default.createElement(
-            _reactBootstrap.ListGroupItem,
-            { onClick: function onClick() {
-                _this3.props.userStore.addCollectable(_this3.props.userStore.name, x.name, _this3.props.params.collectionname);
-              }, key: x.name },
-            x.name
+            _reactBootstrap.Panel,
+            { style: _CollectionStyleCss2.default.panelStyle, header: x.name, key: x.name, eventKey: x.name },
+            x.description,
+            _react2.default.createElement(
+              _reactBootstrap.Button,
+              { onClick: function onClick() {
+                  _this2.props.userStore.addCollectable(_this2.props.userStore.name, x.name, _this2.props.params.collectionname);
+                } },
+              'Add To Collection'
+            )
           );
         }
       }, this);
     }
   }, {
     key: 'fetchCollection',
-    value: function fetchCollection() {
-      var _this4 = this;
+    value: function fetchCollection(collectionName) {
+      var _this3 = this;
 
-      fetch('/' + this.props.params.collectionname).then(function (result) {
+      fetch('/' + collectionName).then(function (result) {
         return result.json();
       }).then(function (data) {
-        return _this4.setState({ collection: data });
+        return _this3.setState({ collection: data });
       });
     }
   }, {
     key: 'render',
     value: function render() {
-
       return _react2.default.createElement(
         _reactBootstrap.Row,
-        null,
+        { className: 'show-grid' },
         _react2.default.createElement(
           _reactBootstrap.Col,
           { xs: 12, md: 9 },
-          _react2.default.createElement(_reactBootstrap.Col, { xs: 1 }),
+          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, smHidden: true, md: 1 }),
           _react2.default.createElement(
             _reactBootstrap.Col,
-            { xs: 11 },
+            { md: 11 },
             _react2.default.createElement(
               'h3',
               null,
@@ -28402,26 +28420,27 @@ var Collection = function (_React$Component) {
             ),
             _react2.default.createElement(_reactBootstrap.ProgressBar, { active: true, style: { border: ".5px solid black", background: "white" }, now: parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)) })
           ),
+          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, smHidden: true, md: 1 }),
           _react2.default.createElement(
-            _reactBootstrap.Row,
-            null,
+            _reactBootstrap.Col,
+            { style: _CollectionStyleCss2.default.mapStyle, xsHidden: true, smHidden: true, md: 10 },
             _react2.default.createElement(_CollectionMap2.default, {
               collectionName: this.props.params.collectionname,
               fullCollection: this.state.collection,
               usersCollection: this.props.userStore[this.props.params.collectionname] })
-          )
+          ),
+          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, smHidden: true, md: 1 })
         ),
         _react2.default.createElement(
           _reactBootstrap.Col,
           { xs: 12, md: 2 },
-          this.props.params.collectionname,
           _react2.default.createElement(
-            _reactBootstrap.ListGroup,
+            _reactBootstrap.Accordion,
             { style: _CollectionStyleCss2.default.listStyle },
             this.prepareCollection()
           )
         ),
-        _react2.default.createElement(_reactBootstrap.Col, { md: 1 })
+        _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, smHidden: true, md: 1 })
       );
     }
   }]);
@@ -28493,7 +28512,7 @@ var LIBRARY = __webpack_require__(101),
     $export = __webpack_require__(33),
     redefine = __webpack_require__(162),
     hide = __webpack_require__(52),
-    has = __webpack_require__(41),
+    has = __webpack_require__(39),
     Iterators = __webpack_require__(63),
     $iterCreate = __webpack_require__(265),
     setToStringTag = __webpack_require__(104),
@@ -28582,7 +28601,7 @@ var pIE = __webpack_require__(64),
     createDesc = __webpack_require__(65),
     toIObject = __webpack_require__(35),
     toPrimitive = __webpack_require__(109),
-    has = __webpack_require__(41),
+    has = __webpack_require__(39),
     IE8_DOM_DEFINE = __webpack_require__(155),
     gOPD = Object.getOwnPropertyDescriptor;
 
@@ -28611,7 +28630,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 /* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(41),
+var has = __webpack_require__(39),
     toIObject = __webpack_require__(35),
     arrayIndexOf = __webpack_require__(257)(false),
     IE_PROTO = __webpack_require__(105)('IE_PROTO');
@@ -29351,7 +29370,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _Actions = __webpack_require__(56);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 var _ExecutionEnvironment = __webpack_require__(77);
 
@@ -29614,7 +29633,7 @@ var _deepEqual = __webpack_require__(292);
 
 var _deepEqual2 = _interopRequireDefault(_deepEqual);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 var _AsyncUtils = __webpack_require__(325);
 
@@ -29917,7 +29936,7 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _ExecutionEnvironment = __webpack_require__(77);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 var _runTransitionHook = __webpack_require__(117);
 
@@ -32800,7 +32819,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var ReactDOMComponentTree = __webpack_require__(14);
 var ReactInstrumentation = __webpack_require__(23);
 
@@ -33540,7 +33559,7 @@ module.exports = ReactInputSelection;
 var _prodInvariant = __webpack_require__(11);
 
 var DOMLazyTree = __webpack_require__(57);
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var React = __webpack_require__(60);
 var ReactBrowserEventEmitter = __webpack_require__(83);
 var ReactCurrentOwner = __webpack_require__(31);
@@ -35939,7 +35958,7 @@ var _invariant = __webpack_require__(15);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 var _PatternUtils = __webpack_require__(59);
 
@@ -36574,11 +36593,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 var _reactRouter = __webpack_require__(46);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36808,7 +36827,7 @@ var _UserStore2 = _interopRequireDefault(_UserStore);
 
 var _reactRouter = __webpack_require__(46);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37007,7 +37026,7 @@ module.exports = function (it) {
 "use strict";
 
 
-var $defineProperty = __webpack_require__(42),
+var $defineProperty = __webpack_require__(40),
     createDesc = __webpack_require__(65);
 
 module.exports = function (object, index, value) {
@@ -37171,8 +37190,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var META = __webpack_require__(73)('meta'),
     isObject = __webpack_require__(62),
-    has = __webpack_require__(41),
-    setDesc = __webpack_require__(42).f,
+    has = __webpack_require__(39),
+    setDesc = __webpack_require__(40).f,
     id = 0;
 var isExtensible = Object.isExtensible || function () {
   return true;
@@ -37272,7 +37291,7 @@ module.exports = !$assign || __webpack_require__(61)(function () {
 /* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(42),
+var dP = __webpack_require__(40),
     anObject = __webpack_require__(50),
     getKeys = __webpack_require__(53);
 
@@ -37317,7 +37336,7 @@ module.exports.f = function getOwnPropertyNames(it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(41),
+var has = __webpack_require__(39),
     toObject = __webpack_require__(108),
     IE_PROTO = __webpack_require__(105)('IE_PROTO'),
     ObjectProto = Object.prototype;
@@ -37537,7 +37556,7 @@ $export($export.S, 'Object', { setPrototypeOf: __webpack_require__(274).set });
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var global = __webpack_require__(34),
-    has = __webpack_require__(41),
+    has = __webpack_require__(39),
     DESCRIPTORS = __webpack_require__(51),
     $export = __webpack_require__(33),
     redefine = __webpack_require__(162),
@@ -37559,7 +37578,7 @@ var global = __webpack_require__(34),
     _create = __webpack_require__(102),
     gOPNExt = __webpack_require__(272),
     $GOPD = __webpack_require__(158),
-    $DP = __webpack_require__(42),
+    $DP = __webpack_require__(40),
     $keys = __webpack_require__(53),
     gOPD = $GOPD.f,
     dP = $DP.f,
@@ -41647,7 +41666,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _Actions = __webpack_require__(56);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 var _ExecutionEnvironment = __webpack_require__(77);
 
@@ -41846,7 +41865,7 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _Actions = __webpack_require__(56);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 function createLocation() {
   var location = arguments.length <= 0 || arguments[0] === undefined ? '/' : arguments[0];
@@ -41918,7 +41937,7 @@ var _invariant = __webpack_require__(15);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _PathUtils = __webpack_require__(43);
+var _PathUtils = __webpack_require__(41);
 
 var _Actions = __webpack_require__(56);
 
@@ -51683,7 +51702,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -53133,7 +53152,7 @@ var AutoFocusUtils = __webpack_require__(398);
 var CSSPropertyOperations = __webpack_require__(400);
 var DOMLazyTree = __webpack_require__(57);
 var DOMNamespaces = __webpack_require__(126);
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var DOMPropertyOperations = __webpack_require__(200);
 var EventPluginHub = __webpack_require__(68);
 var EventPluginRegistry = __webpack_require__(82);
@@ -54582,7 +54601,7 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var ReactComponentTreeHook = __webpack_require__(22);
 
 var warning = __webpack_require__(10);
@@ -55554,7 +55573,7 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var EventPluginRegistry = __webpack_require__(82);
 var ReactComponentTreeHook = __webpack_require__(22);
 
@@ -56467,7 +56486,7 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(39);
+var DOMProperty = __webpack_require__(37);
 var EventPluginHub = __webpack_require__(68);
 var EventPluginUtils = __webpack_require__(127);
 var ReactComponentEnvironment = __webpack_require__(130);
@@ -61464,7 +61483,7 @@ var _invariant = __webpack_require__(15);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 var _InternalPropTypes = __webpack_require__(45);
 
@@ -61605,7 +61624,7 @@ var _invariant = __webpack_require__(15);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 var _InternalPropTypes = __webpack_require__(45);
 
@@ -61752,7 +61771,7 @@ var _RouterContext = __webpack_require__(92);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 var _RouterUtils = __webpack_require__(227);
 
@@ -62605,7 +62624,7 @@ var _createTransitionManager = __webpack_require__(144);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 var _RouterUtils = __webpack_require__(227);
 
@@ -62717,7 +62736,7 @@ var _routerWarning = __webpack_require__(18);
 
 var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-var _RouteUtils = __webpack_require__(40);
+var _RouteUtils = __webpack_require__(38);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
@@ -65728,10 +65747,6 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _mobxReact = __webpack_require__(37);
-
-var _reactBootstrap = __webpack_require__(38);
-
 var _reactDatamaps = __webpack_require__(396);
 
 var _reactDatamaps2 = _interopRequireDefault(_reactDatamaps);
@@ -65752,36 +65767,46 @@ var CollectionMap = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (CollectionMap.__proto__ || Object.getPrototypeOf(CollectionMap)).call(this, props));
 
-    _this.state = {};
+    _this.state = {
+      theStates: ['AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY']
+    };
     return _this;
   }
 
+  // addClickHandlers(ref){
+  //   if (ref && ref.map) {
+  //     ref.map.svg.selectAll('.datamaps-subunit').on('click', (state) => {
+  //       console.log("You clicked on "+state.properties.name);
+  //     });
+  //   }
+  // }
+
   _createClass(CollectionMap, [{
-    key: 'addClickHandlers',
-    value: function addClickHandlers(ref) {
-      if (ref && ref.map) {
-        ref.map.svg.selectAll('.datamaps-subunit').on('click', function (state) {
-          console.log("You clicked on " + state.properties.name);
-        });
-      }
-    }
-  }, {
     key: 'prepareFillKeys',
     value: function prepareFillKeys() {
       var fillKeys = {};
-      this.props.fullCollection.forEach(function (x) {
-        if (this.props.usersCollection.find(function (y) {
-          return y.name == x.name;
-        })) {
-          fillKeys[x.abbreviation] = {
-            fillKey: 'Collected'
+      var theStates = [];
+      if (this.props.collectionName == "states") {
+        this.props.fullCollection.forEach(function (x) {
+          if (this.props.usersCollection.find(function (y) {
+            return y.name == x.name;
+          })) {
+            fillKeys[x.states] = {
+              fillKey: 'Collected'
+            };
+          } else {
+            fillKeys[x.states] = {
+              fillKey: 'defaultFill'
+            };
+          }
+        }, this);
+      } else {
+        this.state.theStates.forEach(function (x) {
+          fillKeys[x] = {
+            fillKey: 'defaultFill'
           };
-        } else {
-          fillKeys[x.abbreviation] = {
-            fillKey: 'NotCollected'
-          };
-        }
-      }, this);
+        });
+      }
 
       return fillKeys;
     }
@@ -65796,7 +65821,7 @@ var CollectionMap = function (_React$Component) {
           return y.name == x.name;
         })) {
           bubbles.push({
-            name: x.name,
+            name: x.name + ", " + x.description,
             radius: radius,
             country: 'USA',
             latitude: x.latitude,
@@ -65805,27 +65830,32 @@ var CollectionMap = function (_React$Component) {
           });
         }
       }, this);
-
       return bubbles;
     }
   }, {
     key: 'prepareMap',
     value: function prepareMap() {
-      var ourMap = _react2.default.createElement(_reactDatamaps2.default, { scope: 'usa', height: '650',
-        ref: this.addClickHandlers,
-        geographyConfig: {
-          highlightFillColor: '#0DFFA6',
-          highlightBorderColor: '#1D0CE8',
-          highlightBorderWidth: 3
+      var fillKeys = this.prepareFillKeys();
+      var ourMap = _react2.default.createElement(_reactDatamaps2.default, { scope: 'usa',
+        responsive: 'true',
+        height: '500'
+        // ref={this.addClickHandlers}
+        , geographyConfig: {
+          highlightOnHover: false
+          // highlightFillColor: '#0DFFA6',
+          // highlightBorderColor: '#1D0CE8',
+          // highlightBorderWidth: 3
         },
         fills: {
           'Collected': '#35B729',
-          'NotCollected': '#E8AB0C' },
-        data: this.prepareFillKeys(),
+          'NotCollected': '#707070',
+          'defaultFill': '#707070' },
+        data: fillKeys,
         bubbles: this.prepareBubbles(),
         bubbleOptions: {
           borderWidth: 1,
-          borderColor: '#E8AB0C'
+          borderColor: '#000000',
+          fillOpacity: 1
         },
         labels: true
       });
@@ -65836,8 +65866,8 @@ var CollectionMap = function (_React$Component) {
     value: function render() {
 
       return _react2.default.createElement(
-        _reactBootstrap.Col,
-        { className: 'hidden-sm hidden-xs', md: 12 },
+        'div',
+        null,
         this.prepareMap()
       );
     }
@@ -65847,13 +65877,12 @@ var CollectionMap = function (_React$Component) {
 }(_react2.default.Component);
 
 CollectionMap.propTypes = {
-  userStore: _react2.default.PropTypes.object,
   collectionName: _react2.default.PropTypes.string,
   fullCollection: _react2.default.PropTypes.array,
   usersCollection: _react2.default.PropTypes.object
 };
 
-exports.default = (0, _mobxReact.inject)("userStore")((0, _mobxReact.observer)(CollectionMap));
+exports.default = CollectionMap;
 
 /***/ }),
 /* 514 */
@@ -65875,11 +65904,11 @@ var _Trophy = __webpack_require__(516);
 
 var _Trophy2 = _interopRequireDefault(_Trophy);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 var _reactRouterBootstrap = __webpack_require__(91);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 var _Collection = __webpack_require__(151);
 
@@ -66077,13 +66106,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 var _reactRouter = __webpack_require__(46);
 
 var _reactRouterBootstrap = __webpack_require__(91);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 var _reactSimplePieChart = __webpack_require__(497);
 
@@ -66125,7 +66154,7 @@ var Dashboard = function (_React$Component) {
     key: 'createPieChart',
     value: function createPieChart(collectionname) {
       var percentComplete = this.props.userStore.getPercentageCompletion(collectionname);
-      return _react2.default.createElement(_reactSimplePieChart2.default, { slices: [{ color: '#E8AB0C', value: 100 - percentComplete }, { color: '#35b729', value: percentComplete }] });
+      return _react2.default.createElement(_reactSimplePieChart2.default, { slices: [{ color: '#707070', value: 100 - percentComplete }, { color: '#35b729', value: percentComplete }] });
     }
   }, {
     key: 'createActivityList',
@@ -66254,11 +66283,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(46);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 var _reactRouterBootstrap = __webpack_require__(91);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 var _Collection = __webpack_require__(151);
 
@@ -66299,7 +66328,7 @@ var Trophy = function (_React$Component) {
         return _react2.default.createElement('img', { key: this.props.collectionName, style: _TrophyStyleCss2.default.trophyStyle.silver, src: __webpack_require__(95)("./" + this.props.collectionName + '.png') });
       } else if (this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 40) {
         return _react2.default.createElement('img', { key: this.props.collectionName, style: _TrophyStyleCss2.default.trophyStyle.bronze, src: __webpack_require__(95)("./" + this.props.collectionName + '.png') });
-      } else if (this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 1) {
+      } else if (this.props.userStore.getPercentageCompletion(this.props.collectionName) > 0) {
         return _react2.default.createElement('img', { key: this.props.collectionName, style: _TrophyStyleCss2.default.trophyStyle, src: __webpack_require__(95)("./" + this.props.collectionName + '.png') });
       }
     }
@@ -66342,11 +66371,11 @@ var _NewUser = __webpack_require__(236);
 
 var _NewUser2 = _interopRequireDefault(_NewUser);
 
-var _mobxReact = __webpack_require__(37);
+var _mobxReact = __webpack_require__(42);
 
 var _reactRouter = __webpack_require__(46);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66513,9 +66542,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
   listStyle: {
-    height: "77vh",
+    height: "84vh",
     overflowY: "scroll",
     border: "thin solid SlateGrey"
+  },
+  panelStyle: {
+    margin: "0"
+  },
+  mapStyle: {
+    top: "-15px",
+    left: "20px"
   }
 };
 
@@ -66531,7 +66567,8 @@ exports.default = {
     zIndex: "1",
     background: "rgb(53, 183, 41)",
     color: "white",
-    boxShadow: "0px 1px 5px grey"
+    boxShadow: "0px 1px 5px grey",
+    marginBottom: "20"
   },
   logoStyle: {
     position: "absolute",
@@ -66608,7 +66645,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(46);
 
-var _reactBootstrap = __webpack_require__(38);
+var _reactBootstrap = __webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

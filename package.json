@@ -15,7 +15,7 @@
     "build": "npm run clean && npm run build:webpack && npm run build:server",
     "clean": "rimraf static distServer",
     "build:webpack": "NODE_ENV='production' webpack --config webpack.config.babel.js",
-    "build:server": "babel tools -d distserver/tools --presets es2015 && babel src/models -d distserver/src/models && babel src/routes -d distserver/src/routes --presets es2015 && babel webpack.config.babel.js webpack.config.dev.js src/config.js -d distserver && cp src/index.html distserver/src && cp -r src/img dist/src/img"
+    "build:server": "babel tools -d distserver/tools --presets es2015 && babel src/models -d distserver/src/models && babel src/routes -d distserver/src/routes --presets es2015 && babel webpack.config.babel.js webpack.config.dev.js src/config.js -d distserver && cp src/index.html distserver/src"
   },
   "author": "Cory House",
   "license": "MIT",
