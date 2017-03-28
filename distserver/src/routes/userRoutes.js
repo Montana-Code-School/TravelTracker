@@ -85,7 +85,6 @@ router.route('/user').post(function (req, res) {
 });
 
 router.post('/authenticate', function (req, res, next) {
-  console.log('Authenticating....', req.body.name, req.body.password);
   _User2.default.findOne({
     name: req.body.name.toLowerCase()
   }, function (err, user) {
