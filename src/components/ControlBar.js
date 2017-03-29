@@ -38,10 +38,11 @@ class ControlBar extends React.Component {
             <Navbar .Header>
               <Navbar .Brand>
                 <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="209px" height="96px"/></Link>
-                <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
+                <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm"style={styles.logoStyle} src={require('../img/barlogo.png')} width="104.5px" height="48px"/></Link>
               </Navbar .Brand>
+              <Navbar .Toggle />
             </Navbar .Header>
-            <Navbar .Toggle />
+
             <Navbar .Collapse>
               {displayTrophy}
               <Nav pullRight>
