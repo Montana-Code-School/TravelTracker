@@ -1,4 +1,5 @@
 import React from 'react';
+import { inject, observer } from 'mobx-react';
 import Datamap from 'react-datamaps';
 
 class CollectionMap extends React.Component {
@@ -6,28 +7,31 @@ class CollectionMap extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      location: {latitude: null, longitude: null},
       theStates: ['AL', 'AK' , 'AS' , 'AZ' , 'AR' , 'CA', 'CO', 'CT' , 'DE' , 'DC' , 'FM' , 'FL' , 'GA' , 'GU' , 'HI' , 'ID' , 'IL',
         'IN' , 'IA' , 'KS' , 'KY' , 'LA' , 'ME' , 'MH' , 'MD' , 'MA' , 'MI' , 'MN' , 'MS' , 'MO' , 'MT' , 'NE' , 'NV' , 'NH' ,
         'NJ' , 'NM' , 'NY' , 'NC' , 'ND' , 'MP' , 'OH' , 'OK' , 'OR' , 'PW' , 'PA' , 'PR' , 'RI' , 'SC' , 'SD' , 'TN' , 'TX' ,
         'UT' , 'VT' , 'VI' , 'VA' , 'WA' , 'WV' , 'WI' , 'WY' ]
     };
+
   }
 
-  userLocation() {
-    let userLocation={};
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
+  componentDidMount(){
+    const self = this;
+    this.userLocation(
+      function(position) {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
         console.log(lat, lon);
-        userLocation = {latitude: lat, longitude: lon};
-        console.log(userLocation);
-      });
-    } else {
-      document.write('Your browser does not support GeoLocation :(');
+        self.setState({location: {latitude: lat, longitude: lon}});
+      }
+    );
+  }
+
+  userLocation(callback) {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(callback);
     }
-    console.log(userLocation);
-    return (userLocation);
   }
 
   prepareFillKeys(){
@@ -58,18 +62,21 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
-    let userNow=this.userLocation();
-    console.log(userNow);
-    bubbles.push(
-      {
-        name: "Your Location",
-        radius: 8,
-        country: 'USA',
-        latitude: 45.6639085,
-        longitude: -111.0621144,
-        fillKey: 'User'
-      }
-    );
+
+    if(this.state.location.latitude !== null) {
+      bubbles.push(
+        {
+          name: "Your Location",
+          radius: 8,
+          country: 'USA',
+          latitude: this.state.location.latitude,
+          longitude: this.state.location.longitude,
+          fillKey: 'User'
+        }
+      );
+    }
+
+
     if(this.props.collectionName != "states"){
       this.props.fullCollection.forEach(function(x){
         if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
@@ -130,10 +137,11 @@ class CollectionMap extends React.Component {
   }
 
   render() {
+    const ourMap = this.prepareMap();
 
     return (
       <div>
-        {this.prepareMap()}
+        {ourMap}
       </div>
     );
   }
@@ -145,4 +153,4 @@ CollectionMap.propTypes = {
   usersCollection: React.PropTypes.object
 };
 
-export default CollectionMap;
+export default inject("userStore")(observer(CollectionMap));
