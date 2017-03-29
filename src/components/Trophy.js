@@ -30,7 +30,7 @@ class Trophy extends React.Component {
       );}
     else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) > 0)) {
       return (
-        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'.png')}/>
+        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'/'+this.props.collectionName+'grey.png')}/>
       );}
   }
 
