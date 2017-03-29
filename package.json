@@ -7,7 +7,7 @@
     "start:dev": "npm-run-all --parallel testonly:watch open:src lint:watch",
     "start:prod": "node distserver/tools/srcServer.js",
     "open:src": "babel-node tools/srcServer.js",
-    "lint": "node_modules/.bin/esw webpack.config.* src tools",
+    "lint": "node_modules/.bin/esw webpack.config.* tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "npm run lint && npm run testonly",
     "testonly": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
