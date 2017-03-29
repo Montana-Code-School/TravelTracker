@@ -37,7 +37,7 @@ class ControlBar extends React.Component {
           <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
             <Navbar .Header>
               <Navbar .Brand>
-                <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="165px" height="48px"/></Link>
+                <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="209px" height="96px"/></Link>
                 <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
               </Navbar .Brand>
             </Navbar .Header>
@@ -46,7 +46,7 @@ class ControlBar extends React.Component {
               {displayTrophy}
               <Nav pullRight>
                 <LinkContainer to={{pathname: '/Dashboard'}}><NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem></LinkContainer>
-                <NavDropdown id="dropdown" title="Collections">
+                <NavDropdown id="dropdown" title="collections">
                   <LinkContainer to={{pathname: '/Dashboard'}}><NavItem>Home Page</NavItem></LinkContainer>
                   <MenuItem divider/>
                   <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
@@ -54,7 +54,7 @@ class ControlBar extends React.Component {
                   <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
                 </NavDropdown>
-                <NavItem onClick={() => {this.logOutHandler();}}>LogOut</NavItem>
+                <NavItem onClick={() => {this.logOutHandler();}}>log out</NavItem>
               </Nav>
             </Navbar .Collapse>
           </Navbar>
@@ -64,13 +64,13 @@ class ControlBar extends React.Component {
   }
 
   render() {
-    let textStyle ={fontFamily: "Josefin Sans", background: "#F7F7F7"};
+    let textStyle ={fontFamily: "Open Sans", background: "#F7F7F7"};
     return (
       <div style={textStyle}>
           {this.createNavBar()}
           {this.props.children}
           <style>
-          @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+          @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
           </style>
       </div>
     );

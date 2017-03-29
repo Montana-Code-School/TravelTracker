@@ -26,7 +26,7 @@ class Dashboard extends React.Component {
 
   createPieChart(collectionname){
     let percentComplete = this.props.userStore.getPercentageCompletion(collectionname);
-    return(<PieChart slices={[{color: '#707070',value: (100-percentComplete)},{color: '#35b729', value: percentComplete}
+    return(<PieChart slices={[{color: '#c1c1c0',value: (100-percentComplete)},{color: '#57ae81', value: percentComplete}
     ]}/>);
   }
 
@@ -35,7 +35,7 @@ class Dashboard extends React.Component {
   }
 
   render() {
-    let listStyle = {height:"77vh", overflowY: "scroll", border:"thin solid SlateGrey"};
+    let listStyle = {height:"77vh", overflowY: "scroll", border:"1px solid #ececec"};
 
     return (
       <div>

@@ -54,7 +54,7 @@ export default class UserStore {
     let preparedActivityList = [];
 
     activityList.forEach(function(x){
-      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "green"}}/>  {x.name}, {x.date}</ListGroupItem>);
+      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "#57ae81"}}/>  {x.name}, {x.date}</ListGroupItem>);
     });
 
     return preparedActivityList;

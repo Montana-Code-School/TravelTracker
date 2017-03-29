@@ -29,9 +29,9 @@ class Collection extends React.Component {
   prepareCollection(){
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
-        const collectedHeader = (<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span>{x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>);
+        const collectedHeader = (<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span>{x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>);
         return (
-          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "green"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
+          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
           {x.description}
           <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove From Collection</Button>
           </Panel>);
@@ -57,7 +57,7 @@ class Collection extends React.Component {
               <Col xsHidden smHidden md={1}/>
               <Col md={11}>
                 <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
-                <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
+                <ProgressBar active style={{border: ".5px solid #ececec", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
               </Col>
               <Col xsHidden smHidden md={1}/>
               <Col style={styles.mapStyle} xsHidden smHidden md={10}>

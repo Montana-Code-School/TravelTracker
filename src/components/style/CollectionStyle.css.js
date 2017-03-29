@@ -3,7 +3,7 @@ export default {
   {
     height:"84vh",
     overflowY: "scroll",
-    border:"thin solid SlateGrey"
+    border:"thin solid #ececec"
   },
   panelStyle:
   {
