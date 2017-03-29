@@ -22,7 +22,6 @@ class CollectionMap extends React.Component {
       function(position) {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
-        console.log(lat, lon);
         self.setState({location: {latitude: lat, longitude: lon}});
       }
     );
@@ -75,7 +74,6 @@ class CollectionMap extends React.Component {
         }
       );
     }
-
 
     if(this.props.collectionName != "states"){
       this.props.fullCollection.forEach(function(x){
@@ -149,7 +147,8 @@ class CollectionMap extends React.Component {
 CollectionMap.propTypes = {
   collectionName: React.PropTypes.string,
   fullCollection: React.PropTypes.array,
-  usersCollection: React.PropTypes.object
+  usersCollection: React.PropTypes.object,
+  userStore: React.PropTypes.object
 };
 
 export default inject("userStore")(observer(CollectionMap));

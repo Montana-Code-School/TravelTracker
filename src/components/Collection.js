@@ -24,9 +24,6 @@ class Collection extends React.Component {
     this.fetchCollection(nextProps.params.collectionname);
   }
 
-
-
-
   prepareCollection(){
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
