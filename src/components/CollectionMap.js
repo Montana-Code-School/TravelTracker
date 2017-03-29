@@ -16,15 +16,13 @@ class CollectionMap extends React.Component {
   userLocation() {
     let userLocation={};
     if (navigator.geolocation) {
-      setTimeout(
-        navigator.geolocation.getCurrentPosition(function(position) {
-          let lat = position.coords.latitude;
-          let lon = position.coords.longitude;
-          console.log(lat, lon);
-          userLocation = {latitude: lat, longitude: lon};
-        }), 5000
-      );
-
+      navigator.geolocation.getCurrentPosition(function(position) {
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+        console.log(lat, lon);
+        userLocation = {latitude: lat, longitude: lon};
+        console.log(userLocation);
+      });
     } else {
       document.write('Your browser does not support GeoLocation :(');
     }
@@ -60,15 +58,15 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
-    let userLocation=this.userLocation();
-    console.log(userLocation);
+    let userNow=this.userLocation();
+    console.log(userNow);
     bubbles.push(
       {
         name: "Your Location",
-        radius: 10,
+        radius: 8,
         country: 'USA',
-        latitude: userLocation.latitude,
-        longitude: userLocation.longitude,
+        latitude: 45.6639085,
+        longitude: -111.0621144,
         fillKey: 'User'
       }
     );

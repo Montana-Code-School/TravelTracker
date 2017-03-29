@@ -54,10 +54,13 @@ class Dashboard extends React.Component {
     } else {
       return (
         <div style={styles.jumboStyle}>
-        <Jumbotron><img style={styles.welcomeRibbon} src={require('../img/logo.png')}/><h4>Welcome to Travel Tracker!
-          Thank you for visiting our site.</h4><h4>View the assortment of options available in the "Collections"
-          menu and pick your passion.</h4><h4>Periodically check in on the Home Page to view your overall progress.</h4><h3 style={{fontWeight: "bold"}}>Bon Voyage!  Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
-        </Jumbotron>
+          <Jumbotron>
+            <h4>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
+            <h4>View the assortment of options available in the "Collections" menu and pick your passion.</h4>
+            <h4>Periodically check in on the Home Page to view your overall progress.</h4>
+            <img style={styles.welcomeRibbon} src={require('../img/logo.png')}/>
+            <h3 style={{fontWeight: "bold"}}>Bon Voyage!  Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
+          </Jumbotron>
         </div>
       );
     }

@@ -14,4 +14,10 @@ export default {
     overflowY: "scroll",
     border:"thin solid SlateGrey"
   },
+  imageStyle: {
+    height:"100vh",
+    width:"100vw",
+    background: "url(../img/backgrounds/highway.jpg) no-repeat center fixed",
+    backgroundSize: "cover"
+  },
 };
