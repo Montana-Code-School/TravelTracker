@@ -51,22 +51,13 @@ class Collection extends React.Component {
   render() {
     return (
         <Row>
-          <Col xs={12} md={9}>
-              <Col xsHidden smHidden md={1}/>
-              <Col md={11}>
-                <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
-                <ProgressBar active style={{border: ".5px solid black", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
-              </Col>
-              <Col xsHidden smHidden md={1}/>
-              <Col style={styles.mapStyle} xsHidden smHidden md={10}>
-                <CollectionMap
-                collectionName={this.props.params.collectionname}
-                fullCollection={this.state.collection}
-                usersCollection={this.props.userStore[this.props.params.collectionname]}/>
-              </Col>
-              <Col xsHidden smHidden md={1}/>
+          <Col xs={12} md={8}>
+            <CollectionMap
+            collectionName={this.props.params.collectionname}
+            fullCollection={this.state.collection}
+            usersCollection={this.props.userStore[this.props.params.collectionname]}/>
           </Col>
-          <Col xs={12} md={2}>
+          <Col xs={12} md={3}>
             <Accordion style={styles.listStyle}>
               {this.prepareCollection()}
             </Accordion>
