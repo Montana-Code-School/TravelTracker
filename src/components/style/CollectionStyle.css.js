@@ -7,11 +7,12 @@ export default {
   },
   panelStyle:
   {
-    margin: "0"
+    margin: "0",
+    textAlign: "center"
   },
   mapStyle:
   {
-    top: "-15px",
+    top: "-30px",
     left: "20px"
   }
 };

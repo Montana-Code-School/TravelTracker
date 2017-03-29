@@ -13,6 +13,23 @@ class CollectionMap extends React.Component {
     };
   }
 
+  userLocation() {
+    let userLocation={};
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        let lat = position.coords.latitude;
+        let lon = position.coords.longitude;
+        console.log(lat, lon);
+        userLocation = {latitude: lat, longitude: lon};
+        console.log(userLocation);
+      });
+    } else {
+      document.write('Your browser does not support GeoLocation :(');
+    }
+    console.log(userLocation);
+    return (userLocation);
+  }
+
   prepareFillKeys(){
     let fillKeys = {};
     let theStates = [];
@@ -35,13 +52,24 @@ class CollectionMap extends React.Component {
         };
       });
     }
-
     return fillKeys;
   }
 
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
+    let userNow=this.userLocation();
+    console.log(userNow);
+    bubbles.push(
+      {
+        name: "Your Location",
+        radius: 8,
+        country: 'USA',
+        latitude: 45.6639085,
+        longitude: -111.0621144,
+        fillKey: 'User'
+      }
+    );
     if(this.props.collectionName != "states"){
       this.props.fullCollection.forEach(function(x){
         if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
@@ -55,6 +83,16 @@ class CollectionMap extends React.Component {
               fillKey: 'Collected'
             }
           );
+        }else{
+          bubbles.push({
+            name: x.name + ", " + x.description,
+            radius,
+            country: 'USA',
+            latitude: x.latitude,
+            longitude: x.longitude,
+            fillKey: 'NotCollected'
+          }
+        );
         }
       }, this);
     }
@@ -65,17 +103,19 @@ class CollectionMap extends React.Component {
     let fillKeys = this.prepareFillKeys();
     let ourMap = (<Datamap scope="usa"
     responsive
-    height="500"
+    height="450"
     // ref={this.addClickHandlers}
     geographyConfig={{
-      highlightOnHover: false
+      highlightOnHover: false,
+      popupOnHover: false
       // highlightFillColor: '#0DFFA6',
       // highlightBorderColor: '#1D0CE8',
       // highlightBorderWidth: 3
     }}
     fills={{
+      'User': '#FF0000',
       'Collected': '#35B729',
-      'NotCollected': '#707070',
+      'NotCollected': '#FF7F50',
       'defaultFill': '#707070'}}
       data={fillKeys}
       bubbles={this.prepareBubbles()}

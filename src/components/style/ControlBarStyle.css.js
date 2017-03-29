@@ -1,8 +1,9 @@
 export default {
-  
+
   navbarStyle:{
     zIndex: "1",
-    marginBottom: "20px"
+    marginBottom: "50px",
+    height: "50px"
   },
   logoStyle:{
     position: "absolute",

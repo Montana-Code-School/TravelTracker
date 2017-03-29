@@ -60,6 +60,14 @@ export default class UserStore {
     return preparedActivityList;
   }
 
+  checkForCollections(){
+    if(this.states.length>0 || this.parks.length>0 || this.mlbstadiums.length>0 || this.airports.length>0) {
+      return true;
+    }else{
+      return false;
+    }
+  }
+
   getPercentageCompletion(collectionname){
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
@@ -71,7 +79,7 @@ export default class UserStore {
     let collectable = this[collectionname].find(function(y){
       return y.name==collectablename;
     });
-    return collectable.date;
+    return new Date(collectable.date).toLocaleDateString();
   }
 
   removeCollectable(username, collectablename, collectionname){
@@ -96,7 +104,7 @@ export default class UserStore {
   }
 
   addCollectable(username, collectablename, collectionname){
-    let collectable = {name: collectablename, date: new Date().toLocaleDateString()};
+    let collectable = {name: collectablename, date: new Date()};
     fetch(`/api/add`, {
       method: 'PUT',
       headers: {

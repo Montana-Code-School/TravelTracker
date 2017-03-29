@@ -3,8 +3,9 @@ import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
-   ListGroupItem, Glyphicon, ProgressBar, Row, Col } from 'react-bootstrap';
-import PieChart from 'react-simple-pie-chart';
+   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Jumbotron } from 'react-bootstrap';
+import Piechart from './Piechart';
+import styles from './style/DashboardStyle.css.js';
 
 class Dashboard extends React.Component {
 
@@ -13,9 +14,7 @@ class Dashboard extends React.Component {
     this.state = {
       activityList: []
     };
-    this.createPieChart = this.createPieChart.bind(this);
     this.createActivityList = this.createActivityList.bind(this);
-
   }
 
   componentWillMount(){
@@ -24,72 +23,47 @@ class Dashboard extends React.Component {
     });
   }
 
-  createPieChart(collectionname){
-    let percentComplete = this.props.userStore.getPercentageCompletion(collectionname);
-    return(<PieChart slices={[{color: '#c1c1c0',value: (100-percentComplete)},{color: '#57ae81', value: percentComplete}
-    ]}/>);
-  }
-
   createActivityList(){
     return this.props.userStore.getActivityList();
   }
 
   render() {
-    let listStyle = {height:"77vh", overflowY: "scroll", border:"1px solid #ececec"};
 
-    return (
-      <div>
-        <Row>
-          <Col xs={12} md={9} style={{textAlign: "center"}}>
-            <Col xs={2}/>
-              <Col xs={3}>
-                US States
-                <Link to={{pathname: '/Collection/states'}}>
-                  <div>
-                    {this.createPieChart("states")}
-                    {this.props.userStore.getPercentageCompletion("states").toFixed(0)}%
-                  </div>
-                </Link>
-              </Col>
-              <Col xs={3}>
-                National Parks
-                <Link to={{pathname: '/Collection/parks'}}>
-                  <div>
-                    {this.createPieChart("parks")}
-                    {this.props.userStore.getPercentageCompletion("parks").toFixed(0)}%
-                  </div>
-                </Link>
-              </Col>
-              <Col xs={3}>
-                MLB Stadiums
-                <Link to={{pathname: '/Collection/mlbstadiums'}}>
-                  <div>
-                    {this.createPieChart("mlbstadiums")}
-                    {this.props.userStore.getPercentageCompletion("mlbstadiums").toFixed(0)}%
-                  </div>
-                </Link>
-              </Col>
+    if(this.props.userStore.checkForCollections()){
+      return (
+        <div>
+          <Row>
+            <Col xs={12} md={9} style={{textAlign: "center"}}>
               <Col xs={2}/>
-              <Col xs={3}>
-                US Airports
-                <Link to={{pathname: '/Collection/airports'}}>
-                  <div>
-                    {this.createPieChart("airports")}
-                    {this.props.userStore.getPercentageCompletion("airports").toFixed(0)}%
-                  </div>
-                </Link>
-              </Col>
-          </Col>
-          <Col xs={12} md={2}>
-            Recent Activity
-            <ListGroup style={listStyle}>
-              {this.state.activityList}
-            </ListGroup>
-          </Col>
-          <Col md={1}/>
-        </Row>
-      </div>
-    );
+              <Piechart collectionname={"states"}/>
+              <Piechart collectionname={"parks"}/>
+              <Piechart collectionname={"mlbstadiums"}/>
+              <Col xs={2}/>
+              <Piechart collectionname={"airports"}/>
+            </Col>
+            <Col xs={12} md={2}>
+              Recent Activity
+              <ListGroup style={styles.listStyle}>
+                {this.state.activityList}
+              </ListGroup>
+            </Col>
+            <Col md={1}/>
+          </Row>
+        </div>
+      );
+    } else {
+      return (
+        <div style={styles.jumboStyle}>
+          <Jumbotron>
+            <h4>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
+            <h4>View the assortment of options available in the "Collections" menu and pick your passion.</h4>
+            <h4>Periodically check in on the Home Page to view your overall progress.</h4>
+            <img style={styles.welcomeRibbon} src={require('../img/logo.png')}/>
+            <h3 style={{fontWeight: "bold"}}>Bon Voyage!  Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
+          </Jumbotron>
+        </div>
+      );
+    }
   }
 }
 

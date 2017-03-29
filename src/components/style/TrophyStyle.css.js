@@ -2,7 +2,6 @@ export default {
   trophyCase:{
     position: "relative",
     left: "20%",
-    top: ".5px",
     width: "50px",
     height: "49px"
   },
@@ -13,7 +12,6 @@ export default {
       top: ".5px",
       width: "50px",
       height: "49px",
-      border: "3px solid #cc851c"
     },
     "silver":{
       position: "relative",
@@ -21,7 +19,6 @@ export default {
       top: ".5px",
       width: "50px",
       height: "49px",
-      border: "3px solid silver"
     },
     "gold":{
       position: "relative",
@@ -29,12 +26,10 @@ export default {
       top: ".5px",
       width: "50px",
       height: "49px",
-      border: "3px solid gold"
     },
     position: "relative",
     left: "20%",
-    top: ".5px",
-    width: "50px",
-    height: "49px"
+    width: "5%",
+    height: "5%"
   }
 };

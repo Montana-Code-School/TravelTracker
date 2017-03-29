@@ -3,6 +3,7 @@ import { inject, observer } from 'mobx-react';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
    ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button} from 'react-bootstrap';
 import styles from './style/CollectionStyle.css.js';
+import './style/collection.css';
 import CollectionMap from './CollectionMap';
 
 class Collection extends React.Component {
@@ -33,13 +34,12 @@ class Collection extends React.Component {
         return (
           <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
           {x.description}
-          <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove From Collection</Button>
+          <Button onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Remove</Button>
           </Panel>);
       } else {
         return (
           <Panel style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
-          {x.description}
-          <Button onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Add To Collection</Button>
+            {x.description} <Button block onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}>Add</Button>
           </Panel>);}
     },this);
   }
@@ -52,23 +52,14 @@ class Collection extends React.Component {
 
   render() {
     return (
-        <Row className="show-grid">
-          <Col xs={12} md={9}>
-              <Col xsHidden smHidden md={1}/>
-              <Col md={11}>
-                <h3>{this.props.params.collectionname} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
-                <ProgressBar active style={{border: ".5px solid #ececec", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
-              </Col>
-              <Col xsHidden smHidden md={1}/>
-              <Col style={styles.mapStyle} xsHidden smHidden md={10}>
-                <CollectionMap
-                collectionName={this.props.params.collectionname}
-                fullCollection={this.state.collection}
-                usersCollection={this.props.userStore[this.props.params.collectionname]}/>
-              </Col>
-              <Col xsHidden smHidden md={1}/>
+        <Row>
+          <Col xs={12} md={8}>
+            <CollectionMap
+            collectionName={this.props.params.collectionname}
+            fullCollection={this.state.collection}
+            usersCollection={this.props.userStore[this.props.params.collectionname]}/>
           </Col>
-          <Col xs={12} md={2}>
+          <Col xs={12} md={3}>
             <Accordion style={styles.listStyle}>
               {this.prepareCollection()}
             </Accordion>
