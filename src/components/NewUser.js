@@ -29,7 +29,7 @@ class NewUser extends React.Component {
     this.setState({email: e.target.value});
   }
   handleNewUser(event) {
-    event.preventDefault();
+    browserHistory.push('/Welcome');
     this.NewUser(this.state);
   }
 
@@ -46,9 +46,6 @@ class NewUser extends React.Component {
         password: usr.password,
         email: usr.email
       })
-    })
-    .then(function(){
-      browserHistory.push('/Welcome');
     });
   }
 
