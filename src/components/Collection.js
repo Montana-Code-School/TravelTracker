@@ -1,10 +1,11 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
-   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button} from 'react-bootstrap';
+   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button } from 'react-bootstrap';
 import styles from './style/CollectionStyle.css.js';
 import './style/collection.css';
 import CollectionMap from './CollectionMap';
+import CollectionModal from './CollectionModal';
 
 class Collection extends React.Component {
 
@@ -16,6 +17,7 @@ class Collection extends React.Component {
     this.fetchCollection = this.fetchCollection.bind(this);
     this.prepareCollection = this.prepareCollection.bind(this);
   }
+
   componentWillMount() {
     this.fetchCollection(this.props.params.collectionname);
   }
@@ -77,7 +79,8 @@ class Collection extends React.Component {
 Collection.propTypes = {
   userStore: React.PropTypes.object,
   collectionname: React.PropTypes.string,
-  params: React.PropTypes.object
+  params: React.PropTypes.object,
 };
+
 
 export default inject("userStore")(observer(Collection));

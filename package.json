@@ -39,6 +39,8 @@
     "open": "^0.0.5",
     "password-hash": "^1.2.2",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-datamaps": "^0.3.0",
     "react-dom": "^15.4.2",
