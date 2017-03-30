@@ -72,7 +72,7 @@ export default class UserStore {
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
     else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}
-    else if(collectionname == "airports"){return (this[collectionname].length/529)*100;}
+    else if(collectionname == "airports"){return (this[collectionname].length/163)*100;}
   }
 
   getDateCollectableAdded(collectablename, collectionname){

@@ -57,14 +57,14 @@ class NewUser extends React.Component {
     this.props.userStore.newUserCreated = false;
     const bg = require('../img/frontBackground-min.jpg');
     const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
-    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "350px", width: "400px"};
+    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "350px", width: "350px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const loginLinkStyle = {float: "right"};
 
     return (
       <div>
         <div>
-        <img style={logoStyle} src={require('../img/canureadme.png')} width="150" height="150"/>
+        <img style={logoStyle} src={require('../img/barlogo.png')} width="209" height="96"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">

@@ -13,7 +13,6 @@ class CollectionMap extends React.Component {
         'NJ' , 'NM' , 'NY' , 'NC' , 'ND' , 'MP' , 'OH' , 'OK' , 'OR' , 'PW' , 'PA' , 'PR' , 'RI' , 'SC' , 'SD' , 'TN' , 'TX' ,
         'UT' , 'VT' , 'VI' , 'VA' , 'WA' , 'WV' , 'WI' , 'WY' ]
     };
-
   }
 
   componentDidMount(){
@@ -65,7 +64,7 @@ class CollectionMap extends React.Component {
     if(this.state.location.latitude !== null) {
       bubbles.push(
         {
-          name: "Your Location",
+          name: this.props.userStore.name+" is here!!",
           radius: 8,
           country: 'USA',
           latitude: this.state.location.latitude,
