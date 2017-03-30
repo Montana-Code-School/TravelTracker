@@ -30,6 +30,7 @@ let parkRoutes = require('../src/routes/parkRoutes');
 let stateRoutes = require('../src/routes/stateRoutes');
 let mlbstadiumRoutes = require('../src/routes/mlbstadiumRoutes');
 let airportRoutes = require('../src/routes/airportRoutes');
+let facebookRoutes = require('../src/routes/facebookRoutes');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -38,6 +39,7 @@ app.use('/parks', parkRoutes);
 app.use('/states', stateRoutes);
 app.use('/mlbstadiums', mlbstadiumRoutes);
 app.use('/airports', airportRoutes);
+app.use('/facebook', facebookRoutes);
 
 
 

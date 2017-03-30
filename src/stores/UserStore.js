@@ -134,12 +134,6 @@ export default class UserStore {
     browserHistory.push('/Welcome');
   }
 
-  /* Creating the function LoginUser with the name and password params
-  using a fetch function with a post method looking to Accept and
-  Content-Type of application in JSON format. body thus requires name and password.
-  then an if else if else statements check to see if the loginCred matches and
-  supplies a token and stores data as this. */
-
   LoginUser(name, password) {
     fetch('/api/authenticate', {
       method: 'POST',
@@ -173,6 +167,43 @@ export default class UserStore {
         this.failedLogin=true;
         this.name="";
         browserHistory.push('/Welcome');
+      }
+    });
+  }
+
+  facebookLoginUser(response) {
+    const self = this;
+    fetch('facebook/usercheck', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: response.name
+      })
+    }).then(function(result){
+      return result.json();
+    }).then(function(result) {
+      if(result.userfound) {
+        self.LoginUser(response.name, response.id);
+      } else {
+        this.newUserCreated = true;
+        fetch('/api/user', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: response.name,
+            password: response.id,
+            email: response.name
+          })
+        })
+        .then(function(){
+          self.LoginUser(response.name, response.id);
+        });
       }
     });
   }
