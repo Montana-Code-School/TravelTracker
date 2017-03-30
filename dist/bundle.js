@@ -36942,7 +36942,7 @@ var NewUser = function (_React$Component) {
   }, {
     key: 'handleNewUser',
     value: function handleNewUser(event) {
-      event.preventDefault();
+      _reactRouter.browserHistory.push('/Welcome');
       this.NewUser(this.state);
     }
   }, {
@@ -36960,8 +36960,6 @@ var NewUser = function (_React$Component) {
           password: usr.password,
           email: usr.email
         })
-      }).then(function () {
-        _reactRouter.browserHistory.push('/Welcome');
       });
     }
   }, {
@@ -67506,8 +67504,8 @@ exports.default = {
     },
     position: "relative",
     left: "20%",
-    width: "5%",
-    height: "5%"
+    width: "47px",
+    height: "62px"
   }
 };
 
