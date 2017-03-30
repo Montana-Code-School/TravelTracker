@@ -63,6 +63,7 @@ var parkRoutes = require('../src/routes/parkRoutes');
 var stateRoutes = require('../src/routes/stateRoutes');
 var mlbstadiumRoutes = require('../src/routes/mlbstadiumRoutes');
 var airportRoutes = require('../src/routes/airportRoutes');
+var facebookRoutes = require('../src/routes/facebookRoutes');
 
 app.use(_bodyParser2.default.urlencoded({ extended: false }));
 app.use(_bodyParser2.default.json());
@@ -71,6 +72,7 @@ app.use('/parks', parkRoutes);
 app.use('/states', stateRoutes);
 app.use('/mlbstadiums', mlbstadiumRoutes);
 app.use('/airports', airportRoutes);
+app.use('/facebook', facebookRoutes);
 
 if (PROD) {
   app.use('/', _express2.default.static('dist'));

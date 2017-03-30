@@ -8,14 +8,12 @@ var _Mlbstadium = require('../models/Mlbstadium');
 
 var _Mlbstadium2 = _interopRequireDefault(_Mlbstadium);
 
-require('isomorphic-fetch');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/* Importing variables as lets to our required imports */
 var router = _express2.default.Router();
 
 /* using a router function with the params of req res and next */
-/* Importing variables as lets to our required imports */
 router.use(function (req, res, next) {
   res.setHeader('Content-Type', 'application/json');
   next();
