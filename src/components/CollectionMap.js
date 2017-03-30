@@ -103,7 +103,6 @@ class CollectionMap extends React.Component {
     let fillKeys = this.prepareFillKeys();
     let ourMap = (<Datamap scope="usa"
     responsive
-    height="450"
     // ref={this.addClickHandlers}
     geographyConfig={{
       highlightOnHover: false,

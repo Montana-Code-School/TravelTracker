@@ -67,3 +67,6 @@
     background-color: #57ae81;
   }
 }
+.navbar-collapse.collapse.in {
+  background-color: #c1c1c0;
+}

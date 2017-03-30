@@ -3,6 +3,7 @@ import NewUser from './NewUser';
 import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 import { Grid, Col, Row, Image, Well, Button, Form, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import FacebookLogin from 'react-facebook-login';
 
 class Welcome extends React.Component {
 
@@ -20,6 +21,7 @@ class Welcome extends React.Component {
     this.handleLoginUser = this.handleLoginUser.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.loginNotice = this.loginNotice.bind(this);
+    this.responseFacebook = this.responseFacebook.bind(this);
   }
 
   handleNameChange(e) {
@@ -43,10 +45,15 @@ class Welcome extends React.Component {
       return (<h5 style={{color: "green"}}>New User Created! Feel free to login</h5>);}
   }
 
+  responseFacebook(response){
+    this.props.userStore.facebookLoginUser(response);
+
+  }
+
   render() {
     const bg = require('../img/frontBackground-min.jpg');
     const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
-    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "300px", width: "400px"};
+    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "350px", width: "350px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
 
@@ -57,6 +64,10 @@ class Welcome extends React.Component {
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
+          <FacebookLogin
+            appId="1676339145713512"
+            fields="name,email,picture"
+            callback={this.responseFacebook} />
             <Form>
 
                 <legend>Log In to Travel Tracker</legend>
@@ -74,7 +85,7 @@ class Welcome extends React.Component {
                 <div style={newUserLinkStyle}>
                   <Link to ="/NewUser" >New User</Link>
                 </div>
-                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
+                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouch={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
             </Form>
           </Well>
        </div>

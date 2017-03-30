@@ -38,15 +38,15 @@ class ControlBar extends React.Component {
             <Navbar .Header>
               <Navbar .Brand>
                 <Link to={{pathname: '/Dashboard'}}><img className="hidden-xs" style={styles.logoStyle} src={require('../img/barlogo.png')} width="209px" height="96px"/></Link>
-                <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/logocollapsed.png')} width="112px" height="51px"/></Link>
+                <Link to={{pathname: '/Dashboard'}}><img className="hidden-md hidden-lg hidden-sm" style={styles.logoStyle} src={require('../img/barlogo.png')} width="104.5px" height="48px"/></Link>
               </Navbar .Brand>
-            </Navbar .Header>
             <Navbar .Toggle />
+            </Navbar .Header>
             <Navbar .Collapse>
               {displayTrophy}
               <Nav pullRight>
                 <LinkContainer to={{pathname: '/Dashboard'}}><NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem></LinkContainer>
-                <NavDropdown id="dropdown" title="collections">
+                <NavDropdown id="basic-nav-dropdown" title="collections">
                   <LinkContainer to={{pathname: '/Dashboard'}}><NavItem>Home Page</NavItem></LinkContainer>
                   <MenuItem divider/>
                   <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
