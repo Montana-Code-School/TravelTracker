@@ -17,9 +17,15 @@ class Dashboard extends React.Component {
     this.createActivityList = this.createActivityList.bind(this);
   }
 
-  componentWillMount(){
+  componentWillMount() {
     this.setState({
       activityList: this.props.userStore.getActivityList()
+    });
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      activityList: nextProps.userStore.getActivityList()
     });
   }
 

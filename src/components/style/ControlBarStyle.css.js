@@ -2,7 +2,7 @@ export default {
 
   navbarStyle:{
     zIndex: "1",
-    marginBottom: "50px",
+    marginBottom: "75px",
     height: "50px"
   },
   logoStyle:{
