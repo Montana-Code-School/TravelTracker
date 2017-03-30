@@ -1,7 +1,6 @@
 /* Importing variables as lets to our required imports */
 import express from 'express';
 import Mlbstadium from '../models/Mlbstadium';
-import "isomorphic-fetch";
 
 let router = express.Router();
 

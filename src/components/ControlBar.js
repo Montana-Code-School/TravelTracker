@@ -8,6 +8,8 @@ import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphico
 import Collection from './Collection';
 import styles from './style/ControlBarStyle.css.js';
 import './style/navBarStyle.css';
+import injectTapEventPlugin from "react-tap-event-plugin";
+
 
 /* making the class ControlBar function which is a React Component. Render to
 actually diplay the ControlBar return content.*/
@@ -18,6 +20,10 @@ class ControlBar extends React.Component {
     };
     this.createNavBar = this.createNavBar.bind(this);
     this.logOutHandler = this.logOutHandler.bind(this);
+  }
+
+  componentWillMount() {
+    injectTapEventPlugin();
   }
 
   logOutHandler(){

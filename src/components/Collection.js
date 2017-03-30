@@ -33,7 +33,7 @@ class Collection extends React.Component {
           {x.description}
           <Button block
           onClick={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
-          onTouch={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+          onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
           >Remove</Button>
           </Panel>);
       } else {
@@ -42,7 +42,7 @@ class Collection extends React.Component {
             {x.description}
             <Button block
             onClick={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
-            onTouch={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
             >Add</Button>
           </Panel>);}
     },this);
