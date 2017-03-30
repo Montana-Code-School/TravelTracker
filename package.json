@@ -7,7 +7,7 @@
     "start:dev": "npm-run-all --parallel testonly:watch open:src lint:watch",
     "start:prod": "node distserver/tools/srcServer.js",
     "open:src": "babel-node tools/srcServer.js",
-    "lint": "node_modules/.bin/esw webpack.config.* src tools",
+    "lint": "node_modules/.bin/esw webpack.config.* tools",
     "lint:watch": "npm run lint -- --watch",
     "test": "npm run lint && npm run testonly",
     "testonly": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
@@ -47,6 +47,7 @@
     "react-router-bootstrap": "^0.23.1",
     "react-router-dom": "^4.0.0",
     "react-simple-pie-chart": "^0.4.0",
+    "react-tap-event-plugin": "^2.0.1",
     "style-loader": "^0.13.1",
     "toastr": "2.1.2",
     "webpack": "^2.3.1"

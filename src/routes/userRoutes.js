@@ -73,19 +73,6 @@ router.route('/user')
     });
   });
 
-router.post('/usercheck'), function(req, res, next) {
-  User.findOne({
-    name: req.body.name.toLowerCase()
-  }, function(err, user) {
-    if (err) next (err);
-    if (!user) {
-      res.json({userfound: false});
-    } else if (user) {
-      res.json({userfound: true});
-    }
-  });
-};
-
 router.post('/authenticate', function(req, res, next) {
   User.findOne({
     name: req.body.name.toLowerCase()

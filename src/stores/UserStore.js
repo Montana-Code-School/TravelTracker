@@ -54,7 +54,7 @@ export default class UserStore {
     let preparedActivityList = [];
 
     activityList.forEach(function(x){
-      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "#57ae81"}}/>  {x.name}, {x.date}</ListGroupItem>);
+      preparedActivityList.push(<ListGroupItem key={x.name}><Glyphicon glyph="plus-sign" style={{color: "#57ae81"}}/>  {x.name}, {new Date(x.date).toLocaleDateString()}</ListGroupItem>);
     });
 
     return preparedActivityList;
@@ -72,7 +72,7 @@ export default class UserStore {
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
     else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}
-    else if(collectionname == "airports"){return (this[collectionname].length/529)*100;}
+    else if(collectionname == "airports"){return (this[collectionname].length/163)*100;}
   }
 
   getDateCollectableAdded(collectablename, collectionname){

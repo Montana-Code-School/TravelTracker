@@ -47,7 +47,6 @@ class Welcome extends React.Component {
 
   responseFacebook(response){
     this.props.userStore.facebookLoginUser(response);
-
   }
 
   render() {

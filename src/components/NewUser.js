@@ -64,7 +64,7 @@ class NewUser extends React.Component {
     return (
       <div>
         <div>
-        <img style={logoStyle} src={require('../img/barlogo.png')} width="150" height="150"/>
+        <img style={logoStyle} src={require('../img/barlogo.png')} width="209" height="96"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
@@ -89,7 +89,7 @@ class NewUser extends React.Component {
                 <div style={loginLinkStyle}>
                   <Link to ="/Welcome" >Login</Link>
                 </div>
-                <Button onClick={this.handleNewUser} type="submit" className="btn btn-primary">Submit</Button>
+                <Button onClick={this.handleNewUser} onTouch={this.handleNewUser} type="submit" className="btn btn-primary">Submit</Button>
             </Form>
           </Well>
        </div>
