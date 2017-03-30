@@ -64,7 +64,7 @@ class CollectionMap extends React.Component {
     if(this.state.location.latitude !== null) {
       bubbles.push(
         {
-          name: "Your Location",
+          name: this.props.userStore.name+" is here!!",
           radius: 8,
           country: 'USA',
           latitude: this.state.location.latitude,

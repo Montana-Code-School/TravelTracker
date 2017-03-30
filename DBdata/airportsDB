@@ -1,0 +1,163 @@
+{"states" : "AK", "name" : "Ted Stevens Anchorage International", "description" : "ANC", "latitude": "61.166", "longitude": "-149.996"}
+{"states" : "AK", "name" : "Fairbanks International", "description" : "FAI", "latitude": "64.8025", "longitude": "-147.8550"}
+{"states" : "AK", "name" : "Juneau International", "description" : "JUN", "latitude": "58.3486", "longitude": "-134.5700"}
+{"states" : "AK", "name" : "Ketchikan International", "description" : "KTN", "latitude": "55.3486", "longitude": "-131.6972"}
+{"states" : "AL", "name" : "Birmingham-Shuttlesworth International", "description" : "BHM", "latitude": "33.5560", "longitude": "-86.747"}
+{"states" : "AL", "name" : "Huntsville International-Carl T. Jones Field", "description" : "HSV", "latitude": "34.6350", "longitude": "-86.7686"}
+{"states" : "AZ", "name" : "Laughlin/Bullhead International", "description" : "IFP", "latitude": "35.1494", "longitude": "-114.5478"}
+{"states" : "AZ", "name" : "Phoenix Sky Harbor International", "description" : "PHX", "latitude": "33.4316", "longitude": "-112.008"}
+{"states" : "AZ", "name" : "Tucson International", "description" : "TUS", "latitude": "32.1030", "longitude": "-110.9296"}
+{"states" : "AZ", "name" : "Yuma MCAS/Yuma International", "description" : "NYL", "latitude": "32.6474", "longitude": "-114.5976"}
+{"states" : "CA", "name" : "Fresno/Yosemite International", "description" : "FAT", "latitude": "36.7700", "longitude": "-119.7138"}
+{"states" : "CA", "name" : "Los Angeles International", "description" : "LAX", "latitude": "33.9325", "longitude": "-118.4024"}
+{"states" : "CA", "name" : "Oakland International", "description" : "OAK", "latitude": "37.7138", "longitude": "-122.2158"}
+{"states" : "CA", "name" : "Ontario International", "description" : "ONT", "latitude": "34.0498", "longitude": "-117.5976"}
+{"states" : "CA", "name" : "Palm Springs International", "description" : "PSP", "latitude": "33.8220", "longitude": "-116.5010"}
+{"states" : "CA", "name" : "Sacramento International", "description" : "SMF", "latitude": "38.6856", "longitude": "-121.5875"}
+{"states" : "CA", "name" : "San Bernardino International", "description" : "SBD", "latitude": "34.089", "longitude": "-117.2324"}
+{"states" : "CA", "name" : "San Diego International", "description" : "SAN", "latitude": "32.7304", "longitude": "-117.1826"}
+{"states" : "CA", "name" : "San Francisco International", "description" : "SFO", "latitude": "37.6142", "longitude": "-122.3720"}
+{"states" : "CA", "name" : "Norman Y. Mineta San Jose International", "description" : "SJC", "latitude": "37.3550", "longitude": "-121.9200"}
+{"states" : "CO", "name" : "Denver International", "description" : "DEN", "latitude": "39.8510", "longitude": "-104.6640"}
+{"states" : "CT", "name" : "Bradley International", "description" : "BDL", "latitude": "41.9296", "longitude": "-72.6806"}
+{"states" : "DC", "name" : "Washington Dulles International", "description" : "IAD", "latitude": "38.9555", "longitude": "-77.4510"}
+{"states" : "FL", "name" : "Daytona Beach International", "description" : "DAB", "latitude": "29.1730", "longitude": "-81.0510"}
+{"states" : "FL", "name" : "Fort Lauderdale/Hollywood International", "description" : "FLL", "latitude": "26.0664", "longitude": "-80.1494"}
+{"states" : "FL", "name" : "Southwest Florida International", "description" : "RSW", "latitude": "26.5312", "longitude": "-81.747"}
+{"states" : "FL", "name" : "Jacksonville International", "description" : "JAX", "latitude": "30.4814", "longitude": "-81.6806"}
+{"states" : "FL", "name" : "Key West International", "description" : "EYW", "latitude": "24.5478", "longitude": "-81.747"}
+{"states" : "FL", "name" : "The Florida Keys Marathon International", "description" : "MTH", "latitude": "24.7138", "longitude": "-81.0498"}
+{"states" : "FL", "name" : "Melbourne International", "description" : "MLB", "latitude": "28.0996", "longitude": "-80.6308"}
+{"states" : "FL", "name" : "Miami International", "description" : "MIA", "latitude": "25.7802", "longitude": "-80.2822"}
+{"states" : "FL", "name" : "Ocala International-Jim Taylor Field", "description" : "OCF", "latitude": "29.166", "longitude": "-82.2158"}
+{"states" : "FL", "name" : "Orlando International", "description" : "MCO", "latitude": "28.415", "longitude": "-81.2988"}
+{"states" : "FL", "name" : "Orlando Sanford International", "description" : "SFB", "latitude": "28.7636", "longitude": "-81.2324"}
+{"states" : "FL", "name" : "Northwest Florida Beaches International", "description" : "ECP", "latitude": "30.3486", "longitude": "-85.7802"}
+{"states" : "FL", "name" : "Pensacola International", "description" : "PNS", "latitude": "30.4648", "longitude": "-87.1826"}
+{"states" : "FL", "name" : "Sarasota/Bradenton International", "description" : "SRQ", "latitude": "27.3818", "longitude": "-82.5478"}
+{"states" : "FL", "name" : "St. Pete-Clearwater International", "description" : "PIE", "latitude": "27.8964", "longitude": "-82.6806"}
+{"states" : "FL", "name" : "Tallahassee International", "description" : "TLH", "latitude": "30.3818", "longitude": "-84.3486"}
+{"states" : "FL", "name" : "Tampa International", "description" : "TPA", "latitude": "27.9628", "longitude": "-82.5146"}
+{"states" : "FL", "name" : "Palm Beach International", "description" : "PBI", "latitude": "26.664", "longitude": "-80.083"}
+{"states" : "GA", "name" : "Hartsfield-Jackson Atlanta International", "description" : "ATL", "latitude": "33.6308", "longitude": "-84.415"}
+{"states" : "GA", "name" : "Savannah/Hilton Head International", "description" : "SAV", "latitude": "32.1162", "longitude": "-81.1992"}
+{"states" : "HI", "name" : "Hilo International", "description" : "ITO", "latitude": "19.7138", "longitude": "-155.0332"}
+{"states" : "HI", "name" : "Honolulu International", "description" : "HNL", "latitude": "21.3154", "longitude": "-157.913"}
+{"states" : "HI", "name" : "Kona International at Keahole", "description" : "KOA", "latitude": "19.7304", "longitude": "-156.0332"}
+{"states" : "IA", "name" : "Des Moines International", "description" : "DSM", "latitude": "41.5312", "longitude": "-93.6474"}
+{"states" : "IL", "name" : "Chicago Midway International", "description" : "MDW", "latitude": "41.7802", "longitude": "-87.747"}
+{"states" : "IL", "name" : "Chicago O'Hare International", "description" : "ORD", "latitude": "41.9628", "longitude": "-87.8964"}
+{"states" : "IL", "name" : "Chicago/Rockford International", "description" : "RFD", "latitude": "42.1826", "longitude": "-89.083"}
+{"states" : "IL", "name" : "Quad City International", "description" : "MLI", "latitude": "41.4316", "longitude": "-90.498"}
+{"states" : "IL", "name" : "General Downing-Peoria International", "description" : "PIA", "latitude": "40.6474", "longitude": "-89.6806"}
+{"states" : "IN", "name" : "Fort Wayne International", "description" : "FWA", "latitude": "40.9628", "longitude": "-85.1826"}
+{"states" : "IN", "name" : "Gary/Chicago International", "description" : "GYY", "latitude": "41.6142", "longitude": "-87.3984"}
+{"states" : "IN", "name" : "Indianapolis International", "description" : "IND", "latitude": "39.7138", "longitude": "-86.2822"}
+{"states" : "IN", "name" : "South Bend International", "description" : "SBN", "latitude": "41.6972", "longitude": "-86.3154"}
+{"states" : "IN", "name" : "Terre Haute International-Hulman Field", "description" : "HUF", "latitude": "39.4482", "longitude": "-87.2988"}
+{"states" : "KY", "name" : "Cincinnati/Northern Kentucky International", "description" : "CVG", "latitude": "39.0332", "longitude": "-84.664"}
+{"states" : "KY", "name" : "Louisville International-Standiford Field", "description" : "SDF", "latitude": "38.166", "longitude": "-85.7304"}
+{"states" : "LA", "name" : "Alexandria International", "description" : "AEX", "latitude": "31.3154", "longitude": "-92.5312"}
+{"states" : "LA", "name" : "Chennault International", "description" : "CWF", "latitude": "30.1992", "longitude": "-93.1328"}
+{"states" : "LA", "name" : "Louis Armstrong New Orleans International", "description" : "MSY", "latitude": "29.9794", "longitude": "-90.249"}
+{"states" : "MA", "name" : "General Edward Lawrence Logan International", "description" : "BOS", "latitude": "42.3486", "longitude": "-71.00"}
+{"states" : "MD", "name" : "Baltimore/Washington International-Thurgood Marshal", "description" : "BWI", "latitude": "39.166", "longitude": "-76.664"}
+{"states" : "ME", "name" : "Bangor International", "description" : "BGR", "latitude": "44.7968", "longitude": "-68.8134"}
+{"states" : "ME", "name" : "Portland International Jetport", "description" : "PWM", "latitude": "43.6308", "longitude": "-70.2988"}
+{"states" : "MI", "name" : "Bishop International", "description" : "FNT", "latitude": "42.9462", "longitude": "-83.7304"}
+{"states" : "MI", "name" : "Gerald R. Ford International", "description" : "GRR", "latitude": "42.8632", "longitude": "-85.5146"}
+{"states" : "MI", "name" : "Kalamazoo/Battle Creek International", "description" : "AZO", "latitude": "42.2324", "longitude": "-85.5478"}
+{"states" : "MI", "name" : "Capital Region International", "description" : "LAN", "latitude": "42.7636", "longitude": "-84.581"}
+{"states" : "MI", "name" : "Sawyer International", "description" : "SAW", "latitude": "46.3486", "longitude": "-87.3818"}
+{"states" : "MI", "name" : "Oakland County International", "description" : "PTK", "latitude": "42.6474", "longitude": "-83.415"}
+{"states" : "MI", "name" : "MBS International", "description" : "MBS", "latitude": "43.5146", "longitude": "-84.0664"}
+{"states" : "MI", "name" : "Chippewa County International", "description" : "CIU", "latitude": "46.249", "longitude": "-84.4648"}
+{"states" : "MN", "name" : "Duluth International", "description" : "DLH", "latitude": "46.83", "longitude": "-92.1826"}
+{"states" : "MN", "name" : "Fall International-Einarson Field", "description" : "INL", "latitude": "48.5478", "longitude": "-93.3984"}
+{"states" : "MN", "name" : "Minneapolis-St.Paul International/Wold-Chamberlain", "description" : "MSP", "latitude": "44.8632", "longitude": "-93.2158"}
+{"states" : "MN", "name" : "Rochester International", "description" : "RST", "latitude": "43.8964", "longitude": "-92.498"}
+{"states" : "MO", "name" : "Kansas City International", "description" : "MCI", "latitude": "39.2822", "longitude": "-94.6972"}
+{"states" : "MO", "name" : "Lambert-St. Louis International", "description" : "STL", "latitude": "38.7304", "longitude": "-90.3652"}
+{"states" : "MS", "name" : "Stennis International", "description" : "HSA", "latitude": "30.3652", "longitude": "-89.4482"}
+{"states" : "MS", "name" : "Gulfport-Biloxi International", "description" : "GPT", "latitude": "30.3984", "longitude": "-89.0664"}
+{"states" : "MS", "name" : "Jackson-Medger Wiley Evers International", "description" : "JAN", "latitude": "32.2988", "longitude": "-90.0664"}
+{"states" : "MT", "name" : "Billings Logan International", "description" : "BIL", "latitude": "45.7968", "longitude": "-108.5312"}
+{"states" : "MT", "name" : "Bozeman/Yellowstone International", "description" : "BZN", "latitude": "45.7636", "longitude": "-111.1494"}
+{"states" : "MT", "name" : "Great Falls International", "description" : "GTF", "latitude": "47.4648", "longitude": "-111.3652"}
+{"states" : "MT", "name" : "Glacier Park International", "description" : "GPI", "latitude": "48.2988", "longitude": "-114.249"}
+{"states" : "MT", "name" : "Missoula International", "description" : "MSO", "latitude": "46.8964", "longitude": "-114.083"}
+{"states" : "NC", "name" : "Charlotte/Douglas International", "description" : "CLT", "latitude": "35.1992", "longitude": "-80.9296"}
+{"states" : "NC", "name" : "Piedmont Triad International", "description" : "GSO", "latitude": "36.0996", "longitude": "-79.9296"}
+{"states" : "NC", "name" : "Raleigh-Durham International", "description" : "RDU", "latitude": "35.8632", "longitude": "-78.7802"}
+{"states" : "NC", "name" : "Wilmington International", "description" : "ILM", "latitude": "34.2656", "longitude": "-77.8964"}
+{"states" : "ND", "name" : "Hector International", "description" : "FAR", "latitude": "46.913", "longitude": "-96.7968"}
+{"states" : "ND", "name" : "Grand Forks International", "description" : "GFK", "latitude": "47.9296", "longitude": "-97.166"}
+{"states" : "ND", "name" : "Minot International", "description" : "MOT", "latitude": "48.249", "longitude": "-101.2656"}
+{"states" : "ND", "name" : "Sloulin Field International", "description" : "ISN", "latitude": "48.166", "longitude": "-103.6308"}
+{"states" : "NH", "name" : "Portsmouth International at Pease", "description" : "PSM", "latitude": "43.0664", "longitude": "-70.8134"}
+{"states" : "NJ", "name" : "Atlantic City International", "description" : "ACY", "latitude": "39.4482", "longitude": "-74.5644"}
+{"states" : "NJ", "name" : "Newark Liberty International", "description" : "EWR", "latitude": "40.6806", "longitude": "-74.166"}
+{"states" : "NM", "name" : "Albuquerque International-Sunport", "description" : "ABQ", "latitude": "35.0332", "longitude": "-106.5976"}
+{"states" : "NM", "name" : "Las Cruces International", "description" : "LRU", "latitude": "32.2822", "longitude": "-106.913"}
+{"states" : "NM", "name" : "Roswell International Air Center", "description" : "ROW", "latitude": "33.2988", "longitude": "-104.5146"}
+{"states" : "NV", "name" : "McCarran International", "description" : "LAS", "latitude": "36.0664", "longitude": "-115.1494"}
+{"states" : "NV", "name" : "Reno/Tahoe International", "description" : "RNO", "latitude": "39.4814", "longitude": "-119.7636"}
+{"states" : "NY", "name" : "Albany International", "description" : "ALB", "latitude": "42.7304", "longitude": "-73.7968"}
+{"states" : "NY", "name" : "Buffalo Niagara International", "description" : "BUF", "latitude": "42.9296", "longitude": "-78.7138"}
+{"states" : "NY", "name" : "Massena International-Richards Field", "description" : "MSS", "latitude": "44.9296", "longitude": "-74.83"}
+{"states" : "NY", "name" : "Sullivan County International", "description" : "MSV", "latitude": "41.6972", "longitude": "-74.7802"}
+{"states" : "NY", "name" : "John F. Kennedy International", "description" : "JFK", "latitude": "40.6308", "longitude": "-73.7636"}
+{"states" : "NY", "name" : "Stewart International", "description" : "SWF", "latitude": "41.498", "longitude": "-74.0996"}
+{"states" : "NY", "name" : "Niagara Falls International", "description" : "IAG", "latitude": "43.0996", "longitude": "-78.9296"}
+{"states" : "NY", "name" : "Ogdensburg International", "description" : "OGS", "latitude": "44.664", "longitude": "-75.4482"}
+{"states" : "NY", "name" : "Plattsburgh International", "description" : "PBG", "latitude": "44.6474", "longitude": "-73.4648"}
+{"states" : "NY", "name" : "Greater Rochester International", "description" : "ROC", "latitude": "43.1162", "longitude": "-77.664"}
+{"states" : "NY", "name" : "Griffiss International", "description" : "RME", "latitude": "43.2324", "longitude": "-75.3984"}
+{"states" : "NY", "name" : "Syracuse Hancock International", "description" : "SYR", "latitude": "43.0996", "longitude": "-76.0996"}
+{"states" : "NY", "name" : "Watertown International", "description" : "ART", "latitude": "43.9794", "longitude": "-76.0166"}
+{"states" : "OH", "name" : "Cleveland-Hopkins International", "description" : "CLE", "latitude": "41.3984", "longitude": "-81.8466"}
+{"states" : "OH", "name" : "Port Columbus International", "description" : "CMH", "latitude": "39.9794", "longitude": "-82.8798"}
+{"states" : "OH", "name" : "Rickenbacker International", "description" : "LCK", "latitude": "39.7968", "longitude": "-82.913"}
+{"states" : "OH", "name" : "James M. Cox Dayton International", "description" : "DAY", "latitude": "39.8964", "longitude": "-84.2158"}
+{"states" : "OK", "name" : "Tulsa International", "description" : "TUL", "latitude": "36.1826", "longitude": "-95.8798"}
+{"states" : "OR", "name" : "Rogue Valley International-Medford", "description" : "MFR", "latitude": "42.3652", "longitude": "-122.8632"}
+{"states" : "OR", "name" : "Portland International", "description" : "PDX", "latitude": "45.581", "longitude": "-122.581"}
+{"states" : "PA", "name" : "Lehigh Valley International", "description" : "ABE", "latitude": "40.6474", "longitude": "-75.4316"}
+{"states" : "PA", "name" : "Erie International/Tom Ridge Field", "description" : "ERI", "latitude": "42.0664", "longitude": "-80.166"}
+{"states" : "PA", "name" : "Harrisburg International", "description" : "MDT", "latitude": "40.1826", "longitude": "-76.747"}
+{"states" : "PA", "name" : "Philadelphia International", "description" : "PHL", "latitude": "39.8632", "longitude": "-75.2324"}
+{"states" : "PA", "name" : "Pittsburgh International", "description" : "PIT", "latitude": "40.4814", "longitude": "-80.2158"}
+{"states" : "PA", "name" : "Wilkes-Barre/Scranton International", "description" : "AVP", "latitude": "41.332", "longitude": "-75.7138"}
+{"states" : "SC", "name" : "Charleston AFB/International", "description" : "CHS", "latitude": "32.8798", "longitude": "-80.0332"}
+{"states" : "SC", "name" : "Greenville/Spartanburg International", "description" : "GSP", "latitude": "34.8798", "longitude": "-82.2158"}
+{"states" : "SC", "name" : "Myrtle Beach International", "description" : "MYR", "latitude": "33.664", "longitude": "-78.913"}
+{"states" : "TN", "name" : "Memphis International", "description" : "MEM", "latitude": "35.0332", "longitude": "-89.9628"}
+{"states" : "TN", "name" : "Nashville International", "description" : "BNA", "latitude": "36.1162", "longitude": "-86.664"}
+{"states" : "TX", "name" : "Rick Husband Amarillo International", "description" : "AMA", "latitude": "35.2158", "longitude": "-101.6972"}
+{"states" : "TX", "name" : "Austin-Bergstrom International", "description" : "AUS", "latitude": "30.1826", "longitude": "-97.664"}
+{"states" : "TX", "name" : "Brownsville/South Padre Island International", "description" : "BRO", "latitude": "25.8964", "longitude": "-97.415"}
+{"states" : "TX", "name" : "Corpus Christi International", "description" : "CRP", "latitude": "27.7636", "longitude": "-97.498"}
+{"states" : "TX", "name" : "Dallas-Fort Worth International", "description" : "DFW", "latitude": "32.8798", "longitude": "-97.0332"}
+{"states" : "TX", "name" : "Del Rio International", "description" : "DRT", "latitude": "29.3652", "longitude": "-100.913"}
+{"states" : "TX", "name" : "El Paso International", "description" : "ELP", "latitude": "31.7968", "longitude": "-106.3652"}
+{"states" : "TX", "name" : "Fort Worth Meacham International", "description" : "FTW", "latitude": "32.8134", "longitude": "-97.3486"}
+{"states" : "TX", "name" : "Valley International", "description" : "HRL", "latitude": "26.2158", "longitude": "-97.6474"}
+{"states" : "TX", "name" : "Laredo International", "description" : "LRD", "latitude": "27.5312", "longitude": "-99.4482"}
+{"states" : "TX", "name" : "Lubbock Preston Smith International", "description" : "LBB", "latitude": "33.6474", "longitude": "-101.8134"}
+{"states" : "TX", "name" : "McAllen Miller International", "description" : "MFE", "latitude": "26.166", "longitude": "-98.2324"}
+{"states" : "TX", "name" : "Midland International Air and Space Port", "description" : "MAF", "latitude": "31.9296", "longitude": "-102.1992"}
+{"states" : "TX", "name" : "San Antonio International", "description" : "SAT", "latitude": "29.5312", "longitude": "-98.4648"}
+{"states" : "UT", "name" : "Salt Lake City International", "description" : "SLC", "latitude": "40.7802", "longitude": "-111.9628"}
+{"states" : "VA", "name" : "Newport News/Williamsburg International", "description" : "PHF", "latitude": "37.1162", "longitude": "-76.4814"}
+{"states" : "VA", "name" : "Norfolk International", "description" : "ORF", "latitude": "36.8798", "longitude": "-76.1992"}
+{"states" : "VA", "name" : "Richmond International", "description" : "RIC", "latitude": "37.498", "longitude": "-77.3154"}
+{"states" : "VT", "name" : "Burlington International", "description" : "BTV", "latitude": "44.4648", "longitude": "-73.1494"}
+{"states" : "WA", "name" : "Bellingham International", "description" : "BLI", "latitude": "48.7802", "longitude": "-122.5312"}
+{"states" : "WA", "name" : "Grant County International", "description" : "MWH", "latitude": "47.1992", "longitude": "-119.3154"}
+{"states" : "WA", "name" : "Boeing Field/King County International", "description" : "BFI", "latitude": "47.5146", "longitude": "-122.2988"}
+{"states" : "WA", "name" : "Seattle-Tacoma International", "description" : "SEA", "latitude": "47.4316", "longitude": "-122.2988"}
+{"states" : "WA", "name" : "Spokane International", "description" : "GEG", "latitude": "47.6142", "longitude": "-117.5312"}
+{"states" : "WI", "name" : "Appleton International", "description" : "ATW", "latitude": "44.249", "longitude": "-88.5146"}
+{"states" : "WI", "name" : "Green Bay-Austin Straubel International", "description" : "GRB", "latitude": "44.4814", "longitude": "-88.1162"}
+{"states" : "WI", "name" : "General Mitchell International", "description" : "MKE", "latitude": "42.9296", "longitude": "-87.8798"}
+{"states" : "WY", "name" : "Casper/Natrona County International", "description" : "CPR", "latitude": "42.8964", "longitude": "-106.4482"}
