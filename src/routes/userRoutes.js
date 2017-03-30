@@ -7,6 +7,7 @@ let app = express();
 let config = require('../config');
 let router = express.Router();
 
+// safer to get the secret from an env variable - Harold
 app.set('superSecret', config.secret);
 
 

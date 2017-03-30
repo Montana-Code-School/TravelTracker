@@ -10,5 +10,6 @@ export default class CollectionStore {
     });
   }
 
+// Refactor your behavior and actions to collections into this class - Harold
 
 }

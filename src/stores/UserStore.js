@@ -28,6 +28,8 @@ export default class UserStore {
     this.LoginUser = this.LoginUser.bind(this);
   }
 
+  // arrow functions below (or pass functions directly) would make this much
+  // more concise and easier to read - Harold
   getActivityList(){
     let activityList = [];
 
@@ -69,6 +71,8 @@ export default class UserStore {
   }
 
   getPercentageCompletion(collectionname){
+    // This could be made prettier with a switch. Even better (the only 2 lines)
+    // use a data object for the percentage divider) - Harold
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
     else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}

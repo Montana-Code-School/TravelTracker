@@ -16,6 +16,7 @@ class Trophy extends React.Component {
   }
 
   createTrophy(){
+    // There is a lot of repetition here - see if you can refactor it out - Harold
     if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) == 100)) {
       return (
         <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'/'+this.props.collectionName+'gold.png')}/>

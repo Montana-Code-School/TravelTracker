@@ -24,6 +24,12 @@ class Collection extends React.Component {
     this.fetchCollection(nextProps.params.collectionname);
   }
 
+  // this function is a bit hard to read. May be hard to maintain too.
+  // There is at least some repetition below that could factored out.
+  // Break into smaller functions for the different JSX items.
+  // It doesn't look like collectedHeader is being used?
+  // If we make the Button a small React component
+  // maybe we don't need to do bound functions either.
   prepareCollection(){
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
