@@ -28430,9 +28430,6 @@ var Collection = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Button,
               { block: true,
-                onClick: function onClick() {
-                  _this2.props.userStore.removeCollectable(_this2.props.userStore.name, x.name, _this2.props.params.collectionname);
-                },
                 onTouchTap: function onTouchTap() {
                   _this2.props.userStore.removeCollectable(_this2.props.userStore.name, x.name, _this2.props.params.collectionname);
                 }
@@ -28448,9 +28445,6 @@ var Collection = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Button,
               { block: true,
-                onClick: function onClick() {
-                  _this2.props.userStore.addCollectable(_this2.props.userStore.name, x.name, _this2.props.params.collectionname);
-                },
                 onTouchTap: function onTouchTap() {
                   _this2.props.userStore.addCollectable(_this2.props.userStore.name, x.name, _this2.props.params.collectionname);
                 }
@@ -37044,7 +37038,7 @@ var NewUser = function (_React$Component) {
               ),
               _react2.default.createElement(
                 _reactBootstrap.Button,
-                { onClick: this.handleNewUser, onTouchTap: this.handleNewUser, type: 'submit', className: 'btn btn-primary' },
+                { onTouchTap: this.handleNewUser, type: 'submit', className: 'btn btn-primary' },
                 'Submit'
               )
             )
@@ -66944,6 +66938,13 @@ var Dashboard = function (_React$Component) {
       });
     }
   }, {
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.setState({
+        activityList: nextProps.userStore.getActivityList()
+      });
+    }
+  }, {
     key: 'createActivityList',
     value: function createActivityList() {
       return this.props.userStore.getActivityList();
@@ -67370,7 +67371,7 @@ var Welcome = function (_React$Component) {
                 { to: '/Dashboard' },
                 _react2.default.createElement(
                   _reactBootstrap.Button,
-                  { onClick: this.handleLoginUser, onTouchTap: this.handleLoginUser, type: 'submit', className: 'btn btn-primary' },
+                  { onTouchTap: this.handleLoginUser, type: 'submit', className: 'btn btn-primary' },
                   'Submit'
                 )
               )
@@ -67425,7 +67426,7 @@ exports.default = {
 
   navbarStyle: {
     zIndex: "1",
-    marginBottom: "50px",
+    marginBottom: "75px",
     height: "50px"
   },
   logoStyle: {
