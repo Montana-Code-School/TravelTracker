@@ -2,9 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
-import Collection from './Collection';
 import styles from './style/TrophyStyle.css.js';
 
 class Trophy extends React.Component {
@@ -13,30 +10,40 @@ class Trophy extends React.Component {
     this.state = {
     };
     this.createTrophy = this.createTrophy.bind(this);
+    this.getTrophy = this.getTrophy.bind(this);
+  }
+
+  getTrophy(trophy){
+    return require('../img/trophies/'
+      + this.props.collectionName + '/'
+      + this.props.collectionName + trophy);
+  }
+
+  getTrophyImage(trophy){
+    return (
+      <img
+        key={this.props.collectionName}
+        style={styles.trophyStyle}
+        src={this.getTrophy(trophy)}
+      />
+    );
   }
 
   createTrophy(){
-    if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) == 100)) {
-      return (
-        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'/'+this.props.collectionName+'gold.png')}/>
-      );}
-    else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 80)) {
-      return (
-        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'/'+this.props.collectionName+'silver.png')}/>
-      );}
-    else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) >= 40)) {
-      return (
-        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'/'+this.props.collectionName+'bronze.png')}/>
-      );}
-    else if ((this.props.userStore.getPercentageCompletion(this.props.collectionName) > 0)) {
-      return (
-        <img key={this.props.collectionName} style={styles.trophyStyle} src={require('../img/trophies/'+this.props.collectionName+'/'+this.props.collectionName+'grey.png')}/>
-      );}
+    const percent = this.props.userStore.getPercentageCompletion(
+      this.props.collectionName);
+    const percentImages = [
+      {pct: 100, img: 'gold'}, {pct: 80, img: 'silver'},
+      {pct: 40, img: 'bronze'}, {pct: 0.1, img: 'grey'}];
+    const result = percentImages.find(pi => percent >= pi.pct);
+    return result ? this.getTrophyImage(result.img + ".png"): undefined;
   }
 
   render() {
     return (
-      <Link to={{pathname: '/Collection/'+this.props.collectionName}} key={this.props.collectionName}>
+      <Link to={{pathname: '/Collection/'+this.props.collectionName}}
+        key={this.props.collectionName}
+      >
         {this.createTrophy()}
       </Link>
     );
