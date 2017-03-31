@@ -84,7 +84,7 @@ class Welcome extends React.Component {
                 <div style={newUserLinkStyle}>
                   <Link to ="/NewUser" >New User</Link>
                 </div>
-                <Link to="/Dashboard"><Button onTouchTap={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
+                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouchTap={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
             </Form>
           </Well>
        </div>
