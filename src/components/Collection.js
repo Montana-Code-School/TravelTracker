@@ -12,7 +12,7 @@ class Collection extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      collection: []
+      collection: [],
     };
     this.fetchCollection = this.fetchCollection.bind(this);
     this.prepareCollection = this.prepareCollection.bind(this);
