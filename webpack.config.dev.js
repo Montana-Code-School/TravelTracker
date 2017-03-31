@@ -16,7 +16,9 @@ export default {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'src'),
-    historyApiFallback: true
+    historyApiFallback: {
+      index: '/'
+    }
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

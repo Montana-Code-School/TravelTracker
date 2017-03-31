@@ -29,8 +29,25 @@ class NewUser extends React.Component {
     this.setState({email: e.target.value});
   }
   handleNewUser(event) {
+    const self = this;
+    fetch('facebook/usercheck', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(this.state)
+    }).then(function(result){
+      return result.json();
+    }).then(function(result) {
+      console.log(result);
+      if(result.userfound) {
+        self.props.userStore.userAlreadyExists = true;
+      }else{
+        self.NewUser(self.state);
+      }
+    });
     browserHistory.push('/Welcome');
-    this.NewUser(this.state);
   }
 
   NewUser(usr) {
@@ -52,6 +69,7 @@ class NewUser extends React.Component {
   render() {
     this.props.userStore.failedLogin = false;
     this.props.userStore.newUserCreated = false;
+    this.props.userStore.userAlreadyExists = false;
     const bg = require('../img/frontBackground-min.jpg');
     const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
     const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "350px", width: "350px"};

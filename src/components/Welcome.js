@@ -43,6 +43,8 @@ class Welcome extends React.Component {
       return (<h5 style={{color: "red"}}>Incorrect username or password.  Please try again</h5>);}
     else if(this.props.userStore.newUserCreated){
       return (<h5 style={{color: "green"}}>New User Created! Feel free to login</h5>);}
+    else if(this.props.userStore.userAlreadyExists){
+      return (<h5 style={{color: "red"}}>Username taken... Please sign up with a different name</h5>);}
   }
 
   responseFacebook(response){
@@ -52,7 +54,7 @@ class Welcome extends React.Component {
   render() {
     const bg = require('../img/frontBackground-min.jpg');
     const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
-    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "350px", width: "350px"};
+    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "375px", width: "350px"};
     const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
 
