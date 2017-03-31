@@ -18,6 +18,7 @@ export default class UserStore {
       loggedInUser: false,
       failedLogin: false,
       newUserCreated: false,
+      userAlreadyExists: false,
       id: "",
       token: "",
       states: [],
@@ -161,6 +162,8 @@ export default class UserStore {
         this.mlbstadiums = loginCred.mlbstadiums;
         this.airports = loginCred.airports;
         this.newUserCreated = false;
+        this.userAlreadyExists = false;
+        this.failedLogin=false;
         browserHistory.push('/Dashboard');
       } else {
         this.loggedInUser=false;
