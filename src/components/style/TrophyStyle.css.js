@@ -29,7 +29,7 @@ export default {
     },
     position: "relative",
     left: "20%",
-    width: "5%",
-    height: "5%"
+    width: "47px",
+    height: "62px"
   }
 };
