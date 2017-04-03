@@ -60,7 +60,6 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
-    // let thumb = '<img src="../img/coorsfield.jpg" width="50px" height="50px"/>';
     let actualLat = this.state.location.latitude;
     let actualLong = this.state.location.longitude;
     // let compLat = x.latitude;
