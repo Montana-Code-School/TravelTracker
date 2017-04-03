@@ -67,8 +67,8 @@ class CollectionMap extends React.Component {
 
     if(this.state.location.latitude !== null) {
 
-      if (actualLat >= 44.9912101476 -1 && actualLat <= 44.9912101476 +1 &&
-          actualLong >= -110.691947937 -1 && actualLong <= -110.691947937 +1) {
+      if (actualLat >= 44.9912101476 -.5 && actualLat <= 44.9912101476 +.5 &&
+          actualLong >= -110.691947937 -.5 && actualLong <= -110.691947937 +.5) {
         bubbles.push(
           {
             name: this.props.userStore.name + ", testing",

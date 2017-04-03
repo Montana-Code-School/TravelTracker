@@ -1,9 +1,9 @@
 import React from 'react';
-import NewUser from './NewUser';
 import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
 import { Grid, Col, Row, Image, Well, Button, Form, FormGroup, ControlLabel, FormControl, Glyphicon } from 'react-bootstrap';
 import FacebookLogin from 'react-facebook-login';
+import './style/Welcome.css';
 
 class Welcome extends React.Component {
 
@@ -40,11 +40,14 @@ class Welcome extends React.Component {
 
   loginNotice() {
     if(this.props.userStore.failedLogin){
-      return (<h5 style={{color: "red"}}>Incorrect username or password.  Please try again</h5>);}
+      return (<h5 style={{color: "red"}}>
+      Incorrect username or password.  Please try again</h5>);}
     else if(this.props.userStore.newUserCreated){
-      return (<h5 style={{color: "green"}}>New User Created! Feel free to login</h5>);}
+      return (<h5 style={{color: "green"}}>
+      New User Created! Feel free to login</h5>);}
     else if(this.props.userStore.userAlreadyExists){
-      return (<h5 style={{color: "red"}}>Username taken... Please sign up with a different name</h5>);}
+      return (<h5 style={{color: "red"}}>
+      Username taken... Please sign up with a different name</h5>);}
   }
 
   responseFacebook(response){
@@ -65,10 +68,7 @@ class Welcome extends React.Component {
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
-          <FacebookLogin
-            appId="1676339145713512"
-            fields="name,email,picture"
-            callback={this.responseFacebook} />
+
             <Form>
 
                 <legend>Log In to Travel Tracker</legend>
@@ -84,10 +84,21 @@ class Welcome extends React.Component {
                 </FormGroup>
 
                 <div style={newUserLinkStyle}>
-                  <Link to ="/NewUser" >New User</Link>
+                  <Link to ="/NewUser" style={{color: "#4eb14d"}}>New User</Link>
                 </div>
-                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouchTap={this.handleLoginUser} type="submit" className="btn btn-primary">Submit</Button></Link>
+                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouchTap={this.handleLoginUser} type="submit" className="btn btn-success">Submit</Button></Link>
             </Form>
+            <br/>
+            <div style={{textAlign: "center"}}>
+            <FacebookLogin
+              appId="1676339145713512"
+              fields="name,email,picture"
+              callback={this.responseFacebook}
+              icon="fa-facebook"
+              cssClass="facebookbtn"
+              textButton = " Login with Facebook"
+               />
+            </div>
           </Well>
        </div>
       </div>

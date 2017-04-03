@@ -1,7 +1,7 @@
 /* Importing the neccesary components*/
 import React from 'react';
 import { Link } from 'react-router';
-import Trophy from './Trophy';
+import CollectionIcon from './CollectionIcon';
 import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, Col, Glyphicon } from 'react-bootstrap';
@@ -32,12 +32,13 @@ class ControlBar extends React.Component {
 
   createNavBar(){
     if(this.props.userStore.loggedInUser){
-      let displayTrophy = [
-        <Trophy key="states" collectionName={"states"}/>,
-        <Trophy key="parks" collectionName={"parks"}/>,
-        <Trophy key="mlbstadiums" collectionName={"mlbstadiums"}/>,
-        <Trophy key="nflstadiums" collectionName={"nflstadiums"}/>,
-        <Trophy key="airports" collectionName={"airports"}/>];
+      let displayIcon = [
+        <CollectionIcon key="states" collectionName={"states"}/>,
+        <CollectionIcon key="parks" collectionName={"parks"}/>,
+        <CollectionIcon key="elevations" collectionName={"elevations"}/>,
+        <CollectionIcon key="mlbstadiums" collectionName={"mlbstadiums"}/>,
+        <CollectionIcon key="nflstadiums" collectionName={"nflstadiums"}/>,
+        <CollectionIcon key="airports" collectionName={"airports"}/>];
 
       return (
         <div>
@@ -50,7 +51,7 @@ class ControlBar extends React.Component {
             <Navbar .Toggle />
             </Navbar .Header>
             <Navbar .Collapse>
-              {displayTrophy}
+              {displayIcon}
               <Nav pullRight>
                 <LinkContainer to={{pathname: '/Dashboard'}}><NavItem><Glyphicon glyph="user"/> {this.props.userStore.name}</NavItem></LinkContainer>
                 <NavDropdown id="basic-nav-dropdown" title="collections">
@@ -58,10 +59,11 @@ class ControlBar extends React.Component {
                   <MenuItem divider/>
                   <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
-                  <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/Collection/elevations'}}><NavItem>Elevation by State</NavItem></LinkContainer>
                   <MenuItem divider/>
                   <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/nflstadiums'}}><NavItem>NFL Stadiums</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
                 </NavDropdown>
                 <NavItem onClick={() => {this.logOutHandler();}}>log out</NavItem>
               </Nav>
@@ -86,7 +88,7 @@ class ControlBar extends React.Component {
   }
 }
 
-/* Setting the propTypes of ControlBar userStore and children as React.PropTypes.*/
+
 
 ControlBar.propTypes = {
   userStore: React.PropTypes.object,

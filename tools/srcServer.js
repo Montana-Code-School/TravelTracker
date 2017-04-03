@@ -27,6 +27,7 @@ const PROD = process.env.NODE_ENV === 'production';
 
 let userRoutes = require('../src/routes/userRoutes');
 let parkRoutes = require('../src/routes/parkRoutes');
+let elevationRoutes = require('../src/routes/elevationRoutes');
 let stateRoutes = require('../src/routes/stateRoutes');
 let mlbstadiumRoutes = require('../src/routes/mlbstadiumRoutes');
 let nflstadiumRoutes = require('../src/routes/nflstadiumRoutes');
@@ -37,6 +38,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/api', userRoutes);
 app.use('/parks', parkRoutes);
+app.use('/elevations', elevationRoutes);
 app.use('/states', stateRoutes);
 app.use('/mlbstadiums', mlbstadiumRoutes);
 app.use('/nflstadiums', nflstadiumRoutes);

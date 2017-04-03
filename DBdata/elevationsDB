@@ -1,0 +1,440 @@
+{
+    "name" : "Cheaha Mountain",
+    "states" : "AL",
+    "description" : "Cheaha Mountain, often called Mount Cheaha, is the highest natural point in the U.S. state of Alabama. It is located a few miles northwest of the town of Delta. The mountain is also host to the scenic Cheaha State Park, which offers a lodge, a restaurant, and other amenities. Cheaha Mountain is 2,413ft (736m) above sea level.",
+    "latitude" : "33.485511",
+    "longitude" : "-85.808663"
+}
+
+{
+    "name" : "Denali",
+    "states" : "AK",
+    "description" : "Denali (formerly known as Mount McKinley) is the highest mountain in North America, with a summit elevation of 20,310 feet (6,190 m) above sea level. With a topographic prominence of 20,156 feet (6,144 m) and a topographic isolation of 4,629 miles (7,450 km), Denali is the third most prominent and third most isolated peak after Mount Everest and Aconcagua. Located in the Alaska Range in the interior of the U.S. state of Alaska, Denali is the centerpiece of Denali National Park and Preserve.",
+    "latitude" : "63.0695",
+    "longitude" : "-151.0074"
+}
+
+{
+    "name" : "Humphreys Peak",
+    "states" : "AZ",
+    "description" : "Humphreys Peak is the highest natural point in the U.S. state of Arizona, with an elevation of 12,633 feet (3,851 m) above sea level. The peak is located within the Kachina Peaks Wilderness in the Coconino National Forest, about 11 miles (17.7 km) north of Flagstaff, Arizona. Humphreys Peak is the highest of a group of extinct volcanic peaks known as the San Francisco Peaks.",
+    "latitude" : "35.346342",
+    "longitude" : "-111.677946"
+}
+
+{
+    "name" : "Mount Magazine",
+    "states" : "AR",
+    "description" : "Mount Magazine, officially named Magazine Mountain is the highest mountain in the state of Arkansas and the site of Mount Magazine State Park. The mountain is a flat-topped plateau with a sandstone cap rimmed by precipitous rock cliffs. Two peaks are situated atop the plateau, Signal Hill, which reaches 2,753 feet (839 m), and Mossback Ridge, which reaches 2,700 feet (823 m).",
+    "latitude" : "35.167016",
+    "longitude" : "-93.644726"
+}
+
+{
+    "name" : "Mount Whitney",
+    "states" : "CA",
+    "description" : "Mount Whitney is the highest summit in the contiguous United States and the Sierra Nevada, with an elevation of 14,505 feet (4421.0 m). It is on the boundary between California's Inyo and Tulare counties, 84.6 miles (136.2 km) west-northwest of the lowest point in North America at Badwater Basin in Death Valley National Park at 282 ft (86 m) below sea level. The west slope of the mountain is in Sequoia National Park and the summit is the southern terminus of the John Muir Trail which runs 211.9 mi (341.0 km) from Happy Isles in Yosemite Valley. The east slope is in the Inyo National Forest in Inyo County.",
+    "latitude" : "36.578581",
+    "longitude" : "-118.291995"
+}
+
+{
+    "name" : "Mount Elbert",
+    "states" : "CO",
+    "description" : "Mount Elbert is the highest summit of the Rocky Mountains of North America and the highest point in the U.S. state of Colorado and the entire Mississippi River drainage basin. The ultra-prominent 14,440-foot (4401.2 m) fourteener is the highest peak in the Sawatch Range and the second-highest summit in the contiguous United States after Mount Whitney. Mount Elbert is located in San Isabel National Forest, 12.1 miles (19.4 km) southwest (bearing 223) of the City of Leadville in Lake County, Colorado. The mountain was named in honor of Colorado statesman Samuel Hitt Elbert, who was active in the formative period of the state and Governor of the Territory of Colorado from 1873 to 1874. Henry W. Stuckle of the Hayden Survey was the first to record an ascent of the peak, in 1874. The easiest and most popular climbing routes are categorized as Class 1 to 2 or A in mountaineering parlance. Mount Elbert is therefore often referred to as the gentle giant that tops all others in the Rocky Mountains",
+    "latitude" : "39.117751",
+    "longitude" : "-106.445358"
+}
+
+{
+    "name" : "Mount Frissell",
+    "states" : "CT",
+    "description" : "Mount Frissell, 2,454 feet (748 m), located on the border of southwest Massachusetts and northwest Connecticut, is a prominent peak of the Taconic Range. The peak and northern part of the mountain are located within Massachusetts, while the southern slope of Mount Frissell is located within Connecticut and rises to the highest elevation within that state, 2,379 feet (725 m). The high-point marker for Connecticut is on the border with Massachusetts at 42.049633°N 73.483042°W. Bear Mountain, located 1.3 miles (2.1 km) to the east, is the highest mountain summit in Connecticut. Most hikers reach the state high point by a rather short route starting high up in the col between Mt. Frissell and Bear Mountain, at an elevation of around 1,800 feet (550 m).",
+    "latitude" : "42.051094",
+    "longitude" : "-73.481978"
+}
+
+{
+    "name" : "Ebright Azimuth",
+    "states" : "DE",
+    "description" : "The Ebright Azimuth is the point with the highest benchmark monument elevation in the U.S. state of Delaware. It is marked with a geodetic benchmark monument and has an elevation of 447.85 feet (136.50 m) above sea level. The only state high-point with a lower elevation is Britton Hill in the state of Florida at 345 feet (105 m) above sea level.",
+    "latitude" : "39.83574",
+    "longitude" : "-75.51915"
+}
+
+{
+    "name" : "Britton Hill",
+    "states" : "FL",
+    "description" : "Britton Hill is the highest natural point in the state of Florida, USA, with a summit elevation of 345 feet (105 m) above mean sea level. Britton Hill is the lowest state highpoint in the United States, 103 feet (31 m) lower than the next lowest highpoint, Ebright Azimuth in Delaware. The hill is located in northern Walton County near the town of Lakewood, Florida, just off County Road 285 about 2 miles (3.2 km) southeast of Florala, Alabama. A small park called Lakewood Park marks the high point and features a monument, trails and an information board.",
+    "latitude" : "30.988514",
+    "longitude" : "-86.281889"
+}
+
+
+{
+    "name" : "Brasstown Bald",
+    "states" : "GA",
+    "description" : "Brasstown Bald is the highest point in the state of Georgia at 4,784 ft (1458 m) above sea level. Located in northeast Georgia, the mountain is known to the native Cherokee people as Enotah. The name in English is derived from a mistaken translation of the term for a former Cherokee village nearby, located along the upper Brasstown Creek (named in English from the same error) feeding the Hiawassee River. Across the North Carolina state line, immediately north of the mountain, are other places named in that error of English settlers: Brasstown, a community in the Brasstown township of Clay County, North Carolina. Brasstown Bald is partly in both Towns and Union counties, the peak being divided by the county line. The mountain is part of the Blue Ridge Mountains (part of the Appalachian Mountains), and within the borders of the Blue Ridge Ranger District of the Chattahoochee National Forest. The mountain consists mostly of soapstone and dunite.",
+    "latitude" : "34.874199",
+    "longitude" : "-83.810652"
+}
+
+
+{
+    "name" : "Mauna Kea",
+    "states" : "HI",
+    "description" : "Mauna Kea is a dormant volcano on the island of Hawaii. Standing 4,207 m (13,802 ft) above sea level, its peak is the highest point in the state of Hawaii. Much of the mountain is under water; when measured from its oceanic base, Mauna Kea is over 10,000 m (33,000 ft) tall. Late volcanism has also given it a much rougher appearance than its neighboring volcanoes; contributing factors include the construction of cinder cones, the decentralization of its rift zones, the glaciation on its peak, and the weathering effects of the prevailing trade winds. Mauna Kea last erupted 6,000 to 4,000 years ago and is now considered dormant.",
+    "latitude" : "19.820664",
+    "longitude" : "-155.468066"
+}
+
+
+{
+    "name" : "Borah Peak",
+    "states" : "ID",
+    "description" : "Borah Peak is the highest mountain in the U.S. state of Idaho at 12,662 ft (3861 m) above sea level. It is located in the central section of the Lost River Range, within the Challis National Forest in eastern Custer County. The 1983 Borah Peak earthquake occurred on October 28 at 8:06:09 local time in the Lost River Range at Borah Peak in central Idaho, United States, measuring 6.9 on the moment magnitude scale. Mount Borah rose about 1 foot (30 cm) and the Lost River Valley in that vicinity dropped about 8 feet (2.4 m). The peak was scarred on the western side, and the mark is still visible.",
+    "latitude" : "44.137389",
+    "longitude" : "-113.781101"
+}
+
+
+{
+    "name" : "Charles Mound",
+    "states" : "IL",
+    "description" : "Charles Mound is a gentle, 1,235-foot (376 m) high hill in northern Jo Daviess County, Illinois, near the small town of Scales Mound and 11 miles (18 km) northeast of Galena. It is the highest natural point in the state.",
+    "latitude" : "42.504044",
+    "longitude" : "-90.239726"
+}
+
+
+{
+    "name" : "Hoosier Hill",
+    "states" : "IN",
+    "description" : "Hoosier Hill is the highest natural point in the state of Indiana at 1,257 feet (383 m) above sea level. It is in the rural area of Franklin Township, Wayne County to the northwest of Bethel. The nearest intersection to the high point is Elliot Road and County Line Road. The nearest major landmark is Interstate 70 and Richmond 11 miles (17.5 km) to the south. The Hill sits on private property; the high point sits in a forested area surrounded by farmland. In 2005, an Eagle Scout candidate named Kyle Cummings (Troop 820 from Lakeside Park, Kentucky), in cooperation with the property owner, built a trail, sign and picnic area at the high point.",
+    "latitude" : "40.001111",
+    "longitude" : "-84.848611"
+}
+
+
+{
+    "name" : "Hawkeye Point",
+    "states" : "IA",
+    "description" : "Hawkeye Point is the highest natural point in Iowa at 1,670 feet (510 m).It is approximately 4.5 miles (7.2 km) north of Sibley on the eastern side of SR 60 and approximately 3.5 miles (5.6 km) south of the Iowa-Minnesota state border. The high ground lies 100 feet (30 m) due south of an old silo.",
+    "latitude" : "43.459967",
+    "longitude" : "-95.708903"
+}
+
+
+{
+    "name" : "Mount Sunflower",
+    "states" : "KS",
+    "description" : "Mount Sunflower is the highest natural point in the state of Kansas. At 4,039 feet (1,231 m), it is 3,300 feet (1,010 m) above the state's topographic low point in southeastern Kansas. Located in Wallace County, it is less than half a mile (0.8 km) from the Colorado state border and close to the lowest point in Colorado. Mount Sunflower is located on private land owned by Ed and Cindy Harold, who encourage visitors to the site. Amenities include a picnic table, a little free library, a sunflower sculpture made from railroad spikes, and a plaque on the site stated, 'On this site in 1897, nothing happened.' As of 2015, however, that sign is missing, evidently stolen. Additionally, there is a mailbox on site with a registration book inside where you can write your name, where you are from, and how many in your party.",
+    "latitude" : "39.021944",
+    "longitude" : "-102.037222"
+}
+
+
+{
+    "name" : "Black Mountain",
+    "states" : "KY",
+    "description" : "Black Mountain is the highest mountain peak in the Commonwealth of Kentucky, USA, with a summit elevation of 4,145 feet (1,263 m) above mean sea level; and a top to bottom height of over 2,500 feet (760 m). The summit is located at approximately 36°54′51″N 82°53′38″W in Harlan County, Kentucky near the Virginia border, just above the towns of Lynch, Kentucky and Appalachia, Virginia. It is about 500 feet (150 m) taller than any other mountain in Kentucky.",
+    "latitude" : "36.914167",
+    "longitude" : "-82.893889"
+}
+
+
+{
+    "name" : "Driskill Mountain",
+    "states" : "LA",
+    "description" : "Driskill Mountain (also referred to as Mount Driskill) is the highest natural summit in Louisiana, with an elevation of 535 feet (163 m) above sea level. It lies about 5.3 miles (8.5 km) southeast of Bryceland, Louisiana. It is located in the northeastern corner of Sec. 32, T. 17 N., R. 5 W. within Bienville Parish. Driskill Mountain is a landform created by the erosion of unlithified Paleogene sediment. Its summit consists of nonmarine quartz sands of the Cockfield Formation. These sands overlie shallow marine and coastal clays, silts, and sands of the Cook Mountain Formation, which form the bulk of Driskill Mountain.",
+    "latitude" : "32.424598",
+    "longitude" : "-92.897379"
+}
+
+
+{
+    "name" : "Mount Katahdin",
+    "states" : "ME",
+    "description" : "Mount Katahdin is the highest mountain in the U.S. state of Maine at 5,267 feet (1,605 m). Named Katahdin by the Penobscot Indians, which means 'The Greatest Mountain', Katahdin is the centerpiece of Baxter State Park. It is a steep, tall mountain formed from a granite intrusion weathered to the surface. The flora and fauna on the mountain are typical of those found in northern New England. Katahdin was known to the Native Americans in the region, and was known to Europeans at least since 1689. It has inspired hikes, climbs, journal narratives, paintings, and a piano sonata. The area around the peak was protected by Governor Percival Baxter starting in the 1930s. Katahdin is the northern terminus of the Appalachian Trail, and is located near a stretch known as the Hundred-Mile Wilderness.",
+    "latitude" : "45.904354",
+    "longitude" : "-68.921274"
+}
+
+
+{
+    "name" : "Hoye-Crest",
+    "states" : "MD",
+    "description" : "Hoye-Crest is a summit along Backbone Mountain just inside of Garrett County, Maryland, USA. It is the highest natural point in Maryland at an elevation of 3,360 feet (1,020 m). The location, named for Captain Charles E. Hoye (1876-1951), founder of the Garrett County Historical Society, offers a view of the North Branch Potomac River valley to the east. The Maryland Historical Society placed a historical marker at the summit during a dedication ceremony in September 1952.",
+    "latitude" : "39.237329",
+    "longitude" : "-79.485331"
+}
+
+
+{
+    "name" : "Mount Greylock",
+    "states" : "MA",
+    "description" : "Mount Greylock is the highest natural point in Massachusetts at 3,489 feet (1,063 m). Its peak is located in the northwest corner of the state in the western part of the town of Adams (near its border with Williamstown) in Berkshire County. Although geologically part of the Taconic Mountains, Mount Greylock is commonly associated with the abutting Berkshire Hills to the east. The mountain is known for its expansive views encompassing five states and the only taiga-boreal forest in the state. A seasonal automobile road (open annually from late May through November 1) climbs to the summit, where stands the iconic 93-foot-high (28 m) lighthouse-like Massachusetts Veterans War Memorial Tower. A network of hiking trails traverse the mountain, including the 2,179-mile (3,507 km) Appalachian Trail. Mount Greylock State Reservation was created in 1898 as Massachusetts' first public land for the purpose of forest preservation.",
+    "latitude" : "42.63704",
+    "longitude" : "-73.16593"
+}
+
+
+{
+    "name" : "Mount Arvon",
+    "states" : "MI",
+    "description" : "Mount Arvon, elevation 1,979 feet (603 m), located in L'Anse Township, Baraga County, is the highest natural point in the U.S. state of Michigan. Like nearby Arvon Township, Mount Arvon takes its name from the deposits of slate in the area which were reminiscent of those around Caernarfon in Wales. Mount Arvon is part of the Huron Mountains. It rises about eight miles (13 km) south of Lake Superior (elevation 591 ft, 180 m). On the list of highest natural points in each U.S. state, Mount Arvon ranks 38th. Mount Arvon is a few miles from Mount Curwood, which for years had been designated as Michigan's highest spot until a resurvey in 1982 with modern technology determined that Mount Arvon is one foot (0.30 m) taller than Mount Curwood. Mount Arvon is about 12 miles (19 km) east of L'Anse, although it is about a 26-mile (42 km) drive from the city as much of it lies on winding logging roads. The property is owned by the MeadWestvaco paper company but public access is allowed.",
+    "latitude" : "46.755813",
+    "longitude" : "-88.155434"
+}
+
+
+{
+    "name" : "Eagle Mountain",
+    "states" : "MN",
+    "description" : "Eagle Mountain is the highest natural point in Minnesota, at 2,301 feet (701 m). It is located in northern Cook County and is in the Boundary Waters Canoe Area Wilderness and Superior National Forest in the Misquah Hills, northwest of the community of Grand Marais. It is a Minnesota State Historic Site.",
+    "latitude" : "47.897391",
+    "longitude" : "-90.560111"
+}
+
+
+{
+    "name" : "Woodall Mountain",
+    "states" : "MS",
+    "description" : "Located in the northeast part of the state, Woodall Mountain is the highest natural point in the state of Mississippi at 807 feet (246 m). It was originally called Yow Hill. The summit is marked with a National Geodetic Survey triangulation station disk and three radio towers. A sign cautions visitors to prepare for a steep, unpaved, and rocky inclined road approximately a mile in length to the summit. Atop the hill there is a bench, a high point register, and a gravel circle allowing parking for several vehicles. A wooden observation tower was constructed in the 20th century atop the hill in the middle of the gravel circle. A climb to the top of the tower gave an encompassing view of the surrounding area. It was an excellent vantage point for watching the town of Iuka’s annual fireworks displays. The tower deteriorated over time, with some steps rotting; it was torn down in 1998.",
+    "latitude" : "34.78774",
+    "longitude" : "-88.241629"
+}
+
+
+{
+    "name" : "Taum Sauk Mountain",
+    "states" : "MO",
+    "description" : "Taum Sauk Mountain in the Saint Francois Mountains is the highest natural point in the U.S. state of Missouri at 1,772 feet (540 m). The topography of Taum Sauk is that of a somewhat flat ridge rather than a peak. While relatively low in terms of elevation at 1,772 feet (540 m) compared to other peaks, Taum Sauk and the St. Francois range are true mountains, being the result of a volcanic orogeny. Whereas vertical relief in the rest of the Ozarks region is the result of erosion of sedimentary strata, the St. Francois are an ancient Precambrian igneous uplift several times older than the Appalachians. Geologists believe that Taum Sauk and its neighbors may be among the few areas in the US never to have been submerged in ancient seas. The peaks of the St. Francois range existed as islands in the shallow seaway throughout most of the Paleozoic Era as the sandstones, limestones, and shales typical of the Ozarks were deposited. Weathering and erosion of these ancient peaks provided the clastic sediments of the surrounding rock layers.",
+    "latitude" : "37.570327",
+    "longitude" : "-90.7279"
+}
+
+
+{
+    "name" : "Granite Peak",
+    "states" : "MT",
+    "description" : "Granite Peak, at an elevation of 12,807 feet (3,904 m) above sea level, is the highest natural point in the U.S. state of Montana, and is the tenth highest state high point in the nation. It lies within the Absaroka-Beartooth Wilderness, in Park County very near the borders of Stillwater County and Carbon County. Granite Peak is 10 miles (16 km) north of the Wyoming border, 45 miles (72 km) southwest of Columbus, Montana. Granite Peak is the second most difficult state highpoint after Denali in Alaska, due to technical climbing, poor weather, and route finding. Granite Peak’s first ascent was made by Elers Koch, James C. Whitham and R.T. Ferguson on August 29, 1923 after several failed attempts by others. It was the last of the state highpoints to be climbed. Today, climbers typically spend two or three days ascending the peak, stopping over on the Froze-to-Death Plateau, although some climbers choose to ascend the peak in a single day. Another route that has gained popularity in recent years is the Southwest Couloir route, a non-technical route from the south starting near Cooke City; climbers generally take two days to complete it.",
+    "latitude" : "45.163427",
+    "longitude" : "-109.807456"
+}
+
+
+{
+    "name" : "Panorama Point",
+    "states" : "NE",
+    "description" : "Panorama Point is the highest natural point in Nebraska, at an elevation of 5,429 feet (1,655 m) above sea level. It is located in southwestern Kimball County, near the point where Nebraska and Wyoming meet on Colorado's northern boundary. Despite its name and elevation, Panorama Point is not a mountain or a hill; it is merely a low rise on the High Plains. A stone marker, giving the elevation at 5,424 feet (1,653 m), and a guest register are located at the summit of the drive. From the point one can see the nearby state corner marker, and a vast plains landscape with the Rocky Mountains in the western distance. Panorama Point is located on the High Point Bison Ranch, which permits visitors to drive to the site as long as they take care to avoid the ranging bison and pay an entrance fee.",
+    "latitude" : "41.01054",
+    "longitude" : "-104.029671"
+}
+
+
+{
+    "name" : "Boundary Peak",
+    "states" : "NV",
+    "description" : "Boundary Peak is the highest point, at 13,147 feet (4,007 m), in the state of Nevada. It is the northernmost peak of the White Mountains, located in Great Basin region of the Western United States. The summit is located in Esmeralda County of southwestern Nevada, and is within the Boundary Peak Wilderness of the Inyo National Forest.",
+    "latitude" : "37.846098",
+    "longitude" : "-118.351299"
+}
+
+
+{
+    "name" : "Mount Washington",
+    "states" : "NH",
+    "description" : "Mount Washington, called Agiocochook by some Native American tribes, is the highest peak in the Northeastern United States at 6,288.2 ft (1,916.6 m) and the most prominent mountain east of the Mississippi River. The mountain is notorious for its erratic weather. On the afternoon of April 12, 1934, the Mount Washington Observatory recorded a windspeed of 231 miles per hour (372 km/h) at the summit, the world record for most of the 20th century, and still a record for measured wind speeds not involved with a tropical cyclone. The mountain is located in the Presidential Range of the White Mountains, in the township of Sargent's Purchase, Coös County, New Hampshire. While nearly the whole mountain is in the White Mountain National Forest, an area of 60.3 acres (24.4 ha) surrounding and including the summit is occupied by Mount Washington State Park. The Mount Washington Cog Railway ascends the western slope of the mountain, and the Mount Washington Auto Road climbs to the summit from the east. The mountain is popular with hikers (the Appalachian Trail crosses the summit). Other common activities include glider flying, and annual cycle and running races such as the Auto Road Bicycle Hillclimb and Road Race.",
+    "latitude" : "44.2705",
+    "longitude" : "-71.30325"
+}
+
+
+{
+    "name" : "High Point",
+    "states" : "NJ",
+    "description" : "High Point, in Montague, Sussex County, New Jersey, in the Skylands Region, is the highest elevation in the state at 1,803 feet (550 m). It is southeast of Port Jervis, New York. High Point is the highest peak of the Kittatinny Mountains. Three states – New Jersey, New York, and Pennsylvania – can be seen from the top. At the peak is the High Point Monument, a 220-foot (67 m) obelisk, built in 1930 as a war memorial.",
+    "latitude" : "41.32095",
+    "longitude" : "-74.66155"
+}
+
+
+{
+    "name" : "Wheeler Peak",
+    "states" : "NM",
+    "description" : "Wheeler Peak is the highest natural point in the U.S. state of New Mexico. It is located northeast of Taos and south of Red River in the northern part of the state, and just 2 miles (3.2 km) southeast of the ski slopes of Taos Ski Valley. It lies in the Sangre de Cristo Mountains, the southernmost subrange of the Rocky Mountains. The peak's elevation is 13,167 feet (4,013 m). Formerly named Taos Peak, after the nearby town of Taos, New Mexico, it was renamed Wheeler Peak in 1950",
+    "latitude" : "36.556855",
+    "longitude" : "-105.416947"
+}
+
+
+{
+    "name" : "Mount Marcy",
+    "states" : "NY",
+    "description" : "Mount Marcy is the highest point in New York State, with an elevation of 5,343 feet (1,629 m). It is located in the Town of Keene in Essex County. The mountain is in the heart of the Adirondack High Peaks Region of the High Peaks Wilderness Area. Its stature and expansive views make it a popular destination for hikers, who crowd its summit in the summer months. Lake Tear of the Clouds, at the col between Mt. Marcy and Mt. Skylight, is often cited as the highest source of the Hudson River,[5] via Feldspar Brook and the Opalescent River, even though the main stem of the Opalescent River has as its source a higher point two miles north of Lake of the Clouds, and that stem is a mile longer than Feldspar Brook.",
+    "latitude" : "44.112734",
+    "longitude" : "-73.923726"
+}
+
+
+{
+    "name" : "Mount Mitchell",
+    "states" : "NC",
+    "description" : "Mount Mitchell is the highest peak of the Appalachian Mountains and the highest peak in mainland eastern North America. It is located near Burnsville in Yancey County, North Carolina, in the Black Mountain subrange of the Appalachians, and about 19 miles (31 km) northeast of Asheville. It is protected by Mount Mitchell State Park and surrounded by the Pisgah National Forest. Mount Mitchell's elevation is 6,684 feet (2,037 m) above sea level.",
+    "latitude" : "35.764839",
+    "longitude" : "-82.265122"
+}
+
+
+{
+    "name" : "White Butte",
+    "states" : "ND",
+    "description" : "White Butte is the highest natural point in the U.S. state of North Dakota. At an elevation of 3,506 ft (1,069 m), it is a prominent butte in Slope County, in the Badlands of the southwestern part of the state. It is located 3 miles (5 kilometers) east of US 85 and about 6.5 mi (10 km) south of Amidon. The nearest town is Amidon, about seven miles to the northwest. The summit is located within the boundaries of the Little Missouri National Grassland and is about 35 miles (56 km) south of Theodore Roosevelt National Park. It is on private property, owned by the Dennis family who live nearby. At the trailhead, the family maintains a small mailbox-like receptacle for donations to help maintain the area, and requests a $5 contribution from visitors. The Killdeer Mountains, 75 miles (121 km) to the north, rise 900 feet (270 m) from their foothills, but are 225 feet (69 m) shorter than White Butte",
+    "latitude" : "46.386676",
+    "longitude" : "-103.302402"
+}
+
+
+{
+    "name" : "Campbell Hill",
+    "states" : "OH",
+    "description" : "Campbell Hill is, at 1,550 feet (472 m), the highest point in elevation in the U.S. state of Ohio. Campbell Hill is located within the city of Bellefontaine, two miles (3.2 km) northeast of downtown. The peak is the former home of the Bellefontaine Air Force Station, where the 664th Aircraft Control and Warning Squadron maintained a Cold War early warning radar. Currently, the summit is occupied by the Ohio Hi-Point Career Center and is open to visitors Monday through Friday. Located about 50 miles northwest of Columbus, Campbell Hill is classified as a glacial moraine and has been referred to as the most manicured of the state highpoints. Campbell Hill ranks 43rd in height on the list of highest natural points in each U.S. state.",
+    "latitude" : "40.369776",
+    "longitude" : "-83.720488"
+}
+
+
+{
+    "name" : "Black Mesa",
+    "states" : "OK",
+    "description" : "Black Mesa is a mesa in the U.S. states of Colorado, New Mexico, and Oklahoma. It extends from Mesa de Maya, Colorado southeasterly 28 miles (45 km) along the north bank of the Cimarron River, crossing the northeast corner of New Mexico to end at the confluence of the Cimarron and Carrizo Creek near Kenton in the Oklahoma panhandle. Its highest elevation is 5,705 feet (1,739 m) in Colorado. The highest point of Black Mesa within New Mexico is 5,239 feet (1,597 m). In northwestern Cimarron County, Oklahoma, Black Mesa reaches 4,973 feet (1,516 m), the highest point in the state of Oklahoma. The plateau that formed at the top of the mesa has been known as a geological wonder of North America. There is abundant wildlife in this arid prairie environment, including mountain lions, butterflies, and the Texas horned lizard.",
+    "latitude" : "37.08141",
+    "longitude" : "-103.34633"
+}
+
+
+{
+    "name" : "Mount Hood",
+    "states" : "OR",
+    "description" : "Mount Hood, called Wy'east by the Multnomah tribe, is a potentially active stratovolcano in the Cascade Volcanic Arc of northern Oregon. It was formed by a subduction zone on the Pacific coast and rests in the Pacific Northwest region of the United States. It is located about 50 miles (80 km) east-southeast of Portland, on the border between Clackamas and Hood River counties. In addition to being Oregon's highest mountain, it is one of the loftiest mountains in the nation based on its prominence.The height assigned to Mount Hood's snow-covered peak has varied over its history. Modern sources point to three different heights: 11,249 feet (3,429 m), a 1991 adjustment of a 1986 measurement by the U.S. National Geodetic Survey (NGS), 11,240 feet (3,426 m) based on a 1993 scientific expedition, and 11,239 feet (3,426 m) of slightly older origin. The peak is home to 12 named glaciers and snowfields. It is the highest point in Oregon and the fourth highest in the Cascade Range. Mount Hood is considered the Oregon volcano most likely to erupt, though based on its history, an explosive eruption is unlikely. Still, the odds of an eruption in the next 30 years are estimated at between 3 and 7 percent, so the U.S. Geological Survey (USGS) characterizes it as potentially active, but the mountain is informally considered dormant.",
+    "latitude" : "45.373514",
+    "longitude" : "-121.695919"
+}
+
+
+{
+    "name" : "Mount Davis",
+    "states" : "PA",
+    "description" : "Mount Davis (3,213 ft or 979 m) is the highest point in Pennsylvania. Located in the 5,685 acres (2,301 ha) Forbes State Forest near the hamlet of Markleton in Elk Lick Township, Somerset County, it lies on a gentle crest of a 30-mile (50 km) ridge line extending from central Somerset County southward into Garrett County, Maryland known as Negro Mountain. The high point was named for John Nelson Davis, an early settler, American Civil War veteran, surveyor, and naturalist known for his studies of the mountain's flora and fauna. During the Civil War, Davis served in Company E, 102nd Pennsylvania Infantry. The summit of Mt. Davis may be ascended by car or a number of hiking trails. Its surrounds are noted for their patterns of unusual circular stone formed by periglacial action. A metal observation tower with a relief map of the region stands near the true high point. Mount Davis ranks 33rd on the list of highest natural points in each U.S. state",
+    "latitude" : "39.786191",
+    "longitude" : "-79.175863"
+}
+
+
+{
+    "name" : "Jerimoth Hill",
+    "states" : "RI",
+    "description" : "Jerimoth Hill (812 ft, 247 m) is the highest point in the U.S. state of Rhode Island. Located in the town of Foster near Providence, the site is owned by Brown University and used as an observatory. It is also a popular destination for highpointers, and prior to 2005 was known for being difficult to access due to a local landowner who prohibited entry.",
+    "latitude" : "41.849543",
+    "longitude" : "-71.778681"
+}
+
+
+{
+    "name" : "Sassafras Mountain",
+    "states" : "SC",
+    "description" : "Sassafras Mountain is the highest point in the US state of South Carolina at an elevation of 3,5554 ft (1085 m) above sea level. It is in the Blue Ridge Mountains, part of the Appalachian Mountains. The Pisgah Quadrangle topographical map, revised 1904-1905, shows the long abandoned Sassafras Gap Road to be the preferred route through to Rosman, N.C. and Brevard, N.C. at the end of the 19th Century and that the existing Highway 178 was then a secondary road. This abandoned road is a short distance from the summit and is crossed by the hiking trail to Caesars Head from Sassafras summit. Most people crossing this old roadbed in Sassafras Gap don't recognize it as a road, but it is easily recognized because of the short section of steps going down into the roadbed, and a similar section of short steps on the opposite side of the roadbed going up and the trail then continuing steeply up toward Caesars Head. A short hike South down the old Sassafras Gap Road will take you to Hickory Head Spring, the headwater of the South Saluda River.",
+    "latitude" : "35.064837",
+    "longitude" : "-82.777355"
+}
+
+
+{
+    "name" : "Black Elk Peak",
+    "states" : "SD",
+    "description" : "Black Elk Peak (formerly Harney Peak) is the highest natural point in South Dakota. It lies in the Black Elk Wilderness area, in southern Pennington County, in the Black Hills National Forest. The peak lies 3.7 mi (6.0 km) WSW of Mount Rushmore. At 7,242 feet (2,207 m), it has been described by the Board on Geographical Names as the highest summit in the United States east of the Rocky Mountains. The summit can be reached from Sylvan Lake, Camp Remington, Highway 244, Palmer Creek Rd., Mount Rushmore, or Horse Thief Lake. From the trailhead at Sylvan Lake in Custer State Park, to the summit and back is about 7 miles (11 km). This is the shortest, least strenuous, and most popular route. No permit is required for use of the first portion of the trail. However, the United States Forest Service requires hikers to obtain a permit at a self-service kiosk located at the entrance to the Black Elk Wilderness area en route to the summit. An old stone tower, once used as a fire lookout tower, is located at the summit. The ashes of Valentine McGillycuddy were interred near the base of the tower and a plaque reads, Valentine McGillycuddy, Wasicu Wacan. Wasicu Wacan is Lakota for Holy White Man.",
+    "latitude" : "43.865848",
+    "longitude" : "-103.532432"
+}
+
+
+{
+    "name" : "Clingmans Dome",
+    "states" : "TN",
+    "description" : "Clingmans Dome (or Clingman's Dome) is a mountain in the Great Smoky Mountains of Tennessee and North Carolina, in the southeastern United States. At an elevation of 6,643 feet (2,025 m), it is the highest mountain in the Smokies, the highest point in the state of Tennessee, and the highest point along the 2,174-mile (3,499 km) Appalachian Trail. It is also the third highest point in all of Eastern North America, after the nearby Mount Mitchell (6,684 feet or 2,037 metres) and Mount Craig (6,647 feet or 2,026 metres). Clingmans Dome has two subpeaks: 6,560-foot (2,000 m) Mount Buckley to the west and 6,400-foot (1,950 m) Mount Love to the east. The headwaters of several substantial streams are located on the slopes of Clingmans Dome, namely Little River on the north slope, and Forney Creek and Noland Creek (both tributaries of the Tuckasegee River) on the south slope. The mountain is located entirely within the Tennessee River watershed. Clingmans Dome is protected as part of the Great Smoky Mountains National Park. A paved road connects it to U.S. Highway 441 (Newfound Gap Road). The 45-foot (14 m) concrete observation tower, built in 1959 and listed on the National Register of Historic Places, offers a panoramic view of the mountains. An air quality monitoring station, operated by the Environmental Protection Agency, is the second highest in eastern North America.",
+    "latitude" : "35.562872",
+    "longitude" : "-83.498496"
+}
+
+
+{
+    "name" : "Guadalupe Peak",
+    "states" : "TX",
+    "description" : "Guadalupe Peak, also known as Signal Peak, is the highest natural point in Texas, with an elevation of 8,751 feet (2,667 m) above sea level. It is located in Guadalupe Mountains National Park, and is part of the Guadalupe Mountains range in southeastern New Mexico and West Texas. The mountain is about 90 miles (140 km) east of El Paso and about 50 miles (80 km) southwest of Carlsbad, New Mexico. The peak rises more than 3,000 feet (910 m) above the arid floor of the Chihuahuan Desert. The peak can be climbed by a maintained stony trail (4.25 miles or 6.8 kilometres each way) at any time of the year. The trail is part of the network of hiking trails in the surrounding national park. A stainless steel pyramid marks the summit. It was erected by American Airlines in 1958 to commemorate the 100th anniversary of the Butterfield Overland Mail, a stagecoach route that passed south of the mountain. One side of the pyramid has the American Airlines logo. The second side displays a U.S. Postal Service tribute to the Pony Express Riders of the Butterfield Stage. The third side displays a compass with the logo of the Boy Scouts of America. A summit register contained in a metal ammunition box is located at the base of the pyramid.",
+    "latitude" : "31.891461",
+    "longitude" : "-104.86071"
+}
+
+
+{
+    "name" : "Kings Peak",
+    "states" : "UT",
+    "description" : "Kings Peakis the highest peak in the U.S. state of Utah, with an elevation of 13,534 feet (4,125 m). It lies just south of the spine of the central Uinta Mountains, in the Ashley National Forest in northeastern Utah, in north-central Duchesne County. It lies within the boundaries of the High Uintas Wilderness. The peak is approximately 79 miles (127 km) due east of central Salt Lake City, and 45 miles (72 km) due north of the town of Duchesne. There are three popular routes to the summit; a scramble up the east slope, a hike up the northern ridge, and a long but relatively easy hike up the southern slope. The peak was named for Clarence King, a surveyor in the area and the first director of the United States Geological Survey. Kings Peak is generally regarded as the hardest state highpoint which can be climbed without specialist rock climbing skills and/or guiding. The easiest route requires a 29 mile round trip hike.",
+    "latitude" : "40.776382",
+    "longitude" : "-110.372815"
+}
+
+
+{
+    "name" : "Mount Mansfield",
+    "states" : "VT",
+    "description" : "Mount Mansfield is the highest mountain in Vermont with a summit that peaks at 4,393 feet (1,339 m) above sea level. The summit located within the town of Underhill in Chittenden County; the ridgeline, including some secondary peaks, extends into the town of Stowe in Lamoille County, and the mountain's flanks also reach into the town of Cambridge. When viewed from the east or west, this mountain has the appearance of a (quite elongated) human profile, with distinct forehead, nose, lips, chin, and Adam's apple. These features are most distinct when viewed from the east; unlike most human faces, the chin is the highest point. Mount Mansfield is one of three spots in Vermont where true alpine tundra survives from the Ice Ages. A few acres exist on Camel's Hump and Mount Abraham nearby and to the south, but Mount Mansfield's summit still holds about 200 acres.Located in Mount Mansfield State Forest, the mountain is used for various recreational and commercial purposes. The Nose is home to transmitter towers for a number of regional radio and TV stations. There are many hiking trails, including the Long Trail, which traverses the main ridgeline. In addition, the east flank of the mountain is used by the Stowe Mountain Resort for winter skiing. A popular tourist activity is to take the toll road (about 4 miles (6.4 km), steep, mostly unpaved, with several hairpin turns) from the Stowe Base Lodge to 'The Nose' and hike along the ridge to The Chin.",
+    "latitude" : "44.543947",
+    "longitude" : "-72.81431"
+}
+
+
+{
+    "name" : "Mount Rogers",
+    "states" : "VA",
+    "description" : "Mount Rogers is the highest natural point in the Commonwealth of Virginia, United States, with a summit elevation of 5,729 feet (1,746 m) above mean sea level. It lies in Grayson and Smyth Counties, Virginia, about 6.45 miles (10.38 km) WSW of Troutdale, Virginia, within the Mount Rogers National Recreation Area and Jefferson National Forest. The mountain is named for William Barton Rogers, a Virginian educated at the College of William & Mary, who taught at William & Mary and the University of Virginia, became Virginia's first State Geologist, and went on to found the Massachusetts Institute of Technology.The summit is most easily accessed from Grayson Highlands State Park by following the Appalachian Trail southbound for 3.5 miles (5.6 km) to a blue-blazed trail leading to the summit, which is covered by trees and marked with four National Geodetic Survey triangulation station disks; a standard station disk marked with an equilateral triangle and three standard reference disks marked with arrows pointing towards the station disk. One reference disk has been obscured by dense overgrowth. Because the Appalachian Trail passes within a half mile of the summit, the area is especially popular with hikers.",
+    "latitude" : "36.659841",
+    "longitude" : "-81.544558"
+}
+
+
+{
+    "name" : "Mount Rainier",
+    "states" : "WA",
+    "description" : "Mount Rainier, Mount Tacoma, or Mount Tahoma is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the U.S. state of Washington. It is a large active stratovolcano located 54 miles (87 km) south-southeast of Seattle, in the Mount Rainier National Park. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m). Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could produce massive lahars that could threaten the entire Puyallup River valley, and poses a grave threat to the southern sections of the Seattle metropolitan area, a city of over 650,000 people with more than 3.7 million living in its metropolitan area.",
+    "latitude" : "46.852886",
+    "longitude" : "-121.760374"
+}
+
+
+{
+    "name" : "Spruce Knob",
+    "states" : "WV",
+    "description" : "Spruce Knob, at 4,863 feet (1,482 m), is the highest point in the state of West Virginia and the summit of Spruce Mountain, the highest peak in the Allegheny Mountains. The summit of Spruce Knob has a definite alpine feel, much more so than most other mountains of the Southern Appalachians. The upper few hundred feet are covered in a dense spruce forest, a relic boreal forest environment similar to those found in northern New England and Canada. The summit is accessible both via trails and a paved Forest Service road, and is crowned with a stone lookout tower amid a mixture of boulder fields, meadows and trees. A handicap-accessible nature trail half a mile (0.8 km) long circles the topmost part of the mountain. High west winds near the summit have gnarled the spruce there like Krummholz, flagged with limbs only on their leeward (eastward) side.",
+    "latitude" : "38.699868",
+    "longitude" : "-79.532792"
+}
+
+
+{
+    "name" : "Gannett Peak",
+    "states" : "WY",
+    "description" : "Gannett Peak is the highest peak in the U.S. state of Wyoming and straddles the boundary between Fremont and Sublette Counties along the Continental Divide. Geographically, Gannett Peak is the apex of the entire Central Rockies at 13,809 ft (6190.5 m); the largely continuous group of the chain occupying the states of Wyoming, Idaho and Montana. Named in 1906 for American geographer Henry Gannett, the peak is also the highpoint of the Wind River Range. The mountain slopes are located in both Bridger-Teton National Forest and Shoshone National Forest. Gannett is the highest peak within what is better known as the Greater Yellowstone Ecosystem and is the highest peak in the Rocky Mountains outside of Colorado. The 896-acre (3.63 km2) Gannett Glacier, which is likely the largest single glacier in the American portion of the Rocky Mountains, flows down from the northern slopes of the mountain. Minor Glacier is situated in the western cirque of the peak while Dinwoody and Gooseneck Glaciers can be found on the southeast side of the mountain. Gannett Peak is commonly climbed on a four- to six-day round-trip. It is considered by mountaineers to be the most difficult state high point except for Alaska's Denali and possibly Montana's Granite Peak.",
+    "latitude" : "43.184202",
+    "longitude" : "-109.654234"
+}
+
+
+{
+    "name" : "Timms Hill",
+    "states" : "WI",
+    "description" : "Timms Hill is the highest natural point in the U.S. state of Wisconsin. Located in north-central Wisconsin in Timms Hill County Park in the Town of Hill in Price County, Timms Hill has an elevation of 1,951.5 ft (595 m). It is less than 1 mile (1.6 km) south of Highway 86, about midway between Ogema and Spirit and about 23 miles (37 km) west of Tomahawk. A public lookout tower on top offers outstanding views of the surrounding area. Visible to the southeast is Rib Mountain (elev. 1,924 ft, 586 m), 44 miles away by line of sight. The ten-mile Timms Hill Trail connects to the Ice Age Trail, a National Scenic Trail stretching 1,200 miles (1,900 km) across glacial terrain in Wisconsin.",
+    "latitude" : "45.450884",
+    "longitude" : "-90.195398"
+}

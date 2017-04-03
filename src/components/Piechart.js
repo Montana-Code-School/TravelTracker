@@ -19,6 +19,9 @@ class Piechart extends React.Component {
     else if (collectionname == "parks"){
       return "National Parks";
     }
+    else if (collectionname == "elevations"){
+      return "State Peaks";
+    }
     else if (collectionname == "mlbstadiums"){
       return "MLB Stadiums";
     }
@@ -39,7 +42,7 @@ class Piechart extends React.Component {
   render() {
     if(this.props.userStore.getPercentageCompletion(this.props.collectionname).toFixed(2)>0) {
       return (
-        <Col xs={3}>
+        <Col xs={6}>
           {this.createDisplayName(this.props.collectionname)}
           <Link to={{pathname: '/Collection/'+this.props.collectionname}}>
             <div>

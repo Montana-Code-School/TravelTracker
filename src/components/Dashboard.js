@@ -1,11 +1,10 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import { Link } from 'react-router';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
-   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Jumbotron } from 'react-bootstrap';
+import {  ListGroup, Row, Col, Jumbotron, Well } from 'react-bootstrap';
 import Piechart from './Piechart';
 import styles from './style/DashboardStyle.css.js';
+import Trophy from './Trophy';
+
 
 class Dashboard extends React.Component {
 
@@ -33,29 +32,58 @@ class Dashboard extends React.Component {
     return this.props.userStore.getActivityList();
   }
 
+  createTrophyCase(){
+    if(this.props.userStore.loggedInUser){
+      let displayTrophy = [
+        <Trophy key="states" collectionName={"states"}/>,
+        <Trophy key="parks" collectionName={"parks"}/>,
+        <Trophy key="elevations" collectionName={"elevations"}/>,
+        <Trophy key="mlbstadiums" collectionName={"mlbstadiums"}/>,
+        <Trophy key="nflstadiums" collectionName={"nflstadiums"}/>,
+        <Trophy key="airports" collectionName={"airports"}/>,];
+      return displayTrophy;
+    }
+  }
+
   render() {
 
     if(this.props.userStore.checkForCollections()){
       return (
         <div>
-          <Row>
-            <Col xs={12} md={9} style={{textAlign: "center"}}>
-              <Col xs={2}/>
+          <div>
+          <Col md={1}/>
+
+            <Col md={2} style={{textAlign: "center"}}>
+            <Well>
+            <Row>
               <Piechart collectionname={"states"}/>
               <Piechart collectionname={"parks"}/>
+            </Row>
+            <Row>
               <Piechart collectionname={"mlbstadiums"}/>
-              <Col xs={2}/>
               <Piechart collectionname={"nflstadiums"}/>
+            </Row>
+            <Row>
+              <Piechart collectionname={"elevations"}/>
               <Piechart collectionname={"airports"}/>
+            </Row>
+            </Well>
             </Col>
-            <Col xs={12} md={2}>
+            <Col md={6}>
+            <Well>
+            <div>
+              {this.createTrophyCase()}
+            </div>
+            </Well>
+            </Col>
+            <Col md={2}>
               Recent Activity
               <ListGroup style={styles.listStyle}>
                 {this.state.activityList}
               </ListGroup>
             </Col>
             <Col md={1}/>
-          </Row>
+          </div>
         </div>
       );
     } else {
