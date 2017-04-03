@@ -24,6 +24,7 @@ export default class UserStore {
       states: [],
       parks: [],
       mlbstadiums: [],
+      nflstadiums: [],
       airports: []
     });
     this.LoginUser = this.LoginUser.bind(this);
@@ -41,6 +42,10 @@ export default class UserStore {
     });
 
     this.mlbstadiums.forEach(function(x){
+      activityList.push(x);
+    });
+
+    this.nflstadiums.forEach(function(x){
       activityList.push(x);
     });
 
@@ -62,7 +67,7 @@ export default class UserStore {
   }
 
   checkForCollections(){
-    if(this.states.length>0 || this.parks.length>0 || this.mlbstadiums.length>0 || this.airports.length>0) {
+    if(this.states.length>0 || this.parks.length>0 || this.mlbstadiums.length>0 || this.nflstadiums.length>0 || this.airports.length>0) {
       return true;
     }else{
       return false;
@@ -73,6 +78,7 @@ export default class UserStore {
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
     else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}
+    else if(collectionname == "nflstadiums"){return (this[collectionname].length/32)*100;}
     else if(collectionname == "airports"){return (this[collectionname].length/163)*100;}
   }
 
@@ -131,6 +137,7 @@ export default class UserStore {
     this.states= [];
     this.parks= [];
     this.mlbstadiums= [];
+    this.nflstadiums= [];
     this.airports= [];
     browserHistory.push('/Welcome');
   }
@@ -160,6 +167,7 @@ export default class UserStore {
         this.states = loginCred.states;
         this.parks = loginCred.parks;
         this.mlbstadiums = loginCred.mlbstadiums;
+        this.nflstadiums = loginCred.nflstadiums;
         this.airports = loginCred.airports;
         this.newUserCreated = false;
         this.userAlreadyExists = false;

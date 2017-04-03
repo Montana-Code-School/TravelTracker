@@ -60,18 +60,39 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
+    // let thumb = '<img src="../img/coorsfield.jpg" width="50px" height="50px"/>';
+    let actualLat = this.state.location.latitude;
+    let actualLong = this.state.location.longitude;
+    // let compLat = x.latitude;
+    // let compLong = x.longitude;
 
     if(this.state.location.latitude !== null) {
-      bubbles.push(
-        {
-          name: this.props.userStore.name+" is here!!",
-          radius: 8,
-          country: 'USA',
-          latitude: this.state.location.latitude,
-          longitude: this.state.location.longitude,
-          fillKey: 'User'
-        }
-      );
+
+      if (actualLat >= 44.9912101476 -1 && actualLat <= 44.9912101476 +1 &&
+          actualLong >= -110.691947937 -1 && actualLong <= -110.691947937 +1) {
+        bubbles.push(
+          {
+            name: this.props.userStore.name + ", testing",
+            radius: 20,
+            country: 'USA',
+            latitude: this.state.location.latitude,
+            longitude: this.state.location.longitude,
+            fillKey: 'User'
+          }
+        );
+        alert('are you at Yellostone?');
+      } else {
+        bubbles.push(
+          {
+            name: this.props.userStore.name + " is here!!",
+            radius: 8,
+            country: 'USA',
+            latitude: this.state.location.latitude,
+            longitude: this.state.location.longitude,
+            fillKey: 'User'
+          }
+        );
+      }
     }
 
     if(this.props.collectionName != "states"){

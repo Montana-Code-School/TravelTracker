@@ -36,6 +36,7 @@ class ControlBar extends React.Component {
         <Trophy key="states" collectionName={"states"}/>,
         <Trophy key="parks" collectionName={"parks"}/>,
         <Trophy key="mlbstadiums" collectionName={"mlbstadiums"}/>,
+        <Trophy key="nflstadiums" collectionName={"nflstadiums"}/>,
         <Trophy key="airports" collectionName={"airports"}/>];
 
       return (
@@ -58,6 +59,7 @@ class ControlBar extends React.Component {
                   <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
+                  <LinkContainer to={{pathname: '/Collection/nflstadiums'}}><NavItem>NFL Stadiums</NavItem></LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
                 </NavDropdown>
                 <NavItem onClick={() => {this.logOutHandler();}}>log out</NavItem>

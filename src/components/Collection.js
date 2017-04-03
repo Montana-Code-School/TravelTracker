@@ -1,7 +1,7 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
-   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button } from 'react-bootstrap';
+   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button, Popover, OverlayTrigger } from 'react-bootstrap';
 import styles from './style/CollectionStyle.css.js';
 import './style/collection.css';
 import CollectionMap from './CollectionMap';
@@ -29,22 +29,44 @@ class Collection extends React.Component {
   prepareCollection(){
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
-        const collectedHeader = (<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span>{x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>);
+
+        const popoverClickRootClose = (
+          <Popover id="popover-trigger-click-root-close" title={x.name}>
+            <div>{x.description}</div>
+            <div><img src={require("../img/coorsfield.jpg")} width="100px" height="100px"/></div>
+            <Button block
+            onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            >Remove</Button>
+          </Popover>
+        );
         return (
-          <Panel style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
-          {x.description}
-          <Button block
-          onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
-          >Remove</Button>
-          </Panel>);
+          <ListGroupItem>
+            <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose}>
+              <ListGroupItem style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
+              </ListGroupItem>
+            </OverlayTrigger>
+          </ListGroupItem>);
+
       } else {
-        return (
-          <Panel style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
-            {x.description}
+
+        const popoverClickRootClose = (
+          <Popover id="popover-trigger-click-root-close" title={x.name}>
+            <div>{x.description}</div>
+            <div><img src={require("../img/coorsfield.jpg")} width="100px" height="100px"/></div>          
             <Button block
             onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
             >Add</Button>
-          </Panel>);}
+          </Popover>
+        );
+
+        return (
+          <ListGroupItem>
+            <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose}>
+              <ListGroupItem style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
+              </ListGroupItem>
+          </OverlayTrigger>
+        </ListGroupItem>);
+      }
     },this);
   }
 
@@ -64,9 +86,9 @@ class Collection extends React.Component {
             usersCollection={this.props.userStore[this.props.params.collectionname]}/>
           </Col>
           <Col xs={12} md={3}>
-            <Accordion style={styles.listStyle}>
+            <ListGroup style={styles.listStyle}>
               {this.prepareCollection()}
-            </Accordion>
+            </ListGroup>
           </Col>
           <Col xsHidden smHidden md={1}/>
         </Row>

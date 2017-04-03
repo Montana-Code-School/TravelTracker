@@ -2,7 +2,7 @@ import React from 'react';
 import NewUser from './NewUser';
 import { inject, observer } from 'mobx-react';
 import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
-import { Grid, Col, Row, Image, Well, Button, Form, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
+import { Grid, Col, Row, Image, Well, Button, Form, FormGroup, ControlLabel, FormControl, Glyphicon } from 'react-bootstrap';
 import FacebookLogin from 'react-facebook-login';
 
 class Welcome extends React.Component {
