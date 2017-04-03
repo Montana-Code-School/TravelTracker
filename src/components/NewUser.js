@@ -102,9 +102,9 @@ class NewUser extends React.Component {
                 </FormGroup>
 
                 <div style={loginLinkStyle}>
-                  <Link to ="/Welcome" >Login</Link>
+                  <Link to ="/Welcome" style={{color: "#4eb14d"}}>Login</Link>
                 </div>
-                <Button onClick={this.handleNewUser} onTouchTap={this.handleNewUser} type="submit" className="btn btn-primary">Submit</Button>
+                <Button onClick={this.handleNewUser} onTouchTap={this.handleNewUser} type="submit" className="btn btn-success">Submit</Button>
             </Form>
           </Well>
        </div>

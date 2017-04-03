@@ -19,6 +19,9 @@ let UserSchema = new mongoose.Schema({
   parks: {
     type: Array
   },
+  elevations: {
+    type: Array
+  },
   mlbstadiums: {
     type: Array
   },

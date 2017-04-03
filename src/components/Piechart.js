@@ -21,7 +21,7 @@ class Piechart extends React.Component {
   render() {
     if(this.props.userStore.getPercentageCompletion(this.props.collectionname).toFixed(2)>0) {
       return (
-        <Col xs={3}>
+        <Col xs={6}>
           {this.props.collectionname}
           <Link to={{pathname: '/Collection/'+this.props.collectionname}}>
             <div>

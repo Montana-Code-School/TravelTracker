@@ -24,7 +24,8 @@ export default class UserStore {
       states: [],
       parks: [],
       mlbstadiums: [],
-      airports: []
+      airports: [],
+      elevations: []
     });
     this.LoginUser = this.LoginUser.bind(this);
   }
@@ -37,6 +38,10 @@ export default class UserStore {
     });
 
     this.parks.forEach(function(x){
+      activityList.push(x);
+    });
+
+    this.elevations.forEach(function(x){
       activityList.push(x);
     });
 
@@ -62,7 +67,7 @@ export default class UserStore {
   }
 
   checkForCollections(){
-    if(this.states.length>0 || this.parks.length>0 || this.mlbstadiums.length>0 || this.airports.length>0) {
+    if(this.states.length>0 || this.parks.length>0 || this.elevations.length>0 || this.mlbstadiums.length>0 || this.airports.length>0) {
       return true;
     }else{
       return false;
@@ -72,6 +77,7 @@ export default class UserStore {
   getPercentageCompletion(collectionname){
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
+    else if(collectionname == "elevations"){return (this[collectionname].length/100)*100;}
     else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}
     else if(collectionname == "airports"){return (this[collectionname].length/163)*100;}
   }
@@ -130,6 +136,7 @@ export default class UserStore {
     this.token= "";
     this.states= [];
     this.parks= [];
+    this.elevations= [];
     this.mlbstadiums= [];
     this.airports= [];
     browserHistory.push('/Welcome');
@@ -159,6 +166,7 @@ export default class UserStore {
         this.name = name.toLowerCase();
         this.states = loginCred.states;
         this.parks = loginCred.parks;
+        this.elevations = loginCred.elevations;
         this.mlbstadiums = loginCred.mlbstadiums;
         this.airports = loginCred.airports;
         this.newUserCreated = false;
