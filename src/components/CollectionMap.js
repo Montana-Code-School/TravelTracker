@@ -149,7 +149,7 @@ class CollectionMap extends React.Component {
       popupOnHover: false
     }}
     fills={{
-      'User': '#FF0000',
+      'User': 'blue',
       'Collected': '#35B729',
       'NotCollected': '#FF7F50',
       'defaultFill': '#707070'}}
