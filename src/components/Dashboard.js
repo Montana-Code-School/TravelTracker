@@ -1,6 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import {  ListGroup, Row, Col, Jumbotron, Well, Button } from 'react-bootstrap';
+import {  ListGroup, Row, Col, Jumbotron, Well } from 'react-bootstrap';
 import Piechart from './Piechart';
 import CollectionModal from './CollectionModal';
 import styles from './style/DashboardStyle.css.js';
@@ -91,10 +91,13 @@ class Dashboard extends React.Component {
         <div style={styles.jumboStyle}>
           <Jumbotron>
             <h4>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
-            <h4>View the assortment of options available in the "Collections" menu and pick your passion.</h4>
-            <h4>Periodically check in on the Home Page to view your overall progress.</h4>
+            <h4>View the assortment of options available in the "Collections"
+            menu and pick your passion.</h4>
+            <h4>Periodically check in on the Home Page to view
+            your overall progress.</h4>
             <img style={styles.welcomeRibbon} src={require('../img/logo.png')}/>
-            <h3 style={{fontWeight: "bold"}}>Bon Voyage!  Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
+            <h3 style={{fontWeight: "bold"}}>Bon Voyage!
+            Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
           </Jumbotron>
         </div>
       );
