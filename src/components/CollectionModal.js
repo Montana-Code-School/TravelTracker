@@ -30,83 +30,28 @@ class CollectionModal extends React.Component {
     this.setState({ showModal: true });
   }
 
-  prepareCollection(){
-    return this.state.collection.map(function(x){
-      const collectedHeader = (<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span>{x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>);
-      if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
-        return (
-          <div>
-          <ListGroupItem style={styles.panelStyle}  key={x.name} eventKey={x.name}>
-          <Button bsStyle="primary" bsSize="large" onClick={this.open}>{<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>}
-          </Button>
-
-          <Modal show={this.state.showModal} onHide={this.close} eventKey={x.name}>
-            <Modal.Header closeButton>
-              <Modal.Title>test</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              {x.description}
-            </Modal.Body>
-            <Modal.Footer>
-              <Button block
-              onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
-              >Remove</Button>
-              <Button onClick={this.close}>Close</Button>
-            </Modal.Footer>
-          </Modal>
-          </ListGroupItem>
-          </div>
-        );
-      } else {
-        return (
-          <div>
-          <ListGroupItem style={styles.panelStyle} key={x.name} eventKey={x.name}>
-          <Button bsStyle="primary" bsSize="large" onClick={this.open}>{x.name}
-          </Button>
-          <Modal show={this.state.showModal} onHide={this.close} eventKey={x.name}>
-            <Modal.Header closeButton>
-              <Modal.Title>{x.name}</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              {x.description}
-            </Modal.Body>
-            <Modal.Footer>
-            <Button block
-            onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
-            >Add</Button>
-              <Button onClick={this.close}>Close</Button>
-            </Modal.Footer>
-          </Modal>
-          </ListGroupItem>
-          </div>
-        );}
-    },this);
-  }
-
   render() {
 
     return (
-      <div>
-        <Button bsStyle="primary" bsSize="large" onClick={this.open}>
-          Launch demo modal
-        </Button>
-
-        <Modal show={this.state.showModal} onHide={this.close}>
-          <Modal.Header closeButton>
-            <Modal.Title>Name</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            {this.prepareCollection()}
-            <h4>Description</h4>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <hr />
-            <h4>Overflowing text to show scroll behavior</h4>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={this.close}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+      <Modal {...this.props} bsSize="small" aria-labelledby="contained-modal-title-sm">
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-sm">Available Collections</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <LinkContainer to={{pathname: '/Dashboard'}}><NavItem>Home Page</NavItem></LinkContainer>
+          <MenuItem divider/>
+          <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
+          <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
+          <LinkContainer to={{pathname: '/Collection/elevations'}}><NavItem>Elevation by State</NavItem></LinkContainer>
+          <MenuItem divider/>
+          <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
+          <LinkContainer to={{pathname: '/Collection/nflstadiums'}}><NavItem>NFL Stadiums</NavItem></LinkContainer>
+          <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={this.props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
     );
   }
 }

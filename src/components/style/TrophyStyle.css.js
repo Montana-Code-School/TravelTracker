@@ -7,7 +7,6 @@ export default {
   },
   trophyStyle:{
     position: "relative",
-    aligntext : "center",
     width: "100px",
     height: "100px"
   }

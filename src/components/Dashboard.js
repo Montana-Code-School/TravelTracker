@@ -81,10 +81,12 @@ class Dashboard extends React.Component {
               </Well>
             </Col>
             <Col md={2}>
-              Recent Activity
-              <ListGroup style={styles.listStyle}>
+              <Well style={styles.listStyle}>
+              <h4 style={{textAlign: "center"}}>Recent Activity</h4>
+              <ListGroup>
                 {this.state.activityList}
               </ListGroup>
+              </Well>
             </Col>
             <Col md={1}/>
           </div>

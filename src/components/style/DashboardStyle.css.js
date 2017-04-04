@@ -12,6 +12,7 @@ export default {
   listStyle:{
     height: "69vh",
     overflowY: "scroll",
+    padding: "0px",
     border: ".5px solid #57ae81"
   },
   wellStyle: {
