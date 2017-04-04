@@ -1,10 +1,10 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
 
 import React from 'react';
-import { Navbar, Nav, NavItem, NavbarBrand, NavDropdown, MenuItem, ListGroup,
-   ListGroupItem, Glyphicon, ProgressBar, Row, Col, Accordion, Panel, Button , Modal} from 'react-bootstrap';
+import { Link } from 'react-router';
+import { NavItem, Button , Modal} from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
-import styles from './style/CollectionStyle.css.js';
+import styles from './style/ModalStyle.css.js';
 import './style/collection.css';
 
 class CollectionModal extends React.Component {
@@ -33,25 +33,25 @@ class CollectionModal extends React.Component {
   render() {
 
     return (
-      <Modal {...this.props} bsSize="small" aria-labelledby="contained-modal-title-sm">
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-sm">Available Collections</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <LinkContainer to={{pathname: '/Dashboard'}}><NavItem>Home Page</NavItem></LinkContainer>
-          <MenuItem divider/>
-          <LinkContainer to={{pathname: '/Collection/states'}}><NavItem>States</NavItem></LinkContainer>
-          <LinkContainer to={{pathname: '/Collection/parks'}}><NavItem>National Parks</NavItem></LinkContainer>
-          <LinkContainer to={{pathname: '/Collection/elevations'}}><NavItem>Elevation by State</NavItem></LinkContainer>
-          <MenuItem divider/>
-          <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}><NavItem>MLB Stadiums</NavItem></LinkContainer>
-          <LinkContainer to={{pathname: '/Collection/nflstadiums'}}><NavItem>NFL Stadiums</NavItem></LinkContainer>
-          <LinkContainer to={{pathname: '/Collection/airports'}}><NavItem>US Airports</NavItem></LinkContainer>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={this.props.onHide}>Close</Button>
-        </Modal.Footer>
-      </Modal>
+     <div>
+       <Button style={{border: ".5px solid #57ae81"}} className="btn btn-success" onClick={this.open}>Travel Tracker Collections</Button>
+       <Modal bsSize="small" show={this.state.showModal} onHide={this.close}>
+         <Modal.Header closeButton>
+           <Modal.Title>Select your next collection:</Modal.Title>
+         </Modal.Header>
+         <Modal.Body>
+           <NavItem><Link to="/Collection/states" style={styles.modalStyle}>US States</Link></NavItem>
+           <NavItem><Link to="/Collection/parks" style={styles.modalStyle}>National Parks</Link></NavItem>
+           <NavItem><Link to="/Collection/elevations" style={styles.modalStyle}>State Elevations</Link></NavItem>
+           <NavItem><Link to="/Collection/mlbstadiums" style={styles.modalStyle}>MLB Stadiums</Link></NavItem>
+           <NavItem><Link to="/Collection/nflstadiums" style={styles.modalStyle}>NFL Stadiums</Link></NavItem>
+           <NavItem><Link to="/Collection/airports" style={styles.modalStyle}>US Airports</Link></NavItem>
+         </Modal.Body>
+         <Modal.Footer>
+           <Button onClick={this.close}>Close</Button>
+         </Modal.Footer>
+       </Modal>
+     </div>
     );
   }
 }

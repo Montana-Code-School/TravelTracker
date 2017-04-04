@@ -2,6 +2,7 @@ import React from 'react';
 import { inject, observer } from 'mobx-react';
 import {  ListGroup, Row, Col, Jumbotron, Well, Button } from 'react-bootstrap';
 import Piechart from './Piechart';
+import CollectionModal from './CollectionModal';
 import styles from './style/DashboardStyle.css.js';
 import Trophy from './Trophy';
 
@@ -69,7 +70,7 @@ class Dashboard extends React.Component {
               </Well>
               <Well style={styles.wellStyle}>
                 <div style={styles.trophyCase}>
-                  <Button>View Collections</Button>
+                  <CollectionModal/>
                 </div>
               </Well>
             </Col>

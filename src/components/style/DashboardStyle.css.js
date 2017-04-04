@@ -17,7 +17,7 @@ export default {
   },
   wellStyle: {
     border: ".5px solid #57ae81",
-    textAlign: "center"
+    textAlign: "center",
   },
   trophyCase:{
   },
