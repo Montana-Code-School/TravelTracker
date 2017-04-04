@@ -1,0 +1,32 @@
+{"name" : "Tennessee Titans", "description" : "Nissan Stadium", "states" : "TN", "latitude": 36.166461, "longitude": -86.771289}
+{"name" : "New York Giants", "description" : "MetLife Stadium", "states" : "NJ, NY", "latitude": 40.812194, "longitude": -74.076983}
+{"name" : "Pittsburgh Steelers", "description" : "Heinz Field", "states" : "PA", "latitude": 40.446786, "longitude": -80.015761}
+{"name" : "Carolina Panthers", "description" : "Bank of America Stadium", "states" : "NC", "latitude": 35.225808, "longitude": -80.852861}
+{"name" : "Baltimore Ravens", "description" : "M&T Bank Stadium", "states" : "MD", "latitude": 39.277969, "longitude": -76.622767}
+{"name" : "Tampa Bay Buccaneers", "description" : "Raymond James Stadium", "states" : "FL", "latitude": 27.975967, "longitude": -82.50335}
+{"name" : "Indianapolis Colts", "description" : "Lucas Oil Stadium", "states" : "IN", "latitude": 39.760056, "longitude": -86.163806}
+{"name" : "Minnesota Vikings", "description" : "U.S. Bank Stadium", "states" : "MN", "latitude": 44.973881, "longitude": -93.258094}
+{"name" : "Arizona Cardinals", "description" : "University of Phoenix Stadium", "states" : "AZ", "latitude": 33.5277, "longitude": -112.262608}
+{"name" : "Dallas Cowboys", "description" : "AT&T Stadium", "states" : "TX", "latitude": 32.747778, "longitude": -97.092778}
+{"name" : "Atlanta Falcons", "description" : "Mercedes-Benz Stadium", "states" : "GA", "latitude": 33.757614, "longitude": -84.400972}
+{"name" : "New York Jets", "description" : "MetLife Stadium", "states" : "NJ, NY", "latitude": 40.812194, "longitude": -74.076983}
+{"name" : "Denver Broncos", "description" : "Sports Authority Field at Mile High", "states" : "CO", "latitude": 39.743936, "longitude": -105.020097}
+{"name" : "Miami Dolphins", "description" : "Hard Rock Stadium", "states" : "FL", "latitude": 25.957919, "longitude": -80.238842}
+{"name" : "Philadelphia Eagles", "description" : "Lincoln Financial Field", "states" : "PA", "latitude": 39.900775, "longitude": -75.167453}
+{"name" : "Chicago Bears", "description" : "Soldier Field", "states" : "IL", "latitude": 41.862306, "longitude": -87.616672}
+{"name" : "New England Patriots", "description" : "Gillette Stadium", "states" : "MA", "latitude": 42.090925, "longitude": -71.26435}
+{"name" : "Washington Redskins", "description" : "FedEx Field", "states" : "MD, DC", "latitude": 38.907697, "longitude": -76.864517}
+{"name" : "Green Bay Packers", "description" : "Lambeau Field", "states" : "WI", "latitude": 44.501306, "longitude": -88.062167}
+{"name" : "Los Angeles Chargers", "description" : "StubHub Center", "states" : "CA", "latitude": 33.864449, "longitude":  -118.261121}
+{"name" : "New Orleans Saints", "description" : "Mercedes-Benz Superdome", "states" : "LA", "latitude": 29.950931, "longitude": -90.081364}
+{"name" : "Houston Texans", "description" : "NRG Stadium", "states" : "TX", "latitude": 29.684781, "longitude": -95.410956}
+{"name" : "Buffalo Bills", "description" : "New Era Field", "states" : "NY", "latitude": 42.773739, "longitude": -78.786978}
+{"name" : "San Francisco 49ers", "description" : "Levi's Stadium", "states" : "CA", "latitude": 37.713486, "longitude": -122.386256}
+{"name" : "Jacksonville Jaguars", "description" : "Ever Bank Field", "states" : "FL", "latitude": 30.323925, "longitude": -81.637356}
+{"name" : "Cleveland Browns", "description" : "First Energy Stadium", "states" : "OH", "latitude": 41.506022, "longitude": -81.699564}
+{"name" : "Oakland Raiders", "description" : "Oakland-Alameda County Coliseum", "states" : "CA", "latitude": 37.751411, "longitude": -122.200889}
+{"name" : "Kansas City Chiefs", "description" : "Arrowhead Stadium", "states" : "MO", "latitude": 39.048914, "longitude": -94.484039}
+{"name" : "Los Angeles Rams", "description" : "Los Angeles Memorial Coliseum", "states" : "CA", "latitude": 34.014088, "longitude": -118.287854}
+{"name" : "Seattle Seahawks", "description" : "Century Link Field", "states" : "WA", "latitude": 47.595153, "longitude": -122.331625}
+{"name" : "Cincinnati Bengals", "description" : "Paul Brown Stadium", "states" : "OH", "latitude": 39.095442, "longitude": -84.516039}
+{"name" : "Detroit Lions", "description" : "Ford Field", "states" : "MI", "latitude": 42.340156, "longitude": -83.045808}

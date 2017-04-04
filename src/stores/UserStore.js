@@ -24,6 +24,7 @@ export default class UserStore {
       states: [],
       parks: [],
       mlbstadiums: [],
+      nflstadiums: [],
       airports: [],
       elevations: []
     });
@@ -49,6 +50,10 @@ export default class UserStore {
       activityList.push(x);
     });
 
+    this.nflstadiums.forEach(function(x){
+      activityList.push(x);
+    });
+
     this.airports.forEach(function(x){
       activityList.push(x);
     });
@@ -67,7 +72,7 @@ export default class UserStore {
   }
 
   checkForCollections(){
-    if(this.states.length>0 || this.parks.length>0 || this.elevations.length>0 || this.mlbstadiums.length>0 || this.airports.length>0) {
+    if(this.states.length>0 || this.parks.length>0 || this.mlbstadiums.length>0 || this.nflstadiums.length>0 || this.elevations.length>0 || this.airports.length>0) {
       return true;
     }else{
       return false;
@@ -77,8 +82,9 @@ export default class UserStore {
   getPercentageCompletion(collectionname){
     if(collectionname == "states"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "parks"){return (this[collectionname].length/59)*100;}
-    else if(collectionname == "elevations"){return (this[collectionname].length/100)*100;}
+    else if(collectionname == "elevations"){return (this[collectionname].length/50)*100;}
     else if(collectionname == "mlbstadiums"){return (this[collectionname].length/30)*100;}
+    else if(collectionname == "nflstadiums"){return (this[collectionname].length/32)*100;}
     else if(collectionname == "airports"){return (this[collectionname].length/163)*100;}
   }
 
@@ -146,6 +152,7 @@ export default class UserStore {
     this.parks= [];
     this.elevations= [];
     this.mlbstadiums= [];
+    this.nflstadiums= [];
     this.airports= [];
     browserHistory.push('/Welcome');
   }
@@ -176,6 +183,7 @@ export default class UserStore {
         this.parks = loginCred.parks;
         this.elevations = loginCred.elevations;
         this.mlbstadiums = loginCred.mlbstadiums;
+        this.nflstadiums = loginCred.nflstadiums;
         this.airports = loginCred.airports;
         this.newUserCreated = false;
         this.userAlreadyExists = false;

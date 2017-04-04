@@ -1,6 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import {  ListGroup, Row, Col, Jumbotron, Well } from 'react-bootstrap';
+import {  ListGroup, Row, Col, Jumbotron, Well, Button } from 'react-bootstrap';
 import Piechart from './Piechart';
 import styles from './style/DashboardStyle.css.js';
 import Trophy from './Trophy';
@@ -37,7 +37,10 @@ class Dashboard extends React.Component {
       let displayTrophy = [
         <Trophy key="states" collectionName={"states"}/>,
         <Trophy key="parks" collectionName={"parks"}/>,
-        <Trophy key="mlbstadiums" collectionName={"mlbstadiums"}/>];
+        <Trophy key="elevations" collectionName={"elevations"}/>,
+        <Trophy key="mlbstadiums" collectionName={"mlbstadiums"}/>,
+        <Trophy key="nflstadiums" collectionName={"nflstadiums"}/>,
+        <Trophy key="airports" collectionName={"airports"}/>,];
       return displayTrophy;
     }
   }
@@ -48,27 +51,34 @@ class Dashboard extends React.Component {
       return (
         <div>
           <div>
-          <Col md={1}/>
-
+            <Col md={1}/>
             <Col md={2} style={{textAlign: "center"}}>
-            <Well>
-            <Row>
-              <Piechart collectionname={"states"}/>
-              <Piechart collectionname={"parks"}/>
-            </Row>
-            <Row>
-              <Piechart collectionname={"mlbstadiums"}/>
-              <Piechart collectionname={"elevations"}/>
-            </Row>
-              <Piechart collectionname={"airports"}/>
-            </Well>
+              <Well style={styles.wellStyle}>
+                <Row>
+                  <Piechart collectionname={"states"}/>
+                  <Piechart collectionname={"parks"}/>
+                </Row>
+                <Row>
+                  <Piechart collectionname={"mlbstadiums"}/>
+                  <Piechart collectionname={"nflstadiums"}/>
+                </Row>
+                <Row>
+                  <Piechart collectionname={"elevations"}/>
+                  <Piechart collectionname={"airports"}/>
+                </Row>
+              </Well>
             </Col>
             <Col md={6}>
-            <Well>
-            <div>
-              {this.createTrophyCase()}
-            </div>
-            </Well>
+              <Well style={styles.wellStyle}>
+                <div>
+                  {this.createTrophyCase()}
+                </div>
+              </Well>
+              <Well style={styles.wellStyle}>
+                <div style={styles.trophyCase}>
+                  <Button>View Collections</Button>
+                </div>
+              </Well>
             </Col>
             <Col md={2}>
               Recent Activity
@@ -77,7 +87,6 @@ class Dashboard extends React.Component {
               </ListGroup>
             </Col>
             <Col md={1}/>
-
           </div>
         </div>
       );

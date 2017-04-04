@@ -42,8 +42,7 @@ class Trophy extends React.Component {
   render() {
     return (
       <Link to={{pathname: '/Collection/'+this.props.collectionName}}
-        key={this.props.collectionName}
-      >
+        key={this.props.collectionName}>
         {this.createTrophy()}
       </Link>
     );

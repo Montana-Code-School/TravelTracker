@@ -13,30 +13,17 @@ class CollectionIcon extends React.Component {
     this.createIcon = this.createIcon.bind(this);
   }
 
-  getIcon(icon){
-    return require('../img/icons/'
-      + this.props.collectionName + '/'
-      + this.props.collectionName + icon);
-  }
-
-  getIconImage(icon){
-    return (
-      <img
-        key={this.props.collectionName}
-        style={styles.trophyStyle}
-        src={this.getIcon(icon)}
-      />
-    );
-  }
-
   createIcon(){
     const percent = this.props.userStore.getPercentageCompletion(
       this.props.collectionName);
-    const percentImages = [
-      {pct: 100, img: 'gold'}, {pct: 80, img: 'silver'},
-      {pct: 40, img: 'bronze'}, {pct: 0.1, img: 'grey'}];
-    const result = percentImages.find(pi => percent >= pi.pct);
-    return result ? this.getIconImage(result.img + ".png"): undefined;
+    const percentImages =  0.1;
+
+    if (percent >= percentImages){
+      return (
+        <img key={this.props.collectionName} style={styles.iconStyle}
+        src={require('../img/icons/' + this.props.collectionName + '/' +
+        this.props.collectionName + '.png')}/>);
+    }
   }
 
   render() {

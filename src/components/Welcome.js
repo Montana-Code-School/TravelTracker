@@ -1,8 +1,7 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import { Link } from 'react-router';
-import { Well, Button, Form, FormGroup, ControlLabel, FormControl }
-from 'react-bootstrap';
+import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
+import { Grid, Col, Row, Image, Well, Button, Form, FormGroup, ControlLabel, FormControl, Glyphicon } from 'react-bootstrap';
 import FacebookLogin from 'react-facebook-login';
 import './style/Welcome.css';
 
@@ -65,7 +64,7 @@ class Welcome extends React.Component {
     return (
       <div>
         <div>
-          <img style={logoStyle} src={require('../img/barlogo.png')} width="209" height="96"/>
+          <img style={logoStyle} src={require('../img/barlogo.png')} width="300" height="150"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">

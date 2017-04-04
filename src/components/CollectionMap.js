@@ -75,18 +75,38 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 5;
     let bubbles = [];
+    let actualLat = this.state.location.latitude;
+    let actualLong = this.state.location.longitude;
+    // let compLat = x.latitude;
+    // let compLong = x.longitude;
 
     if(this.state.location.latitude !== null) {
-      bubbles.push(
-        {
-          name: this.props.userStore.name+" is here!!",
-          radius: 8,
-          country: 'USA',
-          latitude: this.state.location.latitude,
-          longitude: this.state.location.longitude,
-          fillKey: 'User'
-        }
-      );
+
+      if (actualLat >= 44.9912101476 -.5 && actualLat <= 44.9912101476 +.5 &&
+          actualLong >= -110.691947937 -.5 && actualLong <= -110.691947937 +.5) {
+        bubbles.push(
+          {
+            name: this.props.userStore.name + ", testing",
+            radius: 20,
+            country: 'USA',
+            latitude: this.state.location.latitude,
+            longitude: this.state.location.longitude,
+            fillKey: 'User'
+          }
+        );
+        console.log('are you at Yellowstone?');
+      } else {
+        bubbles.push(
+          {
+            name: this.props.userStore.name + " is here!!",
+            radius: 8,
+            country: 'USA',
+            latitude: this.state.location.latitude,
+            longitude: this.state.location.longitude,
+            fillKey: 'User'
+          }
+        );
+      }
     }
 
     if(this.props.collectionName != "states"){

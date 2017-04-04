@@ -97,6 +97,7 @@ router.post('/authenticate', function(req, res, next) {
           parks: user.parks,
           elevations: user.elevations,
           mlbstadiums: user.mlbstadiums,
+          nflstadiums: user.nflstadiums,
           airports: user.airports
         });
       }
