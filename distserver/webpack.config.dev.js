@@ -25,7 +25,9 @@ exports.default = {
   },
   devServer: {
     contentBase: _path2.default.resolve(__dirname, 'src'),
-    historyApiFallback: true
+    historyApiFallback: {
+      index: '/'
+    }
   },
   plugins: [new _webpack2.default.HotModuleReplacementPlugin(), new _webpack2.default.NoEmitOnErrorsPlugin()],
   module: {
