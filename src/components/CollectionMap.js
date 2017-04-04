@@ -1,6 +1,7 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
 import Datamap from 'react-datamaps';
+import d3 from 'd3';
 
 class CollectionMap extends React.Component {
 
@@ -8,10 +9,12 @@ class CollectionMap extends React.Component {
     super(props);
     this.state = {
       location: {latitude: null, longitude: null},
-      theStates: ['AL', 'AK' , 'AS' , 'AZ' , 'AR' , 'CA', 'CO', 'CT' , 'DE' , 'DC' , 'FM' , 'FL' , 'GA' , 'GU' , 'HI' , 'ID' , 'IL',
-        'IN' , 'IA' , 'KS' , 'KY' , 'LA' , 'ME' , 'MH' , 'MD' , 'MA' , 'MI' , 'MN' , 'MS' , 'MO' , 'MT' , 'NE' , 'NV' , 'NH' ,
-        'NJ' , 'NM' , 'NY' , 'NC' , 'ND' , 'MP' , 'OH' , 'OK' , 'OR' , 'PW' , 'PA' , 'PR' , 'RI' , 'SC' , 'SD' , 'TN' , 'TX' ,
-        'UT' , 'VT' , 'VI' , 'VA' , 'WA' , 'WV' , 'WI' , 'WY' ]
+      theStates: ['AL', 'AK' , 'AS' , 'AZ' , 'AR' , 'CA', 'CO', 'CT' , 'DE' ,
+        'DC' , 'FM' , 'FL' , 'GA' , 'GU' , 'HI' , 'ID' , 'IL', 'IN' , 'IA' ,
+        'KS' , 'KY' , 'LA' , 'ME' , 'MH' , 'MD' , 'MA' , 'MI' , 'MN' , 'MS' ,
+        'MO' , 'MT' , 'NE' , 'NV' , 'NH' , 'NJ' , 'NM' , 'NY' , 'NC' , 'ND' ,
+        'MP' , 'OH' , 'OK' , 'OR' , 'PW' , 'PA' , 'PR' , 'RI' , 'SC' , 'SD' ,
+        'TN' , 'TX' , 'UT' , 'VT' , 'VI' , 'VA' , 'WA' , 'WV' , 'WI' , 'WY' ]
     };
   }
 
@@ -26,6 +29,19 @@ class CollectionMap extends React.Component {
     );
   }
 
+  componentDidUpdate(){
+    if(this.props.collectionName == "states"){
+      d3.selectAll('.datamaps-subunit').on('click', (state) => {
+        this.props.userStore.toggleCollectable(this.props.userStore.name, state.properties.name, this.props.collectionName);
+      });
+    } else{
+      d3.selectAll('.datamaps-bubble').on('click', (bubble) => {
+        this.props.userStore.toggleCollectable(this.props.userStore.name, bubble.collectablename, this.props.collectionName);
+      });
+      d3.selectAll('.datamaps-subunit').on('click', () => {null;});
+    }
+  }
+
   userLocation(callback) {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(callback);
@@ -34,7 +50,6 @@ class CollectionMap extends React.Component {
 
   prepareFillKeys(){
     let fillKeys = {};
-    let theStates = [];
     if(this.props.collectionName == "states"){
       this.props.fullCollection.forEach(function(x){
         if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
@@ -80,6 +95,7 @@ class CollectionMap extends React.Component {
           bubbles.push(
             {
               name: x.name + ", " + x.description,
+              collectablename: x.name,
               radius,
               country: 'USA',
               latitude: x.latitude,
@@ -90,6 +106,7 @@ class CollectionMap extends React.Component {
         }else{
           bubbles.push({
             name: x.name + ", " + x.description,
+            collectablename: x.name,
             radius,
             country: 'USA',
             latitude: x.latitude,
@@ -107,13 +124,9 @@ class CollectionMap extends React.Component {
     let fillKeys = this.prepareFillKeys();
     let ourMap = (<Datamap scope="usa"
     responsive
-    // ref={this.addClickHandlers}
     geographyConfig={{
       highlightOnHover: false,
       popupOnHover: false
-      // highlightFillColor: '#0DFFA6',
-      // highlightBorderColor: '#1D0CE8',
-      // highlightBorderWidth: 3
     }}
     fills={{
       'User': '#FF0000',
@@ -129,6 +142,7 @@ class CollectionMap extends React.Component {
         }}
       labels
       />);
+
     return ourMap;
   }
 

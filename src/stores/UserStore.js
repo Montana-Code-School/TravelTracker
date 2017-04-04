@@ -89,6 +89,14 @@ export default class UserStore {
     return new Date(collectable.date).toLocaleDateString();
   }
 
+  toggleCollectable(username, collectablename, collectionname){
+    if(this[collectionname].find(function(y){return y.name==collectablename;})){
+      this.removeCollectable(username, collectablename, collectionname);
+    } else {
+      this.addCollectable(username, collectablename, collectionname);
+    }
+  }
+
   removeCollectable(username, collectablename, collectionname){
     let collectable = this[collectionname].find(function(y){
       return y.name==collectablename;
