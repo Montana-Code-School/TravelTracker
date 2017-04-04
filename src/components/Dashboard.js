@@ -13,7 +13,6 @@ class Dashboard extends React.Component {
     this.state = {
       activityList: []
     };
-    this.createActivityList = this.createActivityList.bind(this);
   }
 
   componentWillMount() {
@@ -26,10 +25,6 @@ class Dashboard extends React.Component {
     this.setState({
       activityList: nextProps.userStore.getActivityList()
     });
-  }
-
-  createActivityList(){
-    return this.props.userStore.getActivityList();
   }
 
   createTrophyCase(){
@@ -70,9 +65,7 @@ class Dashboard extends React.Component {
             </Col>
             <Col md={6}>
               <Well style={styles.wellStyle}>
-                <div>
                   {this.createTrophyCase()}
-                </div>
               </Well>
               <Well style={styles.wellStyle}>
                 <div style={styles.trophyCase}>

@@ -61,7 +61,9 @@ export default class UserStore {
     activityList.sort(function (a,b) {
       return a.date > b.date;
     });
+
     activityList.reverse();
+
     let preparedActivityList = [];
 
     activityList.forEach(function(x){
@@ -125,7 +127,7 @@ export default class UserStore {
   }
 
   addCollectable(username, collectablename, collectionname){
-    let collectable = {name: collectablename, date: new Date()};
+    let collectable = {name: collectablename, date: new Date().toJSON()};
     fetch(`/api/add`, {
       method: 'PUT',
       headers: {
@@ -137,7 +139,8 @@ export default class UserStore {
         collectable: collectable,
         collectionname: collectionname
       })
-    }).then(this[collectionname].push(collectable));}
+    }).then(this[collectionname].push(collectable));
+  }
 
   logUserOut(){
     this.name= "";
