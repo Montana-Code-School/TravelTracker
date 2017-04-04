@@ -17,16 +17,10 @@ export default {
   },
   wellStyle: {
     border: ".5px solid #57ae81",
-    alignText: "center",
-    alignContent: "center",
-    alignItems: "center",
-    justifyContent: "center",
+    textAlign: "center",
   },
   trophyCase:{
-    alignText: "center",
-    alignContent: "center",
-    alignItems: "center",
-    justifyContent: "center",
+    
   },
 
 };
