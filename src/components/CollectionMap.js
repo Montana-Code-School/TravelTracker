@@ -79,7 +79,7 @@ class CollectionMap extends React.Component {
             fillKey: 'User'
           }
         );
-        alert('are you at Yellostone?');
+        console.log('are you at Yellowstone?');
       } else {
         bubbles.push(
           {

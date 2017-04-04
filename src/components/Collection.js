@@ -33,7 +33,7 @@ class Collection extends React.Component {
         const popoverClickRootClose = (
           <Popover id="popover-trigger-click-root-close" title={x.name}>
             <div>{x.description}</div>
-            <div><img src={require("../img/coorsfield.jpg")} width="100px" height="100px"/></div>
+            <br/>
             <Button block
             onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
             >Remove</Button>
@@ -52,13 +52,12 @@ class Collection extends React.Component {
         const popoverClickRootClose = (
           <Popover id="popover-trigger-click-root-close" title={x.name}>
             <div>{x.description}</div>
-            <div><img src={require("../img/coorsfield.jpg")} width="100px" height="100px"/></div>          
+            <br/>
             <Button block
             onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
             >Add</Button>
           </Popover>
         );
-
         return (
           <ListGroupItem>
             <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose}>
@@ -79,12 +78,18 @@ class Collection extends React.Component {
   render() {
     return (
         <Row>
-          <Col xs={12} md={8}>
-            <CollectionMap
-            collectionName={this.props.params.collectionname}
-            fullCollection={this.state.collection}
-            usersCollection={this.props.userStore[this.props.params.collectionname]}/>
+          <Col xs={1}/>
+          <Col xs={10}>
+            <h3>{this.props.collectionStore.createDisplayName(this.props.params.collectionname)} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
+            <ProgressBar active striped bsStyle="success" style={{border: ".5px solid #57ae81", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
           </Col>
+          <Col xs={1}/>
+            <Col xs={12} md={8}>
+              <CollectionMap
+              collectionName={this.props.params.collectionname}
+              fullCollection={this.state.collection}
+              usersCollection={this.props.userStore[this.props.params.collectionname]}/>
+            </Col>
           <Col xs={12} md={3}>
             <ListGroup style={styles.listStyle}>
               {this.prepareCollection()}
@@ -98,9 +103,10 @@ class Collection extends React.Component {
 
 Collection.propTypes = {
   userStore: React.PropTypes.object,
+  collectionStore: React.PropTypes.object,
   collectionname: React.PropTypes.string,
   params: React.PropTypes.object,
 };
 
 
-export default inject("userStore")(observer(Collection));
+export default inject("userStore", "collectionStore")(observer(Collection));

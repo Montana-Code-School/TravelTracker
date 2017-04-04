@@ -10,47 +10,22 @@ export default {
     textAlign: "center"
   },
   listStyle:{
-    height:"69vh",
+    height: "69vh",
     overflowY: "scroll",
-    border:"thin solid SlateGrey #ececec"
+    border: ".5px solid #57ae81"
   },
-  imageStyle: {
-    height:"100vh",
-    width:"100vw",
-    background: "url(../img/backgrounds/highway.jpg) no-repeat center fixed",
-    backgroundSize: "cover"
+  wellStyle: {
+    border: ".5px solid #57ae81",
+    alignText: "center",
+    alignContent: "center",
+    alignItems: "center",
+    justifyContent: "center",
   },
   trophyCase:{
-    position: "relative",
-    left: "20%",
-    width: "50px",
-    height: "49px"
+    alignText: "center",
+    alignContent: "center",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  trophyStyle:{
-    "bronze":{
-      position: "relative",
-      left: "20%",
-      top: ".5px",
-      width: "50px",
-      height: "49px",
-    },
-    "silver":{
-      position: "relative",
-      left: "20%",
-      top: ".5px",
-      width: "50px",
-      height: "49px",
-    },
-    "gold":{
-      position: "relative",
-      left: "20%",
-      top: ".5px",
-      width: "50px",
-      height: "49px",
-    },
-    position: "relative",
-    left: "20%",
-    width: "75px",
-    height: "75px"
-  }
+
 };

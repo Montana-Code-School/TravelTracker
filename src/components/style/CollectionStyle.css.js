@@ -1,9 +1,9 @@
 export default {
   listStyle:
   {
-    height:"84vh",
+    height:"70vh",
     overflowY: "scroll",
-    border:"1px solid #ececec"
+    border: ".5px solid #57ae81"
   },
   panelStyle:
   {
