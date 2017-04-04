@@ -60,8 +60,10 @@ var PROD = process.env.NODE_ENV === 'production';
 
 var userRoutes = require('../src/routes/userRoutes');
 var parkRoutes = require('../src/routes/parkRoutes');
+var elevationRoutes = require('../src/routes/elevationRoutes');
 var stateRoutes = require('../src/routes/stateRoutes');
 var mlbstadiumRoutes = require('../src/routes/mlbstadiumRoutes');
+var nflstadiumRoutes = require('../src/routes/nflstadiumRoutes');
 var airportRoutes = require('../src/routes/airportRoutes');
 var facebookRoutes = require('../src/routes/facebookRoutes');
 
@@ -69,8 +71,10 @@ app.use(_bodyParser2.default.urlencoded({ extended: false }));
 app.use(_bodyParser2.default.json());
 app.use('/api', userRoutes);
 app.use('/parks', parkRoutes);
+app.use('/elevations', elevationRoutes);
 app.use('/states', stateRoutes);
 app.use('/mlbstadiums', mlbstadiumRoutes);
+app.use('/nflstadiums', nflstadiumRoutes);
 app.use('/airports', airportRoutes);
 app.use('/facebook', facebookRoutes);
 
