@@ -1,9 +1,8 @@
 export default {
-  trophyCase:{
+  geoStyle:{
     position: "relative",
-    left: "20%",
     width: "50px",
-    height: "49px"
+    height: "50px"
   },
   trophyStyle:{
     position: "relative",

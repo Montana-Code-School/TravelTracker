@@ -2,6 +2,7 @@ import React from 'react';
 import { inject, observer } from 'mobx-react';
 import Datamap from 'react-datamaps';
 import d3 from 'd3';
+import styles from './style/TrophyStyle.css.js';
 
 class CollectionMap extends React.Component {
 
@@ -50,30 +51,29 @@ class CollectionMap extends React.Component {
   }
 
   compareLocation() {
+    let geolocation = null;
 
     if(this.state.location.latitude !== null) {
 
       let actualLat = parseFloat(this.state.location.latitude).toFixed(4);
       let actualLong = parseFloat(this.state.location.longitude).toFixed(4);
-      console.log(actualLat, actualLong);
 
       this.props.fullCollection.forEach(function(x){
         let compLat = parseFloat(x.latitude).toFixed(4);
         let compLong = parseFloat(x.longitude).toFixed(4);
 
-        console.log("your lat: " + actualLat);
-        console.log(x.name + " lat: " + compLat);
-        console.log("your long: " + actualLong);
-        console.log(x.name + " long: " + compLong);
-
-        if (((actualLong >= (compLong - 2)) && (actualLong <= (compLong + 2))) &&
-        ((actualLat >= (compLat - 2)) && (actualLat <= (compLat + 2)))) {
-          console.log('---------------');
-          console.log('ARE YOU AT ' + x.name);
-          console.log('---------------');
+        if (((actualLong >= (compLong - 1)) && (actualLong <= (compLong - (-1)))) &&
+        ((actualLat >= (compLat - 1)) && (actualLat <= (compLat - (-1))))) {
+          return (
+            geolocation = (
+              <div style={{textAlign: "center"}}>
+                <h3>You have been geolocated at {x.name}<img key={x.name} style={styles.geoStyle} src={require('../img/trophies/geolocation/geolocation.png')}/></h3>
+              </div>)
+          );
         }
       },this);
     }
+    return geolocation;
   }
 
   prepareFillKeys(){
@@ -103,39 +103,18 @@ class CollectionMap extends React.Component {
   prepareBubbles(){
     const radius = 6;
     let bubbles = [];
-    let actualLat = this.state.location.latitude;
-    let actualLong = this.state.location.longitude;
-    // let compLat = x.latitude;
-    // let compLong = x.longitude;
 
     if(this.state.location.latitude !== null) {
-
-      if (actualLat >= 44.9912101476 -.5 && actualLat <= 44.9912101476 +.5 &&
-          actualLong >= -110.691947937 -.5 && actualLong <= -110.691947937 +.5) {
-        bubbles.push(
-          {
-            name: this.props.userStore.name + ", testing",
-            collectablename: "usersposition",
-            radius: 20,
-            country: 'USA',
-            latitude: this.state.location.latitude,
-            longitude: this.state.location.longitude,
-            fillKey: 'User'
-          }
-        );
-        console.log('are you at Yellowstone?');
-      } else {
-        bubbles.push(
-          {
-            name: this.props.userStore.name + " is here!!",
-            radius: 8,
-            country: 'USA',
-            latitude: this.state.location.latitude,
-            longitude: this.state.location.longitude,
-            fillKey: 'User'
-          }
-        );
-      }
+      bubbles.push(
+        {
+          name: this.props.userStore.name + " is here!!",
+          radius: 8,
+          country: 'USA',
+          latitude: this.state.location.latitude,
+          longitude: this.state.location.longitude,
+          fillKey: 'User'
+        }
+      );
     }
 
     if(this.props.collectionName != "states"){
@@ -197,11 +176,12 @@ class CollectionMap extends React.Component {
 
   render() {
     const ourMap = this.prepareMap();
-    this.compareLocation();
+    const geolocation = this.compareLocation();
 
     return (
       <div>
         {ourMap}
+        {geolocation}
       </div>
     );
   }
