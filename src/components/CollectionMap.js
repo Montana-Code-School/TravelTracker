@@ -52,6 +52,7 @@ class CollectionMap extends React.Component {
   compareLocation() {
 
     if(this.state.location.latitude !== null) {
+
       let actualLat = parseFloat(this.state.location.latitude).toFixed(4);
       let actualLong = parseFloat(this.state.location.longitude).toFixed(4);
       console.log(actualLat, actualLong);
@@ -71,7 +72,7 @@ class CollectionMap extends React.Component {
           console.log('ARE YOU AT ' + x.name);
           console.log('---------------');
         }
-      });
+      },this);
     }
   }
 
@@ -202,7 +203,6 @@ class CollectionMap extends React.Component {
       <div>
         {ourMap}
       </div>
-
     );
   }
 }

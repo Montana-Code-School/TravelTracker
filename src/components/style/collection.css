@@ -1,3 +1,7 @@
 a:hover {
   cursor: pointer;
 }
+
+.btn-success:focus,.btn:active {
+   outline: none !important;
+}

@@ -70,3 +70,7 @@
 .navbar-collapse.collapse.in {
   background-color: #c1c1c0;
 }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
+  background-color: #57ae81;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
-import { Grid, Col, Row, Image, Well, Button, Form, FormGroup, ControlLabel, FormControl, Glyphicon } from 'react-bootstrap';
+import { Link } from 'react-router';
+import { Well, Button, Form, FormGroup,
+  ControlLabel, FormControl } from 'react-bootstrap';
 import FacebookLogin from 'react-facebook-login';
+import GoogleLogin from 'react-google-login';
+import FontAwesome from 'react-fontawesome';
 import './style/Welcome.css';
 
 class Welcome extends React.Component {
@@ -22,6 +25,7 @@ class Welcome extends React.Component {
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.loginNotice = this.loginNotice.bind(this);
     this.responseFacebook = this.responseFacebook.bind(this);
+    this.responseGoogle = this.responseGoogle.bind(this);
   }
 
   handleNameChange(e) {
@@ -54,17 +58,28 @@ class Welcome extends React.Component {
     this.props.userStore.facebookLoginUser(response);
   }
 
+  responseGoogle(response){
+    this.props.userStore.googleLoginUser(response);
+  }
+
   render() {
     const bg = require('../img/frontBackground-min.jpg');
-    const parentStyle = {height:"100vh", width:"100vw", background: "url("+bg+") no-repeat center fixed", backgroundSize: "cover"};
-    const wellStyle = {position: "fixed", top: "0px", bottom: "0px", left: "0px", right: "0px", margin: "auto", opacity: ".95", backgroundBlendMode: "overlay", height: "375px", width: "350px"};
-    const logoStyle = {position: "absolute", top: "0px", left: "10px", zIndex: "100"};
+    const parentStyle = {height:"100vh", width:"100vw",
+      background: "url("+bg+") no-repeat center fixed",
+      backgroundSize: "cover"};
+    const wellStyle = {position: "fixed", top: "0px",
+      bottom: "0px", left: "0px", right: "0px", margin: "auto",
+      opacity: ".95", backgroundBlendMode: "overlay",
+      height: "375px", width: "350px"};
+    const logoStyle = {position: "absolute", top: "0px",
+      left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
 
     return (
       <div>
         <div>
-          <img style={logoStyle} src={require('../img/barlogo.png')} width="300" height="150"/>
+          <img style={logoStyle} src={require('../img/barlogo.png')}
+            width="300" height="150"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
@@ -98,6 +113,15 @@ class Welcome extends React.Component {
               cssClass="facebookbtn"
               textButton = " Login with Facebook"
                />
+            <GoogleLogin
+              clientId="862765406840-becil6hhhlsoi01tokb673lpol5odret.apps.googleusercontent.com"
+              className="googlebtn"
+              onSuccess={this.responseGoogle}
+              onFailure={this.responseGoogle}
+            >
+              <FontAwesome name="google"/>
+              <span> Login with Google</span>
+            </GoogleLogin>
             </div>
           </Well>
        </div>
