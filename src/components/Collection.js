@@ -100,10 +100,11 @@ class Collection extends React.Component {
         <Row>
           <Col xs={1}/>
           <Col xs={10}>
-            <h3>{this.props.collectionStore.createDisplayName(this.props.params.collectionname)} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
-            <ProgressBar active striped bsStyle="success" style={{border: ".5px solid #57ae81", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
+            <h3 style={{textAlign: "center"}}>{this.props.collectionStore.createDisplayName(this.props.params.collectionname)} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
+            <ProgressBar active striped bsStyle="success" key="1" style={{border: ".5px solid #57ae81", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
           </Col>
           <Col xs={1}/>
+
           <Col xs={12} md={8}>
             <CollectionMap
             collectionName={this.props.params.collectionname}

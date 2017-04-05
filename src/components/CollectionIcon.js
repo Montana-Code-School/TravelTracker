@@ -16,7 +16,7 @@ class CollectionIcon extends React.Component {
   createIcon(){
     const percent = this.props.userStore.getPercentageCompletion(
       this.props.collectionName);
-    const percentImages =  0.1;
+    const percentImages =  0.01;
 
     if (percent >= percentImages){
       return (

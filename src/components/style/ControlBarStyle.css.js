@@ -7,7 +7,7 @@ export default {
   },
   logoStyle:{
     position: "absolute",
-    top: "1.25px",
+    top: "0px",
     left: "10.25px",
     zIndex: "100"
   }

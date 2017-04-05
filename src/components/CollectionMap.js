@@ -48,6 +48,32 @@ class CollectionMap extends React.Component {
     }
   }
 
+  compareLocation() {
+
+    if(this.state.location.latitude !== null) {
+      let actualLat = this.state.location.latitude;
+      let actualLong = this.state.location.longitude;
+      console.log(actualLat, actualLong);
+
+      this.props.fullCollection.forEach(function(x){
+        let compLat = x.latitude;
+        let compLong = x.longitude;
+
+        console.log("your lat: " + actualLat);
+        console.log(x.name + " lat: " + compLat);
+        console.log("your long: " + actualLong);
+        console.log(x.name + " long: " + compLong);
+
+        if ((actualLong >= (compLong - 1)) && (actualLong <= (compLong + 1)) ||
+        (actualLat >= (compLat - 1)) && (actualLat <= (compLat + 1))) {
+          console.log('ARE YOU AT ' + x.name);
+        } else {
+          console.log('you are not at ' + x.name);
+        }
+      });
+    }
+  }
+
   prepareFillKeys(){
     let fillKeys = {};
     if(this.props.collectionName == "states"){
@@ -168,11 +194,14 @@ class CollectionMap extends React.Component {
 
   render() {
     const ourMap = this.prepareMap();
+    const atLocation = this.compareLocation();
 
     return (
       <div>
         {ourMap}
+        {atLocation}
       </div>
+
     );
   }
 }
