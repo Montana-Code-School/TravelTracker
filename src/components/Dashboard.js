@@ -53,12 +53,8 @@ class Dashboard extends React.Component {
                 <Row>
                   <Piechart collectionname={"states"}/>
                   <Piechart collectionname={"parks"}/>
-                </Row>
-                <Row>
                   <Piechart collectionname={"mlbstadiums"}/>
                   <Piechart collectionname={"nflstadiums"}/>
-                </Row>
-                <Row>
                   <Piechart collectionname={"elevations"}/>
                   <Piechart collectionname={"airports"}/>
                 </Row>

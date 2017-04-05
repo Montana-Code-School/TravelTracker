@@ -237,4 +237,42 @@ export default class UserStore {
       }
     });
   }
+
+  googleLoginUser(response) {
+    const self = this;
+    fetch('facebook/usercheck', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: response.w3.ig
+      })
+    }).then(function(result){
+      return result.json();
+    }).then(function(result) {
+      if(result.userfound) {
+        self.LoginUser(response.w3.ig, response.googleId);
+      } else {
+        this.newUserCreated = true;
+        fetch('/api/user', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: response.w3.ig,
+            password: response.googleId,
+            email: response.w3.ig
+          })
+        })
+        .then(function(){
+          self.LoginUser(response.w3.ig, response.googleId);
+        });
+      }
+    });
+  }
+
 }
