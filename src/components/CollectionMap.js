@@ -36,7 +36,8 @@ class CollectionMap extends React.Component {
       });
     } else{
       d3.selectAll('.datamaps-bubble').on('click', (bubble) => {
-        this.props.userStore.toggleCollectable(this.props.userStore.name, bubble.collectablename, this.props.collectionName);
+        if(bubble.collectablename != null)
+          this.props.userStore.toggleCollectable(this.props.userStore.name, bubble.collectablename, this.props.collectionName);
       });
       d3.selectAll('.datamaps-subunit').on('click', () => {null;});
     }
@@ -113,6 +114,7 @@ class CollectionMap extends React.Component {
         bubbles.push(
           {
             name: this.props.userStore.name + ", testing",
+            collectablename: "usersposition",
             radius: 20,
             country: 'USA',
             latitude: this.state.location.latitude,
