@@ -87,18 +87,27 @@ class Dashboard extends React.Component {
         </div>
       );
     } else {
+
+      const bg = require('../img/highway.jpg');
+      const parentStyle = {height:"80vh", width:"100vw", background: "url("+bg+") no-repeat center fixed",
+        backgroundSize: "cover", display: "flex", alignItems: "center", justifyContent: "center"};
+
       return (
-        <div style={styles.jumboStyle}>
-          <Jumbotron>
+        <div style={parentStyle}>
+          <div style={{textAlign: "center", alignItems: "center", justifyContent: "center"}}>
+            <Well style={{border: ".5px solid #57ae81"}}>
             <h4>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
-            <h4>View the assortment of options available in the "Collections"
+            <h4 style={{color: "57ae81", fontWeight: "bold", opacity: "1"}}>View the assortment of options available in the "Collections"
             menu and pick your passion.</h4>
-            <h4>Periodically check in on the Home Page to view
+            <h4 style={{color: "57ae81", fontWeight: "bold", opacity: "1"}}>Periodically check in on the Home Page to view
             your overall progress.</h4>
-            <img style={styles.welcomeRibbon} src={require('../img/logo.png')}/>
-            <h3 style={{fontWeight: "bold"}}>Bon Voyage!
-            Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
-          </Jumbotron>
+            </Well>
+            <img style={styles.welcomeRibbon} src={require('../img/barlogo.png')}/>
+            <Well style={{border: ".5px solid #57ae81"}}>
+            <h3><strong>Bon Voyage!
+            Safe Travels!  Fair Winds and Following Seas!  Play Ball!</strong></h3>
+            </Well>
+          </div>
         </div>
       );
     }

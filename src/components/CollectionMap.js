@@ -52,24 +52,24 @@ class CollectionMap extends React.Component {
   compareLocation() {
 
     if(this.state.location.latitude !== null) {
-      let actualLat = this.state.location.latitude;
-      let actualLong = this.state.location.longitude;
+      let actualLat = parseFloat(this.state.location.latitude).toFixed(4);
+      let actualLong = parseFloat(this.state.location.longitude).toFixed(4);
       console.log(actualLat, actualLong);
 
       this.props.fullCollection.forEach(function(x){
-        let compLat = x.latitude;
-        let compLong = x.longitude;
+        let compLat = parseFloat(x.latitude).toFixed(4);
+        let compLong = parseFloat(x.longitude).toFixed(4);
 
         console.log("your lat: " + actualLat);
         console.log(x.name + " lat: " + compLat);
         console.log("your long: " + actualLong);
         console.log(x.name + " long: " + compLong);
 
-        if ((actualLong >= (compLong - 1)) && (actualLong <= (compLong + 1)) ||
-        (actualLat >= (compLat - 1)) && (actualLat <= (compLat + 1))) {
+        if (((actualLong >= (compLong - 2)) && (actualLong <= (compLong + 2))) &&
+        ((actualLat >= (compLat - 2)) && (actualLat <= (compLat + 2)))) {
+          console.log('---------------');
           console.log('ARE YOU AT ' + x.name);
-        } else {
-          console.log('you are not at ' + x.name);
+          console.log('---------------');
         }
       });
     }
@@ -100,7 +100,7 @@ class CollectionMap extends React.Component {
   }
 
   prepareBubbles(){
-    const radius = 5;
+    const radius = 6;
     let bubbles = [];
     let actualLat = this.state.location.latitude;
     let actualLong = this.state.location.longitude;
@@ -196,12 +196,11 @@ class CollectionMap extends React.Component {
 
   render() {
     const ourMap = this.prepareMap();
-    const atLocation = this.compareLocation();
+    this.compareLocation();
 
     return (
       <div>
         {ourMap}
-        {atLocation}
       </div>
 
     );
