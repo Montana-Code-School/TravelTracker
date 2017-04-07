@@ -1,8 +1,10 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import {  ListGroup, Row, Col, Jumbotron, Well } from 'react-bootstrap';
+import {  ListGroup, Row, Col, Well } from 'react-bootstrap';
 import Piechart from './Piechart';
 import CollectionModal from './CollectionModal';
+import CollectionMap from './CollectionMap';
+import Geolocation from './Geolocation';
 import styles from './style/DashboardStyle.css.js';
 import Trophy from './Trophy';
 
@@ -12,7 +14,7 @@ class Dashboard extends React.Component {
   constructor(){
     super();
     this.state = {
-      activityList: []
+      activityList: [],
     };
   }
 
@@ -65,7 +67,7 @@ class Dashboard extends React.Component {
                   {this.createTrophyCase()}
               </Well>
               <Well style={styles.wellStyle}>
-                <div style={styles.trophyCase}>
+                <div>
                   <CollectionModal/>
                 </div>
               </Well>
@@ -83,18 +85,32 @@ class Dashboard extends React.Component {
         </div>
       );
     } else {
+
+      const bg = require('../img/highway.jpg');
+      const imageStyle = {height:"90vh", width:"100vw", background: "url("+bg+") no-repeat center fixed",
+        backgroundSize: "cover", display: "flex", alignItems: "center", justifyContent: "center"};
+
       return (
-        <div style={styles.jumboStyle}>
-          <Jumbotron>
-            <h4>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
-            <h4>View the assortment of options available in the "Collections"
-            menu and pick your passion.</h4>
-            <h4>Periodically check in on the Home Page to view
-            your overall progress.</h4>
-            <img style={styles.welcomeRibbon} src={require('../img/logo.png')}/>
-            <h3 style={{fontWeight: "bold"}}>Bon Voyage!
-            Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h3>
-          </Jumbotron>
+        <div>
+          <div style={imageStyle}>
+            <div style={{textAlign: "center"}}>
+              <Well style={{border: "1px solid #57ae81", backgroundColor: "rgba(193, 193, 192, .5)"}}>
+              <h4 style={{fontWeight: "bold"}}>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
+              <h4 style={{fontWeight: "bold"}}>View the assortment of options available in the "Collections"
+              menu and pick your passion.</h4>
+              <h4 style={{fontWeight: "bold"}}>Periodically check in on the Home Page to view
+              your overall progress.</h4>
+              </Well>
+              <img style={styles.welcomeRibbon} src={require('../img/barlogo.png')}/>
+              <Well style={{border: "1px solid #57ae81", backgroundColor: "rgba(193, 193, 192, .5)"}}>
+              <h2 style={{fontWeight: "bold"}}>Bon Voyage!
+              Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h2>
+              <div>
+                <CollectionModal/>
+              </div>
+              </Well>
+            </div>
+          </div>
         </div>
       );
     }

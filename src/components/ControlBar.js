@@ -79,7 +79,7 @@ class ControlBar extends React.Component {
                     <NavItem>National Parks</NavItem>
                   </LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/elevations'}}>
-                    <NavItem>Elevation by State</NavItem>
+                    <NavItem>State Elevations</NavItem>
                   </LinkContainer>
                   <MenuItem divider/>
                   <LinkContainer to={{pathname: '/Collection/mlbstadiums'}}>

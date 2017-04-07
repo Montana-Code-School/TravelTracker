@@ -3,7 +3,7 @@ export default {
   navbarStyle:{
     zIndex: "1",
     marginBottom: "25px",
-    height: "50px"
+    height: "52px"
   },
   logoStyle:{
     position: "absolute",
