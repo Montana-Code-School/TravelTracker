@@ -1,6 +1,6 @@
 export default {
   welcomeRibbon:{
-    width: "650px",
+    width: "525px",
     height: "300px"
   },
   jumboStyle:{

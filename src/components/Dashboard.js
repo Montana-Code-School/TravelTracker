@@ -101,7 +101,7 @@ class Dashboard extends React.Component {
               <h4 style={{fontWeight: "bold"}}>Periodically check in on the Home Page to view
               your overall progress.</h4>
               </Well>
-              <img style={styles.welcomeRibbon} src={require('../img/barlogo.png')}/>
+              <img style={styles.welcomeRibbon} src={require('../img/barlogo1.png')}/>
               <Well style={{border: "1px solid #57ae81", backgroundColor: "rgba(193, 193, 192, .5)"}}>
               <h2 style={{fontWeight: "bold"}}>Bon Voyage!
               Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h2>

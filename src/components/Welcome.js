@@ -78,8 +78,8 @@ class Welcome extends React.Component {
     return (
       <div>
         <div>
-          <img style={logoStyle} src={require('../img/barlogo.png')}
-            width="300" height="150"/>
+          <img style={logoStyle} src={require('../img/barlogo1.png')}
+            width="275" height="150"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
