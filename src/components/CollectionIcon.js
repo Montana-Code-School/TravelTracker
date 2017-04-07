@@ -28,7 +28,11 @@ class CollectionIcon extends React.Component {
 
   render() {
     return (
-      <Link to={{pathname: '/Collection/'+this.props.collectionName}}
+      <Link style={{display: "inlineBlock", verticalAlign: "middle",
+        transform: "perspective(1px) translateZ(0)",
+        boxShadow: "0 0 1px transparent", transitionDuration: "0.3s",
+        transitionProperty: "transform"}}
+        to={{pathname: '/Collection/'+this.props.collectionName}}
         key={this.props.collectionName}
       >
         {this.createIcon()}

@@ -13,10 +13,10 @@ export default {
     height: "69vh",
     overflowY: "scroll",
     padding: "0px",
-    border: ".5px solid #57ae81"
+    border: ".5px solid #ececec"
   },
   wellStyle: {
-    border: ".5px solid #57ae81",
+    border: ".5px solid #ececec",
     textAlign: "center",
   },
   trophyCase:{
