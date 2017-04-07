@@ -8,6 +8,6 @@ export default {
     marginLeft: "6px",
     borderRadius: "4px",
     opacity: ".75",
-    backgroundColor: "#57ae81"
   }
+
 };
