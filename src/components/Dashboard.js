@@ -47,7 +47,7 @@ class Dashboard extends React.Component {
       return (
         <div>
           <div>
-
+            <Col md={1}/>
             <Col md={2} style={{textAlign: "center"}}>
               <Well style={styles.wellStyle}>
                 <Row>
@@ -60,7 +60,6 @@ class Dashboard extends React.Component {
                 </Row>
               </Well>
             </Col>
-                <Col md={1}/>
             <Col md={6}>
               <Well style={styles.wellStyle}>
               <h3>Trophy Case</h3><br/>
@@ -72,7 +71,6 @@ class Dashboard extends React.Component {
                 </div>
               </Well>
             </Col>
-                        <Col md={1}/>
             <Col md={2}>
               <Well style={styles.listStyle}>
               <h4 style={{textAlign: "center"}}>Recent Activity</h4>

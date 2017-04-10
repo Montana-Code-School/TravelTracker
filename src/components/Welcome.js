@@ -38,7 +38,7 @@ class Welcome extends React.Component {
     this.setState({email: e.target.value});
   }
   handleLoginUser(e) {
-    // e.preventDefault();
+    e.preventDefault();
     this.props.userStore.LoginUser(this.state.name, this.state.password);
   }
 
