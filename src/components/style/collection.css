@@ -5,3 +5,7 @@ a:hover {
 .btn-success:focus,.btn:active {
    outline: none !important;
 }
+
+.progress-bar.active.progress-bar-striped {
+  background-color: #57ae81;
+}
