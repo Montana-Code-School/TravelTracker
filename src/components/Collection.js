@@ -28,12 +28,16 @@ class Collection extends React.Component {
 
   prepareMobileCollection(){
     return this.state.collection.map(function(x){
-      if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
+      if (this.props.userStore[this.props.params.collectionname].find(
+        function(y){return y.name==x.name;})){
         return (
           <Panel
             header={<div><span>
             <Glyphicon glyph="check" style={{color: "#57ae81"}}/>
-            </span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
+              </span>
+                {x.name
+                  +" - "
+                  + this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
           {x.description}
           <Button block
           onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
@@ -44,7 +48,11 @@ class Collection extends React.Component {
           <Panel header={x.name} key={x.name} eventKey={x.name}>
             {x.description}
             <Button block
-            onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() =>
+              {this.props.userStore.addCollectable(
+                this.props.userStore.name, x.name,
+                this.props.params.collectionname);}
+            }
             >Add</Button>
           </Panel>);}
     },this);
@@ -52,14 +60,20 @@ class Collection extends React.Component {
 
   prepareCollection(){
     return this.state.collection.map(function(x){
-      if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
+      if (this.props.userStore[this.props.params.collectionname].find(
+        function(y){return y.name==x.name;})){
 
         const popoverClickRootClose = (
           <Popover id="popover-trigger-click-root-close" title={x.name}>
             <div>{x.description}</div>
             <br/>
             <Button block
-            onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() => {
+              this.props.userStore.removeCollectable(
+                this.props.userStore.name,
+                x.name,
+                this.props.params.collectionname);}
+            }
             >Remove</Button>
           </Popover>
         );
@@ -76,7 +90,12 @@ class Collection extends React.Component {
             <div>{x.description}</div>
             <br/>
             <Button block
-            onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() => {
+              this.props.userStore.addCollectable(
+                this.props.userStore.name,
+                x.name,
+                this.props.params.collectionname);}
+            }
             >Add</Button>
           </Popover>
         );
@@ -109,7 +128,10 @@ class Collection extends React.Component {
             <CollectionMap
             collectionName={this.props.params.collectionname}
             fullCollection={this.state.collection}
-            usersCollection={this.props.userStore[this.props.params.collectionname]}/>
+            usersCollection={
+              this.props.userStore[this.props.params.collectionname]
+            }
+          />
           </Col>
           <Col xsHidden smHidden md={3}>
             <ListGroup>

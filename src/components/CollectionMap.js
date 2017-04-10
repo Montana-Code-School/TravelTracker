@@ -33,12 +33,20 @@ class CollectionMap extends React.Component {
   componentDidUpdate(){
     if(this.props.collectionName == "states"){
       d3.selectAll('.datamaps-subunit').on('click', (state) => {
-        this.props.userStore.toggleCollectable(this.props.userStore.name, state.properties.name, this.props.collectionName);
+        this.props.userStore.toggleCollectable(
+            this.props.userStore.name,
+            state.properties.name,
+            this.props.collectionName
+        );
       });
     } else{
       d3.selectAll('.datamaps-bubble').on('click', (bubble) => {
         if(bubble.collectablename != null)
-          this.props.userStore.toggleCollectable(this.props.userStore.name, bubble.collectablename, this.props.collectionName);
+          this.props.userStore.toggleCollectable(
+            this.props.userStore.name,
+            bubble.collectablename,
+            this.props.collectionName
+        );
       });
       d3.selectAll('.datamaps-subunit').on('click', () => {null;});
     }
@@ -62,8 +70,10 @@ class CollectionMap extends React.Component {
         let compLat = parseFloat(x.latitude).toFixed(4);
         let compLong = parseFloat(x.longitude).toFixed(4);
 
-        if (((actualLong >= (compLong - 1)) && (actualLong <= (compLong - (-1)))) &&
-        ((actualLat >= (compLat - 1)) && (actualLat <= (compLat - (-1))))) {
+        if (((actualLong >= (compLong - 1))
+        && (actualLong <= (compLong - (-1))))
+        && ((actualLat >= (compLat - 1))
+        && (actualLat <= (compLat - (-1))))) {
           return (
             geolocation = (
               <div style={{textAlign: "center"}}>
@@ -80,7 +90,8 @@ class CollectionMap extends React.Component {
     let fillKeys = {};
     if(this.props.collectionName == "states"){
       this.props.fullCollection.forEach(function(x){
-        if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
+        if(this.props.usersCollection.find(
+          function(y){return y.name==x.name;})){
           fillKeys[x.states] = {
             fillKey: 'Collected'
           };
@@ -119,7 +130,8 @@ class CollectionMap extends React.Component {
 
     if(this.props.collectionName != "states"){
       this.props.fullCollection.forEach(function(x){
-        if(this.props.usersCollection.find(function(y){return y.name==x.name;})){
+        if(this.props.usersCollection.find(
+          function(y){return y.name==x.name;})){
           bubbles.push(
             {
               name: x.name + ", " + x.description,

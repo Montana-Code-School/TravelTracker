@@ -40,9 +40,10 @@ class Geolocation extends React.Component {
         let compLat = parseFloat(x.latitude).toFixed(4);
         let compLong = parseFloat(x.longitude).toFixed(4);
 
-        if (((actualLong >= (compLong - 0.5)) && (actualLong <= (compLong - (-0.5)))) &&
-        ((actualLat >= (compLat - 0.5)) && (actualLat <= (compLat - (-0.5))))) {
-          console.log('ARE YOU AT ' + x.name);
+        if (((actualLong >= (compLong - 0.5))
+          && (actualLong <= (compLong - (-0.5))))
+          && ((actualLat >= (compLat - 0.5))
+          && (actualLat <= (compLat - (-0.5))))) {
           return (
             geolocation = (<img key={x.name} className="cards"
             src={require('../img/trophies/geolocation/geolocation.png')}/>)

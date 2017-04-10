@@ -3,8 +3,6 @@ import { inject, observer } from 'mobx-react';
 import {  ListGroup, Row, Col, Well } from 'react-bootstrap';
 import Piechart from './Piechart';
 import CollectionModal from './CollectionModal';
-import CollectionMap from './CollectionMap';
-import Geolocation from './Geolocation';
 import './style/dashboardStyle.css';
 import Trophy from './Trophy';
 
@@ -49,7 +47,7 @@ class Dashboard extends React.Component {
       return (
         <div>
           <div>
-
+            <Col md={1}/>
             <Col md={2} style={{textAlign: "center"}}>
               <Well bsClass ="dashItem">
                 <Row>
@@ -62,7 +60,6 @@ class Dashboard extends React.Component {
                 </Row>
               </Well>
             </Col>
-                <Col md={1}/>
             <Col md={6}>
               <Well bsClass ="dashItem">
               <h3>Trophy Case</h3><br/>
@@ -74,7 +71,6 @@ class Dashboard extends React.Component {
                 </div>
               </Well>
             </Col>
-                        <Col md={1}/>
             <Col md={2}>
               <Well bsClass="recentActivity">
               <h4 style={{textAlign: "center"}}>Recent Activity</h4>
@@ -90,8 +86,10 @@ class Dashboard extends React.Component {
     } else {
 
       const bg = require('../img/highway.jpg');
-      const imageStyle = {height:"90vh", width:"100vw", background: "url("+bg+") no-repeat center fixed",
-        backgroundSize: "cover", display: "flex", alignItems: "center", justifyContent: "center"};
+      const imageStyle = {height:"90vh", width:"100vw",
+        background: "url("+bg+") no-repeat center fixed",
+        backgroundSize: "cover", display: "flex",
+        alignItems: "center", justifyContent: "center"};
 
       return (
         <div>
@@ -103,10 +101,8 @@ class Dashboard extends React.Component {
               menu and pick your passion.</h4>
               <h4 className="head">Periodically check in on the Home Page to view
               your overall progress.</h4>
-
-              <img className ="welcomeRibbon" src={require('../img/barlogo.png')}/>
-
-              <h2 className="head">Bon Voyage!
+              <img src={require('../img/barlogo1.png')}/>
+              <h2 style={{fontWeight: "bold"}}>Bon Voyage!
               Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h2>
               <div>
                 <CollectionModal/>
