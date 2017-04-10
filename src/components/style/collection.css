@@ -6,6 +6,6 @@ a:hover {
    outline: none !important;
 }
 
-.progress-bar.progress-bar-success.active.progress-bar-striped {
-  background-color: maroon;
+.progress-bar.active.progress-bar-striped {
+  background-color: #57ae81;
 }

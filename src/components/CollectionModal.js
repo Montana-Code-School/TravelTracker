@@ -34,10 +34,7 @@ class CollectionModal extends React.Component {
 
     return (
      <div>
-       <Button
-        style={{border: ".5px solid #57ae81"}}
-        className="btn btn-success"
-        onClick={this.open}>Travel Tracker Collections</Button>
+       <Button style={{border: ".5px solid #ececec"}} className="btn btn-success" onClick={this.open}>Travel Tracker Collections</Button>
        <Modal bsSize="small" show={this.state.showModal} onHide={this.close}>
          <Modal.Header closeButton>
            <Modal.Title>Select your next collection:</Modal.Title>

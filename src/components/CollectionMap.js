@@ -173,9 +173,9 @@ class CollectionMap extends React.Component {
     }}
     fills={{
       'User': 'blue',
-      'Collected': '#35B729',
-      'NotCollected': '#FF7F50',
-      'defaultFill': '#707070'}}
+      'Collected': '#57ae81',
+      'NotCollected': '#F89A7C',
+      'defaultFill': '#bdbdbd'}}
       data={fillKeys}
       bubbles={this.prepareBubbles()}
         bubbleOptions={{
