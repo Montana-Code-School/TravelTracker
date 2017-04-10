@@ -6,7 +6,7 @@ import { Well, Button, Form, FormGroup,
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
 import FontAwesome from 'react-fontawesome';
-import './style/Welcome.css';
+import './style/welcome.css';
 
 class Welcome extends React.Component {
 

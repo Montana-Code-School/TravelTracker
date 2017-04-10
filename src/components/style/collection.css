@@ -9,3 +9,23 @@ a:hover {
 .progress-bar.active.progress-bar-striped {
   background-color: #57ae81;
 }
+
+.list-group{
+  height: 70vh;
+  overflow-y: scroll;
+  border: .5px solid #ececec;
+}
+
+.panel-group{
+  height: 70vh;
+  overflow-y: scroll;
+  border: .5px solid #ececec;
+}
+
+.list-group-item{
+  margin: 0;
+}
+
+.ListItem {
+  color: #4eb14d;
+}

@@ -5,7 +5,7 @@ import Piechart from './Piechart';
 import CollectionModal from './CollectionModal';
 import CollectionMap from './CollectionMap';
 import Geolocation from './Geolocation';
-import styles from './style/DashboardStyle.css.js';
+import './style/dashboardStyle.css';
 import Trophy from './Trophy';
 
 
@@ -51,7 +51,7 @@ class Dashboard extends React.Component {
           <div>
 
             <Col md={2} style={{textAlign: "center"}}>
-              <Well style={styles.wellStyle}>
+              <Well bsClass ="dashItem">
                 <Row>
                   <Piechart collectionname={"states"}/>
                   <Piechart collectionname={"parks"}/>
@@ -64,11 +64,11 @@ class Dashboard extends React.Component {
             </Col>
                 <Col md={1}/>
             <Col md={6}>
-              <Well style={styles.wellStyle}>
+              <Well bsClass ="dashItem">
               <h3>Trophy Case</h3><br/>
                   {this.createTrophyCase()}
               </Well>
-              <Well style={styles.wellStyle}>
+              <Well bsClass ="dashItem">
                 <div>
                   <CollectionModal/>
                 </div>
@@ -76,7 +76,7 @@ class Dashboard extends React.Component {
             </Col>
                         <Col md={1}/>
             <Col md={2}>
-              <Well style={styles.listStyle}>
+              <Well bsClass="recentActivity">
               <h4 style={{textAlign: "center"}}>Recent Activity</h4>
               <ListGroup>
                 {this.state.activityList}
@@ -98,15 +98,15 @@ class Dashboard extends React.Component {
           <div style={imageStyle}>
             <div style={{textAlign: "center"}}>
               <Well style={{border: "1px solid #bcbcbc", backgroundColor: "rgba(193, 193, 192, .5)"}}>
-              <h4 style={{fontWeight: "bold"}}>Welcome to Travel Tracker!  Thank you for stopping by.</h4>
-              <h4 style={{fontWeight: "bold"}}>View the assortment of options available in the "Collections"
+              <h4 className="head">Welcome to Travel Tracker!  Thank you for stopping by.</h4>
+              <h4 className="head">View the assortment of options available in the "Collections"
               menu and pick your passion.</h4>
-              <h4 style={{fontWeight: "bold"}}>Periodically check in on the Home Page to view
+              <h4 className="head">Periodically check in on the Home Page to view
               your overall progress.</h4>
 
-              <img style={styles.welcomeRibbon} src={require('../img/barlogo.png')}/>
+              <img className ="welcomeRibbon" src={require('../img/barlogo.png')}/>
 
-              <h2 style={{fontWeight: "bold"}}>Bon Voyage!
+              <h2 className="head">Bon Voyage!
               Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h2>
               <div>
                 <CollectionModal/>

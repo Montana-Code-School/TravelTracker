@@ -6,7 +6,6 @@ import { inject, observer } from 'mobx-react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavItem,
   NavDropdown, MenuItem, Glyphicon } from 'react-bootstrap';
-import styles from './style/ControlBarStyle.css.js';
 import './style/navBarStyle.css';
 import injectTapEventPlugin from "react-tap-event-plugin";
 
@@ -40,18 +39,16 @@ class ControlBar extends React.Component {
 
       return (
         <div>
-          <Navbar staticTop collapseOnSelect fluid style={styles.navbarStyle}>
+          <Navbar staticTop collapseOnSelect fluid>
             <Navbar .Header>
               <Navbar .Brand>
-                <Link to={{pathname: '/Dashboard'}}>
+                <Link className= "lgo" to={{pathname: '/Dashboard'}}>
                   <img className="hidden-xs"
-                    style={styles.logoStyle}
                     src={require('../img/barlogo.png')}
                     width="209px" height="96px"/>
                 </Link>
-                <Link to={{pathname: '/Dashboard'}}>
+                <Link className= "lgo" to={{pathname: '/Dashboard'}}>
                   <img className="hidden-md hidden-lg hidden-sm"
-                    style={styles.logoStyle}
                     src={require('../img/barlogo.png')}
                     width="104.5px"
                     height="48px"/>

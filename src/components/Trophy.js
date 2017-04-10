@@ -2,7 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
-import styles from './style/TrophyStyle.css.js';
+import './style/geolocation.css';
+
 
 class Trophy extends React.Component {
   constructor(){
@@ -23,7 +24,7 @@ class Trophy extends React.Component {
     return (
       <img
         key={this.props.collectionName}
-        style={styles.trophyStyle}
+        className="cards"
         src={this.getTrophy(trophy)}
       />
     );

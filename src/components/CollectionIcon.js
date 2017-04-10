@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
-import styles from './style/IconStyle.css.js';
+import './style/collectionIcon.css';
 
 
 class CollectionIcon extends React.Component {
@@ -20,7 +20,7 @@ class CollectionIcon extends React.Component {
 
     if (percent >= percentImages){
       return (
-        <img key={this.props.collectionName} style={styles.iconStyle}
+        <img key={this.props.collectionName} className="navIcons"
         src={require('../img/icons/' + this.props.collectionName + '/' +
         this.props.collectionName + '.png')}/>);
     }

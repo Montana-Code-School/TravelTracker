@@ -3,7 +3,6 @@ import { inject, observer } from 'mobx-react';
 import { ListGroup, ListGroupItem, Glyphicon, ProgressBar,
     Row, Col, Accordion, Panel, Button, Popover,
     OverlayTrigger } from 'react-bootstrap';
-import styles from './style/CollectionStyle.css.js';
 import './style/collection.css';
 import CollectionMap from './CollectionMap';
 
@@ -31,7 +30,7 @@ class Collection extends React.Component {
     return this.state.collection.map(function(x){
       if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
         return (
-          <Panel style={styles.panelStyle}
+          <Panel
             header={<div><span>
             <Glyphicon glyph="check" style={{color: "#57ae81"}}/>
             </span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
@@ -42,7 +41,7 @@ class Collection extends React.Component {
           </Panel>);
       } else {
         return (
-          <Panel style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
+          <Panel header={x.name} key={x.name} eventKey={x.name}>
             {x.description}
             <Button block
             onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
@@ -66,7 +65,7 @@ class Collection extends React.Component {
         );
         return (
           <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose} key={x.name}>
-            <ListGroupItem style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>}/>
+            <ListGroupItem header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>}/>
           </OverlayTrigger>
         );
 
@@ -83,7 +82,7 @@ class Collection extends React.Component {
         );
         return (
           <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose} key={x.name}>
-            <ListGroupItem style={styles.panelStyle} header={x.name}/>
+            <ListGroupItem header={x.name}/>
           </OverlayTrigger>
         );
       }
@@ -113,12 +112,12 @@ class Collection extends React.Component {
             usersCollection={this.props.userStore[this.props.params.collectionname]}/>
           </Col>
           <Col xsHidden smHidden md={3}>
-            <ListGroup style={styles.listStyle}>
+            <ListGroup>
               {this.prepareCollection()}
             </ListGroup>
           </Col>
           <Col xs={12} mdHidden lgHidden>
-            <Accordion style={styles.listStyle}>
+            <Accordion>
               {this.prepareMobileCollection()}
             </Accordion>
           </Col>
