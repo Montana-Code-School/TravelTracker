@@ -134,7 +134,7 @@ class Welcome extends React.Component {
             <GoogleLogin
               clientId="862765406840-becil6hhhlsoi01tokb673lpol5odret.apps.googleusercontent.com"
               className="googlebtn"
-              redirect_uri="https://mysterious-stream-55753.herokuapp.com/"
+              redirect_uri="https://mysterious-stream-55753.herokuapp.com/Welcome"
               onSuccess={this.responseGoogle}
               onFailure={this.responseGoogle}
             >

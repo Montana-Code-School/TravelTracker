@@ -9,3 +9,7 @@ a:hover {
 .progress-bar.active.progress-bar-striped {
   background-color: #57ae81;
 }
+
+g.labels text{
+  font-size: 12px !important;
+}

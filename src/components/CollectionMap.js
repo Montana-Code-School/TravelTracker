@@ -3,6 +3,7 @@ import { inject, observer } from 'mobx-react';
 import Datamap from 'react-datamaps';
 import d3 from 'd3';
 import styles from './style/TrophyStyle.css.js';
+import './style/collection.css';
 
 class CollectionMap extends React.Component {
 
