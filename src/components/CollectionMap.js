@@ -77,7 +77,8 @@ class CollectionMap extends React.Component {
           return (
             geolocation = (
               <div style={{textAlign: "center"}}>
-                <h3>You have been geolocated at {x.name}<img key={x.name} src={require('../img/trophies/geolocation/geolocation.png')}/></h3>
+                <h3>You have been geolocated near {x.name}<img key={x.name}
+                src={require('../img/trophies/geolocation/geolocation.png')}/></h3>
               </div>)
           );
         }
