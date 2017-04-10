@@ -1,6 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import {  ListGroup, Row, Col, Well } from 'react-bootstrap';
+import {  ListGroup, Col, Well } from 'react-bootstrap';
 import Piechart from './Piechart';
 import CollectionModal from './CollectionModal';
 import './style/dashboardStyle.css';
@@ -50,14 +50,12 @@ class Dashboard extends React.Component {
             <Col md={1}/>
             <Col md={2} style={{textAlign: "center"}}>
               <Well bsClass ="dashItem">
-                <Row>
                   <Piechart collectionname={"states"}/>
                   <Piechart collectionname={"parks"}/>
                   <Piechart collectionname={"mlbstadiums"}/>
                   <Piechart collectionname={"nflstadiums"}/>
                   <Piechart collectionname={"elevations"}/>
                   <Piechart collectionname={"airports"}/>
-                </Row>
               </Well>
             </Col>
             <Col md={6}>
@@ -101,7 +99,7 @@ class Dashboard extends React.Component {
               menu and pick your passion.</h4>
               <h4 className="head">Periodically check in on the Home Page to view
               your overall progress.</h4>
-              <img src={require('../img/barlogo1.png')}/>
+              <img className="welcomeRibbon" src={require('../img/barlogo1.png')}/>
               <h2 style={{fontWeight: "bold"}}>Bon Voyage!
               Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h2>
               <div>

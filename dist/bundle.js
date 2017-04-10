@@ -66889,9 +66889,9 @@ var CollectionMap = function (_React$Component) {
               _react2.default.createElement(
                 'h3',
                 null,
-                'You have been geolocated at ',
+                'You have been geolocated near ',
                 x.name,
-                _react2.default.createElement('img', { key: x.name, src: __webpack_require__(240) })
+                _react2.default.createElement('img', { width: '50px', height: '50px', key: x.name, src: __webpack_require__(240) })
               )
             );
           }
@@ -67221,7 +67221,7 @@ var _reactRouterBootstrap = __webpack_require__(482);
 
 var _reactBootstrap = __webpack_require__(34);
 
-__webpack_require__(549);
+__webpack_require__(548);
 
 var _reactTapEventPlugin = __webpack_require__(508);
 
@@ -67521,16 +67521,12 @@ var Dashboard = function (_React$Component) {
               _react2.default.createElement(
                 _reactBootstrap.Well,
                 { bsClass: 'dashItem' },
-                _react2.default.createElement(
-                  _reactBootstrap.Row,
-                  null,
-                  _react2.default.createElement(_Piechart2.default, { collectionname: "states" }),
-                  _react2.default.createElement(_Piechart2.default, { collectionname: "parks" }),
-                  _react2.default.createElement(_Piechart2.default, { collectionname: "mlbstadiums" }),
-                  _react2.default.createElement(_Piechart2.default, { collectionname: "nflstadiums" }),
-                  _react2.default.createElement(_Piechart2.default, { collectionname: "elevations" }),
-                  _react2.default.createElement(_Piechart2.default, { collectionname: "airports" })
-                )
+                _react2.default.createElement(_Piechart2.default, { collectionname: "states" }),
+                _react2.default.createElement(_Piechart2.default, { collectionname: "parks" }),
+                _react2.default.createElement(_Piechart2.default, { collectionname: "mlbstadiums" }),
+                _react2.default.createElement(_Piechart2.default, { collectionname: "nflstadiums" }),
+                _react2.default.createElement(_Piechart2.default, { collectionname: "elevations" }),
+                _react2.default.createElement(_Piechart2.default, { collectionname: "airports" })
               )
             ),
             _react2.default.createElement(
@@ -67612,7 +67608,7 @@ var Dashboard = function (_React$Component) {
                   { className: 'head' },
                   'Periodically check in on the Home Page to view your overall progress.'
                 ),
-                _react2.default.createElement('img', { src: __webpack_require__(153) }),
+                _react2.default.createElement('img', { className: 'welcomeRibbon', src: __webpack_require__(153) }),
                 _react2.default.createElement(
                   'h2',
                   { style: { fontWeight: "bold" } },
@@ -67958,7 +67954,7 @@ var _reactRouter = __webpack_require__(32);
 
 var _mobxReact = __webpack_require__(26);
 
-__webpack_require__(548);
+__webpack_require__(549);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -68762,7 +68758,7 @@ exports = module.exports = __webpack_require__(39)();
 
 
 // module
-exports.push([module.i, ".cards {\n  position: relative;\n  width: 100%;\n  height: 50%;\n  border-style: solid;\n  border-width: 10px;\n  border-color: white;\n  border-radius: 10px;\n  border-bottom: none;\n}\n", ""]);
+exports.push([module.i, ".navbar-default {\n  background-color: #ffffff;\n  border-bottom: solid 1px #ececec;\n  margin-bottom: 25px;\n  height: 52px;\n  z-index: 1;\n}\n.lgo {\n  position: absolute;\n  top: 0px;\n  left: 10.25px;\n  z-index: 100;\n}\n\n.navbar-default .navbar-brand {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-brand:hover,\n.navbar-default .navbar-brand:focus {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-text {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-nav > li > a {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-nav > li > a:hover,\n.navbar-default .navbar-nav > li > a:focus {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-nav > .active > a,\n.navbar-default .navbar-nav > .active > a:hover,\n.navbar-default .navbar-nav > .active > a:focus {\n  color: #3d3d3d;\n  background-color: #ececec;\n}\n.navbar-default .navbar-nav > .open > a,\n.navbar-default .navbar-nav > .open > a:hover,\n.navbar-default .navbar-nav > .open > a:focus {\n  color: #3d3d3d;\n  background-color: #ececec;\n}\n.navbar-default .navbar-toggle {\n  border-color: #ececec;\n}\n.navbar-default .navbar-toggle:hover,\n.navbar-default .navbar-toggle:focus {\n  background-color: #ececec;\n}\n.navbar-default .navbar-toggle .icon-bar {\n  background-color: #3d3d3d;\n}\n.navbar-default .navbar-collapse,\n.navbar-default .navbar-form {\n  border-color: #3d3d3d;\n}\n.navbar-default .navbar-link {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-link:hover {\n  color: #3d3d3d;\n}\n\n@media (max-width: 767px) {\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a {\n    color: #3d3d3d;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {\n    color: #3d3d3d;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {\n    color: #3d3d3d;\n    background-color: #ececec;\n  }\n}\n.navbar-collapse.collapse.in {\n  background-color: #c1c1c0;\n}\n\n.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{\n  background-color: #ececec;\n}\n", ""]);
 
 // exports
 
@@ -68776,7 +68772,7 @@ exports = module.exports = __webpack_require__(39)();
 
 
 // module
-exports.push([module.i, ".navbar-default {\n  background-color: #ffffff;\n  border-bottom: solid 1px #ececec;\n  margin-bottom: 25px;\n  height: 52px;\n  z-index: 1;\n}\n.lgo {\n  position: absolute;\n  top: 0px;\n  left: 10.25px;\n  z-index: 100;\n}\n\n.navbar-default .navbar-brand {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-brand:hover,\n.navbar-default .navbar-brand:focus {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-text {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-nav > li > a {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-nav > li > a:hover,\n.navbar-default .navbar-nav > li > a:focus {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-nav > .active > a,\n.navbar-default .navbar-nav > .active > a:hover,\n.navbar-default .navbar-nav > .active > a:focus {\n  color: #3d3d3d;\n  background-color: #ececec;\n}\n.navbar-default .navbar-nav > .open > a,\n.navbar-default .navbar-nav > .open > a:hover,\n.navbar-default .navbar-nav > .open > a:focus {\n  color: #3d3d3d;\n  background-color: #ececec;\n}\n.navbar-default .navbar-toggle {\n  border-color: #ececec;\n}\n.navbar-default .navbar-toggle:hover,\n.navbar-default .navbar-toggle:focus {\n  background-color: #ececec;\n}\n.navbar-default .navbar-toggle .icon-bar {\n  background-color: #3d3d3d;\n}\n.navbar-default .navbar-collapse,\n.navbar-default .navbar-form {\n  border-color: #3d3d3d;\n}\n.navbar-default .navbar-link {\n  color: #3d3d3d;\n}\n.navbar-default .navbar-link:hover {\n  color: #3d3d3d;\n}\n\n@media (max-width: 767px) {\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a {\n    color: #3d3d3d;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {\n    color: #3d3d3d;\n  }\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,\n  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {\n    color: #3d3d3d;\n    background-color: #ececec;\n  }\n}\n.navbar-collapse.collapse.in {\n  background-color: #c1c1c0;\n}\n\n.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{\n  background-color: #ececec;\n}\n", ""]);
+exports.push([module.i, ".cards {\n  position: relative;\n  width: 100%;\n  height: 50%;\n  border-style: solid;\n  border-width: 10px;\n  border-color: white;\n  border-radius: 10px;\n  border-bottom: none;\n}\n", ""]);
 
 // exports
 
@@ -68915,8 +68911,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./geolocation.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./geolocation.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./navBarStyle.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./navBarStyle.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -68941,8 +68937,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./navBarStyle.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./navBarStyle.css");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./trophy.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./trophy.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
