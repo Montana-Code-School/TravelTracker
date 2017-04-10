@@ -34,18 +34,45 @@ class CollectionModal extends React.Component {
 
     return (
      <div>
-       <Button style={{border: ".5px solid #57ae81"}} className="btn btn-success" onClick={this.open}>Travel Tracker Collections</Button>
+       <Button
+        style={{border: ".5px solid #57ae81"}}
+        className="btn btn-success"
+        onClick={this.open}>Travel Tracker Collections</Button>
        <Modal bsSize="small" show={this.state.showModal} onHide={this.close}>
          <Modal.Header closeButton>
            <Modal.Title>Select your next collection:</Modal.Title>
          </Modal.Header>
          <Modal.Body>
-           <NavItem><Link to="/Collection/states" style={styles.modalStyle}>US States</Link></NavItem>
-           <NavItem><Link to="/Collection/parks" style={styles.modalStyle}>National Parks</Link></NavItem>
-           <NavItem><Link to="/Collection/elevations" style={styles.modalStyle}>State Elevations</Link></NavItem>
-           <NavItem><Link to="/Collection/mlbstadiums" style={styles.modalStyle}>MLB Stadiums</Link></NavItem>
-           <NavItem><Link to="/Collection/nflstadiums" style={styles.modalStyle}>NFL Stadiums</Link></NavItem>
-           <NavItem><Link to="/Collection/airports" style={styles.modalStyle}>US Airports</Link></NavItem>
+           <NavItem>
+            <Link to="/Collection/states" style={styles.modalStyle}>
+              US States
+            </Link>
+           </NavItem>
+           <NavItem>
+            <Link to="/Collection/parks" style={styles.modalStyle}>
+              National Parks
+            </Link>
+           </NavItem>
+           <NavItem>
+            <Link to="/Collection/elevations" style={styles.modalStyle}>
+              State Elevations
+            </Link>
+           </NavItem>
+           <NavItem>
+            <Link to="/Collection/mlbstadiums" style={styles.modalStyle}>
+              MLB Stadiums
+            </Link>
+           </NavItem>
+           <NavItem>
+            <Link to="/Collection/nflstadiums" style={styles.modalStyle}>
+              NFL Stadiums
+            </Link>
+           </NavItem>
+           <NavItem>
+            <Link to="/Collection/airports" style={styles.modalStyle}>
+              US Airports
+            </Link>
+           </NavItem>
          </Modal.Body>
          <Modal.Footer>
            <Button onClick={this.close}>Close</Button>

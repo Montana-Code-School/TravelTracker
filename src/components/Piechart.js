@@ -13,9 +13,17 @@ class Piechart extends React.Component {
   }
 
   createPieChart(collectionname){
-    let percentComplete = this.props.userStore.getPercentageCompletion(collectionname);
-    return(<SimplePieChart slices={[{color: '#ececec',value: (100-percentComplete)},{color: '#57ae81', value: percentComplete}
-    ]}/>);
+    let percentComplete =
+      this.props.userStore.getPercentageCompletion(collectionname);
+    return(
+      <SimplePieChart
+        slices={[{
+          color: '#ececec',
+          value: (100-percentComplete)},
+          {color: '#57ae81', value: percentComplete}
+        ]}
+      />
+    );
   }
 
   render() {
