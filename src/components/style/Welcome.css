@@ -1,4 +1,6 @@
-
+a:hover {
+  cursor: crosshair;
+}
 
 .facebookbtn {
   font-weight: bold;
