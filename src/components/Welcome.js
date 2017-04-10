@@ -130,10 +130,11 @@ class Welcome extends React.Component {
               icon="fa-facebook"
               cssClass="facebookbtn"
               textButton = " Login with Facebook"
-               />
+            />
             <GoogleLogin
               clientId="862765406840-becil6hhhlsoi01tokb673lpol5odret.apps.googleusercontent.com"
               className="googlebtn"
+              redirect_uri="https://mysterious-stream-55753.herokuapp.com/"
               onSuccess={this.responseGoogle}
               onFailure={this.responseGoogle}
             >
