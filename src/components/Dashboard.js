@@ -47,7 +47,7 @@ class Dashboard extends React.Component {
       return (
         <div>
           <div>
-
+            <Col md={1}/>
             <Col md={2} style={{textAlign: "center"}}>
               <Well style={styles.wellStyle}>
                 <Row>
@@ -60,7 +60,6 @@ class Dashboard extends React.Component {
                 </Row>
               </Well>
             </Col>
-                <Col md={1}/>
             <Col md={6}>
               <Well style={styles.wellStyle}>
               <h3>Trophy Case</h3><br/>
@@ -72,7 +71,6 @@ class Dashboard extends React.Component {
                 </div>
               </Well>
             </Col>
-                        <Col md={1}/>
             <Col md={2}>
               <Well style={styles.listStyle}>
               <h4 style={{textAlign: "center"}}>Recent Activity</h4>
@@ -103,7 +101,6 @@ class Dashboard extends React.Component {
               menu and pick your passion.</h4>
               <h4 style={{fontWeight: "bold"}}>Periodically check in on the Home Page to view
               your overall progress.</h4>
-
               <img style={styles.welcomeRibbon} src={require('../img/barlogo1.png')}/>
               <h2 style={{fontWeight: "bold"}}>Bon Voyage!
               Safe Travels!  Fair Winds and Following Seas!  Play Ball!</h2>

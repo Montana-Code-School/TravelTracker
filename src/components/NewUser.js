@@ -114,7 +114,7 @@ class NewUser extends React.Component {
                 </div>
                 <Button
                   onClick={this.handleNewUser}
-                  onTouchTap={this.handleNewUser}
+                  onTouchTap={this.handleLoginUser}
                   type="submit" className="btn btn-success">Submit</Button>
             </Form>
           </Well>
