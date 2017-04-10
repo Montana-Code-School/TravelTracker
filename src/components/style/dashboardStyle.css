@@ -1,0 +1,24 @@
+.welcomeRibbon {
+  max-width: 525px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+.dashItem {
+    border: .5px solid #ececec;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+.recentActivity {
+    height: 69vh;
+    overflow-y: scroll;
+    padding: 0px;
+    border: .5px solid #ececec;
+    margin-top: 50px;
+  }
+
+.head {
+    font-weight: bold;
+  }

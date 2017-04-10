@@ -4,7 +4,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import { NavItem, Button , Modal} from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
-import styles from './style/ModalStyle.css.js';
 import './style/collection.css';
 
 class CollectionModal extends React.Component {
@@ -40,36 +39,12 @@ class CollectionModal extends React.Component {
            <Modal.Title>Select your next collection:</Modal.Title>
          </Modal.Header>
          <Modal.Body>
-           <NavItem>
-            <Link to="/Collection/states" style={styles.modalStyle}>
-              US States
-            </Link>
-           </NavItem>
-           <NavItem>
-            <Link to="/Collection/parks" style={styles.modalStyle}>
-              National Parks
-            </Link>
-           </NavItem>
-           <NavItem>
-            <Link to="/Collection/elevations" style={styles.modalStyle}>
-              State Elevations
-            </Link>
-           </NavItem>
-           <NavItem>
-            <Link to="/Collection/mlbstadiums" style={styles.modalStyle}>
-              MLB Stadiums
-            </Link>
-           </NavItem>
-           <NavItem>
-            <Link to="/Collection/nflstadiums" style={styles.modalStyle}>
-              NFL Stadiums
-            </Link>
-           </NavItem>
-           <NavItem>
-            <Link to="/Collection/airports" style={styles.modalStyle}>
-              US Airports
-            </Link>
-           </NavItem>
+           <NavItem><Link to="/Collection/states">US States</Link></NavItem>
+           <NavItem><Link to="/Collection/parks">National Parks</Link></NavItem>
+           <NavItem><Link to="/Collection/elevations">State Elevations</Link></NavItem>
+           <NavItem><Link to="/Collection/mlbstadiums">MLB Stadiums</Link></NavItem>
+           <NavItem><Link to="/Collection/nflstadiums">NFL Stadiums</Link></NavItem>
+           <NavItem><Link to="/Collection/airports">US Airports</Link></NavItem>
          </Modal.Body>
          <Modal.Footer>
            <Button onClick={this.close}>Close</Button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import styles from './style/TrophyStyle.css.js';
+import './style/geolocation.css';
 
 class Geolocation extends React.Component {
 
@@ -45,7 +45,7 @@ class Geolocation extends React.Component {
           && ((actualLat >= (compLat - 0.5))
           && (actualLat <= (compLat - (-0.5))))) {
           return (
-            geolocation = (<img key={x.name} style={styles.trophyStyle}
+            geolocation = (<img key={x.name} className="cards"
             src={require('../img/trophies/geolocation/geolocation.png')}/>)
           );
         }

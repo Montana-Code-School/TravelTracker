@@ -10,6 +10,27 @@ a:hover {
   background-color: #57ae81;
 }
 
+<<<<<<< HEAD
 g.labels text{
   font-size: 12px !important;
+=======
+.list-group{
+  height: 70vh;
+  overflow-y: scroll;
+  border: .5px solid #ececec;
+}
+
+.panel-group{
+  height: 70vh;
+  overflow-y: scroll;
+  border: .5px solid #ececec;
+}
+
+.list-group-item{
+  margin: 0;
+}
+
+.ListItem {
+  color: #4eb14d;
+>>>>>>> 9a8a034256de1229d74d3b5581df1c3590940272
 }

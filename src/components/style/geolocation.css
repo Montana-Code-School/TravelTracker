@@ -1,0 +1,10 @@
+.cards {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  border-radius: 10px;
+  border-bottom: none;
+}
