@@ -29,12 +29,16 @@ class Collection extends React.Component {
 
   prepareMobileCollection(){
     return this.state.collection.map(function(x){
-      if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
+      if (this.props.userStore[this.props.params.collectionname].find(
+        function(y){return y.name==x.name;})){
         return (
           <Panel style={styles.panelStyle}
             header={<div><span>
             <Glyphicon glyph="check" style={{color: "#57ae81"}}/>
-            </span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
+              </span>
+                {x.name
+                  +" - "
+                  + this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
           {x.description}
           <Button block
           onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
@@ -42,10 +46,19 @@ class Collection extends React.Component {
           </Panel>);
       } else {
         return (
-          <Panel style={styles.panelStyle} header={x.name} key={x.name} eventKey={x.name}>
+          <Panel
+            style={styles.panelStyle}
+            header={x.name}
+            key={x.name}
+            eventKey={x.name}
+          >
             {x.description}
             <Button block
-            onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() =>
+              {this.props.userStore.addCollectable(
+                this.props.userStore.name, x.name,
+                this.props.params.collectionname);}
+            }
             >Add</Button>
           </Panel>);}
     },this);
@@ -53,20 +66,43 @@ class Collection extends React.Component {
 
   prepareCollection(){
     return this.state.collection.map(function(x){
-      if (this.props.userStore[this.props.params.collectionname].find(function(y){return y.name==x.name;})){
+      if (this.props.userStore[this.props.params.collectionname].find(
+        function(y){return y.name==x.name;})){
 
         const popoverClickRootClose = (
           <Popover id="popover-trigger-click-root-close" title={x.name}>
             <div>{x.description}</div>
             <br/>
             <Button block
-            onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() => {
+              this.props.userStore.removeCollectable(
+                this.props.userStore.name,
+                x.name,
+                this.props.params.collectionname);}
+            }
             >Remove</Button>
           </Popover>
         );
         return (
-          <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose} key={x.name}>
-            <ListGroupItem style={styles.panelStyle} header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>}/>
+          <OverlayTrigger
+            trigger="click"
+            rootClose placement="left"
+            overlay={popoverClickRootClose} key={x.name}
+          >
+            <ListGroupItem
+              style={styles.panelStyle}
+              header={
+                <div>
+                  <span>
+                    <Glyphicon glyph="check" style={{color: "#57ae81"}}/>
+                  </span>
+                  {x.name
+                    +" - "
+                    + this.props.userStore.getDateCollectableAdded(
+                      x.name, this.props.params.collectionname)}
+                </div>
+              }
+            />
           </OverlayTrigger>
         );
 
@@ -77,12 +113,20 @@ class Collection extends React.Component {
             <div>{x.description}</div>
             <br/>
             <Button block
-            onTouchTap={() => {this.props.userStore.addCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
+            onTouchTap={() => {
+              this.props.userStore.addCollectable(
+                this.props.userStore.name,
+                x.name,
+                this.props.params.collectionname);}
+            }
             >Add</Button>
           </Popover>
         );
         return (
-          <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose} key={x.name}>
+          <OverlayTrigger
+            trigger="click"
+            rootClose placement="left"
+            overlay={popoverClickRootClose} key={x.name}>
             <ListGroupItem style={styles.panelStyle} header={x.name}/>
           </OverlayTrigger>
         );
@@ -102,7 +146,7 @@ class Collection extends React.Component {
           <Col xs={1}/>
           <Col xs={10}>
             <h3 style={{textAlign: "center"}}>{this.props.collectionStore.createDisplayName(this.props.params.collectionname)} collection: {this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0)}%</h3>
-            <ProgressBar active striped bsStyle="success" key="1" style={{border: ".5px solid #57ae81", background: "white"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
+            <ProgressBar active striped key="1" style={{border: ".5px solid #ececec"}} now={parseInt(this.props.userStore.getPercentageCompletion(this.props.params.collectionname).toFixed(0))}/>
           </Col>
           <Col xs={1}/>
 
@@ -110,7 +154,10 @@ class Collection extends React.Component {
             <CollectionMap
             collectionName={this.props.params.collectionname}
             fullCollection={this.state.collection}
-            usersCollection={this.props.userStore[this.props.params.collectionname]}/>
+            usersCollection={
+              this.props.userStore[this.props.params.collectionname]
+            }
+          />
           </Col>
           <Col xsHidden smHidden md={3}>
             <ListGroup style={styles.listStyle}>

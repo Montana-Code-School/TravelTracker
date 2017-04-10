@@ -1,7 +1,8 @@
 import React from 'react';
 import { inject, observer } from 'mobx-react';
-import { Router, Route, browserHistory, IndexRoute, Link } from 'react-router';
-import { Grid, Col, Row, Image, Well, Form, FormControl, FormGroup, ControlLabel, Button } from 'react-bootstrap';
+import { browserHistory, Link } from 'react-router';
+import { Well, Form, FormControl,
+  FormGroup, ControlLabel, Button } from 'react-bootstrap';
 
 class NewUser extends React.Component {
 
@@ -40,7 +41,6 @@ class NewUser extends React.Component {
     }).then(function(result){
       return result.json();
     }).then(function(result) {
-      console.log(result);
       if(result.userfound) {
         self.props.userStore.userAlreadyExists = true;
       }else{
@@ -79,7 +79,9 @@ class NewUser extends React.Component {
     return (
       <div>
         <div>
-        <img style={logoStyle} src={require('../img/barlogo1.png')} width="275" height="150"/>
+        <img
+          style={logoStyle}
+          src={require('../img/barlogo1.png')} width="275" height="150"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
@@ -88,23 +90,32 @@ class NewUser extends React.Component {
 
                 <FormGroup controlId="formInlineName">
                   <ControlLabel>Name</ControlLabel>
-                  <FormControl onChange={this.handleNameChange} type="text" placeholder="username" />
+                  <FormControl
+                    onChange={this.handleNameChange}
+                    type="text" placeholder="username" />
                 </FormGroup>
 
                 <FormGroup controlId="formInlinePassword">
                   <ControlLabel>Password</ControlLabel>
-                  <FormControl onChange={this.handlePasswordChange} type="password" placeholder="password" />
+                  <FormControl
+                    onChange={this.handlePasswordChange}
+                    type="password" placeholder="password" />
                 </FormGroup>
 
                 <FormGroup controlId="formInlineEmail">
                   <ControlLabel>Email</ControlLabel>
-                  <FormControl onChange={this.handleEmailChange} type="text" placeholder="email" />
+                  <FormControl
+                    onChange={this.handleEmailChange}
+                    type="text" placeholder="email" />
                 </FormGroup>
 
                 <div style={loginLinkStyle}>
                   <Link to ="/Welcome" style={{color: "#4eb14d"}}>Login</Link>
                 </div>
-                <Button onClick={this.handleNewUser} onTouchTap={this.handleNewUser} type="submit" className="btn btn-success">Submit</Button>
+                <Button
+                  onClick={this.handleNewUser}
+                  onTouchTap={this.handleLoginUser}
+                  type="submit" className="btn btn-success">Submit</Button>
             </Form>
           </Well>
        </div>

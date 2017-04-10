@@ -3,7 +3,6 @@ import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router';
 import { Well, Button, Form, FormGroup,
   ControlLabel, FormControl } from 'react-bootstrap';
-import './style/collection.css';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
 import FontAwesome from 'react-fontawesome';
@@ -39,7 +38,7 @@ class Welcome extends React.Component {
     this.setState({email: e.target.value});
   }
   handleLoginUser(e) {
-    e.preventDefault();
+    // e.preventDefault();
     this.props.userStore.LoginUser(this.state.name, this.state.password);
   }
 
@@ -91,19 +90,36 @@ class Welcome extends React.Component {
                 {this.loginNotice()}
                 <FormGroup controlId="formInlineName">
                   <ControlLabel>Name</ControlLabel>
-                  <FormControl onChange={this.handleNameChange} type="text" placeholder="username" />
+                  <FormControl
+                    onChange={this.handleNameChange}
+                    type="text"
+                    placeholder="username"
+                  />
                 </FormGroup>
 
                 <FormGroup controlId="formInlinePassword">
                   <ControlLabel>Password</ControlLabel>
-                  <FormControl onChange={this.handlePasswordChange} type="password" placeholder="password" />
+                  <FormControl
+                    onChange={this.handlePasswordChange}
+                    type="password"
+                    placeholder="password"
+                  />
                 </FormGroup>
 
                 <div style={newUserLinkStyle}>
-                  <Link to ="/NewUser" style={{color: "#4eb14d"}}>New User</Link>
+                  <Link
+                    to ="/NewUser"
+                    style={{color: "#4eb14d"}}
+                  >New User</Link>
                 </div>
-                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouchTap={this.handleLoginUser}
-                  type="submit" className="btn btn-success">Submit</Button></Link>
+                <Link
+                  to="/Dashboard">
+                <Button
+                  onClick={this.handleLoginUser}
+                  onTouchTap={this.handleLoginUser}
+                  type="submit"
+                  className="btn btn-success"
+                >Submit</Button></Link>
             </Form>
             <br/>
             <div style={{textAlign: "center"}}>
