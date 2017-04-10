@@ -3,6 +3,7 @@ import { inject, observer } from 'mobx-react';
 import { Link } from 'react-router';
 import { Well, Button, Form, FormGroup,
   ControlLabel, FormControl } from 'react-bootstrap';
+import './style/collection.css';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
 import FontAwesome from 'react-fontawesome';
@@ -101,7 +102,8 @@ class Welcome extends React.Component {
                 <div style={newUserLinkStyle}>
                   <Link to ="/NewUser" style={{color: "#4eb14d"}}>New User</Link>
                 </div>
-                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouchTap={this.handleLoginUser} type="submit" className="btn btn-success">Submit</Button></Link>
+                <Link to="/Dashboard"><Button onClick={this.handleLoginUser} onTouchTap={this.handleLoginUser}
+                  type="submit" className="btn btn-success">Submit</Button></Link>
             </Form>
             <br/>
             <div style={{textAlign: "center"}}>
