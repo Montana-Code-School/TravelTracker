@@ -1,7 +1,9 @@
 export default {
   welcomeRibbon:{
-    width: "525px",
-    height: "300px"
+    maxWidth: "525px",
+    maxHeight: "300px",
+    width: "100%",
+    height: "100%"
   },
   jumboStyle:{
     height: "30vh",

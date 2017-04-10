@@ -71,7 +71,7 @@ class Welcome extends React.Component {
       bottom: "0px", left: "0px", right: "0px", margin: "auto",
       opacity: ".95", backgroundBlendMode: "overlay",
       height: "375px", width: "350px"};
-    const logoStyle = {position: "absolute", top: "0px",
+    const logoStyle = {position: "fixed" , top: "0px",
       left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
 
@@ -79,7 +79,7 @@ class Welcome extends React.Component {
       <div>
         <div>
           <img style={logoStyle} src={require('../img/barlogo1.png')}
-            width="275" height="150"/>
+            width="275px" height="150px"/>
         </div>
         <div style={parentStyle}>
           <Well style={wellStyle} bsSize="large">
@@ -113,7 +113,7 @@ class Welcome extends React.Component {
                   >New User</Link>
                 </div>
                 <Link
-                  to="/Dashboard">
+                  to="/Welcome">
                 <Button
                   onClick={this.handleLoginUser}
                   onTouchTap={this.handleLoginUser}
