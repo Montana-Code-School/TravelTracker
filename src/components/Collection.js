@@ -12,6 +12,7 @@ class Collection extends React.Component {
     super(props);
     this.state = {
       collection: [],
+      isOpen: false,
     };
     this.fetchCollection = this.fetchCollection.bind(this);
     this.prepareCollection = this.prepareCollection.bind(this);
@@ -38,7 +39,7 @@ class Collection extends React.Component {
                 {x.name
                   +" - "
                   + this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>} key={x.name} eventKey={x.name}>
-          {x.description}
+                {x.description}
           <Button block
           onTouchTap={() => {this.props.userStore.removeCollectable(this.props.userStore.name, x.name, this.props.params.collectionname);}}
           >Remove</Button>
@@ -78,8 +79,10 @@ class Collection extends React.Component {
           </Popover>
         );
         return (
-          <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose} key={x.name}>
-            <ListGroupItem header={<div><span><Glyphicon glyph="check" style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>}/>
+          <OverlayTrigger trigger="click" rootClose placement="left"
+          overlay={popoverClickRootClose} key={x.name}>
+            <ListGroupItem header={<div><span><Glyphicon glyph="check"
+            style={{color: "#57ae81"}}/></span> {x.name +" - "+ this.props.userStore.getDateCollectableAdded(x.name, this.props.params.collectionname)}</div>}/>
           </OverlayTrigger>
         );
 
@@ -100,7 +103,8 @@ class Collection extends React.Component {
           </Popover>
         );
         return (
-          <OverlayTrigger trigger="click" rootClose placement="left" overlay={popoverClickRootClose} key={x.name}>
+          <OverlayTrigger trigger="click" rootClose placement="left"
+          overlay={popoverClickRootClose} key={x.name}>
             <ListGroupItem header={x.name}/>
           </OverlayTrigger>
         );

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { inject, observer } from 'mobx-react';
-import './style/geolocation.css';
+import './style/trophy.css';
 
 
 class Trophy extends React.Component {

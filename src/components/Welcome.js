@@ -70,7 +70,7 @@ class Welcome extends React.Component {
     const wellStyle = {position: "fixed", top: "0px",
       bottom: "0px", left: "0px", right: "0px", margin: "auto",
       opacity: ".95", backgroundBlendMode: "overlay",
-      height: "375px", width: "350px"};
+      height: "400px", width: "350px"};
     const logoStyle = {position: "fixed" , top: "0px",
       left: "10px", zIndex: "100"};
     const newUserLinkStyle = {float: "right"};
@@ -134,7 +134,7 @@ class Welcome extends React.Component {
             <GoogleLogin
               clientId="862765406840-becil6hhhlsoi01tokb673lpol5odret.apps.googleusercontent.com"
               className="googlebtn"
-              redirect_uri="https://mysterious-stream-55753.herokuapp.com/Welcome"
+              redirect_uri="https://mysterious-stream-55753.herokuapp.com/Dashboard"
               onSuccess={this.responseGoogle}
               onFailure={this.responseGoogle}
             >
