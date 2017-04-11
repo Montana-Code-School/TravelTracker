@@ -18,6 +18,17 @@ g.labels text{
   height: 70vh;
   overflow-y: scroll;
   border: .5px solid #ececec;
+  padding: 0px;
+}
+
+.panel-group{
+  height: 70vh;
+  overflow-y: scroll;
+  border: .5px solid #ececec;
+}
+
+.panel-group .panel + .panel{
+  margin-top: 0px !important;
 }
 
 .list-group-item{
