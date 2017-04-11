@@ -20,12 +20,6 @@ g.labels text{
   border: .5px solid #ececec;
 }
 
-.panel-group{
-  height: 70vh;
-  overflow-y: scroll;
-  border: .5px solid #ececec;
-}
-
 .list-group-item{
   margin: 0;
 }
