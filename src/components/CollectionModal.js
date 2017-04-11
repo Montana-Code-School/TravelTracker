@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { NavItem, Button , Modal} from 'react-bootstrap';
 import { inject, observer } from 'mobx-react';
-import './style/collection.css';
+import './style/modalStyle.css';
 
 class CollectionModal extends React.Component {
   constructor(props) {
@@ -39,12 +39,18 @@ class CollectionModal extends React.Component {
            <Modal.Title>Select your next collection:</Modal.Title>
          </Modal.Header>
          <Modal.Body>
-           <NavItem><Link to="/Collection/states">US States</Link></NavItem>
-           <NavItem><Link to="/Collection/parks">National Parks</Link></NavItem>
-           <NavItem><Link to="/Collection/elevations">State Elevations</Link></NavItem>
-           <NavItem><Link to="/Collection/mlbstadiums">MLB Stadiums</Link></NavItem>
-           <NavItem><Link to="/Collection/nflstadiums">NFL Stadiums</Link></NavItem>
-           <NavItem><Link to="/Collection/airports">US Airports</Link></NavItem>
+           <NavItem><Link to="/Collection/states" className="modalStyle">
+           US States</Link></NavItem>
+           <NavItem><Link to="/Collection/parks" className="modalStyle">
+           National Parks</Link></NavItem>
+           <NavItem><Link to="/Collection/elevations" className="modalStyle">
+           State Elevations</Link></NavItem>
+           <NavItem><Link to="/Collection/mlbstadiums" className="modalStyle">
+           MLB Stadiums</Link></NavItem>
+           <NavItem><Link to="/Collection/nflstadiums" className="modalStyle">
+           NFL Stadiums</Link></NavItem>
+           <NavItem><Link to="/Collection/airports" className="modalStyle">
+           US Major Airports</Link></NavItem>
          </Modal.Body>
          <Modal.Footer>
            <Button onClick={this.close}>Close</Button>

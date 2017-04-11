@@ -86,7 +86,7 @@ class ControlBar extends React.Component {
                     <NavItem>NFL Stadiums</NavItem>
                   </LinkContainer>
                   <LinkContainer to={{pathname: '/Collection/airports'}}>
-                    <NavItem>US Airports</NavItem>
+                    <NavItem>US Major Airports</NavItem>
                   </LinkContainer>
                 </NavDropdown>
                 <NavItem
